@@ -27,7 +27,7 @@ animalHidePoncho,items,Clothes,EnChanged,Leather Poncho,Poncho en peau de bête,
 bandanaClothesGroupDesc,items,Clothes,EnChanged,Bandanas provide some protection against damage.,"Les bandanas vous protègent lorsqu'il fait chaud et vous protègent également contre d'autres sortes de dégâts, comme n'importe quel accessoire vestimentaire.",Halstücher bieten etwas Schutz vor Schaden.,,"Las bandanas te mantienen fresco en climas calurosos y, al igual que toda la ropa, brindan un poco de protección contra otro tipo de daños."
 hazmatShirt,items,Clothes,EnChanged,Hazmat Jacket,Chemise de protection,Schutzanzugjacke,,Camisa de material peligroso
 shadesDesc,items,Clothes,EnChanged,Sunglasses make you look cool.,Les lunettes de soleil vous donnent l'air cool et vous protègent des rayons solaires.,Mit einer Sonnenbrille siehst du cool aus.,,"Con estas gafas te ves cool, además te mantienes fresco en climas calurosos. "
-coffeeBeansDesc,items,Farming,EnChanged,Brew coffee at a campfire or craft the beans into coffee seeds.,,Braue Kaffee am Lagerfeuer oder verarbeite die Bohnen zu Kaffeesamen.,,
+coffeeBeansDesc,items,Farming,EnChanged,Brew coffee at a campfire to warm you up and give you energy.,,Braue Kaffee am Lagerfeuer oder verarbeite die Bohnen zu Kaffeesamen.,,
 foodYuccaFruitDesc,items,Food,EnChanged,Yucca fruit is edible and can be juiced to gain a bit of water. It is harvested from cacti and yucca plants.,Les fruits de yucca se mangent et peuvent être cueillis sur les cactus.,Die Yucca-Frucht ist essbar und kann von Kakteen geerntet werden.,,La yuca es comestible y se puede recoger de los cactus.
 moldyBreadDesc,items,Food,EnChanged,Eat at your own risk. Can be used to craft antibiotics at a chemistry station.,,"Auf eigene Gefahr essen. Kann benutzt werden, um am Chemietisch Antibiotika zu fertigen.",,
 blunderbussDesc,items,Gun,EnChanged,A primitive muzzle loader can be crafted from mainly forged iron. Effective at very close ranges.,"Une arme primitive à chargement par la bouche peut être fabriquée à partir de tuyaux, de fer forgé, de bois et de ressorts. Efficace sur de très courtes distances.",Ein einfacher Vorderlader der hauptsächlich aus geschmiedetem Eisen gefertigt wird. Ist im Nahkampf sehr effektiv.,,"Se puede fabricar un arma de avancarga rudimentaria con tuberías, hierro forjado, madera y resortes. Eficaz a distancias muy cortas."
@@ -48,7 +48,7 @@ theOutlawDesc,progression,Perk,EnChanged,You broke the laws of logic. Your pisto
 9mmRoundCraftingDesc,progression,Skill,EnChanged,Learn to craft 9mm rounds at a workbench.,Apprenez à fabriquer des cartouches de calibre 9 mm.,"Lerne, wie 9 mm Patronen gefertigt werden.",,Aprende a fabricar balas de 9mm.
 clothingArmor,progression,Skill,EnChanged,Clothing / Armor,Armure lourde,Kleidung / Rüstung,,Armadura pesadas
 clothingArmorDesc,progression,Skill,EnChanged,Receive less damage while wearing clothing or armor. Gain skill by taking damage while wearing items from this group.,,"Erleide weniger Schaden, während du Kleidung oder Rüstung trägst. Erhalte diese Fertigkeit, indem du Schaden erleidest, während du Gegenstände aus dieser Kategorie trägst.",,
-healthNutDesc,progression,Skill,EnChanged,Raise your minimum and maximum wellness with every rank of this perk.,Augmente votre bien-être minimal et maximal de 10 points par rang.,Erhöhe den Mindest- und Maximalwert für dein Wohlbefinden mit jedem Rang dieser Eigenschaft.,,Aumenta 10 puntos de tu bienestar máximo y mínimo por nivel.
+healthNutDesc,progression,Skill,EnChanged,Raise your maximum wellness with every rank of this perk.,Augmente votre bien-être minimal et maximal de 10 points par rang.,Erhöhe den Mindest- und Maximalwert für dein Wohlbefinden mit jedem Rang dieser Eigenschaft.,,Aumenta 10 puntos de tu bienestar máximo y mínimo por nivel.
 miner69erDesc,progression,Skill,EnChanged,Increase both block damage and harvested resources while decreasing the stamina used with mining tools.,Infligez 20 % de dégâts de bloc avec les outils miniers et consommez 10 % d'endurance en moins par coup par rang.,Erhöhe den Blockschaden und die erbeuteten Resourcen mit Bergbauwerkzeugen und verbrauche weniger Ausdauer pro Schlag.,,"Inflige 20 % más de daño en bloque con herramientas de minería. Además, cada golpe consume un 10 % menos de resistencia por nivel."
 shotgunShellCraftingDesc,progression,Skill,EnChanged,Learn to craft shotgun shells at a workbench.,Apprenez à fabriquer des cartouches de fusil à pompe.,"Lerne, wie Flintenmunition gefertigt wird.",,Aprende a fabricar cartuchos de escopeta.
 runForestRun,progression,Skill,EnChanged FrChanged,Run Forrest Run,"Cours Forrest, cours","Lauf Forrest, lauf!",,"Corre, Forrest, corre"
@@ -108,7 +108,7 @@ friendRemoved,UI,Menu,EnChanged KgNone,{0} was removed from your friends list.,V
 friendRemoved2,UI,Menu,EnChanged KgNone,{0} removed you from their friends list.,{0} vous a retiré(e) de sa liste d'alliés.,Du wurdest aus der Verbündete von {0} entfernt.,,{0} te eliminó de su lista de aliados.
 friendSentInvite,UI,Menu,EnChanged KgNone,Friend invite sent to {0}.,Vous avez envoyé une demande d'allié à {0}.,Verbündeteschaftsanfrage an {0} geschickt.,,Invitación de aliado enviada a {0}.
 goDayLengthDesc,UI,Menu,EnChanged KgNone,How long it takes for 24 hours to pass in the game.,Durée réelle d'un cycle de 24 heures dans le jeu.,"Bestimmt, wie lange es in Echtzeit dauert, bis 24 Stunden im Spiel vergehen.",,Cuánto tardan en pasar las 24 horas en el juego en minutos reales.
-lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Scavenging/Trading,Glanage,Plünderung,,Carroñar
+lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Survival,Glanage,Plünderung,,Carroñar
 itemTooltipFocusedOne,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {1},<{0}> pour récupérer {1},<{0}> Sammle {1},,<{0}> Recoge {1}
 itemTooltipFocusedSeveral,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {2} of {1},<{0}> pour récupérer {1} sur {2},<{0}> Sammle {2} von: {1},,<{0}> Recoge {2} de {1}
 cannotBreatheTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
@@ -324,7 +324,7 @@ corrugatedMetalGable,blocks,Block,KgNone,Corrugated Metal Gable,Pignon en tôle,
 corrugatedMetalPillar100,blocks,Block,KgNone,Corrugated Metal Pillar100,Pilier 100 en tôle,Wellblech – Säule 100,,Pilar de metal corrugado 100
 corrugatedMetalPillar50,blocks,Block,KgNone,Corrugated Metal Pillar50,Pilier 50 en tôle,Wellblech – Säule 50,,Pilar de metal corrugado 50
 corrugatedMetalRamp,blocks,Block,KgNone,Corrugated Metal Ramp,Rampe en tôle,Wellblechrampe,,Rampa de metal corrugado
-corrugatedMetalSheet,blocks,Block,KgNone,Corrugated Metal Sheet,Plaque de tôle,Wellblech – Platte,,Lámina de metal corrugado
+corrugatedMetalSheet,blocks,Block,KgNone,Scrap Iron Sheet,Plaque de tôle,Wellblech – Platte,,Lámina de metal corrugado
 curtain_bottom1Sheet3,blocks,Block,KgNone,Curtain bottom1 Sheet3,Pan 3 et bas de rideaux 1,Vorhangunterteil 1 Platte 3,,Lámina3 de base1 de cortina
 curtain_top1Sheet3,blocks,Block,KgNone,Curtain top1 Sheet3,Pan 3 de haut de rideaux 1,Vorhangoberteil 1 Tuch 3,,Lámina3 superior1 de cortina
 doorFrameMetal1,blocks,Block,KgNone,Door Frame Metal1,Encadrement de porte en métal 1,Metall-Türrahmen 1,,Estructura de puerta de metal 1
@@ -414,7 +414,7 @@ metalPipeJoint,blocks,Block,KgNone,Metal Pipe Joint,Joint de tuyau en métal,Met
 metalPipeStraight,blocks,Block,KgNone,Metal Pipe Straight,Tuyau en métal droit,Gerades Metallrohr,,Barra de tubería de metal
 metalPipeValve,blocks,Block,KgNone,Metal Pipe Valve,Valve de tuyau en métal,Metallrohr – Ventil,,Válvula de tubería de metal
 metalReinforcedDoorWooden,blocks,Block,KgNone,Metal Reinforced Door,Porte renforcée en métal et en bois renforcé,Metallverstärkte Holz-Sicherheitstür,,Puerta de madera reforzada con metal
-metalRivetSheet,blocks,Block,KgNone,Metal Rivet Sheet,Panneau de métal riveté,Genietetes Metall – Platte,,Lámina con remaches de metal
+metalRivetSheet,blocks,Block,KgNone,Scrap Steel Sheet,Panneau de métal riveté,Genietetes Metall – Platte,,Lámina con remaches de metal
 metalSignLetter_a,blocks,Block,KgNone,Metal Sign A,A en métal,Metallschild A,,Letra de metal A
 metalSignLetter_b,blocks,Block,KgNone,Metal Sign B,B en métal,Metallschild B,,Letra de metal B
 metalSignLetter_c,blocks,Block,KgNone,Metal Sign C,C en métal,Metallschild C,,Letra de metal C
@@ -825,7 +825,7 @@ plantedAloe3Harvest,blocks,Farming,KgNone,Aloe Vera Plant (Harvestable),Aloe ver
 plantedAloe3HarvestDesc,blocks,Farming,KgNone,The Aloe plant can be used to craft aloe cream.,L'aloe vera permet de fabriquer de la pommade d'aloe vera.,Aus der Aloe-Pflanze kann Aloe-Creme gefertigt werden.,,Se puede usar la planta de aloe vera para producir crema de aloe.
 plantedChrysanthemum3Harvest,blocks,Farming,KgNone,Chrysanthemum (Harvestable),Chrysanthème,Chrysantheme,,Crisantemo
 plantedChrysanthemum3HarvestDesc,blocks,Farming,KgNone,Chrysanthemum can be used to brew a cool and refreshing red tea.,Les chrysanthèmes servent à préparer du thé rouge rafraîchissant.,"Chrysantheme kann benutzt werden, um einen kühlenden und erfrischenden roten Tee zu brauen.",,Se pueden usar los crisantemos para hacer refrescante té rojo fresco.
-plantedCoffee3Harvest,blocks,Farming,KgNone,Coffee Plant (Harvestable),Récolte de café 3,Gepflanzte Kaffee-Ernte 3,,Sembrado Café 3 Cosecha
+plantedCoffee3Harvest,blocks,Farming,KgNone,Wild Bean Plant (Harvestable),Récolte de café 3,Gepflanzte Kaffee-Ernte 3,,Sembrado Café 3 Cosecha
 plantedCorn2,blocks,Farming,KgNone,Planted Corn 2 (Growing),Tige de maïs planté 2,Gepflanzte Maisstaude 2,,Sembrado Tallo de maíz 2 Cosecha
 plantedCornDead,blocks,Farming,KgNone,Planted Corn Dead,,,,
 plantedCotton3Harvest,blocks,Farming,KgNone,Cotton (Harvestable),Coton,Baumwolle,,Algodón
@@ -1166,8 +1166,8 @@ qc_thatlldopig,items,Animal Challenge Note,KgNone,That'll Do Pig Challenge,Défi
 762mmBulletSchematicDesc,items,Book,KgNone,Learn to craft this ammunition type if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer ce type de munition si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeit besitzt, kannst du lernen, diese Munition zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear este tipo de munición si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
 9mmBulletSchematic,items,Book,KgNone,9mm Round Schematic,Schéma de cartouche 9 mm,Bauplan - 9mm Patrone,,Esquema de bala de 9mm
 9mmBulletSchematicDesc,items,Book,KgNone,Learn to craft this ammunition type if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer ce type de munition si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeit besitzt, kannst du lernen, diese Munition zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear este tipo de munición si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
-ak47Schematic,items,Book,KgNone,AK-47 Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47
-ak47SchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment AK-47 Assault Rifles by reading this schematic.","Apprenez à assembler, réparer et perfectionner les fusils d'assaut AK-47 en lisant ce schéma.","In diesem Bauplan erfährst du, wie AK-47-Sturmgewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar e incrementar un rifle de asalto AK-47."
+ak47Schematic,items,Book,KgNone,Assualt Rifle Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47
+ak47SchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment Assault Rifles by reading this schematic.","Apprenez à assembler, réparer et perfectionner les fusils d'assaut AK-47 en lisant ce schéma.","In diesem Bauplan erfährst du, wie AK-47-Sturmgewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar e incrementar un rifle de asalto AK-47."
 ammunitionNationBook,items,Book,KgNone,Ammunition Nation Book,Livre « La nation des munitions »,Buch „Munition-Nation“,,Libro Nación de munición
 ammunitionNationBookDesc,items,Book,KgNone,Learn to craft brass casings and lead tips for ammunition crafting.,Apprenez à fabriquer des douilles en laiton et des pointes en plomb pour la fabrication de munitions.,"In diesem Buch erfährst du, wie Patronenhülsen aus Messing und Geschossspitzen aus Blei gefertigt werden.",,Aprende a fabricar cartuchos de latón y puntas de bala de plomo para fabricar munición.
 augerSchematic,items,Book,KgNone,Auger Schematic,Schéma de foreuse,Bauplan – Erdbohrer,,Esquema de taladro
@@ -1223,8 +1223,8 @@ pistolBook,items,Book,KgNone,Pistol Book,« Le livre des pistolets »,Buch „
 pistolBookDesc,items,Book,KgNone,"Read the pistol book to learn how to assemble, repair and augment 9mm pistols. ","Lisez « Le livre des pistolets » pour apprendre à assembler, réparer et perfectionner les pistolets de calibre 9 mm. ","In diesem Buch über Pistolen erfährst du, wie 9 mm Pistolen zusammengesetzt, repariert und verbessert werden. ",,"Lee el libro de la Pistola para aprender a armar, reparar y mejorar revólveres de 9 mm. "
 pumpShotgunSchematic,items,Book,KgNone,Shotgun Schematic,Schéma de fusil à pompe,Bauplan – Schrotflinte,,Esquema de escopeta
 reloadingWeeklyBook,items,Book,KgNone,Reloading Weekly Book,Livre « La recharge hebdomadaire »,Buch „Wöchentlich nachladen“,,Libro “Recarga semanal”
-rocketLauncherSchematic,items,Book,KgNone,Rocket Launcher Schematic,Schéma de lance-roquettes,Bauplan – Raketenwerfer,,Esquema de lanzacohetes
-rocketLauncherSchematicDesc,items,Book,KgNone,Learn how to assemble and repair rocket launchers and craft rocket ammo by reading this schematic.,Apprenez à assembler et réparer les lance-roquettes et à fabriquer des roquettes en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Raketenwerfer zusammengesetzt und repariert werden und wie Raketenwerfermunition hergestellt wird.",,Lee este esquema para aprender a armar y reparar lanzacohetes y a fabricar cohetes.
+rocketLauncherSchematic,items,Book,KgNone,Heavy Weapons Schematic,Schéma de lance-roquettes,Bauplan – Raketenwerfer,,Esquema de lanzacohetes
+rocketLauncherSchematicDesc,items,Book,KgNone,Learn how to assemble and repair heavy weapons and craft rocket ammo by reading this schematic.,Apprenez à assembler et réparer les lance-roquettes et à fabriquer des roquettes en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Raketenwerfer zusammengesetzt und repariert werden und wie Raketenwerfermunition hergestellt wird.",,Lee este esquema para aprender a armar y reparar lanzacohetes y a fabricar cohetes.
 scrapArmorSchematicDesc,items,Book,KgNone,Learn MacDyver's secret to making scrap metal armor by reading this gem by the king of made-up stuff.,Apprenez les secrets de MacDyver sur la fabrication d'armures en métal recyclé et autres en lisant cette merveille écrite par le roi de la débrouille.,"Finde mit diesem einzigartigen Buch von MacDyver, dem Großmeister der Improvisation, heraus, wie Rüstung aus Altmetall gefertigt wird.",,Lee esta joya y conoce los secretos de MacDyver para fabricar armaduras con chatarra de metal y mucho más de mano del rey de inventarse cosas.
 setInConcrete,items,Book,KgNone,Set In Concrete,Livre « Coulé dans le béton »,Einbetonieren,,Grabado en hormigón
 setInConcreteDesc,items,Book,KgNone,Learn to craft concrete if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer du béton si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeitsstufe besitzt, kannst du lernen, Beton zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear hormigón si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
@@ -1234,7 +1234,7 @@ shotgunSlugSchematic,items,Book,KgNone,Shotgun Slug Schematic,Schéma de balle p
 shotgunSlugSchematicDesc,items,Book,KgNone,Be the life of the party and learn how to create your very own shotgun slugs by reading this schematic.,Soyez au cœur de la fête et apprenez à fabriquer vos propres balles pour fusil à pompe en lisant ce schéma.,"Sei der Star jeder Party und lerne mit diesem Bauplan, wie Flintenlaufgeschosse gefertigt werden.",,Sé el alma de la fiesta y aprende a crear tus propios perdigones de escopeta leyendo este esquema.
 sledgehammerSchematic,items,Book,KgNone,Sledgehammer Schematic,Schéma de masse,Bauplan – Vorschlaghammer,,Esquema de mazo
 sledgehammerSchematicDesc,items,Book,KgNone,Learn how to craft a sledgehammer by reading this schematic.,Apprenez à fabriquer une masse en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Vorschlaghämmer gefertigt werden.",,Lee este esquema para aprender a fabricar un mazo.
-smgSchematics,items,Book,KgNone,SMG Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta
+smgSchematics,items,Book,KgNone,Submachine Gun Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta
 smgSchematicsDesc,items,Book,KgNone,"Learn how to assemble, repair and augment Submachine Guns by reading this schematic.","Apprenez à assembler, réparer et améliorer les mitraillettes en lisant ce schéma.","In diesem Bauplan erfährst du, wie Maschinenpistolen zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar y mejorar metralletas."
 sniperRifleSchematic,items,Book,KgNone,Sniper Rifle Schematic,Schéma de fusil de précision,Bauplan – Scharfschützengewehr,,Esquema de rifle de francotirador
 sniperRifleSchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment precision rifles by reading this schematic.","Apprenez à assembler, réparer et améliorer les fusils de précision en lisant ce schéma.","In diesem Bauplan erfährst du, wie Scharfschützengewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar y mejorar rifle de precisión."
@@ -1392,7 +1392,7 @@ blueberriesDesc,items,Farming,KgNone,"Blueberries can be eaten, used to make pie
 blueSpruceSeed,items,Farming,KgNone,Blue Spruce Seed,Graine d'épicéa bleu,Blaufichtensamen,,Semilla de pícea azul
 chrysanthemum,items,Farming,KgNone,Chrysanthemum,Chrysanthème,Chrysantheme,,Crisantemo
 chrysanthemumDesc,items,Farming,KgNone,Chrysanthemum can be used to brew red tea.,Les chrysanthèmes servent à préparer du thé rouge.,"Chrysantheme kann benutzt werden, um roten Tee zu brauen.",,Se pueden usar los crisantemos para hacer té rojo.
-coffeeBeans,items,Farming,KgNone,Coffee Beans,Grains de café,Kaffeebohnen,,Granos de café
+coffeeBeans,items,Farming,KgNone,Coffee Grounds,Grains de café,Kaffeebohnen,,Granos de café
 corn,items,Farming,KgNone,Ear of Corn,Épi de maïs,Maiskolben,,Mazorca de maíz
 cornDesc,items,Farming,KgNone,"An ear of corn can be eaten or used to make corn seed, corn meal, corn on the cob, stews and more.","Un épi de maïs peut être consommé ou utilisé pour obtenir des graines de maïs, faire de la farine de maïs, un épi de maïs doux, des ragoûts et bien plus.","Maiskolben können gegessen werden. Durch sie kann man auch Maissamen, Maismehl, gekochte Maiskolben und Eintöpfe erhalten.",,"La mazorca de maíz se puede comer o usarse para obtener semillas de maíz, hacer harina, obtener mazorcas, estofarlo, etc."
 cornSeed,items,Farming,KgNone,Corn Seed,Graine de maïs,Maissamen,,Semilla de maíz
@@ -1574,7 +1574,7 @@ cookingGrill,items,Item,KgNone,Cooking Grill,Grill,Kochgrill,,Parrilla
 cookingGrillDesc,items,Item,KgNone,A cooking utensil used in the campfire to unlock recipes.,Un ustensile de cuisine à utiliser sur le feu de camp pour déverrouiller des compositions.,"Ein Kochgerät, mit dem am Lagerfeuer Rezepte freigeschaltet werden.",,Un instrumento de cocina que se usa en la fogata para desbloquear recetas.
 crushedSand,items,Item,KgNone,Crushed Sand,Sable de concassage,Bruchsand,,Arena fina
 crushedSandDesc,items,Item,KgNone,Crushed sand is a core resource that can be smelted in the forge to make glass and used to craft items.,Le sable de concassage est une ressource de base qui peut être fondue à la forge pour faire du verre et qui sert à fabriquer des objets.,"Bruchsand ist ein wichtiger Rohstoff, der in der Schmiede geschmolzen werden kann, um Glas herzustellen. Er dient auch zur Fertigung von Gegenständen.",,La arena fina es un recurso básico que se puede fundir para fabricar cristal y usar para fabricar objetos.
-doorKnob,items,Item,KgNone,Brass Doorknob,Poignée en laiton,Messingtürgriff,,Pomo de latón
+doorKnob,items,Item,KgNone,Brass Door Lock,Poignée en laiton,Messingtürgriff,,Pomo de latón
 doorKnobDesc,items,Item,KgNone,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,"Les objets en laiton peuvent être recyclés dans votre sac à dos pour obtenir du laiton recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Messing können in deinem Rucksack zerlegt werden, um Messingstücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de latón se pueden despedazar para tener chatarra de latón en tu mochila o fundir en la fragua para obtener recursos básicos.
 ductTape,items,Item,KgNone,Duct Tape,Ruban adhésif en toile,Klebeband,,Cinta de embalar
 ductTapeDesc,items,Item,KgNone,Duct tape is useful for making many things & according to Madmole MacDyver a must have resource for making the cooler stuff.,"Le ruban adhésif en toile peut servir à fabriquer beaucoup de choses et d'après Maboul MacDyver, c'est l'élément incontournable pour fabriquer les trucs les plus cools.","Klebeband ist für viele Sachen nützlich und laut Madmole MacDyver ein Pflichtgegenstand für diejenigen, die coolere Sachen fertigen wollen.",,"La cinta de embalar es muy útil para muchas cosas y, según Madmole MacDyver, un recurso fundamental para fabricar las cosas más cool."
@@ -1649,9 +1649,9 @@ torchDesc,items,Item,EnChanged,This torch can be used as a light source or weapo
 trophy,items,Item,KgNone,Brass Trophy,Trophée en laiton,Messingtrophäe,,Trofeo de latón
 trophy2,items,Item,KgNone,Lead Trophy,Trophée en plomb,Bleitrophäe,,Trofeo de plomo
 trophy2Desc,items,Item,KgNone,Lead objects can be scrapped into scrap lead in your backpack or smelted in a forge as a core resource.,"Les objets en plomb peuvent être recyclés dans votre sac à dos pour obtenir du plomb recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Blei können in deinem Rucksack zerlegt werden, um Bleistücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de plomo se pueden despedazar para tener chatarra de plomo en tu mochila o fundir en la fragua para obtener recursos básicos.
-trophy3,items,Item,KgNone,Tungsten Trophy,Trophée en tungstène,Wolframtrophäe,,Trofeo de tungsteno
+trophy3,items,Item,KgNone,Iron Trophy,Trophée en tungstène,Wolframtrophäe,,Trofeo de tungsteno
 trophyDesc,items,Item,KgNone,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,"Les objets en laiton peuvent être recyclés dans votre sac à dos pour obtenir du laiton recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Messing können in deinem Rucksack zerlegt werden, um Messingstücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de latón se pueden despedazar para tener chatarra de latón en tu mochila o fundir en la fragua para obtener recursos básicos.
-turd,items,Item,KgNone,A human turd,Une crotte d'humain,Menschliche Scheiße,,Una mierda humana
+turd,items,Item,KgNone,A turd,Une crotte d'humain,Menschliche Scheiße,,Una mierda humana
 turdDesc,items,Item,KgNone,A disgusting turd. Only pick up on the clean end. It can be thrown at your friends or to distract zombies.,Une crotte dégoutante. À ramasser par le bout propre. Vous pouvez la jeter sur vos amis ou vous en servir pour distraire des zombies.,Ekelhafte Scheiße. Heb sie nur am sauberen Ende auf. Du kannst sie auf deine Freunde werfen oder damit Zombies ablenken.,,"Una mierda asquerosa. Recógela por la parte limpia. Se la puedes lanzar a tus amigos, o a los zombis para distraerlos."
 wood,items,Item,KgNone,Wood,Bois,Holz,,Madera
 woodDesc,items,Item,KgNone,A piece of wood. Great for building tools and constructing wood frames for building.,Un morceau de bois. Idéal pour fabriquer des outils et construire des structures en bois pour les constructions.,"Ein Stück Holz. Ideal, um Werkzeuge und Holzrahmen für den Bau herzustellen.",,Un trozo de madera. Ideal para construir herramientas y estructuras de madera para edificios.
@@ -1677,7 +1677,7 @@ splintDesc,items,Medical,KgNone,Use splints to mend sprained or broken limbs. Sp
 vitamins,items,Medical,KgNone,Vitamins,Vitamines,Vitamine,,Vitaminas
 vitaminsDesc,items,Medical,KgNone,Vitamins improve your wellness and can cure early stages of dysentery.,Les vitamines améliorent votre bien-être et peuvent traiter les premiers stades de la dysenterie.,Vitamine verbessern dein Wohlbefinden und können die frühen Stadien von Dysenterie heilen.,,Las vitaminas mejoran tu bienestar y pueden curar las primeras etapas de disentería.
 boneShiv,items,Melee,KgNone,Bone Shiv,Surin en os,Knochenklinge,,Pincho de hueso
-boneShivDesc,items,Melee,KgNone,This primitive makeshift weapon is also useful for gutting animals.,Cette arme de fortune primitive sert également à étriper les animaux.,"Diese primitive, behelfsmäßige Waffe ist auch nützlich zum Ausweiden von Tieren.",,Esta arma primitiva improvisada también es útil para destripar animales.
+boneShivDesc,items,Melee,KgNone,"This primitive makeshift weapon is also useful for gutting animals.Use the RMB to defend against enemys grabbing and biting you for a short time.",Cette arme de fortune primitive sert également à étriper les animaux.,"Diese primitive, behelfsmäßige Waffe ist auch nützlich zum Ausweiden von Tieren.",,Esta arma primitiva improvisada también es útil para destripar animales.
 clubBarbed,items,Melee,KgNone,Barbed Club,Massue à barbelé,Stacheldrahtknüppel,,Garrote con pinchos
 clubBarbedDesc,items,Melee,KgNone,A club with barbs. Added chance for bleeding.,Une massue ornée de barbelés. Augmente les chances d'infliger une hémorragie.,Ein Knüppel mit Stacheldraht. Erhöhte Chance auf Blutungen.,,Un garrote con pinchos. Posibilidad adicional de hemorragia.
 clubIron,items,Melee,KgNone,Iron Reinforced Club,Massue renforcée avec du fer,Eisenverstärkter Knüppel,,Garrote reforzado con hierro
@@ -1687,9 +1687,9 @@ clubSpikedDesc,items,Melee,KgNone,A badass club with sharp spikes. Added chance 
 clubWood,items,Melee,KgNone,Wooden Club,Massue en bois,Holzknüppel,,Garrote de madera
 clubWoodDesc,items,Melee,KgNone,A wooden club. Good for breaking knees and skulls.,Une massue en bois. Parfaite pour briser des genoux et défoncer des crânes.,"Ein Holzknüppel. Eignet sich dazu, Kniescheiben und Schädel zu brechen.",,Un garrote de madera. Genial para romper rodillas y cabezas.
 huntingKnife,items,Melee,KgNone,Hunting Knife,Couteau de chasse,Jagdmesser,,Cuchillo de caza
-huntingKnifeDesc,items,Melee,KgNone,Great for slashing zombies and gutting animals for meat.,Idéal pour taillader des zombies et étriper des animaux pour leur viande.,"Eignet sich prima dafür, Zombies aufzuschlitzen und Tiere auszuweiden.",,Genial para acuchillar zombis y destripar animales para conseguir comida.
+huntingKnifeDesc,items,Melee,KgNone,"Great for slashing zombies and gutting animals for meat.Use the RMB to defend against enemys grabbing and biting you for a short time.",Idéal pour taillader des zombies et étriper des animaux pour leur viande.,"Eignet sich prima dafür, Zombies aufzuschlitzen und Tiere auszuweiden.",,Genial para acuchillar zombis y destripar animales para conseguir comida.
 machete,items,Melee,KgNone,Machete,Machette,Machete,,Machete
-macheteDesc,items,Melee,KgNone,Great for chopping zombie limbs off and gutting animals for meat.,Idéale pour démembrer des zombies et étriper des animaux pour leur viande.,"Eignet sich prima dafür, Zombiegliedmaßen abzuschlagen und Tiere auszuweiden.",,Excelente para cortarles las extremidades a los zombis y destripar animales para conseguir carne.
+macheteDesc,items,Melee,KgNone,"Great for chopping zombie limbs off and gutting animals for meat.Use the RMB to defend against enemys grabbing and biting you for a short time.",Idéale pour démembrer des zombies et étriper des animaux pour leur viande.,"Eignet sich prima dafür, Zombiegliedmaßen abzuschlagen und Tiere auszuweiden.",,Excelente para cortarles las extremidades a los zombis y destripar animales para conseguir carne.
 sledgehammer,items,Melee,KgNone,Iron Sledgehammer,Masse en fer,Eisenvorschlaghammer,,Mazo de hierro
 sledgehammerDesc,items,Melee,KgNone,The sledgehammer is one of the best weapons for cracking skulls with a better chance to score a critical blow.,La masse en fer est l'une des meilleures armes pour défoncer des crânes avec de grandes chances de porter un coup critique.,"Der Vorschlaghammer ist eine der besten Waffen, wenn es darum geht, Schädel zu brechen. Mit ihm hast du eine erhöhte Chance, einen kritischen Treffer zu landen.",,El mazo es una de las mejores armas para destrozar cráneos. Aumenta la probabilidad de asestar golpes críticos.
 commonShotgunPartsGroupDesc,items,Part,KgNone,A common part for shotguns. Assemble with other parts to create a complete shotgun once you've read the right schematic.,Une pièce commune aux fusils à pompe. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le bon schéma.,"Ein gewöhnliches Teil für Schrotflinten. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den richtigen Bauplan gelesen hast.",,"Una parte común de escopeta. Una vez que hayas leído el esquema correcto, ármala con otras partes para crear una escopeta completa."
@@ -1710,9 +1710,9 @@ parts44Magnum_grip,items,Part,KgNone,.44 Magnum Grip,Crosse de .44 magnum,.44 Ma
 parts44Magnum_parts,items,Part,KgNone,.44 Magnum Parts,Pièces de .44 magnum,.44 Magnum Teile,,Partes de Magnum 44
 parts44MagnumGroupDesc,items,Part,KgNone,A part of the .44 Magnum. Assemble with other parts to create a complete revolver once you've read the Enforcer Magazine.,Une pièce de .44 magnum À assembler à d'autres pièces pour fabriquer un revolver une fois que vous avez lu le Magazine Enforcer.,"Ein Teil von einer .44 Magnum. Setze es mit den anderen Teilen zu einem Revolver zusammen, wenn du das Vollstrecker-Magazin gelesen hast.",,"Una parte de una Magnum 44. Una vez que has leído la Revista del sicario, ármala con otras partes para crear una pistola completa."
 partsAK47_barrel,items,Part,KgNone,AK-47 Barrel,Canon d'AK-47,AK-47 Lauf,,Cañón de AK-47
-partsAK47_parts,items,Part,KgNone,AK-47 Parts,Pièces d'AK-47,AK-47 Teile,,Partes de AK-47
+partsAK47_parts,items,Part,KgNone,AssaultRifle Parts,Pièces d'AK-47,AK-47 Teile,,Partes de AK-47
 partsAK47_receiver,items,Part,KgNone,AK-47 Receiver,Carcasse d'AK-47,AK-47 Verschlussgehäuse,,Receptor de AK-47
-partsAK47_stock,items,Part,KgNone,AK-47 Stock,Crosse d'AK-47,AK-47 Schaft,,Cantonera de AK-47
+partsAK47_stock,items,Part,KgNone,AssaultRifle Stock,Crosse d'AK-47,AK-47 Schaft,,Cantonera de AK-47
 partsAK47GroupDesc,items,Part,KgNone,A part of the AK-47 Assault Rifle. Assemble with other parts to create a complete Ak-47 once you've read the schematic.,Une pièce du fusil d'assaut AK-47. À assembler à d'autres pièces pour fabriquer un fusil d'assaut AK-47 une fois que vous avez lu le schéma.,"Ein Teil von einem AK-47-Sturmgewehr. Setze es mit den anderen Teilen zu einer AK-47 zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de asalto AK-47. Una vez que hayas leído el esquema, ármala con otras partes para crear un AK-47 completo."
 partsAuger_blade,items,Part,KgNone,Auger Blade,Foret de foreuse,Erdbohrer-Bohrkopf,,Cuchilla de barrena
 partsAuger_parts,items,Part,KgNone,Auger Parts,Pièces de foreuse,Erdbohrerteile,,Partes de la barrena
@@ -1728,9 +1728,9 @@ partsHuntingRifle_receiver,items,Part,KgNone,Hunting Rifle Receiver,Carcasse de 
 partsHuntingRifle_stock,items,Part,KgNone,Hunting Rifle Stock,Crosse de fusil de chasse,Jagdgewehrschaft,,Cantonera de rifle de caza
 partsHuntingRifleGroupDesc,items,Part,KgNone,A part of the hunting rifle. Assemble with other parts to create a complete hunting rifle once you've read the schematic.,Une pièce de fusil de chasse. À assembler à d'autres pièces pour fabriquer un fusil de chasse une fois que vous avez lu le schéma.,"Ein Teil von einem Jagdgewehr. Setze es mit den anderen Teilen zu einem Jagdgewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de caza. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de caza completo."
 partsMP5_barrel,items,Part,KgNone,SMG Barrel,Canon de mitraillette,Maschinenpistolenlauf,,Cañón de metralleta
-partsMP5_parts,items,Part,KgNone,SMG Parts,Pièces de mitraillette,Maschinenpistolenteile,,Partes de metralleta
+partsMP5_parts,items,Part,KgNone,Submachine Gun Parts,Pièces de mitraillette,Maschinenpistolenteile,,Partes de metralleta
 partsMP5_receiver,items,Part,KgNone,SMG Receiver,Carcasse de mitraillette,Maschinenpistolen-Verschlussgehäuse,,Receptor de metralleta
-partsMP5_stock,items,Part,KgNone,SMG Stock,Crosse de mitraillette,Maschinenpistolenschaft,,Cantonera de metralleta
+partsMP5_stock,items,Part,KgNone,Submachine Gun Stock,Crosse de mitraillette,Maschinenpistolenschaft,,Cantonera de metralleta
 partsMP5GroupDesc,items,Part,KgNone,A part of the Submachine Gun. Assemble with other parts to create a complete SMG once you've read the schematic.,Une pièce de mitraillette. À assembler à d'autres pièces pour fabriquer une mitraillette une fois que vous avez lu le schéma.,"Ein Teil von einer Maschinenpistole. Setze es mit den anderen Teilen zu einer Maschinenpistole zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una metralleta. Una vez que has leído el esquema, ármala con otras partes para crear una metralleta completa."
 partsPistol_barrel,items,Part,KgNone,Pistol Barrel,Canon de pistolet,Pistolenlauf,,Cañón de revólver
 partsPistol_grip,items,Part,KgNone,Pistol Grip,Crosse de pistolet,Pistolengriff,,Empuñadura de revólver
@@ -1758,7 +1758,6 @@ partsSniperRifleGroupDesc,items,Part,KgNone,A part of the sniper rifle. Assemble
 shoppingBasketItem,items,Part,KgNone,Shopping Basket,Panier à provisions,Einkaufskorb,,Cesto de compras
 shoppingBasketItemDesc,items,Part,KgNone,A shopping basket can be used to add storage to minibikes.,Un panier à provisions permet d'ajouter un espace de stockage aux mini-motos.,Ein Einkaufskorb für mehr Platz auf dem Taschenmotorrad.,,Se puede usar un cesto de compras para agregar un espacio de almacenamiento a las minimotos.
 smallEngine,items,Part,KgNone,Small Engine,Petit moteur,Kleiner Motor,,Motor pequeño
-smallEngineDesc,items,Part,KgNone,"A common part for a chainsaw, auger or minibike. Can be used to make these items once you've read the schematic.","Une pièce commune aux tronçonneuses, foreuses et mini-motos. Sert à fabriquer ces objets une fois que vous avez lu le schéma.","Ein gewöhnliches Teil einer Kettensäge, eines Erdbohrers oder eines Taschenmotorrads. Kann verwendet werden, um diese Gegenstände zu fertigen, wenn du den richtigen Bauplan gelesen hast.",,"Una parte común de las motosierras, los taladros y las minimotos. Una vez que hayas leído el esquema, úsala para crear estos objetos."
 q_basicSurvival,items,Quest Note,KgNone,Basic Survival Quest Note,Note de quête « Les bases de la survie »,Questnotiz – Das 1x1 des Überlebens,,Nota de búsqueda de supervivencia básica
 q_basicSurvivalDesc,items,Quest Note,KgNone,A mysterious note from a stranger. I don't know how I got it.,Un petit mot mystérieux provenant d'un étranger. Je ne sais pas comment je l'ai obtenu.,"Eine geheimnisvolle Notiz von einem Fremden. Ich weiß nicht, woher ich sie habe.",,Una nota misteriosa de un extraño. No sé cómo llegó a mí.
 auger,items,Tool,KgNone,Auger,Foreuse,Erdbohrer,,Taladro
@@ -1766,7 +1765,7 @@ augerDesc,items,Tool,KgNone,Rock out with your auger out and be the envy of ever
 chainsaw,items,Tool,KgNone,Chainsaw,Tronçonneuse,Kettensäge,,Motosierra
 chainsawDesc,items,Tool,KgNone,Chop down the biggest trees or zombies faster than Paul Bunyan with this great chainsaw that uses gasoline for fuel.,Abattez les plus gros arbres et découpez du zombie plus vite que votre ombre avec cette merveilleuse tronçonneuse qui consomme du carburant.,Fälle mit dieser benzinbetriebenen Kettensäge die größten Bäume oder Zombies schneller als Paul Bunyan.,,Tala los árboles más grandes y elimina zombis más rápido que Paul Bunyan con esta magnífica motosierra que usa gasolina como combustible.
 clawHammer,items,Tool,KgNone,Claw Hammer,Arrache-clou,Klauenhammer,,Martillo de orejas
-clawHammerDesc,items,Tool,KgNone,The claw hammer is great for repairing and upgrading base walls and not bad as a weapon.,"Génial pour réparer et améliorer les murs de base, l'arrache-clou est également pas mal en tant qu'arme.","Der Klauenhammer eignet sich prima dazu, die Mauern der Basis zu reparieren und aufzuwerten. Er stellt auch eine ziemlich gute Waffe dar.",,El martillo de orejas es genial para reparar y mejorar las paredes de la base. También sirve como arma.
+clawHammerDesc,items,Tool,KgNone,"Use this claw hammer to take apart wooden blocks and retrieve building materials. It can also be used to upgrade wood Blocks and repair all any block.","Génial pour réparer et améliorer les murs de base, l'arrache-clou est également pas mal en tant qu'arme.","Der Klauenhammer eignet sich prima dazu, die Mauern der Basis zu reparieren und aufzuwerten. Er stellt auch eine ziemlich gute Waffe dar.",,El martillo de orejas es genial para reparar y mejorar las paredes de la base. También sirve como arma.
 fireaxeIron,items,Tool,KgNone,Iron Fireaxe,Hache de pompier en fer,Eiserne Feueraxt,,Hacha de bombero de hierro
 fireaxeIronDesc,items,Tool,KgNone,The fireaxe is good for harvesting wood and has a better chance to dismember than most weapons.,"Pratique pour couper du bois, la hache de pompier est également l'arme qui a le plus de chance de démembrer un adversaire.","Die Feueraxt eignet sich gut dazu, Holz zu fällen. Sie hat zudem eine erhöhte Chance, Gegner zu zergliedern.",,El hacha de bombero es buena para recolectar madera y tiene más posibilidades de desmembrar que la mayoría de armas.
 fireaxeSteel,items,Tool,KgNone,Steel Fireaxe,Hache de pompier en acier,Stählerne Feueraxt,,Hacha de bombero de acero
@@ -1786,13 +1785,13 @@ shovelIronDesc,items,Tool,KgNone,"The iron shovel is great for digging through e
 shovelSteel,items,Tool,KgNone,Steel Shovel,Pelle en acier,Stahlschaufel,,Pala de acero
 shovelSteelDesc,items,Tool,KgNone,"The steel shovel is very durable and the ideal tool for digging through earth, sand or snow.","La pelle en acier est un outil durable et idéal pour creuser la terre, le sable ou la neige.","Die Stahlschaufel ist sehr robust und das ideale Werkzeug, um sich durch Erde, Sand und Schnee zu graben.",,"La pala de acero es muy duradera y es la herramienta ideal para cavar en la tierra, arena o nieve."
 stoneAxe,items,Tool,KgNone,Stone Axe,Hache de pierre,Steinaxt,,Hacha de piedra
-stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone, repairing & upgrading walls, doors & windows. Not the best weapon.","Un outil primitif pratique pour couper du bois, extraire de la pierre, ainsi que réparer et améliorer les murs, les portes et les fenêtres. Pas ce qui se fait de mieux en matière d'arme.","Ein primitives Werkzeug zum Holzfällen, Abbauen von Stein, Reparieren und Aufwerten von Mauern, Türen und Fenstern. Es gibt bessere Waffen.",,"Una herramienta primitiva para cortar madera, picar piedra y reparar o mejorar paredes, puertas o ventanas. No es la mejor arma."
+stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone, repairing & upgrading Large logs to logcabin blocks with narrow logs. Not the best weapon.","Un outil primitif pratique pour couper du bois, extraire de la pierre, ainsi que réparer et améliorer les murs, les portes et les fenêtres. Pas ce qui se fait de mieux en matière d'arme.","Ein primitives Werkzeug zum Holzfällen, Abbauen von Stein, Reparieren und Aufwerten von Mauern, Türen und Fenstern. Es gibt bessere Waffen.",,"Una herramienta primitiva para cortar madera, picar piedra y reparar o mejorar paredes, puertas o ventanas. No es la mejor arma."
 stoneShovel,items,Tool,KgNone,Stone Shovel,Pelle en pierre,Steinschaufel,,Pala de piedra
 stoneShovelDesc,items,Tool,KgNone,"The stone shovel is a primitive tool useful for digging dirt, sand or snow.","La pelle en pierre est un outil primitif pratique pour creuser la terre, le sable ou la neige.","Die Steinschaufel ist ein primitives Werkzeug, mit dem man in Erde, Sand und Schnee graben kann.",,"La pala de piedra es una herramienta primitiva que se usa para cavar en la tierra, arena o nieve."
 tazasStoneaxe,items,Tool,KgNone,Taza's Stone Axe,Hache de pierre de Taza,Tazas Steinaxt,,Hacha de piedra de Taza
-tazasStoneaxeDesc,items,Tool,KgNone,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.",La hache de pierre de Taza est un artefact indien rare et puissant. Les Apaches croyaient que ceux qui brandissaient cette arme devenaient invulnérables lors des batailles.,"Tazas Steinaxt ist ein seltenes und mächtiges Artefakt der Indianer. Die Apachen glaubten, dass der Träger dieser Axt im Kampf unbesiegbar ist.",,El hacha de piedra de Taza es un extraño y poderoso artefacto de los antiguos indios. Los apaches creían que aquel que la empuñase sería invencible en la batalla.
-wrench,items,Tool,KgNone,Wrench,Clé à molette,Schraubenschlüssel,,Llave inglesa
-wrenchDesc,items,Tool,KgNone,"Great for disassembling mechanical devices like cars, air conditioners and more. Can also be used to repair and upgrade walls.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."
+tazasStoneaxeDesc,items,Tool,KgNone,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.Use the RMB to defend against enemys grabbing and biting you for a short time.",La hache de pierre de Taza est un artefact indien rare et puissant. Les Apaches croyaient que ceux qui brandissaient cette arme devenaient invulnérables lors des batailles.,"Tazas Steinaxt ist ein seltenes und mächtiges Artefakt der Indianer. Die Apachen glaubten, dass der Träger dieser Axt im Kampf unbesiegbar ist.",,El hacha de piedra de Taza es un extraño y poderoso artefacto de los antiguos indios. Los apaches creían que aquel que la empuñase sería invencible en la batalla.
+wrench,items,Tool,KgNone,Scrap Iron Wrench,Clé à molette,Schraubenschlüssel,,Llave inglesa
+wrenchDesc,items,Tool,KgNone,"Use this wrench to take apart iron blocks and retrieve building materials. It can also be used to upgrade Scrap Iron Blocks and repair all any block.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."
 qt_claude,items,Treasure Map,KgNone,Claude's Treasure Map,La carte au trésor de Claude,Claudes Schatzkarte,,Mapa del tesoro de Claude
 qt_desc,items,Treasure Map,KgNone,A ragged old treasure map I found with some scribbling on it.,Une vieille carte au trésor ornée de gribouillages que j'ai trouvée.,"Eine alte, vergilbte Schatzkarte mit ein paar Kritzeleien, die ich gefunden habe.",,Un viejo mapa del tesoro arrugado y con garabatos que encontré por ahí.
 qt_jennifer,items,Treasure Map,KgNone,Jennifer's Treasure Map,La carte au trésor de Jennifer,Jennifers Schatzkarte,,Mapa del tesoro de Jennifer
@@ -2552,15 +2551,15 @@ lblCategoryBooks,UI,Tooltip,KgNone,Books,Livres,Bücher,,Libros
 lblCategoryBuilding,UI,Tooltip,KgNone,Building,Construire,Gebäude,,Construcción
 lblCategoryChemicals,UI,Tooltip,KgNone,Chemicals,Produits chimiques,Chemikalien,,Químicos
 lblCategoryClothing,UI,Tooltip,KgNone,Clothing,Vêtements,Kleidung,,Ropa
-lblCategoryCraftingMisc,UI,Tooltip,KgNone,Crafting/Miscellaneous,Fabrication/Divers,Fertigung/Sonstiges,,Fabricación/Varios
+lblCategoryCraftingMisc,UI,Tooltip,KgNone,Crafting Skills,Fabrication/Divers,Fertigung/Sonstiges,,Fabricación/Varios
 lblCategoryDecorMisc,UI,Tooltip,KgNone,Decor/Miscellaneous,Décorations/divers,Dekor/Verschiedenes,,Decoración/Varios
-lblCategoryFirearms,UI,Tooltip,KgNone,Firearms,Armes à feu,Schusswaffen,,Armas de fuego
+lblCategoryFirearms,UI,Tooltip,KgNone,Weapons,Armes à feu,Schusswaffen,,Armas de fuego
 lblCategoryFoodCooking,UI,Tooltip,KgNone,Food/Cooking,Nourriture/cuisine,Nahrung/Kochen,,Comida/Cocina
 lblCategoryHealth,UI,Tooltip,KgNone,Health/Fitness,Santé/Forme physique,Gesundheit/Fitness,,Salud/Condición física
 lblCategoryMedicine,UI,Tooltip,KgNone,Medicine,Médecine,Medizin,,Medicina
 lblCategoryResources,UI,Tooltip,KgNone,Resources,Ressources,Rohstoffe,,Recursos
-lblCategoryToolsTraps,UI,Tooltip,KgNone,Tools/Traps,Outils/pièges,Werkzeuge/Fallen,,Herramientas/trampas
-lblCategoryWeapons,UI,Tooltip,KgNone,Weapons,Armes,Waffen,,Armas
+lblCategoryToolsTraps,UI,Tooltip,KgNone,Tools,Outils/pièges,Werkzeuge/Fallen,,Herramientas/trampas
+lblCategoryWeapons,UI,Tooltip,KgNone,Traps,Armes,Waffen,,Armas
 lblCenterOnPlayer,UI,Tooltip,KgNone,Center on Player,Centrer sur le joueur,Auf Spieler zentrieren,,Centrar en jugador
 lblCenterOnSleepingBag,UI,Tooltip,KgNone,Center on Sleeping Bag,Centrer sur le sac de couchage,Auf Schlafsack zentrieren,,Centrar en saco de dormir
 lblChestArmor,UI,Tooltip,KgNone,Chest Armor,Plastron,Brustpanzer,,Coraza
@@ -2745,7 +2744,7 @@ xuiDescriptionLabel,UI,XUI,KgNone,DESCRIPTION,DESCRIPTION,BESCHREIBUNG,,DESCRIPC
 xuiDescriptionNotAvailable,UI,XUI,KgNone,DESCRIPTION NOT AVAILABLE AT THIS TIME.,LA DESCRIPTION N'EST PAS DISPONIBLE À L'HEURE ACTUELLE.,ZURZEIT KEINE BESCHREIBUNG VERFÜGBAR.,,LA DESCRIPCIÓN NO ESTÁ DISPONIBLE EN ESTOS MOMENTOS.
 xuiDurability,UI,XUI,KgNone,DURABILITY,DURABILITÉ,HALTBARKEIT,,DURABILIDAD
 xuiElevation,UI,XUI,KgNone,ELEVATION,ÉLÉVATION,ERHÖHUNG,,ELEVACIÓN
-xuiEmptyInfoPanelText,UI,XUI,KgNone,"[LEFT CLICK] TO INSPECT AN ITEM, RECIPE OR ACTIVE EFFECT\n[LEFT CLICK] HOLD AND DRAG TO TAKE A STACK\n[LEFT CLICK] TO DROP OR SWAP A STACK\n[RIGHT CLICK] HOLD AND DRAG TO TAKE A HALF STACK\n[RIGHT CLICK] TO DROP ONE ITEM AT A TIME","FAITES UN [CLIC GAUCHE] POUR INSPECTER UN OBJET, UNE COMPOSITION OU UN EFFET ACTIF\nMAINTENEZ UN [CLIC GAUCHE] ET FAITES GLISSER POUR PRENDRE UNE PILE\NFAITES UN [CLIC GAUCHE] POUR JETER OU ÉCHANGER UNE PILE\nMAINTENEZ UN [CLIC GAUCHE] ET FAITES GLISSER POUR PRENDRE LA MOITIÉ D'UNE PILE\nFAITES UN [CLIC DROIT] POUR LAISSER TOMBER UN OBJET À LA FOIS","[LINKS-KLICK], UM EINEN GEGENSTAND, EIN REZEPT ODER EINEN AKTIVEN EFFEKT GENAUER ANZUSEHEN\n[LINKS-KLICK], DANN HALTEN UND ZIEHEN, UM EINEN STAPEL ZU NEHMEN\n[LINKS-KLICK], UM EINEN STAPEL ABZULEGEN ODER AUSZUTAUSCHEN\n[RECHTS-KLICK], DANN HALTEN UND ZIEHEN, UM EINEN HALBEN STAPEL ZU NEHMEN\n[RECHTS-KLICK], UM GEGENSTÄNDE EINZELN ABZULEGEN",,"[CLIC IZQUIERDO] PARA INSPECCIONAR UN OBJETO, RECETA O EFECTO ACTIVO\n[CLIC IZQUIERDO] MANTÉN PRESIONADO Y ARRASTRA PARA RECOGER UN MONTÓN\n[CLIC IZQUIERDO] PARA SOLTAR O CAMBIAR UN MONTÓN\n[CLIC DERECHO] MANTÉN PRESIONADO Y ARRASTRA PARA RECOGER MEDIO MONTÓN\n[CLIC DERECHO] PARA SOLTAR UN OBJETO DE UNO EN UNO."
+xuiEmptyInfoPanelText,UI,XUI,KgNone,"[True Survival]All workstations without a fuel input window\nrequire the player to stay in workstation to function\n[True Survival] Stay inside workstations to gain xp from them\n[True Survival]","FAITES UN [CLIC GAUCHE] POUR INSPECTER UN OBJET, UNE COMPOSITION OU UN EFFET ACTIF\nMAINTENEZ UN [CLIC GAUCHE] ET FAITES GLISSER POUR PRENDRE UNE PILE\NFAITES UN [CLIC GAUCHE] POUR JETER OU ÉCHANGER UNE PILE\nMAINTENEZ UN [CLIC GAUCHE] ET FAITES GLISSER POUR PRENDRE LA MOITIÉ D'UNE PILE\nFAITES UN [CLIC DROIT] POUR LAISSER TOMBER UN OBJET À LA FOIS","[LINKS-KLICK], UM EINEN GEGENSTAND, EIN REZEPT ODER EINEN AKTIVEN EFFEKT GENAUER ANZUSEHEN\n[LINKS-KLICK], DANN HALTEN UND ZIEHEN, UM EINEN STAPEL ZU NEHMEN\n[LINKS-KLICK], UM EINEN STAPEL ABZULEGEN ODER AUSZUTAUSCHEN\n[RECHTS-KLICK], DANN HALTEN UND ZIEHEN, UM EINEN HALBEN STAPEL ZU NEHMEN\n[RECHTS-KLICK], UM GEGENSTÄNDE EINZELN ABZULEGEN",,"[CLIC IZQUIERDO] PARA INSPECCIONAR UN OBJETO, RECETA O EFECTO ACTIVO\n[CLIC IZQUIERDO] MANTÉN PRESIONADO Y ARRASTRA PARA RECOGER UN MONTÓN\n[CLIC IZQUIERDO] PARA SOLTAR O CAMBIAR UN MONTÓN\n[CLIC DERECHO] MANTÉN PRESIONADO Y ARRASTRA PARA RECOGER MEDIO MONTÓN\n[CLIC DERECHO] PARA SOLTAR UN OBJETO DE UNO EN UNO."
 xuiEmptyVehicleStorage,UI,XUI,KgNone,ADD BASKET TO ACCESS STORAGE.,AJOUTEZ UN PANIER POUR ACCÉDER AU RANGEMENT.,"FÜGE EINEN KORB HINZU, UM AUF DEN LAGERRAUM ZUZUGREIFEN.",,AÑADE UN CESTO PARA ALMACENAMIENTO.
 xuiEveryone,UI,XUI,KgNone,EVERYONE,TOUT LE MONDE,JEDER,,TODOS
 xuiExamine,UI,XUI,KgNone,EXAMINE,EXAMINER,UNTERSUCHEN,,INVESTIGAR
@@ -3675,7 +3674,7 @@ tripwirepostDesc,blocks,Electricity,New,Wire up 2 or more of these to trigger el
 wallLight01_player,blocks,Electricity,New,Warehouse Outdoor Light,,,,
 plantedAloe1,blocks,Farming,New,Aloe Vera Seed,,Aloe Vera Samen,,
 plantedBlueberry1,blocks,Farming,New,Blueberry Seed,,,,
-plantedCoffee1,blocks,Farming,New,Coffee Seed,,Kaffeesamen,,
+plantedCoffee1,blocks,Farming,New,Bean Seed,,Kaffeesamen,,
 plantedCotton1,blocks,Farming,New,Cotton Seed,,,,
 plantedCotton3HarvestDesc,blocks,Farming,New,Cotton is used for weaving cloth and crafting other items. If you craft seeds from it you can re-plant it.,,,,
 plantedGoldenrod1,blocks,Farming,New,Goldenrod Seed,,,,
@@ -4209,8 +4208,8 @@ xuiSkillLockPickChance,UI,Menu,New,Lock Pick Chance,,,,
 xuiVendingWithOwner,UI,Menu,New,Vending Machine - {0},,,,
 lblShowPassword,UI,Password Dialog,New,Show Password,,,,
 browserBloodMoonEnemyCount,UI,Server Browser,New,Blood Moon Count,,,,
-lblCategoryPainting,UI,Tooltip,New,Painting,,,,
-lblCategoryScience,UI,Tooltip,New,Science,,,,
+lblCategoryPainting,UI,Tooltip,New,Professions,,,,
+lblCategoryScience,UI,Tooltip,New,Science/Engineering,,,,
 lblCategorySecretStash,UI,Tooltip,New,Secret Stash,,,,
 lblCategorySpecialItems,UI,Tooltip,New,Special Items,,,,
 lblSortContainer,UI,Tooltip,New,Sort Container,,,,
@@ -4902,3 +4901,425 @@ solidScrapIronFrameHalf,blocks,Block,New,Solid Scrap Iron 1/2 Block,,,,
 scrapIronHalf,blocks,Block,New,Scrap Iron 1/2 Block,,,,
 rScrapIronHalf,blocks,Block,New,Reinforced Scrap Iron 1/2 Block,,,,
 xuiExpires,UI,Menu,New,Expires,,,,
+inpActGuiLeftclick,UI,Controls Dialog,,UI primary click,,,,
+inpActGuiRightclick,UI,Controls Dialog,,UI secondary click,,,,
+ttBedrollGone,UI,Tooltip,New,Your bedroll is gone,,Dein Schlafsack ist verschwunden,,
+extinguishFireBuffName,buffs,Buff,New,Extinguish Fire,,Lösche Feuer,,
+extinguishFireBuffDesc,buffs,Buff,New,If you happen to be on fire then this will put out the fire and prevent another while the buff remains active.,,Solltest Du in Flammen stehen dann löscht dies das Feuer und verhindert ein neues solange der Effekt aktiv ist.,,
+DroppedLootContainer,entityclasses,Entity Info,New,Dropped Loot,,,,
+SilencerDesc,,,,"The Silencer can be attached to the Pistol, Magnum, and Hunting Rifle. Crafted on the metal working bench.",,,,
+SilencedPistolDesc,,,,"In the land of the Dead the quiet man lives.",,,,
+silencedhuntingRifle,,,,"Silenced Hunting Rifle",,,,
+silencedhuntingRifleDesc,,,,"The Deer will never know you where there.",,,,
+huntingRifleScope,,,,"Hunting Rifle Scope",,,,
+huntingRifleScopeDesc,,,,"With this you can see the pretty pink mist before they fall.",,,,
+44MagnumScope,,,,"44 Magnum Scope",,,,
+44MagnumScopeDesc,,,,"A Scoped Magnum insures you’ll never miss again.(ya right)",,,,
+crossbowScopeDesc,,,,"Play out all your Darrel fantasies.",,,,
+huntingRifleSilScope,,,,"Scoped Silenced Hunting Rifle",,,,
+huntingRifleSilScopeDesc,,,,"Perfect for bringning home the bacon.",,,,
+magnumFrameScope,,,,"Magnum Frame Scope",,,,
+magnumFrameScopeDesc,,,,"Used to assemble a Scoped Magnum and crafted on the metal working bench with a wrench.",,,,
+huntingRifleStockScope,,,,"Hunting Rifle Stock Scope",,,,
+huntingRifleStockScopeDesc,,,,"Used to assemble a Scoped Hunting Rifle and crafted on the wood working bench with a wrench.",,,,
+sniperRifle_scopeFrame,,,,"Scope",,,,
+sniperRifle_scopeFrameDesc,,,,"A Scope can be attached to a Magnum, Hunting Rifle, and Crossbow. You can also use it in your hand.",,,,
+autoCrossbowDesc,,,,"The Auto Crossbow can shoot 6 arrows before needing reloading.",,,,
+crossbowStockScope,,,,"CrossbowStockScope",,,,
+crossbowStockScopeDesc,,,,"A handmade crossbow stock with a scope attached to it. Used to assemble a Scoped Crossbow and made on the wood working bench with a wrench.",,,,
+crossbow_Limb,,,,"Crossbow Limb",,,,
+crossbow_LimbDesc,,,,"A handmade limb for a Crossbow crafted on the wood working bench.",,,,
+crossbow_Stock,,,,"Crossbow Stock",,,,
+crossbow_StockDesc,,,,"A handmade stock for a Crossbow crafted on the wood working bench.",,,,
+crossbow_Barrel,,,,"Crossbow Barrel",,,,
+crossbow_BarrelDesc,,,,"A handmade barrel for a Crossbow crafted on the wood working bench.",,,,
+boltCylinderDesc,,,,"Used to assemble an Auto Crossbow. Crafted on the metal working bench.",,,,
+doubleBarrel,,,,"Blunderbuss Double",,,,
+BlunderbussDoubleDesc,,,,"If one was good then two should be even better.",,,,
+silencedPistolBarrel,,,,"Silenced Pistol Barrel",,,,
+silencedPistolBarrelDesc,,,,"Used to assemble a Silenced Pistol",,,,
+silencedHuntingBarrel,,,,"Silenced Hunting Barrel",,,,
+silencedHuntingBarrelDesc,,,,"Used to assemble a Silenced Hunting Rifle and crafted on the metal working bench with a wrench.",,,,
+9mmFireBulletDesc,,,,"Catches the target on fire. A Scientist can teach you how to craft these.",,,,
+shotgunFireShellDesc,,,,"Catches the target on fire. A Scientist can teach you how to craft these.",,,,
+DemoRocketDesc,,,,"Rocket that does a large area of damage to   blocks and small area of damage to people.",,,,
+308mmBulletDesc,,,,"Used in the Hunting Rifle. You can craft these at a Bullet Press.",,,,
+5.45mmBulletDesc,,,,"Used in the AK47. You can craft these at a Bullet Press.",,,,
+clubSteelSpikedDesc,,,,"Nothing beats in a Zombies head better. Crafted on the metal working bench.",,,,
+nightStickDesc,,,,"A strong club made by a cop that can break the targets leg with every hit.",,,,
+shockStickDesc,,,,"A strong club made by an engineer that Shocks the target Stunning, hurting and lowering its wellness.",,,,
+ironSpearDesc,,,,"A sharp piece of metal on a long stick great for making Zombie-kababs. With the Iron Spear in hand you can throw the iron javelins with the left mouse button.",,,,
+atlatlsDesc,,,,"Use these as throwable Spears with the Iron Spear in hand",,,,
+smallEngineDesc,,,,"A mini bike engine that can be improved by exchanging out better parts.",,,,
+exhaustDesc,,,,"The exhaust to a mini bike. With the right tools you can craft this.",,,,
+engineBlockDesc,,,,"The engine block for a mini bike. With the right tools you can craft this.",,,,
+helmetLightDesc,,,,"A helmet with a flashlight crudely attached to it.",,,,
+professionDesc,,,,"A vast amount of knowledge lies with in these pages.",,,,
+doctorBook,,,,"Doctor Book",,,,
+handSawDesc,,,,"You could use this as a Tool on a Work Bench.",,,,
+skillBookDesc,,,,"A old dusty book filled with knowledge. Gather the needed items to craft a copy on the Research Desk.",,,,
+sanitizingBandageDesc,,,,"This sanitized bandage should clean some of those scratches up. You don’t want it getting infected",,,,
+redHotDesc,,,,"The pipe glows red hot from the fire. Use this to cauterizes a bite wound",,,,
+antiVenomDesc,,,,"Created in the campfire in a cooking pot from the venom sack of a poisonous animal. Used to cure Venom Poison",,,,
+stimulantDesc,,,,"A crudely made pill that taste terrible but take a few of these and you will run even faster. Take enough and even a broken leg wont slow you down. Chemist have been known to bake these up",,,,
+doctorShotDesc,,,,"A dart with a chemical injector on the tip that can be fired with a Bow, Crossbow or Hunting Rifle. The beneficial shots can be self-injected",,,,
+9urificationDesc,,,,"When you dont have time to watch water boil use these so purify water on the move.",,,,
+AntivirialDesc,,,,"Created at the end of the war to fight off the virus these antivirals failed to be produced quickly enough to stop the world from being over ran with the infected. Soon after the bombs were dropped in hope of stopping them",,,,
+keyDesc,,,,"Use this key to unlock your profession case after you have crafted it and placed it on the ground",,,,
+qc_ProfessionGroupDesc,,,,"Mastering your Profession will mean the difference between life and death. Here are a few tasks to help you learn what you can do.",,,,
+chooseAProfessionDesc,,,,"Use this to choose what your profession was before the Apocalypse. Click Recipes to see your choices.",,,,
+chickenCoop,,,,"Chicken Coop",,,,
+chickenCoopDesc,,,,"Place Coop and upgrade with egg in hand. Craft Baby Chick then upgrade Coop with Baby Chicken in hand. Last, craft Hen then upgrade with hen in hand and you will be able to harvet eggs and feathers. You do not gain any XP in this Workstation.",,,,
+blastFurnace,,,,"Blast Furnace",,,,
+blastFurnaceDesc,,,,"A high temperature forge capable of smelting Steel.",,,,
+oilRefinery,,,,"Oil Refinery",,,,
+oilRefineryDesc,,,,"A make shift refinery capable of processing oil, gas, biofuel and gun oil.",,,,
+bulletPress,,,,"Bullet Press",,,,
+bulletPressDesc,,,,"A refurbished military bullet press capable of mass producing most rounds.",,,,
+dryingRack,,,,"Leather Drying Rack",,,,
+dryingRackDesc,,,,"A Drying table that can be used indoors to dry leather.",,,,
+armorTable,,,,"Armor Table",,,,
+armorTableDesc,,,,"A good work bench for crafting armor, clothes and building fabrics.",,,,
+researchDesk,,,,"Research Desk",,,,
+ResearchDeskDesc,,,,"Use this desk to study items and learn to craft them",,,,
+metalWorkBench,,,,"Metal Working Bench",,,,
+MetalWorkBenchDesc,,,,"A sturdy bench for serious metal working. Unlocks more recipes by adding tools",,,,
+eggOmeletDesc,,,,"A delicious breakfast that doesn’t smell.",,,,
+bearMeatDesc,,,,"Raw Bear Meat",,,,
+bearStew,,,,"Bear Stew",,,,
+appleDesc,,,,"A shiny red apple. This would taste great in a pie or as some juice.",,,,
+carrotDesc,,,,"A fresh carrot, this would taste great in a cake or as juice.",,,,
+applePie,,,,"Apple Pie",,,,
+carrotCakeDesc,,,,"This homemade cake is nutritious and raises your wellness. Mmm...just like Grandma used to make.",,,,
+carrotCake,,,,"Carrot Cake",,,,
+wellnessJuice,,,,"Wellness Juice",,,,
+wellnessJuiceDesc,,,,"This concentrated juice is packed with vitamins and antioxidants. Sure to raise your wellness and give you energy.",,,,
+silencedPistol,,,,"Silenced Pistol",,,,
+fruitJuiceDesc,,,,"Freshly squeezed fruit juice. You can also dump this on your head with the left mouse button to remove zombie vomit, douse fires and cool yourself off a little.",,,,
+fruitJuice,,,,"Fruit Juice",,,,
+veggieJuice,,,,"Veggie Juice",,,,
+veggieJuiceDesc,,,,"Freshly squeezed veggie juice. You can also dump this on your head with the left mouse button to remove zombie vomit, douse fires and cool yourself off a little.",,,,
+BreadDesc,,,,"Fresh Bread",,,,
+flourDesc,,,,"Flour can be used in many food recipes like bread and pie's.",,,,
+grubsDesc,,,,"These fat little guys taste like snoot but are packed with protein. You gota do what you gota do. Eat it.",,,,
+redBull,,,,"Red Bull",,,,
+redBullDesc,,,,"A strange smelling beverage that makes you tingle with energy",,,,
+brainShnitzel,,,,"Brain Schnitzel",,,,
+brainShnitzelDesc,,,,"Brain Schnitzel is packed with nutrition and gives a good amount of wellness.",,,,
+venomSack,,,,"Venom Sack",,,,
+venomSackDesc,,,,"A venom gland from a poisonous animal. The potent chemicals in the gland make it very useful in crafting. Can be crafted into Anti Venom on the Campfire in a Cooking Pot",,,,
+shortSteelPipe,,,,"Short Steel Pipe",,,,
+steelPipeDesc,,,,"A strong pipe that can be used for many things including crafting, repairing and upgrading.",,,,
+inkPenDesc,,,,"A working pen. This would be great for doing research. If only you had a blank book.",,,,
+weaponRepairKit,,,,"Weapon Repair Kit",,,,
+weaponRepairKitDesc,,,,"Everything you need to repair a firearm.",,,,
+brainMatter,,,,"Brain Matter",,,,
+brainMatterDesc,,,,"Fresh brain matter from a dead animal. Use this with some coal to cure leather or cook it for a nutritious meal. You should put this away or cook and eat it before the smell attracts unwanted attention. You know Zombies and brains and all that.",,,,
+curedLeather,,,,"Cured Leather",,,,
+curedLeatherDesc,,,,"Craft to Dry Leather to dry the leather outside in the sun or build a Drying Rack to dry it indoors",,,,
+gunOil,,,,"Gun Oil",,,,
+gunOilDesc,,,,"Specialized oil used to rejuvenate and repair old weapon parts",,,,
+meltedRubber,,,,"Melted Rubber",,,,
+meltedRubberDesc,,,,"A basic resource used in many crafting recipes. Crafted on the campfire with a stick",,,,
+mixedChemicals,,,,"Mixed Chemicals",,,,
+mixedChemicalsDesc,,,,"A secretive mix with many uses",,,,
+chooseAProfession,,,,"Choose Your Profession",,,,
+incendiaryPowder,,,,"Incendiary Powder",,,,
+incendiaryPowderDesc,,,,"The key ingredient for crafting fire ammo",,,,
+stickDesc,,,,"A basic wooden stick that can be used to craft many things and make traps.",,,,
+professionPage,,,,"Profession Page",,,,
+professionPageDesc,,,,"Collect 20 pages and craft a new profession kit",,,,
+scubaTankFull,,,,"Scuba Tank Full",,,,
+scubaTankFullDesc,,,,"Scuba tanks can be used to breath under water for five min.",,,,
+blankSkillBook,,,,"Blank Skill Book",,,,
+blankSkillBookDesc,,,,"Used to craft Skill Books",,,,
+plankDesc,,,,"A nicely cut plank of wood perfect for building a home.",,,,
+babyChickenDesc,,,,"A cute little chick. Not too good for a lot of meat but might be good for some eggs if you feed it and keep it safe. With the baby chicken in your hand upgrade the Chicken Coop.",,,,
+babyChicken,,,,"Baby Chicken",,,,
+henDesc,,,,"A adult Hen can produce eggs almost every day, and if you get tired of feeding her just eater. With the hen in your hand upgrade the Chicken Coop.",,,,
+sewingNeedle,,,,"Sewing Needle",,,,
+sewingNeedleDesc,,,,"Perfect for stitching together some needed padding.",,,,
+leatherNeedle,,,,"Leather Needle",,,,
+leatherNeedleDesc,,,,"A strong needle for sewing leather",,,,
+fryingPanDesc,,,,"Great for cooking up some grub on the campfire and can be used to bash heads in a pinch",,,,
+fryingPan,,,,"Frying Pan",,,,
+mortarAndPestle,,,,"Mortar and Pestle",,,,
+mortarAndPestleDesc,,,,"Used to grind Plants and Minerals into powders and creams.",,,,
+steakKnife,,,,"Steak Knife",,,,
+steakKnifeDesc,,,,"A old rusty steak knife. You might be able to crush a few more skulls with it before it breaks.",,,,
+fiberRope,,,,"Fiber Rope",,,,
+fiberRopeDesc,,,,"Strong hand made rope used in many crafting recipes.",,,,
+professionKey,,,,"Profession Key",,,,
+zincPowder,,,,"Zinc Powder",,,,
+zincPowderDesc,,,,"A very useful powder needed to make brass, soap and other items",,,,
+keystoneRock,,,,"Keystone Rock",,,,
+keystoneDesc,,,,"A block used to give your property more protections from other players. Comes in 3 hardnesses Rock, Iron And Steel. The iron and steel blocks are crafted on the metal working bench with steel requiering the Welder.",,,,
+alternatorDesc,,,,"A old car Alternator. You might be able to use this to get some power",,,,
+fanBelt,,,,"Fan Belt",,,,
+fanBeltDesc,,,,"A rubber fan belt",,,,
+nutAndBolt,,,,"Nut and Bolt",,,,
+nutAndBoltDesc,,,,"Simple Nut and bolt used in metal crafting",,,,
+setUpASpikeTrap,,,,"Spike Trap",,,,
+setUpASpikeTrapDesc,,,,"Place on the ground to start building the trap. With sticks in inventory use a tool on it to finish creating the Spike trap",,,,
+bikeNABoxDesc,,,,"A crate with a mini bike in it. Place it on the ground and break it open to loot it",,,,
+bearTrap,,,,"Bear Trap",,,,
+trapbearDesc,,,,"A Strong metal Bear Trap. Use it as a trap for zombies or bait it to try and catch some animals. Crafted on the wood working bench using a wrench.",,,,
+qc_ZombieDesc,,,,"So you think you’re a True Survivor. Let’s see you do this",,,,
+SkillMagazineReadDesc,,,,"Use this Magazine to gain knowledge(350XP) in the category of the magazine or scrap it into a skill page and collect 10 to craft a profession page on the research desk.",,,,
+bladderFlaskFull,,,,Bladder Flask,,,
+bladderFlask5,,,,Bladder Flask,,,,
+bladderFlask4,,,,Bladder Flask,,,,
+bladderFlask3,,,,Bladder Flask,,,,
+bladderFlask2,,,,Bladder Flask,,,,
+bladderFlask1,,,,Bladder Flask,,,,
+bladderFlaskEmpty,,,,Empty Bladder Flask,,,,
+FlaskDesc,,,,"Take a huge drink or pour this on your head with the left mouse button to remove zombie vomit, douse fires and cool yourself off a little",,,,
+emptyFlaskDesc,,,,"You can fill this with 30 bottles of water. Saving room and gaining more stamina taking larger drinks. Crafted on the armor table using a leather needle.",,,,
+qc_Chemist,,,,"Chemist Quest",,,,
+qc_Carpenter,,,,"Carpenter Quest",,,,
+qc_Chef,,,,"Chef Quest",,,,
+qc_FitnessInstructor,,,,"Fitness Instructor Quest",,,,
+qc_Electrician,,,,"Electrician Quest",,,,
+qc_IronWorker,,,,"Iron Worker Quest",,,,
+qc_Thief,,,,"Thief Quest",,,,
+qc_Park_Ranger,,,,"Park Ranger Quest",,,,
+qc_Mechanic,,,,"Mechanic Quest",,,,
+qc_Fireman,,,,"Fireman Quest",,,,
+qc_Doctor,,,,"Doctor Quest",,,,
+qc_Cop,,,,"Cop Quest",,,,
+qc_Soldier,,,,"Soldier Quest",,,,
+qc_Hen,,,,"Hen Quest",,,,
+qc_Bath,,,,"Clean up your act",,,,
+qc_Vorpal,,,,"Vorpal Quest",,,,
+qc_AntiVenom,,,,"AntiVenom Quest",,,,
+qc_King,,,,"Can you be king?",,,,
+fruitSaladDesc,,,,"A fresh combination of healthy fruit",,,,
+veggieSaladDesc,,,,"A fresh combination of healthy vegetables",,,,
+scrapCable,,,,"Electric wire",,,,
+canUnlabeled,,,,"Unlabeled Can",,,,
+canUnlabeledDesc,,,,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,,,
+ttScrapMetalSteel,,,,"Scrap Steel",,,,
+radMushroom,,,,"Radiated Muxhrooms",,,,
+radMushroomDesc,,,,"This strange looking Mushroom was growing from radiated soil and give off a strange glow and warmth. It doesn’t look edible.",,,,
+CraftedGunPartsDesc,,,,"A part of an Crafted Gun. Crafted on the wood working bench with a wrench. Assemble with other parts to create a complete Crafted Revolver.",,,,
+craftedRifle,,,,"Crafted Rifle",,,,
+craftedRiflePartsDesc,,,,"A part of an Crafted Rifle. Crafted on the wood working bench with a wrench. Assemble with other parts to create a complete Crafted Rifle.",,,,
+revolverPartsDesc,,,,"A basic revolver. Uses 9mm ammo. Can be re-assembled and repaired if you read the appropriate schematic.",,,,
+deltaElite1911,,,,"Delta Elite 1911",,,,
+colt1911Desc,,,,"A bad ass colt. Uses 10mm ammo. Can be re-assembled and repaired if you read the appropriate schematic.",,,,
+parts1911_receiver,,,,"1911 Receiver",,,,
+parts1911_barrel,,,,"1911 Barrel",,,,
+parts1911GroupDesc,,,,"A part of a Delta Elite 1911. Assemble with other parts to create a complete Delta Elite 1911 once you've read the appropriate schematic.",,,,
+desertEagleVII,,,,"Desert Eagle VII",,,,
+partsDEVII_receiver,,,,"Desert Eagle Receiver",,,,
+partsDEVII_barrel,,,,"Desert Eagle Barrel",,,,
+partsDEVIGroupDesc,,,,"A part of a Desert Eagle VII. Assemble with other parts to create a complete Desert Eagle VII once you've read the appropriate schematic.",,,,
+tatteredClothesDesc,,,,"Threadbare clothes give you no protection for the elements or attackers but its better than being naked. Might come in handy for scrap cloth though.",,,,
+professionKitDesc,,,,"Your only worldly possessions. Place on the ground and use your key to open or break open to gather your belongings. Check your skill screen to see what each profession teaches. Craft additional professions with 20 profession pages on the research desk.",,,,
+doctorProfession,,,,"Doctor Profession",,,,
+chemistProfession,,,,"Chemist Profession",,,,
+carpenterProfession,,,,"Carpenter Profession",,,,
+copProfession,,,,"Cop Profession",,,,
+chefProfession,,,,"Chef Profession",,,,
+fitnessInstructorProfession,,,,"Fitness Instructor Profession",,,,
+firemanProfession,,,,"Fireman Profession",,,,
+electricianProfession,,,,"Electrician Profession",,,,
+ironWorkerProfession,,,,"Iron Worker Profession",,,,
+thiefProfession,,,,"Thief Profession",,,,
+parkRangerProfession,,,,"Park Ranger Profession",,,,
+mechanicProfession,,,,"Mechanic Profession",,,,
+soldierProfession,,,,"Soldier Profession",,,,
+prepTable,,,,"Food Prep Table",,,,
+workStoveDesc,,,,"The Food Prep Table is an essential workstation to surviving in the apocalypse. With it you can more efficiently break down food servings, store them and craft the most nutritious meals. No survivor last long without one. Stay inside the workstations while crafting to gain cooking XP.",,,,
+gasTankTrap,,,"Gas Fire Trap",,,,
+methaneProducer,,,,"Methane Producer",,,,
+digesterDesc,,,,"A home-made Methane gas Producer. Used to create Methane Bombs. Crafted on the metal working work bench.",,,,
+gasTankEmpty,,,,"Empty Tank",,,
+gasTankEmptyDesc,,,,"Fill this with methane gas in a methane producer to use as a shootable bomb to thin out the zombie hordes.",,,,
+gasTank,,,,"Methane Bomb",,,,
+gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zombies are close. It will not hurt blocks only organics.",,,,
+BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
+boneMeal,,,,"Bone Meal",,,,
+boneMealDesc,,,,"Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
+airCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Battery Pack Workstation",,,,
+garageDoorDesc,,,,"A strong garage door crafted on the Wood Working Bench.",,,,
+fermentationBarrel,,,,"Fermentation Barrel",,,,
+fermentationBarrelDesc,,,,"Used to make fermented Mead or Beer. Crafted on the Anvil with a Claw Hammer.",,,,
+still,,,,"Still",,,,
+stillDesc,,,,"A crude still perched above a fire. Used to make Grain alcohol. Craft it on the Wood Working Bench.",,,,
+woodSpear,,,,"Wooden Spear",,,,
+woodSpearDesc,,,,"A Sharp stick hardened in a fire. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
+smokingDesc,,,,"The worlds gone to shit and you might be dead tomorrow. No reason to quite now. Smoking reduces hunger by 10 over 3 min.",,,,
+ak47StockScopeDesc,,,,"An AK47 Stock with a crudely attached scope. Crafted on the Wood Working Bench with a wrench.",,,,
+bowString,,,,"Bow String",,,,
+bowStringDesc,,,,"A strong natural cord used in advanced archery weapons. Crafted in the campfire in a cooking pot.",,,,
+TomahawkDesc,,,,"A modern made Tomahawk. Sharp and strong. Designed for fighting.",,,,
+ironSoldier,,,,"Soldier Toy",,,,
+ironSoldierDesc,,,,"A rusty old iron toy soldier. A little dirty and roughed up but only cosmetic scars. It'd make a decent gift for a child.",,,,
+ironPaperClips,,,,"Paper Clips",,,,
+ironPaperClipsDesc,,,,"Simple paper clips. Might come in handy someday.",,,,
+ironWeight,,,,"Dumb Bell",,,,
+ironWeightDesc,,,,"Just an old dumbbell. Screw exercising. Like I need to watch my figure in the apocalypse.",,,,
+ironHinge,,,,"Door Hinge",,,,
+ironHingeDesc,,,,"An iron door hinge. Might be useful if I need to rehang a door someday.",,,,
+leadMusketBalls,,,,"Old Musket Balls",,,,
+leadMusketBallsDesc,,,,"Old lead musket balls? Who threw theses out? Where is a musket when I need one?",,,,
+leadSolder,,,,"Solder",,,,
+leadSolderDesc,,,,"Lead solder. Well 50% lead anyway",,,,
+leadSoldier,,,,"Little Solder",,,,
+leadSoldierDesc,,,,"An old lead toy soldier. Who ever thought making toys out of lead was a good idea?",,,,
+brassHinge,,,,"Door Hinge",,,,
+brassHingeDesc,,,,"A brass door hinge.",,,,
+brassMonkey,,,,"Little Monkey Toy",,,,
+brassMonkeyDesc,,,,"A brass monkey. Ok, what the heck is this used for?",,,,
+brassCowBell,,,,"Cow Bell",,,,
+brassCowBellDesc,,,,"A brass cowbell. Who doesn't want... more cowbell!",,,,
+brassKnuckles,,,,"Brass Knuckles",,,,
+brassKnucklesDesc,,,,"Brass Knuckles. Maybe I ought to save these. Use the RMB to defend against enemys grabbing and biting you for a short time.",,,,
+stonePlate,,,,"Dinner Plate",,,,
+stonePlateDesc,,,,"A plate made of stoneware. Not much use without the rest of the set.",,,,
+stonePaperWeight,,,,"Paper Weight",,,,
+stonePaperWeightDesc,,,,"A stone paper weight. Paper is one thing I got a lot of, now I can keep it from blowing away.",,,,
+stoneStatue,,,,"Small Statue",,,,
+stoneStatueDesc,,,,"A small stone statue. Mummm, busty!",,,,
+woodSoldier,,,,"Toy Soldier",,,,
+woodSoldierDesc,,,,"A Nutcracker style wood soldier. This will be great for the holidays.",,,,
+woodWhistle,,,,"Old Toy Whistle",,,,
+woodWhistleDesc,,,,"A small wood whistle. Tooot Tooot!",,,,
+woodSpoon,,,,"Wooden Spoon",,,,
+woodSpoonDesc,,,,"A wood kitchen spoon. Just like mother used to smack me with when I would steal cookies form the kitchen.",,,,
+paperPlayingCards,,,,"Playing Cards",,,,
+paperPlayingCardsDesc,,,,"A few bent playing cards. Need some more for a complete set.",,,,
+paperNews,,,,"Old News Paper",,,, 
+paperNewsDesc,,,,"A old newspaper. And I though things were bad back then.",,,,
+paperToilet,,,,"Old roll of Toilet Paper",,,,
+paperToiletDesc,,,,"A roll of toilet paper. How is this junk?",,,,
+paperGoggles,,,,"Goggles",,,,
+paperGogglesDesc,,,,"Google Goggles. Not much point to these now....",,,,
+clothTeddyBear,,,,"Dirty Teddy Bear",,,, 
+clothTeddyBearDesc,,,,"A stuffed teddy bear. A little dirty and roughed up but only cosmetic scars. Hummmmm, looks a little like the one from Fallout3.",,,,
+clothRags,,,,"Old Rags",,,,  
+clothRagsDesc,,,,"Dirty cloth rags. Bah, I never find good stuff.",,,,
+clothRug,,,,"Old Rug",,,,  
+clothRugDesc,,,,"An old cloth rug. This might make a nice welcome mat if I could only figure out how to make Unity assets...",,,,
+plasticCds,,,,"CD's",,,,
+plasticCdsDesc,,,,"Compact Disks. Not much use without a player.",,,,
+plasticSoldier,,,,"Toy Soldier",,,,  
+plasticSoldierDesc,,,,"A small plastic toy soldier.",,,,
+plasticLegos,,,,"Legos",,,,
+plasticLegosHey,,,,"Hey, I used to play with these all the time when I was a kid.",,,,
+electronic3ds,,,,"Broken 3DS",,,,  
+electronic3dsDesc,,,,"A Nintendo 3DS. Bah, the battery is dead.",,,,
+electronicCellPhone,,,,"Cell Phone",,,,  
+electronicCellPhoneDesc,,,,"A busted cellphone. Who ya gonna call anyway?",,,,
+electronicClockRadio,,,,"Clock Radio",,,,  
+electronicClockRadioDesc,,,,"A broken clock radio. No need to wakeup early for work now though.",,,,
+electricShaver,,,,"Electric Shaver",,,,  
+electricShaverDesc,,,,"A rusty electric shaver. The battery is missing, guess I will keep shaving with my knife.",,,,
+electricToyMotor,,,,"Toy Motor",,,, 
+electricToyMotorDesc,,,,"A small toy motor. Might be good for parts.",,,,
+electricToaster,,,,"Toaster",,,,  
+electricToasterDesc,,,,"An old broken toaster. Might have some useful parts inside.",,,,
+mechanicalKeyPad,,,,"Broken Key Pad",,,,  
+mechanicalKeyPadDesc,,,,"A mechanical keypad. I wonder what the combination was?",,,,
+mechanicalOldWatch,,,,"Old Pocketwatch",,,,  
+mechanicalOldWatchDesc,,,,"An old broken pocketwatch. Hum, the watch stopped at noon.",,,,
+mechanicalTypeWriter,,,,"Old Typewriter",,,,  
+mechanicalTypeWriterDesc,,,,"A broken typewriter. Darn, and I have the time and paper I need to write that novel now too.",,,,
+rubberDoll,,,,"Strange Dolly",,,,  
+rubberDollDesc,,,,"A small rubber dolly. Looks strangly like a zombie.  That's just wrong.",,,,
+rubberDuck,,,,"Rubber Duckie",,,,  
+rubberDuckDesc,,,,"A small rubber duckie. Rubber duckie, your so fine..... Gotta find a bathtub soon!",,,,
+rubberChicken,,,,"Rubber Chicken",,,,  
+rubberChickenDesc,,,,"A rubber chicken. Ha! Seriously? A rubber chicken?",,,,
+rubberBands,,,,"Rubber Bands",,,,  
+rubberBandsDesc,,,,"Rubber bands. These always came in handy, just can't remember how.",,,,
+steelHinge,,,,"Strong Hinge",,,,  
+steelHingeDesc,,,,"A sturdy steel hinge. Probably be useful someday hanging vault doors but who knows...",,,,
+steelSpoon,,,,"Spoon",,,,  
+steelSpoonDesc,,,,"A steel spoon. yea! No more drinking soup from a can like an animal.",,,,
+steelBracelet,,,,"Medical Bracelet",,,,  
+steelBraceletDesc,,,,"A small steel medical bracelet. Probably didn't help the gal who was wearing it at the end.",,,,
+glassPurfume,,,,"Purfume Bottle",,,,  
+glassPurfumeDesc,,,,"A small empty perfume bottle.  Still has a faint smell of lilacs.",,,,
+glassCompact,,,,"Compact",,,,  
+glassCompactDesc,,,,"A small glass makeup compact.  Not much use now.",,,,
+glassFrame,,,,"Frame",,,,  
+glassFrameDesc,,,,"A small photo frame.  Man that zombie chick looks nice!",,,,
+cntSteelGunSafe,,,,"Steel Gun Safe",,,,
+cntSteelGunSafeDesc,,,,"The strongest safe you can make. If this doesnt keep them out nothing will. Crafted on the metal working bench with a welder.",,,,
+drillTool,,,,"Power Drill",,,,
+compactDriverDesc,,,,"When charged this tool can disassemble steel blocks, repair and upgrade blocks and be used as a tool in some workstations. Using this gives Master Craftsman XP. Gather all the needed parts to craft it.",,,,
+crossbow_Parts,,,,"Crossbow Parts",,,,
+crossbow_PartsDesc,,,,"Hand made parts for a Crossbow crafted on the wood working bench.",,,,
+carbonCrossbow,,,,"Carbon Crossbow",,,,
+carbonCrossbowDesc,,,,"A very powerful modern crossbow. This is too strong to use weak bolts and will only shoot Carbon Crossbow Bolts.",,,,
+carbonCrossbow_Parts,,,,"Carbon Crossbow Parts",,,,
+carbonCrossbow_PartsDesc,,,,"Parts used to craft a Carbon Crossbow",,,,
+carbonCrossbow_Limb,,,,"Carbon Crossbow Limb",,,,
+carbonCrossbow_Stock,,,,"Carbon Crossbow Stock",,,,
+carbonCrossbow_Barrel,,,,"Carbon Crossbow Barrel",,,,
+craftedRevolver,,,,"Crafted Revolver",,,,
+CraftedRevolverDesc,,,,"A crudely put together revolver. If it kills a zombie I’ll be surprised. If it does it without blowing my hand of I’ll be amazed. To assemble Gather and craft all the needed parts.",,,,
+craftedRevolverStock,,,,"Crafted Revolver Stock",,,,
+craftedRevolverBarrel,,,,"Crafted Revolver Barrel",,,,
+oldRevolver,,,,"Old Revolver",,,,
+oldRevolverDesc,,,,"An old rusty revolver. The screws are striped and the firing pin is almost broken. There is no repairing this but you might be able to get a few more shots off before it breaks.",,,,
+oldRifle,,,,"Old Rifle",,,,
+oldRifleDesc,,,,"An old rusty rifle. The screws are striped and the firing pin is almost broken. There is no repairing this but you might be able to get a few more shots off before it breaks.",,,,
+partsDoubleBarrel_receiver,,,,"Double Barrel Receiver",,,,
+partsDoubleBarrel_parts,,,,"Double Barrel parts",,,,
+partsDoubleBarrel_barrel,,,,"Double Barrel Barrel",,,,
+hoofDesc,,,,"A freshly removed hoof. A main ingredient in making glue.",,,,
+suturesDesc,,,,"A very strong thin natural thread. Crafted on the campfire in a cooking pot.",,,,
+lashingDesc,,,,"A very strong thick natural cord. Crafted on the campfire in a cooking pot.",,,,
+sinewDesc,,,,"A peace of long un broken tendon harvested from an animal. After curing can be used to make many strong strings and ropes.",,,,
+animalBladder,,,,"Un Damaged Bladder",,,,
+sunflowerHead,,,,"Sunflower Head",,,,
+sunflowerHeadDesc,,,,"A large sunflower head. Use a Drying rack to dry the seeds.",,,,
+lockPickGun,,,,"Lockpick Gun",,,,
+lockPickGunDesc,,,,"Use with lock picks to unlock safes and locked vehicles. Not for resale to unlicensed locksmiths. Illegal in 48 states.",,,,
+lockPick,,,,"Lockpick",,,,
+lockpickDesc,,,,"Small steel lock pick bits used in a lock pick gun. Crafted on the anvil with the claw hammer.",,,,
+ironShiv,,,,"iron Shiv",,,,
+ironShivDesc,,,,"A sharpened piece of iron crafted on the anvil with a claw hammer. Best when used for fighting.",,,,
+trophyDeer,,,,"Antlers",,,,
+trophyRabbit,,,,"Rabbit Foot",,,,
+trophyChicken,,,,"Chicken Feet",,,,
+trophyPig,,,,"Pig Tail",,,,
+trophyBoar,,,,"Pig Tail",,,,
+trophyBuck,,,,"Antlers",,,,
+trophyBear,,,,"Bear Claw",,,,
+HuntingDesc,,,,"A Trophy retrieved from your game. Craft it into bones to earn xp toward your hunting skill.",,,,
+narrowLog,,,,"Narrow Log",,,,
+PlankGroupDesc,,,,"Easily crafted large flat planks. Great for early building or boarding up a hole.",,,,
+scubaTankEmptyDesc,,,,"This tank is empty and needs to be refilled. To refill it you will need to use the battery pack with the air compressor. You will also need power to run it all.",,,,
+cobblestoneHammerDesc,,,,"Use this cobblestone hammer to take apart cobblestone blocks and retrieve building materials. It can also be used to upgrade cobblestone Blocks and repair all any block.",,,,
+brickHammerDesc,,,,"Use this brick hammer to take apart brick blocks and retrieve building materials. It can also be used to upgrade brick Blocks and repair any block.",,,,
+concreteSledgeDesc,,,,"Use this concrete sledge hammer to take apart concrete blocks and retrieve building materials. It can also be used to upgrade concrete Blocks and repair any block.",,,,
+rConcreteBarDesc,,,,"Use this reinforced concrete crowbar to take apart reinforced concrete blocks and retrieve building materials. It can also be used to upgrade reinforced concrete Blocks and repair any block.",,,,
+screwdriverDesc,,,,"Use this to disassemble blocks and retrieve more useful crafting material than just breaking it will produce. Using this tool to repair and disassemble will raise your engineering skill.",,,,
+welderToolDesc,,,,"Use this welder to take apart steel blocks and retrieve building materials. It can also be used to upgrade steel Blocks and repair any block.",,,,
+zombieKill,,,,"This shot will kill most zombies in 6 seconds. To bad it doesnt work on the living.",,,,
+ironSpikesDesc,,,,"Can be placed on the ground and used as a trap or defense. Upgrades with 20 Short Steel Pipes.",,,,
+fryingPanBlock,,,,"Frying Pan",,,,
+barterForFirstAidKit,,,,"Bartering",,,,
+barterForFirstAidKitDesc,,,,"What will you give me for 2 First Aid Fits?",,,,
+barterForMetalRivetSheet,,,,"Bartering",,,,
+barterForMetalRivetSheetDesc,,,,"What will you give me for 100 Scrap Steel Sheets?",,,,
+barterForConcreteMix,,,,"Bartering",,,,
+barterForConcreteMixDesc,,,,"What will you give me for 100 Concrete Mix?",,,,
+barterForCorrugatedMetalSheet,,,,"Bartering",,,,
+barterForCorrugatedMetalSheetDesc,,,,"What will you give me for 100 Scrap Iron Sheets?",,,,
+barterForForgedSteel,,,,"Bartering",,,,
+barterForForgedSteelDesc,,,,"What will you give me for 20 Forged Steel?",,,,
+barterForForgedIron,,,,"Bartering",,,,
+barterForForgedIronDesc,,,,"What will you give me for 20 Forged Iron?",,,,
+barterForGrainAlcohol,,,,"Bartering",,,,
+barterForGrainAlcoholDesc,,,,"What will you give me for 2 Grain Alcohol?",,,,
+barterForFirstAidBandage,,,,"Bartering",,,,
+barterForFirstAidBandageDesc,,,,"What will you give me for 5 First Aid Bandages?",,,,
+barterForCraftedRevolver,,,,"Bartering",,,,
+barterForCraftedRevolverDesc,,,,"What will you give me for this Crafted Revolver?",,,,
+barterForGoldenrodTea,,,,"Bartering",,,,
+barterForGoldenrodTeaDesc,,,,"What will you give me for 15 Goldenrod Tea?",,,,

@@ -1,4 +1,4 @@
-<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="casinoCoin">
+<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="bulletCasing">
 	<!--
 When adding items or blocks to the list, check if they have an "EconomicValue".
 Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
@@ -277,7 +277,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="beaker" />
 			<item name="antibiotics" />
 			<item name="bloodDrawKit" />
-			<item name="firstAidKitSchematic" />
 		</trader_item_group>
 		<trader_item_group name="medicine" count="1">
 			<item name="painkillers" />
@@ -316,46 +315,28 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="qt_raphael" count="1" prob="0.2" />
 		</trader_item_group>
 		<trader_item_group name="commonBooks" count="1">
-			<item name="crossbowSchematic" />
-			<item name="huntingKnifeBook" />
+		
 			<item name="huntingRifleSchematic" />
-			<item name="leatherBootsSchematic" />
-			<item name="leatherGlovesSchematic" />
-			<item name="leatherHoodSchematic" />
-			<item name="leatherJacketSchematic" />
-			<item name="leatherPantsSchematic" />
+			
 			<item name="pistolBook" />
 			<item name="pumpShotgunSchematic" />
-			<item name="scrapBootsSchematic" prob="0.7" />
-			<item name="scrapLegArmorSchematic" prob="0.7" />
-			<item name="scrapChestArmorSchematic" prob="0.7" />
-			<item name="scrapHelmetSchematic" prob="0.7" />
-			<item name="scrapGlovesSchematic" prob="0.7" />
+		
 		</trader_item_group>
 		<trader_item_group name="rareBooks" count="1">
-			<item name="aK47Schematic" />
+			<item name="ak47Schematic" />
 			<item name="augerSchematic" />
 			<item name="chainsawSchematic" />
-			<item name="clubSpikedSchematic" />
-			<item name="explodingCrossbowBoltSchematic" />
-			<item name="firstAidKitSchematic" />
-			<item name="flamingArrowSchematic" />
-			<item name="gasCanSchematic" />
-			<item name="ironBootsSchematic" />
-			<item name="ironChestArmorSchematic" />
-			<item name="ironGlovesSchematic" />
-			<item name="ironHelmetSchematic" />
-			<item name="ironLegArmorSchematic" />
+			
 			<item name="minibikesForDumbshits" />
 			<item name="rocketLauncherSchematic" />
-			<item name="shotgunSlugSchematic" />
-			<item name="sledgehammerSchematic" />
+			
+			
 			<item name="smgSchematics" />
 			<item name="sniperRifleSchematic" />
 			<item name="theEnforcerMagazine" />
 			<item name="compoundBowSchematic" />
-			<item name="herbalAntibioticsRecipe" prob="0.5" />
-			<!-- <item name="macDyverBook" prob="1.5"/> -->
+		
+			
 		</trader_item_group>
 		<trader_item_group name="paintMagazines" count="1">
 			<item name="paintMagazineDecorations" />
@@ -396,10 +377,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="weaponsCommonParts" prob="3" />
 			<item group="weaponsMilitaryParts" prob="1" />
 		</trader_item_group>
-		<trader_item_group name="weaponsGunsMixed">
-			<item group="weaponsGunsCommon" prob="3" />
-			<item group="weaponsGunsMilitary" prob="1" />
-		</trader_item_group>
 		<trader_item_group name="ammo">
 			<item name="9mmBullet" count="40,120" />
 			<item name="762mmBullet" count="20,80" />
@@ -426,7 +403,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="ironArrowHead" count="5,25" prob="0.05" />
 			<!-- 5 -->
 			<item name="steelArrowHead" count="5,25" prob="0.05" />
-			<!-- 5 -->&gt;
+			<!-- 5 -->
 			<item name="feather" count="10,45" /><!-- 5 --></trader_item_group>
 		<trader_item_group name="seeds">
 			<item name="plantedPotato1" />
@@ -656,7 +633,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<!-- 10 -->
 		</trader_item_group>
 		<trader_item_group name="traderGeneral" count="1">
-			<item name="beerBook" count="1" prob="0.3" />
 			<item name="plantedHop1" count="1,5" prob="0.3" />
 			<item name="paint" count="1,12" />
 			<!-- 50 -->
@@ -706,16 +682,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="switch" count="3,9" prob="1.0" />
 		</trader_item_group>
 		<trader_item_group name="stashOnlyItemsLow" count="1">
-			<item name="beerBook" count="1" />
 			<item name="plantedHop1" count="1,5" />
 			<item name="solarbank" count="1" />
-			<item name="batterybankSchematic" count="1" prob="0.5" />
 		</trader_item_group>
 		<trader_item_group name="stashOnlyItemsHigh" count="1">
-			<item name="beerBook" count="1" />
 			<item name="plantedHop1" count="2,8" />
 			<item name="solarCell" count="1,2" />
-			<item name="batterybankSchematic" count="1" prob="0.5" />
 			<item name="autoTurret" count="1,2" prob="0.5" />
 			<item name="shotgunTurret" count="1,3" prob="0.7" />
 		</trader_item_group>

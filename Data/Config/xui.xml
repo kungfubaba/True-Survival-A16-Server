@@ -1,6 +1,7 @@
 <xui>
 	<!-- <ruleset name="default" scale="1.255" stackpanel_scale="1.05"> -->
 	<ruleset name="default" scale="1.255" stackpanel_scale="1.03">
+	
 		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -19,6 +20,7 @@
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowToolsCampfire" />
+		    <window name="windowFuel" /> 
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -48,14 +50,15 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
+	<!--		<window name="windowCombine" /> -->
 		</window_group>				
 
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-            <window name="windowToolsChemistryStation" />
+			<window name="windowToolsChemistryStation" /> <!-- added to 16.2 -->
+	<!--	<window name="windowFuel" /> -->
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -79,20 +82,20 @@
 		<window_group name="dragAndDrop" actionSet="false">
 			<window name="dragAndDropItemStack" />
 		</window_group>
-
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+		
+<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="compass" actionSet="false">
-			<window name="SMXCompass1" anchor="CenterTop" />				<!-- SMX UI -->
+			<window name="SMXCompass1" anchor="CenterTop" /> 				<!-- SMX UI -->
 <!--		<window name="SMXCompass2VALMOD" anchor="CenterTop" /> -->		<!-- VALMOD UI -->
 <!--		<window name="windowCompass" /> -->								<!-- STANDARD UI -->
-			<window name="SMXDayTimeFrame" anchor="LeftTop" />				<!-- SMX & VALMOD UI -->
+			<window name="SMXDayTimeFrame1" anchor="LeftTop" />				<!-- SMX & VALMOD UI -->
 			<window name="SMX" anchor="RightTop" />							<!-- SMX UI -->
 			<window name="SMXLevelXPUF1" anchor="LeftTop" />				<!-- SMX UI -->
 <!--		<window name="SMXLevelXPUF2VALMOD" anchor="LeftTop" /> -->		<!-- VALMOD UI -->
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
@@ -110,8 +113,8 @@
 		<window_group name="timer">
 			<window name="windowTimer"/>
 		</window_group>
-
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+		
+<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="toolbelt" actionSet="false">
 			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- SMX UI -->
@@ -129,13 +132,13 @@
 <!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->		<!-- STANDARD UI -->
 			<window name="SMXHudOther" anchor="RightBottom" />				<!-- SMX & VALMOD UI -->
 <!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->		<!-- STANDARD UI -->
-			<window name="SMXTempFrameUF1" />								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
-<!--		<window name="SMXTempFrameUF2VALMOD" />	-->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
+			<window name="SMXTempFrameUF1" /> 								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
+<!--		<window name="SMXTempFrameUF2VALMOD" /> -->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
 <!--		<window name="windowQuestTracker" anchor="RightTop" /> -->		<!-- STANDARD UI -->
 			<window name="SMXQuestTracker" anchor="RightTop" />				<!-- SMX & VALMOD UI -->
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->		
+<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->		
 		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="windowVehicle"/>
@@ -254,15 +257,15 @@
 		<window_group name="spawnMenu">
 			<window name="spawnMenu" />
 		</window_group>
-
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->		
+		
+<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->		
 		
 		<window_group name="ingameMenu">
 <!--		<window name="ingameMenu" /> -->
 			<window name="SMXingameMenu" />
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="woPropsSleeperVolume">
 			<window name="woPropsSleeperVolume" />
@@ -284,7 +287,6 @@
 			<window name="prefabList" />
 		</window_group>
 		
-	
     <!--JZMOD ADDED-->
 		<window_group name="workstation_bulletPress" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
@@ -318,13 +320,13 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_torch" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_wallTorchPlayer" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_burnBarrel" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_burningBarrelPlayer" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
@@ -430,5 +432,19 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-    </ruleset>
+        <window_group name="workstation_cntVendingMachine" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowOutput" />
+           	<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_cntVendingMachineTrader" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowOutput" />
+           	<window name="windowNonPagingHeader" />
+		</window_group>
+	</ruleset>
 </xui>

@@ -1,14 +1,14 @@
 <controls>
 
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
 
 	<SMX_tb_item_stack_uf1>
-		<rect controller="ItemStack" style="SMXItemStack, hover" collider_scale="1.1">
+		<rect controller="ItemStack" style="SMXTBItemStack, hover" collider_scale="1.1">
 
 			<texture name="SMXToolbeltSlot" depth="0" size="83,83" texture="@file:Mods\SMX\Textures\Toolbelt\toolbeltslot.png" material="Materials/Transparent Colored"  /> <!-- Online Equivalent: http://i63.tinypic.com/2iide2a.jpg -->
 
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" visible="false" />
-			<sprite depth="3" name="background" sprite="menu_empty2px" width="83" height="83" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
+			<sprite depth="3" name="background" atlas="itemiconatlas" sprite="smxtb1select2" width="123" height="86" type="sliced" pos="-21,2" globalopacity="true" fillcenter="false" /> <!-- Changed: sprite="menu_empty2px" removed: color="darkGrey" -->
 			<sprite depth="2" name="highlightOverlay" width="82" height="82" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" visible="false" />
 
 			<sprite depth="4" name="itemIcon" width="80" height="60" atlas="ItemIconAtlas" sprite="{itemicon}" pos="40,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
@@ -54,7 +54,7 @@
 		</panel>
 	</SMX_active_buff_entry2>
 
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
 
 	<slider>
 		<rect depth="1" controller="Slider" height="24">
@@ -233,44 +233,50 @@
 	
 	<ingredient_header>
 		<rect name="header" width="447" height="33">
-			<rect depth="2" width="60" height="33">
-				<sprite depth="1" pos="0,0" width="60" height="33" color="[black]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="60" height="33" color="[black]" type="sliced" fillcenter="false" />
-
-				<label depth="3" text="Need" pos="30,-20" width="60" height="26" font_size="26" justify="center" pivot="center" />
+			<rect depth="2" width="65" height="33">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[darkGrey]" type="sliced" />
+				<label depth="3" text="ITEM" text_key="lblitem" pos="32,-15" height="26" font_size="26" justify="center" pivot="center"/>
 			</rect>
-			<rect depth="2" width="327" height="33" pos="60,0">
-				<sprite depth="1" pos="0,0" width="327" height="33" color="[black]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="33" color="[black]" type="sliced" fillcenter="false" />
-
-				<label depth="3" text="Ingredient" pos="163,-20" height="26" font_size="26" justify="center" pivot="center" />
+			<rect depth="2" width="236" height="33" pos="68,0">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="242" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[darkGrey]" type="sliced" />
+				<label depth="3" text="NAME" text_key="mmTextName" pos="117,-15" width="230" height="26" font_size="26" justify="center" pivot="center"/>
 			</rect>
-			<rect depth="2" width="60" height="33" pos="387,0">
-				<sprite depth="1" pos="0,0" width="60" height="33" color="[black]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="60" height="33" color="[black]" type="sliced" fillcenter="false" />
-
-				<label depth="3" text="Have" pos="30,-20" width="60" height="26" font_size="26" justify="center" pivot="center" />
+			<rect depth="2" width="64" height="33" pos="307,0">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="69" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[darkGrey]" type="sliced" />
+				<label depth="3" text="NEED" text_key="lblneed" pos="32,-15" width="64" height="26" font_size="26" justify="center" pivot="center"/>
+			</rect>
+			<rect depth="2" width="75" height="33" pos="373,0">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="80" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[darkGrey]" type="sliced" />
+				<label depth="3" text="HAVE" text_key="lblhave" pos="35,-15" width="69" height="26" font_size="26" justify="center" pivot="center"/>
 			</rect>
 		</rect>
 	</ingredient_header>
-
+	
 	<ingredient_row>
 		<rect name="row" width="447" height="33" controller="IngredientEntry">
-			<rect depth="2" width="60" height="33">
-				<sprite depth="1" pos="0,0" width="60" height="33" color="[darkGrey_half_alpha]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="0,0" width="60" height="33" color="[black]" type="sliced" fillcenter="false" />
-				<label depth="3" name="needCount" pos="25,-20" width="60" height="26" font_size="26" color="[labelColor]" justify="right" pivot="center" text="{needcount}" />
+			<rect depth="2" width="65" height="33">
+				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="-3,5" width="71" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[lightGrey]" type="sliced" />
+				<sprite depth="2" name="icon" width="56" height="33" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-16" pivot="center" foregroundlayer="true"/>
 			</rect>
-			<rect depth="2" width="327" height="33" pos="60,0">
-				<sprite depth="1" pos="0,0" width="327" height="33" color="[darkGrey_half_alpha]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="0,0" width="327" height="33" color="[black]" type="sliced" fillcenter="false" />
-				<sprite depth="3" name="icon" width="42" height="33" atlas="ItemIconAtlas" sprite="{itemicon}" pos="0,0" foregroundlayer="true" />
-				<label depth="3" name="name" pos="55,-7" width="277" height="26" font_size="26" color="[labelColor]" text="{itemname}" />
+			<rect depth="2" width="236" height="33" pos="68,0">
+				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="-3,5" width="242" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[lightGrey]" type="sliced" />
+				<label depth="3" name="name" pos="117,-16" width="230" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{itemname}"/>
 			</rect>
-			<rect depth="2" width="60" height="33" pos="387,0">
-				<sprite depth="1" pos="0,0" width="60" height="33" color="[darkGrey_half_alpha]" type="filled" fill="1" />
-				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="0,0" width="60" height="33" color="[black]" type="sliced" fillcenter="false" />
-				<label depth="3" name="haveCount" pos="25,-20" width="60" height="26" font_size="26" color="[labelColor]" justify="right" pivot="center" text="{havecount}" />
+			<rect depth="2" width="64" height="33" pos="307,0">
+				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="-3,5" width="69" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[lightGrey]" type="sliced" />
+				<label depth="3" name="needCount" pos="32,-16" width="64" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{needcount}"/>
+			</rect>
+			<rect depth="2" width="75" height="33" pos="373,0">
+				<sprite depth="2" name="backgroundMain" atlas="ItemIconAtlas" sprite="menu_empty3px" pos="-3,5" width="80" height="33" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite color="[lightGrey]" type="sliced" />
+				<label depth="3" name="haveCount" pos="35,-16" width="69" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{havecount}"/>
 			</rect>
 		</rect>
 	</ingredient_row>
@@ -455,7 +461,7 @@
 	<waypoint_entry>
 		<rect width="248" height="43" pos="6,-98" controller="MapWaypointListEntry" >
 			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="254" height="49" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press" sound="[recipe_click]"/>
+			<sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press,scroll" sound="[recipe_click]" />
 			<sprite depth="4" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true"/>
 			<sprite depth="4" name="Tracking" sprite="ui_game_symbol_check" style="icon32px" pos="48,-3" foregroundlayer="true"/>
 			<label depth="4" name="Name" pos="110,-20" width="140" height="30" text="Name" font_size="28" justify="center" pivot="center"/>
@@ -807,6 +813,15 @@
 			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
 	</item_stack_inventory>
+	
+	<spawnbutton>
+		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|118}" height="${height|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton">
+			<sprite depth="1" name="border" sprite="menu_empty2px" pos="0,${Round(-height/2,0)|-16}" color="[black]" type="sliced" fillcenter="false" pivot="${pivot|left}" />
+			<button name="clickable" sprite="menu_empty" pos="0,${Round(-height/2,0)|-16}" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" />
+			<label depth="2" name="btnLabel" width="118" height="24" pos="2,${Round(-height/2,0)|-16}" justify="center" effect="none" pivot="${pivot|left}" font_size="24"/>
+		</rect>
+	</spawnbutton>
+	
 	
 	
 </controls>

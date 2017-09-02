@@ -1,4 +1,60 @@
 <!-- JZMOD FULL ENTITY LIST
+        XXX walkers XXX
+       <entity name="zombieYo" />
+        <entity name="zombieSteve" />
+        <entity name="zombieBurnt" />
+        <entity name="zombieFatHawaiian" />
+        <entity name="zombieMaleHazmat" />
+        <entity name="zombieUtilityWorker" />
+        <entity name="zombieFarmer" />
+        <entity name="zombieStripper" />
+        <entity name="zombieJoe1" />
+        <entity name="zombieArlene1" />
+        <entity name="zombieDarlene1" />
+        <entity name="zombieMarlene1" />
+        <entity name="zombieMaleHazmat1" />
+        <entity name="zombieSkateboarder1" />
+        <entity name="zombieCheerleader1" />
+        <entity name="zombieOldTimer1" />
+        <entity name="zombieBusinessMan1" />
+        <entity name="zombieSteve2" />
+        <entity name="zombieJoe2" />
+        <entity name="zombieMoe2" />
+        <entity name="zombieDarlene2" />
+        <entity name="zombieMarlene2" />
+        <entity name="zombieNurse2" />
+        <entity name="zombieUtilityWorker2" />
+        <entity name="zombieFemaleFat2" />
+        <entity name="zombieFatHawaiian2" />
+        <entity name="zombieStripper2" />
+        <entity name="zombieBusinessMan2" />
+        <entity name="zombieSteve3" />
+        <entity name="zombieBoe3" />
+        <entity name="zombieMoe3" />
+        <entity name="zombieMarlene3" />
+        <entity name="zombieYo3" />
+        <entity name="zombieFatHawaiian3" />
+        <entity name="zombieSoldier3" />
+        <entity name="zombieSkateboarder3" />
+        <entity name="zombieBiker3" />
+        <entity name="zombieBoe5" />
+        <entity name="zombieNurse5" />
+        <entity name="zombieDarlene5" />
+        <entity name="zombieSoldier5" />
+        <entity name="zombieUtilityWorker5" />
+        <entity name="zombieFemaleFat5" />
+        <entity name="zombieFatHawaiian5" />
+        <entity name="zombieOldTimer5" />
+        <entity name="zombieStripper5" />
+        <entity name="zombieBoe6" />
+        <entity name="zombieJoe6" />
+        <entity name="zombieMoe6" />
+        <entity name="zombieMarlene6" />
+        <entity name="zombieBurnt6" />
+        <entity name="zombieMaleHazmat6" />
+        <entity name="zombieOldTimer6" />
+        <entity name="zombieBoe7" />
+        <entity name="zombieScreamer7" />
         XXX crawlerS XXX
 zombieSteveCrawler
 zombieBoe4
@@ -283,149 +339,132 @@ animalStagHostile
 -->
 <entitygroups>
 	<entitygroup name="ZombiesAll">
-		<entity name="zombieBoe" prob="0.68" />
-		<entity name="zombieFootballPlayer" prob="0.68" />
-		<entity name="zombieFemaleFat" prob="0.68" />
-		<entity name="zombieJoe" prob="0.68" />
-		<entity name="zombieMoe" prob="0.68" />
-		<entity name="zombieArlene" prob="0.68" />
-		<entity name="zombieDarlene" prob="0.68" />
-		<entity name="zombieMarlene" prob="0.68" />
-		<entity name="zombieYo" prob="0.68" />
-		<entity name="zombieSteve" prob="0.68" />
-		<entity name="zombieBusinessMan" prob="0.68" />
-		<entity name="zombieBurnt" prob="0.68" />
-		<entity name="zombieNurse" prob="0.68" />
-		<entity name="zombieFatHawaiian" prob="0.68" />
-		<entity name="zombieFatCop" prob="0.68" />
-		<entity name="zombieMaleHazmat" prob="0.68" />
-		<entity name="zombieUtilityWorker" prob="0.68" />
-		<entity name="zombieSoldier" prob="0.68" />
-		<entity name="zombieSkateboarder" prob="0.68" />
-		<entity name="zombieCheerleader" prob="0.68" />
-		<entity name="zombieOldTimer" prob="0.68" />
-		<entity name="zombieBiker" prob="0.68" />
-		<entity name="zombieFarmer" prob="0.68" />
-		<entity name="zombieStripper" prob="0.68" />
-		<entity name="zombieBoe1" prob="0.68" />
-		<entity name="zombieJoe1" prob="0.68" />
-		<entity name="zombieArlene1" prob="0.68" />
-		<entity name="zombieDarlene1" prob="0.68" />
-		<entity name="zombieMarlene1" prob="0.68" />
-		<entity name="zombieYo1" prob="0.68" />
-		<entity name="zombieBurnt1" prob="0.68" />
-		<entity name="zombieNurse1" prob="0.68" />
-		<entity name="zombieSteve1" prob="0.68" />
-		<entity name="zombieMaleHazmat1" prob="0.68" />
-		<entity name="zombieUtilityWorker1" prob="0.68" />
-		<entity name="zombieSoldier1" prob="0.68" />
-		<entity name="zombieSkateboarder1" prob="0.68" />
-		<entity name="zombieCheerleader1" prob="0.68" />
-		<entity name="zombieOldTimer1" prob="0.68" />
-		<entity name="zombieFarmer1" prob="0.68" />
-		<entity name="zombieStripper1" prob="0.68" />
-		<entity name="zombieFootballPlayer1" prob="0.68" />
-		<entity name="zombieBusinessMan1" prob="0.68" />
-		<entity name="zombieSteve2" prob="0.68" />
-		<entity name="zombieMoe2" prob="0.68" />
-		<entity name="zombieJoe2" prob="0.68" />
-		<entity name="zombieArlene2" prob="0.68" />
-		<entity name="zombieDarlene2" prob="0.68" />
-		<entity name="zombieMarlene2" prob="0.68" />
-		<entity name="zombieYo2" prob="0.68" />
-		<entity name="zombieSpider2" prob="0.68" />
-		<entity name="zombieNurse2" prob="0.68" />
-		<entity name="zombieMaleHazmat2" prob="0.68" />
-		<entity name="zombieUtilityWorker2" prob="0.68" />
-		<entity name="zombieFemaleFat2" prob="0.68" />
-		<entity name="zombieFatHawaiian2" prob="0.68" />
-		<entity name="zombieCheerleader2" prob="0.68" />
-		<entity name="zombieOldTimer2" prob="0.68" />
-		<entity name="zombieBiker2" prob="0.68" />
-		<entity name="zombieFarmer2" prob="0.68" />
-		<entity name="zombieStripper2" prob="0.68" />
-		<entity name="zombieFootballPlayer2" prob="0.68" />
-		<entity name="zombieBusinessMan2" prob="0.68" />
-		<entity name="zombieSteve3" prob="0.68" />
-		<entity name="zombieBoe3" prob="0.68" />
-		<entity name="zombieJoe3" prob="0.68" />
-		<entity name="zombieMoe3" prob="0.68" />
-		<entity name="zombieMarlene3" prob="0.68" />
-		<entity name="zombieYo3" prob="0.68" />
-		<entity name="zombieSpider3" prob="0.68" />
-		<entity name="zombieBurnt3" prob="0.68" />
-		<entity name="zombieNurse3" prob="0.68" />
-		<entity name="zombieMaleHazmat3" prob="0.68" />
-		<entity name="zombieUtilityWorker3" prob="0.68" />
-		<entity name="zombieFemaleFat3" prob="0.68" />
-		<entity name="zombieFatHawaiian3" prob="0.68" />
-		<entity name="zombieSoldier3" prob="0.68" />
-		<entity name="zombieSkateboarder3" prob="0.68" />
-		<entity name="zombieBiker3" prob="0.68" />
-		<entity name="zombieFarmer3" prob="0.68" />
-		<entity name="zombieFootballPlayer3" prob="0.68" />
-		<entity name="zombieBusinessMan3" prob="0.68" />
-		<entity name="zombieSteve5" prob="0.68" />
-		<entity name="zombieBoe5" prob="0.68" />
-		<entity name="zombieMoe5" prob="0.68" />
-		<entity name="zombieArlene5" prob="0.68" />
-		<entity name="zombieSpider5" prob="0.68" />
-		<entity name="zombieBurnt5" prob="0.68" />
-		<entity name="zombieNurse5" prob="0.68" />
-		<entity name="zombieDarlene5" prob="0.68" />
-		<entity name="zombieSoldier5" prob="0.68" />
-		<entity name="zombieSkateboarder5" prob="0.68" />
-		<entity name="zombieUtilityWorker5" prob="0.68" />
-		<entity name="zombieFemaleFat5" prob="0.68" />
-		<entity name="zombieFatHawaiian5" prob="0.68" />
-		<entity name="zombieCheerleader5" prob="0.68" />
-		<entity name="zombieOldTimer5" prob="0.68" />
-		<entity name="zombieBiker5" prob="0.68" />
-		<entity name="zombieFarmer5" prob="0.68" />
-		<entity name="zombieStripper5" prob="0.68" />
-		<entity name="zombieFootballPlayer5" prob="0.68" />
-		<entity name="zombieBusinessMan5" prob="0.68" />
-		<entity name="zombieBoe6" prob="0.68" />
-		<entity name="zombieJoe6" prob="0.68" />
-		<entity name="zombieMoe6" prob="0.68" />
-		<entity name="zombieArlene6" prob="0.68" />
-		<entity name="zombieDarlene6" prob="0.68" />
-		<entity name="zombieMarlene6" prob="0.68" />
-		<entity name="zombieYo6" prob="0.68" />
-		<entity name="zombieSpider6" prob="0.68" />
-		<entity name="zombieBurnt6" prob="0.68" />
-		<entity name="zombieNurse6" prob="0.68" />
-		<entity name="zombieMaleHazmat6" prob="0.68" />
-		<entity name="zombieSoldier6" prob="0.68" />
-		<entity name="zombieFemaleFat6" prob="0.68" />
-		<entity name="zombieFatHawaiian6" prob="0.68" />
-		<entity name="zombieCheerleader6" prob="0.68" />
-		<entity name="zombieOldTimer6" prob="0.68" />
-		<entity name="zombieBiker6" prob="0.68" />
-		<entity name="zombieSkateboarder6" prob="0.68" />
-		<entity name="zombieStripper6" prob="0.68" />
-		<entity name="zombieScreamer6" prob="0.68" />
-		<entity name="zombieBusinessMan6" prob="0.68" />
-		<entity name="zombieBoe7" prob="0.68" />
-		<entity name="zombieJoe7" prob="0.68" />
-		<entity name="zombieMoe7" prob="0.68" />
-		<entity name="zombieSteve7" prob="0.68" />
-		<entity name="zombieArlene7" prob="0.68" />
-		<entity name="zombieDarlene7" prob="0.68" />
-		<entity name="zombieMarlene7" prob="0.68" />
-		<entity name="zombieYo7" prob="0.68" />
-		<entity name="zombieSpider7" prob="0.68" />
-		<entity name="zombieSoldier7" prob="0.68" />
-		<entity name="zombieUtilityWorker7" prob="0.68" />
-		<entity name="zombieFemaleFat7" prob="0.68" />
-		<entity name="zombieFatHawaiian7" prob="0.68" />
-		<entity name="zombieCheerleader7" prob="0.68" />
-		<entity name="zombieOldTimer7" prob="0.68" />
-		<entity name="zombieSkateboarder7" prob="0.68" />
-		<entity name="zombieFarmer7" prob="0.68" />
-		<entity name="zombieStripper7" prob="0.68" />
-		<entity name="zombieFootballPlayer7" prob="0.68" />
-		<entity name="zombieScreamer7" prob="0.68" />
+		<entity name="zombieBoe" prob="0.78" />
+		<entity name="zombieJoe" prob="0.78" />
+		<entity name="zombieMoe" prob="0.78" />
+		<entity name="zombieArlene" prob="0.78" />
+		<entity name="zombieDarlene" prob="0.78" />
+		<entity name="zombieMarlene" prob="0.78" />
+		<entity name="zombieYo" prob="0.78" />
+		<entity name="zombieSteve" prob="0.78" />
+		<entity name="zombieBusinessMan" prob="0.78" />
+		<entity name="zombieNurse" prob="0.78" />
+		<entity name="zombieMaleHazmat" prob="0.78" />
+		<entity name="zombieUtilityWorker" prob="0.78" />
+		<entity name="zombieSoldier" prob="0.78" />
+		<entity name="zombieSkateboarder" prob="0.78" />
+		<entity name="zombieCheerleader" prob="0.78" />
+		<entity name="zombieOldTimer" prob="0.78" />
+		<entity name="zombieFarmer" prob="0.78" />
+		<entity name="zombieStripper" prob="0.78" />
+		<entity name="zombieBoe1" prob="0.78" />
+		<entity name="zombieJoe1" prob="0.78" />
+		<entity name="zombieArlene1" prob="0.78" />
+		<entity name="zombieDarlene1" prob="0.78" />
+		<entity name="zombieMarlene1" prob="0.78" />
+		<entity name="zombieYo1" prob="0.78" />
+		<entity name="zombieNurse1" prob="0.78" />
+		<entity name="zombieSteve1" prob="0.78" />
+		<entity name="zombieMaleHazmat1" prob="0.78" />
+		<entity name="zombieUtilityWorker1" prob="0.78" />
+		<entity name="zombieSoldier1" prob="0.78" />
+		<entity name="zombieSkateboarder1" prob="0.78" />
+		<entity name="zombieCheerleader1" prob="0.78" />
+		<entity name="zombieOldTimer1" prob="0.78" />
+		<entity name="zombieFarmer1" prob="0.78" />
+		<entity name="zombieStripper1" prob="0.78" />
+		<entity name="zombieBusinessMan1" prob="0.78" />
+		<entity name="zombieSteve2" prob="0.78" />
+		<entity name="zombieMoe2" prob="0.78" />
+		<entity name="zombieJoe2" prob="0.78" />
+		<entity name="zombieArlene2" prob="0.78" />
+		<entity name="zombieDarlene2" prob="0.78" />
+		<entity name="zombieMarlene2" prob="0.78" />
+		<entity name="zombieYo2" prob="0.78" />
+		<entity name="zombieSpider2" prob="0.78" />
+		<entity name="zombieNurse2" prob="0.78" />
+		<entity name="zombieMaleHazmat2" prob="0.78" />
+		<entity name="zombieUtilityWorker2" prob="0.78" />
+		<entity name="zombieCheerleader2" prob="0.78" />
+		<entity name="zombieOldTimer2" prob="0.78" />
+		<entity name="zombieFarmer2" prob="0.78" />
+		<entity name="zombieStripper2" prob="0.78" />
+		<entity name="zombieBusinessMan2" prob="0.78" />
+		<entity name="zombieSteve3" prob="0.78" />
+		<entity name="zombieBoe3" prob="0.78" />
+		<entity name="zombieJoe3" prob="0.78" />
+		<entity name="zombieMoe3" prob="0.78" />
+		<entity name="zombieMarlene3" prob="0.78" />
+		<entity name="zombieYo3" prob="0.78" />
+		<entity name="zombieSpider3" prob="0.78" />
+		<entity name="zombieNurse3" prob="0.78" />
+		<entity name="zombieMaleHazmat3" prob="0.78" />
+		<entity name="zombieUtilityWorker3" prob="0.78" />
+		<entity name="zombieSoldier3" prob="0.78" />
+		<entity name="zombieSkateboarder3" prob="0.78" />
+		<entity name="zombieFarmer3" prob="0.78" />
+		<entity name="zombieBusinessMan3" prob="0.78" />
+		<entity name="zombieSteve5" prob="0.78" />
+		<entity name="zombieBoe5" prob="0.78" />
+		<entity name="zombieMoe5" prob="0.78" />
+		<entity name="zombieArlene5" prob="0.78" />
+		<entity name="zombieSpider5" prob="0.78" />
+		<entity name="zombieNurse5" prob="0.78" />
+		<entity name="zombieDarlene5" prob="0.78" />
+		<entity name="zombieSoldier5" prob="0.78" />
+		<entity name="zombieSkateboarder5" prob="0.78" />
+		<entity name="zombieUtilityWorker5" prob="0.78" />
+		<entity name="zombieCheerleader5" prob="0.78" />
+		<entity name="zombieOldTimer5" prob="0.78" />
+		<entity name="zombieFarmer5" prob="0.78" />
+		<entity name="zombieStripper5" prob="0.78" />
+		<entity name="zombieBusinessMan5" prob="0.78" />
+		<entity name="zombieBoe6" prob="0.78" />
+		<entity name="zombieJoe6" prob="0.78" />
+		<entity name="zombieMoe6" prob="0.78" />
+		<entity name="zombieArlene6" prob="0.78" />
+		<entity name="zombieDarlene6" prob="0.78" />
+		<entity name="zombieMarlene6" prob="0.78" />
+		<entity name="zombieYo6" prob="0.78" />
+		<entity name="zombieSpider6" prob="0.78" />
+		<entity name="zombieNurse6" prob="0.78" />
+		<entity name="zombieMaleHazmat6" prob="0.78" />
+		<entity name="zombieSoldier6" prob="0.78" />
+		<entity name="zombieCheerleader6" prob="0.78" />
+		<entity name="zombieOldTimer6" prob="0.78" />
+		<entity name="zombieSkateboarder6" prob="0.78" />
+		<entity name="zombieStripper6" prob="0.78" />
+		<entity name="zombieScreamer6" prob="0.78" />
+		<entity name="zombieBusinessMan6" prob="0.78" />
+		<entity name="zombieBoe7" prob="0.78" />
+		<entity name="zombieJoe7" prob="0.78" />
+		<entity name="zombieMoe7" prob="0.78" />
+		<entity name="zombieSteve7" prob="0.78" />
+		<entity name="zombieArlene7" prob="0.78" />
+		<entity name="zombieDarlene7" prob="0.78" />
+		<entity name="zombieMarlene7" prob="0.78" />
+		<entity name="zombieYo7" prob="0.78" />
+		<entity name="zombieSpider7" prob="0.78" />
+		<entity name="zombieSoldier7" prob="0.78" />
+		<entity name="zombieUtilityWorker7" prob="0.78" />
+		<entity name="zombieCheerleader7" prob="0.78" />
+		<entity name="zombieOldTimer7" prob="0.78" />
+		<entity name="zombieSkateboarder7" prob="0.78" />
+		<entity name="zombieFarmer7" prob="0.78" />
+		<entity name="zombieStripper7" prob="0.78" />
+		<entity name="zombieScreamer7" prob="0.78" />
+        <entity name="zombieFemaleFat7" prob="0.83" />
+		<entity name="zombieFatHawaiian7" prob="0.83" />
+        <entity name="zombieFemaleFat6" prob="0.83" />
+		<entity name="zombieFatHawaiian6" prob="0.83" />
+        <entity name="zombieFemaleFat5" prob="0.83" />
+		<entity name="zombieFatHawaiian5" prob="0.83" />
+        <entity name="zombieFemaleFat3" prob="0.83" />
+		<entity name="zombieFatHawaiian3" prob="0.83" />
+        <entity name="zombieFemaleFat2" prob="0.83" />
+		<entity name="zombieFatHawaiian2" prob="0.83" />
+        <entity name="zombieFatHawaiian" prob="0.83" />
+        <entity name="zombieFemaleFat" prob="0.83" />
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieBoe" prob="0.60" />
@@ -442,7 +481,6 @@ animalStagHostile
 		<entity name="zombieBurnt" prob="0.60" />
 		<entity name="zombieNurse" prob="0.60" />
 		<entity name="zombieFatHawaiian" prob="0.60" />
-		<entity name="zombieFatCop" prob="0.60" />
 		<entity name="zombieMaleHazmat" prob="0.60" />
 		<entity name="zombieUtilityWorker" prob="0.60" />
 		<entity name="zombieSoldier" prob="0.60" />
@@ -583,7 +621,6 @@ animalStagHostile
 		<entity name="zombieFatCop" prob="1.66" />
 	</entitygroup>
 	<entitygroup name="ZombiesWasteland">
-		<entity name="zombieSpider" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />
@@ -688,14 +725,6 @@ animalStagHostile
 		<entity name="zombieBurnt" prob="0.07" />
 		<entity name="zombieWightFeral" prob="0.1" />
 		<entity name="zombieFatHawaiian" />
-	</entitygroup>
-	<entitygroup name="Survivors">
-		<entity name="zombieSpider" />
-		<entity name="zombieBoe" prob="0.1" />
-		<entity name="zombieJoe" prob="0.1" />
-		<entity name="zombieSteve" prob="0.1" />
-		<entity name="zombieMoe" prob="0.1" />
-		<entity name="zombieYo" prob="0.1" />
 	</entitygroup>
 	<entitygroup name="ZombiesHoard">
 		<entity name="zombieSpider" />
@@ -876,12 +905,12 @@ animalStagHostile
 		<entity name="animalPig" prob="20.0" />
 	</entitygroup>
 	<entitygroup name="EnemyAnimalsSnow">
-		<entity name="invisibleAnimal" prob="40.0" />
-		<entity name="animalZombieVulture" prob="10.0" />
+		<entity name="invisibleAnimal" prob="50.0" />
+		<entity name="animalZombieVulture" prob="15.0" />
 		<entity name="animalWolf" prob="20.0" />
-		<entity name="animalDireWolf" prob="10.0" />
-		<entity name="animalBear" prob="10.0" />
-		<entity name="animalZombieBear" prob="10.0" />
+		<entity name="animalDireWolf" prob="7.0" />
+		<entity name="animalBear" prob="5.0" />
+		<entity name="animalZombieBear" prob="3.0" />
 	</entitygroup>
 	<entitygroup name="FriendlyAnimalsSnow">
 		<entity name="animalRabbit" prob="16.66" />
@@ -892,11 +921,11 @@ animalStagHostile
 		<entity name="animalStagHostile" prob="16.66" />
 	</entitygroup>
 	<entitygroup name="EnemyAnimalsForest">
-		<entity name="invisibleAnimal" prob="40" />
+		<entity name="invisibleAnimal" prob="62.0" />
 		<entity name="animalWolf" prob="25.0" />
-		<entity name="animalBear" prob="12.5" />
-		<entity name="animalZombieBear" prob="10.0" />
-		<entity name="animalDireWolf" prob="12.5" />
+		<entity name="animalBear" prob="5.0" />
+		<entity name="animalZombieBear" prob="3.0" />
+		<entity name="animalDireWolf" prob="5.0" />
 	</entitygroup>
 	<entitygroup name="FriendlyAnimalsForest">
 		<entity name="animalRabbit" prob="30.0" />
@@ -908,9 +937,9 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="EnemyAnimalsBurntForest">
 		<entity name="invisibleAnimal" prob="50" />
-		<entity name="animalZombieVulture" prob="20.0" />
-		<entity name="animalZombieBear" prob="5.0" />
-		<entity name="animalBear" prob="5.0" />
+		<entity name="animalZombieVulture" prob="25.0" />
+		<entity name="animalZombieBear" prob="2.0" />
+		<entity name="animalBear" prob="3.0" />
 		<entity name="animalSnake" prob="20.0" />
 	</entitygroup>
 	<entitygroup name="FriendlyAnimalsBurntForest">
@@ -925,19 +954,17 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="EnemyAnimalsPlains">
 		<entity name="invisibleAnimal" prob="75.0" />
-		<entity name="animalZombieVulture" prob="10.0" />
-		<entity name="animalSnake" prob="10.0" />
-		<entity name="animalWolf" prob="5.0" />
+		<entity name="animalZombieVulture" prob="11.0" />
+		<entity name="animalSnake" prob="11.0" />
+		<entity name="animalWolf" prob="3.0" />
 	</entitygroup>
 	<entitygroup name="FriendlyAnimalsPlains">
 		<entity name="animalRabbit" prob="25.0" />
 		<entity name="animalChicken" prob="25.0" />
-		<entity name="animalRabbitHostile" prob="5.0" />
-		<entity name="animalChickenHostile" prob="5.0" />
-		<entity name="animalStag" prob="10.0" />
-		<entity name="animalBoar" prob="10.0" />
-		<entity name="animalPig" prob="10.0" />
-		<entity name="animalStagHostile" prob="10.0" />
+		<entity name="animalRabbitHostile" prob="10.0" />
+		<entity name="animalChickenHostile" prob="10.0" />
+		<entity name="animalBoar" prob="15.0" />
+		<entity name="animalPig" prob="15.0" />
 	</entitygroup>
 	<entitygroup name="AnimalsAll">
 		<entity name="animalRabbit" />
@@ -950,7 +977,42 @@ animalStagHostile
 		<entity name="animalDireWolf" prob="0.15" />
 		<entity name="animalBear" prob="0.15" />
 	</entitygroup>
-	<entitygroup name="EnemyAnimalsWasteland">
+    <entitygroup name="Peoples">
+        <entity name="invisibleAnimal" prob="65.0" />
+        <entity name="npcTraderSuitMelee" prob="1.0" />
+		<entity name="npcBandit01" prob="1.71" />
+		<entity name="npcBandit02" prob="1.71" />
+        <entity name="npcBandit03" prob="1.71" />
+		<entity name="npcBandit04" prob="1.71" />
+		<entity name="npcBandit05" prob="1.71" />
+		<entity name="npcBandit06" prob="1.71" />
+		<entity name="npcBandit07" prob="1.71" />
+        <entity name="npcSurvivorRanged" prob="1" />
+        <entity name="npcSurvivorMelee" prob="4.2" />
+		<entity name="npcSurvivorMelee02" prob="4.2" />
+		<entity name="npcSurvivorMelee03" prob="4.2" />
+		<entity name="npcSurvivorMelee04" prob="4.2" />
+		<entity name="npcSurvivorMelee05" prob="4.2" />
+    </entitygroup>
+    <entitygroup name="BadPeoples">
+        <entity name="invisibleAnimal" prob="65.0" />
+        <entity name="npcTraderSuitMelee" prob="1.0" />
+		<entity name="npcBanditRanged" prob="1" />
+		<entity name="npcBandit01" prob="1.71" />
+		<entity name="npcBandit02" prob="1.71" />
+        <entity name="npcBandit03" prob="1.71" />
+		<entity name="npcBandit04" prob="1.71" />
+		<entity name="npcBandit05" prob="1.71" />
+		<entity name="npcBandit06" prob="1.71" />
+		<entity name="npcBandit07" prob="1.71" />
+        <entity name="npcSurvivorRanged" prob="1" />
+        <entity name="npcSurvivorMelee" prob="4" />
+		<entity name="npcSurvivorMelee02" prob="4" />
+		<entity name="npcSurvivorMelee03" prob="4" />
+		<entity name="npcSurvivorMelee04" prob="4" />
+		<entity name="npcSurvivorMelee05" prob="4" />
+    </entitygroup>
+    <entitygroup name="EnemyAnimalsWasteland">
 		<entity name="animalRabbit" prob="5.0" />
 		<entity name="animalChicken" prob="5.0" />
 		<entity name="animalRabbitHostile" prob="10.0" />
@@ -963,6 +1025,15 @@ animalStagHostile
 	<entitygroup name="ZombieDogGroup">
 		<entity name="animalZombieDog" />
 	</entitygroup>
+    <entitygroup name="ZombieBunnyGroup">
+		<entity name="animalRabbitHostile" />
+	</entitygroup>
+    <entitygroup name="ZombieChickenGroup">
+		<entity name="animalChickenHostile" />
+	</entitygroup>
+    <entitygroup name="ZombieBearGroup">
+		<entity name="animalZombieBear" />
+	</entitygroup>
 	<entitygroup name="WolfGroup">
 		<entity name="animalWolf" />
 	</entitygroup>
@@ -972,6 +1043,9 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="VultureGroup">
 		<entity name="animalZombieVulture" />
+	</entitygroup>
+    <entitygroup name="CrocGrp">
+		<entity name="animalSnake" prob="1" />
 	</entitygroup>
 	<entitygroup name="ZombieBusinessManGroup">
 		<entity name="zombieBusinessMan1" prob="14.28" />
@@ -983,44 +1057,52 @@ animalStagHostile
 		<entity name="zombieBusinessMan" prob="14.28" />
 	</entitygroup>
 	<entitygroup name="ZombieBadassGroup">
+        <!--95%-->
 		<entity name="zombieArleneFeral" />
 		<entity name="zombieBoeFeral" />
-		<entity name="zombieBusinessManFeral" />
-		<entity name="zombieCheerleaderFeral" />
-		<entity name="zombieDarleneFeral" />
-		<entity name="zombieFarmerFeral" />
-		<entity name="zombieFatCopFeral" />
-		<entity name="zombieFatHawaiianFeral" />
-		<entity name="zombieFemaleFatFeral" />
-		<entity name="zombieJoeFeral" />
-		<entity name="zombieMarleneFeral" />
-		<entity name="zombieMoeFeral" />
-		<entity name="zombieNurseFeral" />
-		<entity name="zombieOldTimerFeral" />
-		<entity name="zombieSkateboarderFeral" />
-		<entity name="zombieSnowFeral" />
-		<entity name="zombieSoldierFeral" />
-		<entity name="zombieSpiderFeral" />
-		<entity name="zombieSteveCrawler" />
-		<entity name="zombieSteveCrawlerFeral" />
-		<entity name="zombieSteveFeral" />
-		<entity name="zombieUtilityWorkerFeral" />
-		<entity name="zombieWightFeral" />
-		<entity name="zombieYoFeral" />
-		<entity name="zombieSpiderFeralRadiated" />
-		<entity name="zombieWightFeralRadiated" />
-		<entity name="zombieFatCopFeralRadiated" />
+		<entity name="zombieBusinessManFeral" prob="3.27" /> 
+		<entity name="zombieCheerleaderFeral" prob="3.27" /> 
+		<entity name="zombieDarleneFeral" prob="3.27" /> 
+		<entity name="zombieFarmerFeral" prob="3.27" /> 
+		<entity name="zombieFatCopFeral" prob="3.27" /> 
+		<entity name="zombieFatHawaiianFeral" prob="3.27" /> 
+		<entity name="zombieFemaleFatFeral" prob="3.27" /> 
+		<entity name="zombieJoeFeral" prob="3.27" /> 
+		<entity name="zombieMarleneFeral" prob="3.27" /> 
+		<entity name="zombieMoeFeral" prob="3.27" /> 
+		<entity name="zombieNurseFeral" prob="3.27" /> 
+		<entity name="zombieOldTimerFeral" prob="3.27" /> 
+		<entity name="zombieSkateboarderFeral" prob="3.27" /> 
+		<entity name="zombieSnowFeral" prob="3.27" /> 
+		<entity name="zombieSoldierFeral" prob="3.27" /> 
+		<entity name="zombieSpiderFeral" prob="3.27" /> 
+		<entity name="zombieSteveCrawler" prob="3.27" /> 
+		<entity name="zombieSteveCrawlerFeral" prob="3.27" /> 
+		<entity name="zombieSteveFeral" prob="3.27" /> 
+		<entity name="zombieUtilityWorkerFeral" prob="3.27" /> 
+        <entity name="zombieYoFeral" prob="3.27" /> 
+		<entity name="zombieWightFeral" prob="3.27" /> 
+        <entity name="zombieWightFeral7" prob="3.27" /> 
+        <entity name="zombieWightFeral6" prob="3.27" /> 
+        <entity name="zombieWightFeral5" prob="3.27" /> 
+        <entity name="zombieWightFeral3" prob="3.27" /> 
+        <entity name="zombieWightFeral1" prob="3.27" /> 
+        <!--5%-->
+        <entity name="zombieSpiderFeralRadiated" prob="1.66" /> 
+		<entity name="zombieWightFeralRadiated" prob="1.66" /> 
+		<entity name="zombieFatCopFeralRadiated" prob="1.66" /> 
 	</entitygroup>
 	<entitygroup name="ZombieFeralRadiatedGroup">
 		<entity name="zombieSpiderFeralRadiated" />
 		<entity name="zombieWightFeralRadiated" />
-		<entity name="zombieFatCopFeralRadiated" />
+        <entity name="zombieFatCopFeralRadiated" /> 
 	</entitygroup>
 	<entitygroup name="ZombieFarmGroup">
 		<entity name="zombieFarmer" prob="5.0" />
 		<entity name="zombieFarmer1" prob="5.0" />
 		<entity name="zombieFarmer2" prob="5.0" />
 		<entity name="zombieFarmer3" prob="5.0" />
+        <entity name="zombieFarmer4" prob="5.0" />
 		<entity name="zombieFarmer5" prob="5.0" />
 		<entity name="zombieFarmer7" prob="5.0" />
 		<entity name="zombieFemaleFat" prob="0.83" />
@@ -1036,59 +1118,269 @@ animalStagHostile
 		<entity name="animalPig" prob="10.0" />
 	</entitygroup>
 	<entitygroup name="ZombieSoldierGroup">
-		<entity name="zombieSoldier" />
-		<entity name="zombieMaleHazmat" prob="0.2" />
-		<entity name="zombieMaleHazmat" prob="0.2" />
-		<entity name="zombieSpider" prob="0.01" />
-		<entity name="zombieBoe" prob="0.01" />
-		<entity name="zombieJoe" prob="0.01" />
-		<entity name="zombieSteve" prob="0.01" />
-		<entity name="zombieMoe" prob="0.01" />
-		<entity name="zombieYo" prob="0.01" />
-		<entity name="zombieArlene" prob="0.01" />
-		<entity name="zombieDarlene" prob="0.01" />
-		<entity name="zombieMarlene" prob="0.01" />
-		<entity name="zombieNurse" prob="0.01" />
-		<entity name="animalZombieDog" prob="0.01" />
-		<entity name="zombieSteveCrawler" prob="0.01" />
-		<entity name="zombieWightFeral" prob="0.01" />
+        <!--35%-->
+		<entity name="zombieSoldier1" prob="2.42" />
+        <entity name="zombieSoldier" prob="2.42" />
+        <entity name="zombieSoldier3" prob="2.42" />
+        <entity name="zombieSoldier4" prob="2.42" />
+        <entity name="zombieSoldier5" prob="2.42" />
+        <entity name="zombieSoldier6" prob="2.42" />
+        <entity name="zombieSoldier7" prob="2.42" />
+		<entity name="zombieMaleHazmat1" prob="2.42" />
+		<entity name="zombieMaleHazmat2" prob="2.42" />
+        <entity name="zombieMaleHazmat3" prob="2.42" />
+        <entity name="zombieMaleHazmat4" prob="2.42" />
+        <entity name="zombieMaleHazmat5" prob="2.42" />
+        <entity name="zombieMaleHazmat6" prob="2.42" />
+        <entity name="zombieMaleHazmat" prob="2.42" />
+        <!--3%-->
+        <entity name="zombieWightFeral" prob="0.5" /> 
+        <entity name="zombieWightFeral7" prob="0.5" /> 
+        <entity name="zombieWightFeral6" prob="0.5" /> 
+        <entity name="zombieWightFeral5" prob="0.5" /> 
+        <entity name="zombieWightFeral3" prob="0.5" /> 
+        <entity name="zombieWightFeral1" prob="0.5" /> 
+        <!--62%-->
+        <entity name="animalZombieDog" prob="1.24" />
+		<entity name="zombieYo" prob="1.24" />
+        <entity name="zombieSteve" prob="1.24" />
+        <entity name="zombieFatHawaiian" prob="1.24" />
+        <entity name="zombieStripper" prob="1.24" />
+        <entity name="zombieJoe1" prob="1.24" />
+        <entity name="zombieArlene1" prob="1.24" />
+        <entity name="zombieDarlene1" prob="1.24" />
+        <entity name="zombieMarlene1" prob="1.24" />
+        <entity name="zombieSkateboarder1" prob="1.24" />
+        <entity name="zombieSteve2" prob="1.24" />
+        <entity name="zombieJoe2" prob="1.24" />
+        <entity name="zombieMoe2" prob="1.24" />
+        <entity name="zombieDarlene2" prob="1.24" />
+        <entity name="zombieMarlene2" prob="1.24" />
+        <entity name="zombieNurse2" prob="1.24" />
+        <entity name="zombieFemaleFat2" prob="1.24" />
+        <entity name="zombieFatHawaiian2" prob="1.24" />
+        <entity name="zombieStripper2" prob="1.24" />
+        <entity name="zombieSteve3" prob="1.24" />
+        <entity name="zombieBoe3" prob="1.24" />
+        <entity name="zombieMoe3" prob="1.24" />
+        <entity name="zombieMarlene3" prob="1.24" />
+        <entity name="zombieYo3" prob="1.24" />
+        <entity name="zombieFatHawaiian3" prob="1.24" />
+        <entity name="zombieSkateboarder3" prob="1.24" />
+        <entity name="zombieScreamer4" prob="1.24" />
+        <entity name="zombieStripper4" prob="1.24" />
+        <entity name="zombieSkateboarder4" prob="1.24" />
+        <entity name="zombieNurse4" prob="1.24" />
+        <entity name="zombieSpider4" prob="1.24" />
+        <entity name="zombieMarlene4" prob="1.24" />
+        <entity name="zombieYo4" prob="1.24" />
+        <entity name="zombieDarlene4" prob="1.24" />
+        <entity name="zombieArlene4" prob="1.24" />
+        <entity name="zombieJoe4" prob="1.24" />
+        <entity name="zombieBoe4" prob="1.24" />
+        <entity name="zombieSteveCrawler" prob="1.24" />
+        <entity name="zombieBoe5" prob="1.24" />
+        <entity name="zombieNurse5" prob="1.24" />
+        <entity name="zombieDarlene5" prob="1.24" />
+        <entity name="zombieFemaleFat5" prob="1.24" />
+        <entity name="zombieFatHawaiian5" prob="1.24" />
+        <entity name="zombieStripper5" prob="1.24" />
+        <entity name="zombieBoe6" prob="1.24" />
+        <entity name="zombieJoe6" prob="1.24" />
+        <entity name="zombieMoe6" prob="1.24" />
+        <entity name="zombieMarlene6" prob="1.24" />
+        <entity name="zombieBoe7" prob="1.24" />
+        <entity name="zombieScreamer7" prob="1.24" />
 	</entitygroup>
 	<entitygroup name="ZombieFootballStadiumGroup">
-		<entity name="zombieFootballPlayer" prob="10" />
-		<entity name="zombieCheerleader" prob="10" />
-		<entity name="zombieBoe" prob="0.01" />
-		<entity name="zombieJoe" prob="0.01" />
-		<entity name="zombieSteve" prob="0.01" />
-		<entity name="zombieYo" prob="0.01" />
-		<entity name="zombieNurse" prob="0.01" />
-		<entity name="zombieFatHawaiian" prob="0.01" />
+        <!--30%-->
+		<entity name="zombieFootballPlayer" prob="4.28" />
+        <entity name="zombieFootballPlayer4" prob="4.28" />
+        <entity name="zombieFootballPlayer1" prob="4.28" />
+        <entity name="zombieFootballPlayer2" prob="4.28" />
+        <entity name="zombieFootballPlayer3" prob="4.28" />
+        <entity name="zombieFootballPlayer5" prob="4.28" />
+        <entity name="zombieFootballPlayer7" prob="4.28" />
+        <!--30%-->
+		<entity name="zombieCheerleader1" prob="4.28" /> 
+        <entity name="zombieCheerleader2" prob="4.28" />
+        <entity name="zombieCheerleader" prob="4.28" />
+        <entity name="zombieCheerleader4" prob="4.28" />
+        <entity name="zombieCheerleader5" prob="4.28" />
+        <entity name="zombieCheerleader6" prob="4.28" />
+        <entity name="zombieCheerleader7" prob="4.28" />
+        <!--40%-->
+		<entity name="zombieYo" prob="0.81" />
+        <entity name="zombieSteve" prob="0.81" />
+        <entity name="zombieFatHawaiian" prob="0.81" />
+        <entity name="zombieStripper" prob="0.81" />
+        <entity name="zombieJoe1" prob="0.81" />
+        <entity name="zombieArlene1" prob="0.81" />
+        <entity name="zombieDarlene1" prob="0.81" />
+        <entity name="zombieMarlene1" prob="0.81" />
+        <entity name="zombieSkateboarder1" prob="0.81" />
+        <entity name="zombieSteve2" prob="0.81" />
+        <entity name="zombieJoe2" prob="0.81" />
+        <entity name="zombieMoe2" prob="0.81" />
+        <entity name="zombieDarlene2" prob="0.81" />
+        <entity name="zombieMarlene2" prob="0.81" />
+        <entity name="zombieNurse2" prob="0.81" />
+        <entity name="zombieFemaleFat2" prob="0.81" />
+        <entity name="zombieFatHawaiian2" prob="0.81" />
+        <entity name="zombieStripper2" prob="0.81" />
+        <entity name="zombieSteve3" prob="0.81" />
+        <entity name="zombieBoe3" prob="0.81" />
+        <entity name="zombieMoe3" prob="0.81" />
+        <entity name="zombieMarlene3" prob="0.81" />
+        <entity name="zombieYo3" prob="0.81" />
+        <entity name="zombieFatHawaiian3" prob="0.81" />
+        <entity name="zombieSkateboarder3" prob="0.81" />
+        <entity name="zombieScreamer4" prob="0.81" />
+        <entity name="zombieStripper4" prob="0.81" />
+        <entity name="zombieSkateboarder4" prob="0.81" />
+        <entity name="zombieNurse4" prob="0.81" />
+        <entity name="zombieSpider4" prob="0.81" />
+        <entity name="zombieMarlene4" prob="0.81" />
+        <entity name="zombieYo4" prob="0.81" />
+        <entity name="zombieDarlene4" prob="0.81" />
+        <entity name="zombieArlene4" prob="0.81" />
+        <entity name="zombieJoe4" prob="0.81" />
+        <entity name="zombieBoe4" prob="0.81" />
+        <entity name="zombieSteveCrawler" prob="0.81" />
+        <entity name="zombieBoe5" prob="0.81" />
+        <entity name="zombieNurse5" prob="0.81" />
+        <entity name="zombieDarlene5" prob="0.81" />
+        <entity name="zombieFemaleFat5" prob="0.81" />
+        <entity name="zombieFatHawaiian5" prob="0.81" />
+        <entity name="zombieStripper5" prob="0.81" />
+        <entity name="zombieBoe6" prob="0.81" />
+        <entity name="zombieJoe6" prob="0.81" />
+        <entity name="zombieMoe6" prob="0.81" />
+        <entity name="zombieMarlene6" prob="0.81" />
+        <entity name="zombieBoe7" prob="0.81" />
+        <entity name="zombieScreamer7" prob="0.81" />
 	</entitygroup>
 	<entitygroup name="ZombieUtilityWorkerGroup">
-		<entity name="zombieUtilityWorker" />
+		<entity name="zombieUtilityWorker1" prob="14.28" />
+        <entity name="zombieUtilityWorker2" prob="14.28" />
+        <entity name="zombieUtilityWorker3" prob="14.28" />
+        <entity name="zombieUtilityWorker4" prob="14.28" />
+        <entity name="zombieUtilityWorker5" prob="14.28" />
+        <entity name="zombieUtilityWorker" prob="14.28" />
+        <entity name="zombieUtilityWorker7" prob="14.28" />
 	</entitygroup>
 	<entitygroup name="ZombieGhostTownGroup">
-		<!-- old west town -->
-		<entity name="zombieOldTimer" prob="3" />
-		<entity name="zombieMarlene" />
-		<entity name="zombieArlene" />
-		<entity name="zombieJoe" />
-		<entity name="zombieSteveCrawler" />
-		<entity name="zombieFemaleFat" />
-		<entity name="zombieSkateboarder" />
-		<entity name="zombieBoe" />
-		<entity name="zombieMoe" />
-		<entity name="animalZombieDog" />
-		<entity name="zombieFatHawaiian" prob="0.5" />
+		<!-- 50% -->
+		<entity name="zombieOldTimer" prob="7.14" />
+        <entity name="zombieOldTimer1" prob="7.14" />
+        <entity name="zombieOldTimer2" prob="7.14" />
+        <entity name="zombieOldTimer4" prob="7.14" />
+        <entity name="zombieOldTimer5" prob="7.14" />
+        <entity name="zombieOldTimer6" prob="7.14" />
+        <entity name="zombieOldTimer7" prob="7.14" />
+        <!--50%-->
+        <entity name="animalZombieDog" prob="1.0" />
+		<entity name="zombieYo" prob="1.0" />
+        <entity name="zombieSteve" prob="1.0" />
+        <entity name="zombieFatHawaiian" prob="1.0" />
+        <entity name="zombieStripper" prob="1.0" />
+        <entity name="zombieJoe1" prob="1.0" />
+        <entity name="zombieArlene1" prob="1.0" />
+        <entity name="zombieDarlene1" prob="1.0" />
+        <entity name="zombieMarlene1" prob="1.0" />
+        <entity name="zombieSkateboarder1" prob="1.0" />
+        <entity name="zombieSteve2" prob="1.0" />
+        <entity name="zombieJoe2" prob="1.0" />
+        <entity name="zombieMoe2" prob="1.0" />
+        <entity name="zombieDarlene2" prob="1.0" />
+        <entity name="zombieMarlene2" prob="1.0" />
+        <entity name="zombieNurse2" prob="1.0" />
+        <entity name="zombieFemaleFat2" prob="1.0" />
+        <entity name="zombieFatHawaiian2" prob="1.0" />
+        <entity name="zombieStripper2" prob="1.0" />
+        <entity name="zombieSteve3" prob="1.0" />
+        <entity name="zombieBoe3" prob="1.0" />
+        <entity name="zombieMoe3" prob="1.0" />
+        <entity name="zombieMarlene3" prob="1.0" />
+        <entity name="zombieYo3" prob="1.0" />
+        <entity name="zombieFatHawaiian3" prob="1.0" />
+        <entity name="zombieSkateboarder3" prob="1.0" />
+        <entity name="zombieScreamer4" prob="1.0" />
+        <entity name="zombieStripper4" prob="1.0" />
+        <entity name="zombieSkateboarder4" prob="1.0" />
+        <entity name="zombieNurse4" prob="1.0" />
+        <entity name="zombieSpider4" prob="1.0" />
+        <entity name="zombieMarlene4" prob="1.0" />
+        <entity name="zombieYo4" prob="1.0" />
+        <entity name="zombieDarlene4" prob="1.0" />
+        <entity name="zombieArlene4" prob="1.0" />
+        <entity name="zombieJoe4" prob="1.0" />
+        <entity name="zombieBoe4" prob="1.0" />
+        <entity name="zombieSteveCrawler" prob="1.0" />
+        <entity name="zombieBoe5" prob="1.0" />
+        <entity name="zombieNurse5" prob="1.0" />
+        <entity name="zombieDarlene5" prob="1.0" />
+        <entity name="zombieFemaleFat5" prob="1.0" />
+        <entity name="zombieFatHawaiian5" prob="1.0" />
+        <entity name="zombieStripper5" prob="1.0" />
+        <entity name="zombieBoe6" prob="1.0" />
+        <entity name="zombieJoe6" prob="1.0" />
+        <entity name="zombieMoe6" prob="1.0" />
+        <entity name="zombieMarlene6" prob="1.0" />
+        <entity name="zombieBoe7" prob="1.0" />
+        <entity name="zombieScreamer7" prob="1.0" />
 	</entitygroup>
 	<entitygroup name="ZombieBikerBarGroup">
-		<!-- The Boobie Trap -->
-		<entity name="zombieBiker" prob="3" />
-		<entity name="zombieStripper" prob="4" />
-		<entity name="zombieUtilityWorker" />
-		<entity name="zombieFarmer" />
-		<entity name="zombieSkateboarder" />
-		<entity name="zombieBoe" />
-		<entity name="zombieMoe" />
+		<!--20%-->
+		<entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieBiker" prob="1.53" />
+        <entity name="zombieMoe" prob="1.53" />
+        <entity name="zombieMoe2" prob="1.53" />
+        <entity name="zombieMoe3" prob="1.53" />
+        <entity name="zombieMoe5" prob="1.53" />
+        <entity name="zombieMoe6" prob="1.53" />
+        <entity name="zombieMoe7" prob="1.53" />
+        <!--80%-->
+		<entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+        <entity name="zombieStripper" prob="2.28" />
+		<entity name="zombieUtilityWorker1" prob="2.28" />
+        <entity name="zombieUtilityWorker2" prob="2.28" />
+        <entity name="zombieUtilityWorker3" prob="2.28" />
+        <entity name="zombieUtilityWorker4" prob="2.28" />
+        <entity name="zombieUtilityWorker5" prob="2.28" />
+        <entity name="zombieUtilityWorker" prob="2.28" />
+        <entity name="zombieUtilityWorker7" prob="2.28" />
+		<entity name="zombieFarmer" prob="2.28" />
+		<entity name="zombieFarmer1" prob="2.28" />
+		<entity name="zombieFarmer2" prob="2.28" />
+		<entity name="zombieFarmer3" prob="2.28" />
+        <entity name="zombieFarmer4" prob="2.28" />
+		<entity name="zombieFarmer5" prob="2.28" />
+		<entity name="zombieFarmer7" prob="2.28" />
+		<entity name="zombieSkateboarder" prob="2.28" />
+        <entity name="zombieSkateboarder1" prob="2.28" />
+        <entity name="zombieSkateboarder3" prob="2.28" />
+        <entity name="zombieSkateboarder4" prob="2.28" />
+        <entity name="zombieSkateboarder5" prob="2.28" />
+        <entity name="zombieSkateboarder6" prob="2.28" />
+        <entity name="zombieSkateboarder7" prob="2.28" />
+		<entity name="zombieBoe" prob="2.28" />
+        <entity name="zombieBoe1" prob="2.28" />
+        <entity name="zombieBoe3" prob="2.28" />
+        <entity name="zombieBoe4" prob="2.28" />
+        <entity name="zombieBoe5" prob="2.28" />
+        <entity name="zombieBoe6" prob="2.28" />
+        <entity name="zombieBoe7" prob="2.28" />
 	</entitygroup>
 	<entitygroup name="ZombieAnimalsGroup">
 		<entity name="animalZombieDog" prob="4" />
@@ -1099,25 +1391,859 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="BanditGroup">
 		<entity name="npcBanditMelee" />
-		<entity name="npcBanditRanged" />
-		<entity name="npcBanditLeader" prob="0.2" />
 	</entitygroup>
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />
 	</entitygroup>
-	<!-- https://7daystodie.com/forums/showthread.php?56533-Gamestage-Blood-Moon-Horde-generator -->
+    <!-- JZMOD WANDERING HORDES-->
+    <entitygroup name="wanderingHorde15">
+		<entity name="zombieYo" prob="6.66" />
+        <entity name="zombieSteve" prob="6.66" />
+        <entity name="zombieBurnt" prob="6.66" />
+        <entity name="zombieFatHawaiian" prob="6.66" />
+        <entity name="zombieMaleHazmat" prob="6.66" />
+        <entity name="zombieUtilityWorker" prob="6.66" />
+        <entity name="zombieFarmer" prob="6.66" />
+        <entity name="zombieStripper" prob="6.66" />
+        <entity name="zombieJoe1" prob="6.66" />
+        <entity name="zombieArlene1" prob="6.66" />
+        <entity name="zombieDarlene1" prob="6.66" />
+        <entity name="zombieMarlene1" prob="6.66" />
+        <entity name="zombieBurnt" prob="6.66" />
+        <entity name="zombieSkateboarder1" prob="6.66" />
+        <entity name="zombieSpider6" prob="6.66" />
+    </entitygroup>
+    <entitygroup name="wanderingHorde20">
+        <entity name="zombieStripper2" prob="5.0" />
+        <entity name="zombieBusinessMan2" prob="5.0" />
+        <entity name="zombieSteve3" prob="5.0" />
+        <entity name="zombieBoe3" prob="5.0" />
+        <entity name="zombieMoe3" prob="5.0" />
+        <entity name="zombieMarlene3" prob="5.0" />
+        <entity name="zombieYo3" prob="5.0" />
+        <entity name="zombieFatHawaiian3" prob="5.0" />
+        <entity name="zombieSoldier3" prob="5.0" />
+        <entity name="zombieSkateboarder3" prob="5.0" />
+        <entity name="zombieBiker3" prob="5.0" />
+        <entity name="zombieBoe5" prob="5.0" />
+        <entity name="zombieNurse5" prob="5.0" />
+        <entity name="zombieDarlene5" prob="5.0" />
+        <entity name="zombieSoldier5" prob="5.0" />
+        <entity name="zombieUtilityWorker5" prob="5.0" />
+        <entity name="zombieFemaleFat5" prob="5.0" />
+        <entity name="zombieFatHawaiian5" prob="5.0" />
+        <entity name="zombieOldTimer5" prob="5.0" />
+        <entity name="zombieCheerleader1" prob="5.0" />
+	</entitygroup>
+    <entitygroup name="wanderingHorde30">
+	   <entity name="zombieCheerleader1" prob="3.33" />
+       <entity name="zombieOldTimer1" prob="3.33" />
+       <entity name="zombieBusinessMan1" prob="3.33" />
+       <entity name="zombieSteve2" prob="3.33" />
+       <entity name="zombieJoe2" prob="3.33" />
+       <entity name="zombieDarlene2" prob="3.33" />
+       <entity name="zombieNurse2" prob="3.33" />
+       <entity name="zombieUtilityWorker2" prob="3.33" />
+       <entity name="zombieFatHawaiian2" prob="3.33" />
+       <entity name="zombieStripper2" prob="3.33" />
+       <entity name="zombieBusinessMan2" prob="3.33" />
+       <entity name="zombieSteve3" prob="3.33" />
+       <entity name="zombieBoe3" prob="3.33" />
+       <entity name="zombieMarlene3" prob="3.33" />
+       <entity name="zombieYo3" prob="3.33" />
+       <entity name="zombieSoldier3" prob="3.33" />
+       <entity name="zombieSkateboarder3" prob="3.33" />
+       <entity name="zombieBiker3" prob="3.33" />
+       <entity name="zombieBoe5" prob="3.33" />
+       <entity name="zombieNurse5" prob="3.33" />
+       <entity name="zombieDarlene5" prob="3.33" />
+       <entity name="zombieSoldier5" prob="3.33" />
+       <entity name="zombieUtilityWorker5" prob="3.33" />
+       <entity name="zombieFemaleFat5" prob="3.33" />
+       <entity name="zombieOldTimer5" prob="3.33" />
+       <entity name="zombieStripper5" prob="3.33" />
+       <entity name="zombieBoe6" prob="3.33" />
+       <entity name="zombieJoe6" prob="3.33" />
+       <entity name="zombieMoe6" prob="3.33" />
+       <entity name="zombieMarlene6" prob="3.33" />
+	</entitygroup>
+    <entitygroup name="wanderingHorde35">
+       <entity name="zombieSteve" prob="2.85" />
+       <entity name="zombieBurnt" prob="2.85" />
+       <entity name="zombieFatHawaiian" prob="2.85" />
+       <entity name="zombieMaleHazmat" prob="2.85" />
+       <entity name="zombieUtilityWorker" prob="2.85" />
+       <entity name="zombieFarmer" prob="2.85" />
+       <entity name="zombieStripper" prob="2.85" />
+       <entity name="zombieJoe1" prob="2.85" />
+       <entity name="zombieArlene1" prob="2.85" />
+       <entity name="zombieDarlene1" prob="2.85" />
+        <entity name="zombieMarlene1" prob="2.85" />
+       <entity name="zombieMaleHazmat1" prob="2.85" />
+       <entity name="zombieSkateboarder1" prob="2.85" />
+       <entity name="zombieCheerleader1" prob="2.85" />
+       <entity name="zombieOldTimer1" prob="2.85" />
+       <entity name="zombieBusinessMan1" prob="2.85" />
+       <entity name="zombieSteve2" prob="2.85" />
+       <entity name="zombieJoe2" prob="2.85" />
+       <entity name="zombieMoe2" prob="2.85" />
+       <entity name="zombieDarlene2" prob="2.85" />
+       <entity name="zombieMarlene2" prob="2.85" />
+       <entity name="zombieNurse2" prob="2.85" />
+       <entity name="zombieUtilityWorker2" prob="2.85" />
+       <entity name="zombieFemaleFat2" prob="2.85" />
+       <entity name="zombieFatHawaiian2" prob="2.85" />
+       <entity name="zombieStripper2" prob="2.85" />
+       <entity name="zombieBusinessMan2" prob="2.85" />
+       <entity name="zombieSteve3" prob="2.85" />
+       <entity name="zombieBoe3" prob="2.85" />
+       <entity name="zombieMoe3" prob="2.85" />
+       <entity name="zombieMarlene3" prob="2.85" />
+       <entity name="zombieYo3" prob="2.85" />
+       <entity name="zombieFatHawaiian3" prob="2.85" />
+       <entity name="zombieSoldier3" prob="2.85" />
+       <entity name="zombieSkateboarder3" prob="2.85" />
+	</entitygroup>
+    <entitygroup name="wanderingHorde45">
+        <entity name="zombieSteve" prob="2.22" />
+        <entity name="zombieBurnt" prob="2.22" />
+        <entity name="zombieFatHawaiian" prob="2.22" />
+        <entity name="zombieMaleHazmat" prob="2.22" />
+        <entity name="zombieUtilityWorker" prob="2.22" />
+        <entity name="zombieFarmer" prob="2.22" />
+        <entity name="zombieStripper" prob="2.22" />
+        <entity name="zombieJoe1" prob="2.22" />
+        <entity name="zombieArlene1" prob="2.22" />
+        <entity name="zombieDarlene1" prob="2.22" />
+        <entity name="zombieMarlene1" prob="2.22" />
+        <entity name="zombieMaleHazmat1" prob="2.22" />
+        <entity name="zombieSkateboarder1" prob="2.22" />
+        <entity name="zombieCheerleader1" prob="2.22" />
+        <entity name="zombieOldTimer1" prob="2.22" />
+        <entity name="zombieBusinessMan1" prob="2.22" />
+        <entity name="zombieSteve2" prob="2.22" />
+        <entity name="zombieJoe2" prob="2.22" />
+        <entity name="zombieMoe2" prob="2.22" />
+        <entity name="zombieDarlene2" prob="2.22" />
+        <entity name="zombieMarlene2" prob="2.22" />
+        <entity name="zombieNurse2" prob="2.22" />
+        <entity name="zombieUtilityWorker2" prob="2.22" />
+        <entity name="zombieFemaleFat2" prob="2.22" />
+        <entity name="zombieFatHawaiian2" prob="2.22" />
+        <entity name="zombieStripper2" prob="2.22" />
+        <entity name="zombieBusinessMan2" prob="2.22" />
+        <entity name="zombieSteve3" prob="2.22" />
+        <entity name="zombieBoe3" prob="2.22" />
+        <entity name="zombieMoe3" prob="2.22" />
+        <entity name="zombieMarlene3" prob="2.22" />
+        <entity name="zombieYo3" prob="2.22" />
+        <entity name="zombieFatHawaiian3" prob="2.22" />
+        <entity name="zombieSoldier3" prob="2.22" />
+        <entity name="zombieSkateboarder3" prob="2.22" />
+        <entity name="zombieBiker3" prob="2.22" />
+        <entity name="zombieBoe5" prob="2.22" />
+        <entity name="zombieNurse5" prob="2.22" />
+        <entity name="zombieDarlene5" prob="2.22" />
+        <entity name="zombieSoldier5" prob="2.22" />
+        <entity name="zombieUtilityWorker5" prob="2.22" />
+        <entity name="zombieFemaleFat5" prob="2.22" />
+        <entity name="zombieFatHawaiian5" prob="2.22" />
+        <entity name="zombieOldTimer5" prob="2.22" />
+        <entity name="zombieScreamer7" prob="2.22" />
+    </entitygroup>
+    <!-- https://7daystodie.com/forums/showthread.php?56533-Gamestage-Blood-Moon-Horde-generator -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated sleeper horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-	<entitygroup name="sleeperHordeStageGS1">
+    <entitygroup name="sleeperHorde1"><!--SLOW ONLY-->
+        <entity name="zombieYo" prob="1.96" />
+        <entity name="zombieSteve" prob="1.96" />
+        <entity name="zombieFarmer" prob="1.96" />
+        <entity name="zombieStripper" prob="1.96" />
+        <entity name="zombieJoe1" prob="1.96" />
+        <entity name="zombieArlene1" prob="1.96" />
+        <entity name="zombieDarlene1" prob="1.96" />
+        <entity name="zombieMarlene1" prob="1.96" />
+        <entity name="zombieSkateboarder1" prob="1.96" />
+        <entity name="zombieCheerleader1" prob="1.96" />
+        <entity name="zombieOldTimer1" prob="1.96" />
+        <entity name="zombieBusinessMan1" prob="1.96" />
+        <entity name="zombieSteve2" prob="1.96" />
+        <entity name="zombieJoe2" prob="1.96" />
+        <entity name="zombieDarlene2" prob="1.96" />
+        <entity name="zombieMarlene2" prob="1.96" />
+        <entity name="zombieNurse2" prob="1.96" />
+        <entity name="zombieStripper2" prob="1.96" />
+        <entity name="zombieBusinessMan2" prob="1.96" />
+        <entity name="zombieSteve3" prob="1.96" />
+        <entity name="zombieBoe3" prob="1.96" />
+        <entity name="zombieMarlene3" prob="1.96" />
+        <entity name="zombieYo3" prob="1.96" />
+        <entity name="zombieSkateboarder3" prob="1.96" />
+        <entity name="zombieBusinessMan4" prob="1.96" />
+        <entity name="zombieScreamer4" prob="1.96" />
+        <entity name="zombieStripper4" prob="1.96" />
+        <entity name="zombieFarmer4" prob="1.96" />
+        <entity name="zombieOldTimer4" prob="1.96" />
+        <entity name="zombieCheerleader4" prob="1.96" />
+        <entity name="zombieSkateboarder4" prob="1.96" />
+        <entity name="zombieNurse4" prob="1.96" />
+        <entity name="zombieSpider4" prob="1.96" />
+        <entity name="zombieMarlene4" prob="1.96" />
+        <entity name="zombieYo4" prob="1.96" />
+        <entity name="zombieDarlene4" prob="1.96" />
+        <entity name="zombieArlene4" prob="1.96" />
+        <entity name="zombieJoe4" prob="1.96" />
+        <entity name="zombieBoe4" prob="1.96" />
+        <entity name="zombieSteveCrawler" prob="1.96" />
+        <entity name="zombieBoe5" prob="1.96" />
+        <entity name="zombieNurse5" prob="1.96" />
+        <entity name="zombieDarlene5" prob="1.96" />
+        <entity name="zombieOldTimer5" prob="1.96" />
+        <entity name="zombieStripper5" prob="1.96" />
+        <entity name="zombieBoe6" prob="1.96" />
+        <entity name="zombieJoe6" prob="1.96" />
+        <entity name="zombieMarlene6" prob="1.96" />
+        <entity name="zombieOldTimer6" prob="1.96" />
+        <entity name="zombieBoe7" prob="1.96" />
+        <entity name="zombieScreamer7" prob="1.96" />
+    </entitygroup>
+    <entitygroup name="sleeperHorde2"><!--SLOW AND FAST-->
+        <entity name="zombieYo" prob="1.26" />
+        <entity name="zombieSteve" prob="1.26" />
+        <entity name="zombieBurnt" prob="1.26" />
+        <entity name="zombieFatHawaiian" prob="1.26" />
+        <entity name="zombieMaleHazmat" prob="1.26" />
+        <entity name="zombieUtilityWorker" prob="1.26" />
+        <entity name="zombieFarmer" prob="1.26" />
+        <entity name="zombieStripper" prob="1.26" />
+        <entity name="zombieJoe1" prob="1.26" />
+        <entity name="zombieArlene1" prob="1.26" />
+        <entity name="zombieDarlene1" prob="1.26" />
+        <entity name="zombieMarlene1" prob="1.26" />
+        <entity name="zombieMaleHazmat1" prob="1.26" />
+        <entity name="zombieSkateboarder1" prob="1.26" />
+        <entity name="zombieCheerleader1" prob="1.26" />
+        <entity name="zombieOldTimer1" prob="1.26" />
+        <entity name="zombieBusinessMan1" prob="1.26" />
+        <entity name="zombieSteve2" prob="1.26" />
+        <entity name="zombieJoe2" prob="1.26" />
+        <entity name="zombieMoe2" prob="1.26" />
+        <entity name="zombieDarlene2" prob="1.26" />
+        <entity name="zombieMarlene2" prob="1.26" />
+        <entity name="zombieNurse2" prob="1.26" />
+        <entity name="zombieUtilityWorker2" prob="1.26" />
+        <entity name="zombieFemaleFat2" prob="1.26" />
+        <entity name="zombieFatHawaiian2" prob="1.26" />
+        <entity name="zombieStripper2" prob="1.26" />
+        <entity name="zombieBusinessMan2" prob="1.26" />
+        <entity name="zombieSteve3" prob="1.26" />
+        <entity name="zombieBoe3" prob="1.26" />
+        <entity name="zombieMoe3" prob="1.26" />
+        <entity name="zombieMarlene3" prob="1.26" />
+        <entity name="zombieYo3" prob="1.26" />
+        <entity name="zombieFatHawaiian3" prob="1.26" />
+        <entity name="zombieSoldier3" prob="1.26" />
+        <entity name="zombieSkateboarder3" prob="1.26" />
+        <entity name="zombieBiker3" prob="1.26" />
+        <entity name="zombieBusinessMan4" prob="1.26" />
+        <entity name="zombieScreamer4" prob="1.26" />
+        <entity name="zombieFootballPlayer4" prob="1.26" />
+        <entity name="zombieStripper4" prob="1.26" />
+        <entity name="zombieFarmer4" prob="1.26" />
+        <entity name="zombieBiker4" prob="1.26" />
+        <entity name="zombieOldTimer4" prob="1.26" />
+        <entity name="zombieCheerleader4" prob="1.26" />
+        <entity name="zombieFatHawaiian4" prob="1.26" />
+        <entity name="zombieFemaleFat4" prob="1.26" />
+        <entity name="zombieSkateboarder4" prob="1.26" />
+        <entity name="zombieSoldier4" prob="1.26" />
+        <entity name="zombieUtilityWorker4" prob="1.26" /> 
+        <entity name="zombieMaleHazmat4" prob="1.26" />
+        <entity name="zombieNurse4" prob="1.26" />
+        <entity name="zombieBurnt4" prob="1.26" />
+        <entity name="zombieSpider4" prob="1.26" />
+        <entity name="zombieMarlene4" prob="1.26" />
+        <entity name="zombieYo4" prob="1.26" />
+        <entity name="zombieDarlene4" prob="1.26" />
+        <entity name="zombieArlene4" prob="1.26" />
+        <entity name="zombieJoe4" prob="1.26" />
+        <entity name="zombieBoe4" prob="1.26" />
+        <entity name="zombieSteveCrawler" prob="1.26" />
+        <entity name="zombieBoe5" prob="1.26" />
+        <entity name="zombieNurse5" prob="1.26" />
+        <entity name="zombieDarlene5" prob="1.26" />
+        <entity name="zombieSoldier5" prob="1.26" />
+        <entity name="zombieUtilityWorker5" prob="1.26" />
+        <entity name="zombieFemaleFat5" prob="1.26" />
+        <entity name="zombieFatHawaiian5" prob="1.26" />
+        <entity name="zombieOldTimer5" prob="1.26" />
+        <entity name="zombieStripper5" prob="1.26" />
+        <entity name="zombieBoe6" prob="1.26" />
+        <entity name="zombieJoe6" prob="1.26" />
+        <entity name="zombieMoe6" prob="1.26" />
+        <entity name="zombieMarlene6" prob="1.26" />
+        <entity name="zombieBurnt6" prob="1.26" />
+        <entity name="zombieMaleHazmat6" prob="1.26" />
+        <entity name="zombieOldTimer6" prob="1.26" />
+        <entity name="zombieBoe7" prob="1.26" />
+        <entity name="zombieScreamer7" prob="1.26" />
+    </entitygroup>
+    <entitygroup name="sleeperHorde3"><!--SLOW, FAST AND SPECIAL-->
+        <entity name="zombieBoe" prob="0.66" />
+		<entity name="zombieJoe" prob="0.66" />
+		<entity name="zombieMoe" prob="0.66" />
+		<entity name="zombieArlene" prob="0.66" />
+		<entity name="zombieDarlene" prob="0.66" />
+		<entity name="zombieMarlene" prob="0.66" />
+		<entity name="zombieYo" prob="0.66" />
+		<entity name="zombieSteve" prob="0.66" />
+		<entity name="zombieBusinessMan" prob="0.66" />
+		<entity name="zombieNurse" prob="0.66" />
+		<entity name="zombieMaleHazmat" prob="0.66" />
+		<entity name="zombieUtilityWorker" prob="0.66" />
+		<entity name="zombieSoldier" prob="0.66" />
+		<entity name="zombieSkateboarder" prob="0.66" />
+		<entity name="zombieCheerleader" prob="0.66" />
+		<entity name="zombieOldTimer" prob="0.66" />
+		<entity name="zombieFarmer" prob="0.66" />
+		<entity name="zombieStripper" prob="0.66" />
+		<entity name="zombieBoe1" prob="0.66" />
+		<entity name="zombieJoe1" prob="0.66" />
+		<entity name="zombieArlene1" prob="0.66" />
+		<entity name="zombieDarlene1" prob="0.66" />
+		<entity name="zombieMarlene1" prob="0.66" />
+		<entity name="zombieYo1" prob="0.66" />
+		<entity name="zombieNurse1" prob="0.66" />
+		<entity name="zombieSteve1" prob="0.66" />
+		<entity name="zombieMaleHazmat1" prob="0.66" />
+		<entity name="zombieUtilityWorker1" prob="0.66" />
+		<entity name="zombieSoldier1" prob="0.66" />
+		<entity name="zombieSkateboarder1" prob="0.66" />
+		<entity name="zombieCheerleader1" prob="0.66" />
+		<entity name="zombieOldTimer1" prob="0.66" />
+		<entity name="zombieFarmer1" prob="0.66" />
+		<entity name="zombieStripper1" prob="0.66" />
+		<entity name="zombieBusinessMan1" prob="0.66" />
+		<entity name="zombieSteve2" prob="0.66" />
+		<entity name="zombieMoe2" prob="0.66" />
+		<entity name="zombieJoe2" prob="0.66" />
+		<entity name="zombieArlene2" prob="0.66" />
+		<entity name="zombieDarlene2" prob="0.66" />
+		<entity name="zombieMarlene2" prob="0.66" />
+		<entity name="zombieYo2" prob="0.66" />
+		<entity name="zombieSpider2" prob="0.66" />
+		<entity name="zombieNurse2" prob="0.66" />
+		<entity name="zombieMaleHazmat2" prob="0.66" />
+		<entity name="zombieUtilityWorker2" prob="0.66" />
+		<entity name="zombieCheerleader2" prob="0.66" />
+		<entity name="zombieOldTimer2" prob="0.66" />
+		<entity name="zombieFarmer2" prob="0.66" />
+		<entity name="zombieStripper2" prob="0.66" />
+		<entity name="zombieBusinessMan2" prob="0.66" />
+		<entity name="zombieSteve3" prob="0.66" />
+		<entity name="zombieBoe3" prob="0.66" />
+		<entity name="zombieJoe3" prob="0.66" />
+		<entity name="zombieMoe3" prob="0.66" />
+		<entity name="zombieMarlene3" prob="0.66" />
+		<entity name="zombieYo3" prob="0.66" />
+		<entity name="zombieSpider3" prob="0.66" />
+		<entity name="zombieNurse3" prob="0.66" />
+		<entity name="zombieMaleHazmat3" prob="0.66" />
+		<entity name="zombieUtilityWorker3" prob="0.66" />
+		<entity name="zombieSoldier3" prob="0.66" />
+		<entity name="zombieSkateboarder3" prob="0.66" />
+		<entity name="zombieFarmer3" prob="0.66" />
+		<entity name="zombieBusinessMan3" prob="0.66" />
+        <entity name="zombieBusinessMan4" prob="0.66" />
+        <entity name="zombieScreamer4" prob="0.66" />
+        <entity name="zombieFootballPlayer4" prob="0.66" />
+        <entity name="zombieStripper4" prob="0.66" />
+        <entity name="zombieFarmer4" prob="0.66" />
+        <entity name="zombieBiker4" prob="0.66" />
+        <entity name="zombieOldTimer4" prob="0.66" />
+        <entity name="zombieCheerleader4" prob="0.66" />
+        <entity name="zombieFatHawaiian4" prob="0.66" />
+        <entity name="zombieFemaleFat4" prob="0.66" />
+        <entity name="zombieSkateboarder4" prob="0.66" />
+        <entity name="zombieSoldier4" prob="0.66" />
+        <entity name="zombieUtilityWorker4" prob="0.66" />
+        <entity name="zombieMaleHazmat4" prob="0.66" />
+        <entity name="zombieNurse4" prob="0.66" />
+        <entity name="zombieBurnt4" prob="0.66" />
+        <entity name="zombieSpider4" prob="0.66" />
+        <entity name="zombieMarlene4" prob="0.66" />
+        <entity name="zombieYo4" prob="0.66" />
+        <entity name="zombieDarlene4" prob="0.66" />
+        <entity name="zombieArlene4" prob="0.66" />
+        <entity name="zombieJoe4" prob="0.66" />
+        <entity name="zombieBoe4" prob="0.66" />
+        <entity name="zombieSteveCrawler" prob="0.66" />
+		<entity name="zombieSteve5" prob="0.66" />
+		<entity name="zombieBoe5" prob="0.66" />
+		<entity name="zombieMoe5" prob="0.66" />
+		<entity name="zombieArlene5" prob="0.66" />
+		<entity name="zombieSpider5" prob="0.66" />
+		<entity name="zombieNurse5" prob="0.66" />
+		<entity name="zombieDarlene5" prob="0.66" />
+		<entity name="zombieSoldier5" prob="0.66" />
+		<entity name="zombieSkateboarder5" prob="0.66" />
+		<entity name="zombieUtilityWorker5" prob="0.66" />
+		<entity name="zombieCheerleader5" prob="0.66" />
+		<entity name="zombieOldTimer5" prob="0.66" />
+		<entity name="zombieFarmer5" prob="0.66" />
+		<entity name="zombieStripper5" prob="0.66" />
+		<entity name="zombieBusinessMan5" prob="0.66" />
+		<entity name="zombieBoe6" prob="0.66" />
+		<entity name="zombieJoe6" prob="0.66" />
+		<entity name="zombieMoe6" prob="0.66" />
+		<entity name="zombieArlene6" prob="0.66" />
+		<entity name="zombieDarlene6" prob="0.66" />
+		<entity name="zombieMarlene6" prob="0.66" />
+		<entity name="zombieYo6" prob="0.66" />
+		<entity name="zombieSpider6" prob="0.66" />
+		<entity name="zombieNurse6" prob="0.66" />
+		<entity name="zombieMaleHazmat6" prob="0.66" />
+		<entity name="zombieSoldier6" prob="0.66" />
+		<entity name="zombieCheerleader6" prob="0.66" />
+		<entity name="zombieOldTimer6" prob="0.66" />
+		<entity name="zombieSkateboarder6" prob="0.66" />
+		<entity name="zombieStripper6" prob="0.66" />
+		<entity name="zombieScreamer6" prob="0.66" />
+		<entity name="zombieBusinessMan6" prob="0.66" />
+		<entity name="zombieBoe7" prob="0.66" />
+		<entity name="zombieJoe7" prob="0.66" />
+		<entity name="zombieMoe7" prob="0.66" />
+		<entity name="zombieSteve7" prob="0.66" />
+		<entity name="zombieArlene7" prob="0.66" />
+		<entity name="zombieDarlene7" prob="0.66" />
+		<entity name="zombieMarlene7" prob="0.66" />
+		<entity name="zombieYo7" prob="0.66" />
+		<entity name="zombieSpider7" prob="0.66" />
+		<entity name="zombieSoldier7" prob="0.66" />
+		<entity name="zombieUtilityWorker7" prob="0.66" />
+		<entity name="zombieCheerleader7" prob="0.66" />
+		<entity name="zombieOldTimer7" prob="0.66" />
+		<entity name="zombieSkateboarder7" prob="0.66" />
+		<entity name="zombieFarmer7" prob="0.66" />
+		<entity name="zombieStripper7" prob="0.66" />
+		<entity name="zombieScreamer7" prob="0.66" />
+        <entity name="zombieFemaleFat7" prob="0.66" />
+		<entity name="zombieFatHawaiian7" prob="0.66" />
+        <entity name="zombieFemaleFat6" prob="0.66" />
+		<entity name="zombieFatHawaiian6" prob="0.66" />
+        <entity name="zombieFemaleFat5" prob="0.66" />
+		<entity name="zombieFatHawaiian5" prob="0.66" />
+        <entity name="zombieFemaleFat3" prob="0.66" />
+		<entity name="zombieFatHawaiian3" prob="0.66" />
+        <entity name="zombieFemaleFat2" prob="0.66" />
+		<entity name="zombieFatHawaiian2" prob="0.66" />
+        <entity name="zombieFatHawaiian" prob="0.66" />
+        <entity name="zombieFemaleFat" prob="0.66" />
+    </entitygroup>
+    <entitygroup name="sleeperHorde4"><!--SLOW, FAST AND MORE SPECIAL-->
+        <!--75%-->
+		<entity name="zombieJoe" prob="0.61" />
+        <entity name="zombieBoe" prob="0.61" />
+		<entity name="zombieArlene" prob="0.61" />
+		<entity name="zombieDarlene" prob="0.61" />
+		<entity name="zombieMarlene" prob="0.61" />
+		<entity name="zombieYo" prob="0.61" />
+		<entity name="zombieSteve" prob="0.61" />
+		<entity name="zombieBusinessMan" prob="0.61" />
+		<entity name="zombieNurse" prob="0.61" />
+		<entity name="zombieUtilityWorker" prob="0.61" />
+		<entity name="zombieSkateboarder" prob="0.61" />
+		<entity name="zombieCheerleader" prob="0.61" />
+		<entity name="zombieOldTimer" prob="0.61" />
+		<entity name="zombieFarmer" prob="0.61" />
+		<entity name="zombieStripper" prob="0.61" />
+		<entity name="zombieBoe1" prob="0.61" />
+		<entity name="zombieJoe1" prob="0.61" />
+		<entity name="zombieArlene1" prob="0.61" />
+		<entity name="zombieDarlene1" prob="0.61" />
+		<entity name="zombieMarlene1" prob="0.61" />
+		<entity name="zombieYo1" prob="0.61" />
+		<entity name="zombieNurse1" prob="0.61" />
+		<entity name="zombieSteve1" prob="0.61" />
+		<entity name="zombieUtilityWorker1" prob="0.61" />
+		<entity name="zombieSkateboarder1" prob="0.61" />
+		<entity name="zombieCheerleader1" prob="0.61" />
+		<entity name="zombieOldTimer1" prob="0.61" />
+		<entity name="zombieFarmer1" prob="0.61" />
+		<entity name="zombieStripper1" prob="0.61" />
+		<entity name="zombieBusinessMan1" prob="0.61" />
+		<entity name="zombieSteve2" prob="0.61" />
+		<entity name="zombieJoe2" prob="0.61" />
+		<entity name="zombieArlene2" prob="0.61" />
+		<entity name="zombieDarlene2" prob="0.61" />
+		<entity name="zombieMarlene2" prob="0.61" />
+		<entity name="zombieYo2" prob="0.61" />
+		<entity name="zombieSpider2" prob="0.61" />
+		<entity name="zombieNurse2" prob="0.61" />
+		<entity name="zombieUtilityWorker2" prob="0.61" />
+		<entity name="zombieCheerleader2" prob="0.61" />
+		<entity name="zombieOldTimer2" prob="0.61" />
+		<entity name="zombieFarmer2" prob="0.61" />
+		<entity name="zombieStripper2" prob="0.61" />
+		<entity name="zombieBusinessMan2" prob="0.61" />
+		<entity name="zombieSteve3" prob="0.61" />
+		<entity name="zombieBoe3" prob="0.61" />
+		<entity name="zombieJoe3" prob="0.61" />
+		<entity name="zombieMarlene3" prob="0.61" />
+		<entity name="zombieYo3" prob="0.61" />
+		<entity name="zombieSpider3" prob="0.61" />
+		<entity name="zombieNurse3" prob="0.61" />
+		<entity name="zombieUtilityWorker3" prob="0.61" />
+		<entity name="zombieSkateboarder3" prob="0.61" />
+		<entity name="zombieFarmer3" prob="0.61" />
+		<entity name="zombieBusinessMan3" prob="0.61" />
+        <entity name="zombieBusinessMan4" prob="0.61" />
+        <entity name="zombieScreamer4" prob="0.61" />
+        <entity name="zombieFootballPlayer4" prob="0.61" />
+        <entity name="zombieStripper4" prob="0.61" />
+        <entity name="zombieFarmer4" prob="0.61" />
+        <entity name="zombieBiker4" prob="0.61" />
+        <entity name="zombieOldTimer4" prob="0.61" />
+        <entity name="zombieCheerleader4" prob="0.61" />
+        <entity name="zombieFatHawaiian4" prob="0.61" />
+        <entity name="zombieFemaleFat4" prob="0.61" />
+        <entity name="zombieSkateboarder4" prob="0.61" />
+        <entity name="zombieSoldier4" prob="0.61" />
+        <entity name="zombieUtilityWorker4" prob="0.61" />
+        <entity name="zombieMaleHazmat4" prob="0.61" />
+        <entity name="zombieNurse4" prob="0.61" />
+        <entity name="zombieBurnt4" prob="0.61" />
+        <entity name="zombieSpider4" prob="0.61" />
+        <entity name="zombieMarlene4" prob="0.61" />
+        <entity name="zombieYo4" prob="0.61" />
+        <entity name="zombieDarlene4" prob="0.61" />
+        <entity name="zombieArlene4" prob="0.61" />
+        <entity name="zombieJoe4" prob="0.61" />
+        <entity name="zombieBoe4" prob="0.61" />
+        <entity name="zombieSteveCrawler" prob="0.61" />
+		<entity name="zombieSteve5" prob="0.61" />
+		<entity name="zombieBoe5" prob="0.61" />
+		<entity name="zombieArlene5" prob="0.61" />
+		<entity name="zombieSpider5" prob="0.61" />
+		<entity name="zombieNurse5" prob="0.61" />
+		<entity name="zombieDarlene5" prob="0.61" />
+		<entity name="zombieSkateboarder5" prob="0.61" />
+		<entity name="zombieUtilityWorker5" prob="0.61" />
+		<entity name="zombieCheerleader5" prob="0.61" />
+		<entity name="zombieOldTimer5" prob="0.61" />
+		<entity name="zombieFarmer5" prob="0.61" />
+		<entity name="zombieStripper5" prob="0.61" />
+		<entity name="zombieBusinessMan5" prob="0.61" />
+		<entity name="zombieBoe6" prob="0.61" />
+		<entity name="zombieJoe6" prob="0.61" />
+		<entity name="zombieArlene6" prob="0.61" />
+		<entity name="zombieDarlene6" prob="0.61" />
+		<entity name="zombieMarlene6" prob="0.61" />
+		<entity name="zombieYo6" prob="0.61" />
+		<entity name="zombieSpider6" prob="0.61" />
+		<entity name="zombieNurse6" prob="0.61" />
+		<entity name="zombieCheerleader6" prob="0.61" />
+		<entity name="zombieOldTimer6" prob="0.61" />
+		<entity name="zombieSkateboarder6" prob="0.61" />
+		<entity name="zombieStripper6" prob="0.61" />
+		<entity name="zombieScreamer6" prob="0.61" />
+		<entity name="zombieBusinessMan6" prob="0.61" />
+		<entity name="zombieBoe7" prob="0.61" />
+		<entity name="zombieJoe7" prob="0.61" />
+		<entity name="zombieSteve7" prob="0.61" />
+		<entity name="zombieArlene7" prob="0.61" />
+		<entity name="zombieDarlene7" prob="0.61" />
+		<entity name="zombieMarlene7" prob="0.61" />
+		<entity name="zombieYo7" prob="0.61" />
+		<entity name="zombieSpider7" prob="0.61" />
+		<entity name="zombieUtilityWorker7" prob="0.61" />
+		<entity name="zombieCheerleader7" prob="0.61" />
+		<entity name="zombieOldTimer7" prob="0.61" />
+		<entity name="zombieSkateboarder7" prob="0.61" />
+		<entity name="zombieFarmer7" prob="0.61" />
+		<entity name="zombieStripper7" prob="0.61" />
+		<entity name="zombieScreamer7" prob="0.61" />
+        <!--25%-->
+		<entity name="zombieFootballPlayer" prob="0.46" /> 
+        <entity name="zombieFootballPlayer1" prob="0.46" />
+        <entity name="zombieFootballPlayer2" prob="0.46" />
+        <entity name="zombieFootballPlayer3" prob="0.46" />
+        <entity name="zombieFootballPlayer5" prob="0.46" />
+        <entity name="zombieFootballPlayer7" prob="0.46" />
+        <entity name="zombieFemaleFat" prob="0.46" />
+        <entity name="zombieFemaleFat2" prob="0.46" />
+		<entity name="zombieFemaleFat3" prob="0.46" />
+		<entity name="zombieFemaleFat5" prob="0.46" />
+		<entity name="zombieFemaleFat6" prob="0.46" />
+		<entity name="zombieFemaleFat7" prob="0.46" />
+		<entity name="zombieMoe" prob="0.46" />
+        <entity name="zombieMoe2" prob="0.46" />
+        <entity name="zombieMoe3" prob="0.46" />
+        <entity name="zombieMoe5" prob="0.46" />
+        <entity name="zombieMoe6" prob="0.46" />
+        <entity name="zombieMoe7" prob="0.46" />
+        <entity name="zombieBurnt" prob="0.46" />
+        <entity name="zombieBurnt1" prob="0.46" />
+        <entity name="zombieBurnt2" prob="0.46" />
+        <entity name="zombieBurnt3" prob="0.46" />
+        <entity name="zombieBurnt5" prob="0.46" />
+        <entity name="zombieBurnt6" prob="0.46" />
+        <entity name="zombieFatHawaiian" prob="0.46" />
+        <entity name="zombieFatHawaiian2" prob="0.46" />
+        <entity name="zombieFatHawaiian3" prob="0.46" />
+		<entity name="zombieFatHawaiian5" prob="0.46" />
+        <entity name="zombieFatHawaiian6" prob="0.46" />
+        <entity name="zombieFatHawaiian7" prob="0.46" />
+        <entity name="zombieFatCop" prob="0.46" />
+        <entity name="zombieFatCop2" prob="0.46" />
+		<entity name="zombieFatCop3" prob="0.46" />
+		<entity name="zombieFatCop5" prob="0.46" />
+		<entity name="zombieFatCop6" prob="0.46" />
+		<entity name="zombieFatCop7" prob="0.46" />
+		<entity name="zombieMaleHazmat" prob="0.46" />
+        <entity name="zombieMaleHazmat1" prob="0.46" />
+        <entity name="zombieMaleHazmat2" prob="0.46" />
+        <entity name="zombieMaleHazmat3" prob="0.46" />
+        <entity name="zombieMaleHazmat5" prob="0.46" />
+        <entity name="zombieMaleHazmat6" prob="0.46" />
+		<entity name="zombieSoldier" prob="0.46" />
+        <entity name="zombieSoldier1" prob="0.46" />
+        <entity name="zombieSoldier3" prob="0.46" />
+        <entity name="zombieSoldier5" prob="0.46" />
+        <entity name="zombieSoldier6" prob="0.46" />
+		<entity name="zombieSoldier7" prob="0.46" />
+        <entity name="zombieBiker" prob="0.46" />
+        <entity name="zombieBiker1" prob="0.46" />
+        <entity name="zombieBiker2" prob="0.46" />
+        <entity name="zombieBiker3" prob="0.46" />
+        <entity name="zombieBiker5" prob="0.46" />
+        <entity name="zombieBiker6" prob="0.46" />
+	</entitygroup>
+    <entitygroup name="sleeperHorde5"><!--SLOW, FAST AND ALL SPECIAL--> 
+        <!--50%-->
+		<entity name="zombieJoe" prob="0.41" />
+        <entity name="zombieBoe" prob="0.41" />
+		<entity name="zombieArlene" prob="0.41" />
+		<entity name="zombieDarlene" prob="0.41" />
+		<entity name="zombieMarlene" prob="0.41" />
+		<entity name="zombieYo" prob="0.41" />
+		<entity name="zombieSteve" prob="0.41" />
+		<entity name="zombieBusinessMan" prob="0.41" />
+		<entity name="zombieNurse" prob="0.41" />
+		<entity name="zombieUtilityWorker" prob="0.41" />
+		<entity name="zombieSkateboarder" prob="0.41" />
+		<entity name="zombieCheerleader" prob="0.41" />
+		<entity name="zombieOldTimer" prob="0.41" />
+		<entity name="zombieFarmer" prob="0.41" />
+		<entity name="zombieStripper" prob="0.41" />
+		<entity name="zombieBoe1" prob="0.41" />
+		<entity name="zombieJoe1" prob="0.41" />
+		<entity name="zombieArlene1" prob="0.41" />
+		<entity name="zombieDarlene1" prob="0.41" />
+		<entity name="zombieMarlene1" prob="0.41" />
+		<entity name="zombieYo1" prob="0.41" />
+		<entity name="zombieNurse1" prob="0.41" />
+		<entity name="zombieSteve1" prob="0.41" />
+		<entity name="zombieUtilityWorker1" prob="0.41" />
+		<entity name="zombieSkateboarder1" prob="0.41" />
+		<entity name="zombieCheerleader1" prob="0.41" />
+		<entity name="zombieOldTimer1" prob="0.41" />
+		<entity name="zombieFarmer1" prob="0.41" />
+		<entity name="zombieStripper1" prob="0.41" />
+		<entity name="zombieBusinessMan1" prob="0.41" />
+		<entity name="zombieSteve2" prob="0.41" />
+		<entity name="zombieJoe2" prob="0.41" />
+		<entity name="zombieArlene2" prob="0.41" />
+		<entity name="zombieDarlene2" prob="0.41" />
+		<entity name="zombieMarlene2" prob="0.41" />
+		<entity name="zombieYo2" prob="0.41" />
+		<entity name="zombieSpider2" prob="0.41" />
+		<entity name="zombieNurse2" prob="0.41" />
+		<entity name="zombieUtilityWorker2" prob="0.41" />
+		<entity name="zombieCheerleader2" prob="0.41" />
+		<entity name="zombieOldTimer2" prob="0.41" />
+		<entity name="zombieFarmer2" prob="0.41" />
+		<entity name="zombieStripper2" prob="0.41" />
+		<entity name="zombieBusinessMan2" prob="0.41" />
+		<entity name="zombieSteve3" prob="0.41" />
+		<entity name="zombieBoe3" prob="0.41" />
+		<entity name="zombieJoe3" prob="0.41" />
+		<entity name="zombieMarlene3" prob="0.41" />
+		<entity name="zombieYo3" prob="0.41" />
+		<entity name="zombieSpider3" prob="0.41" />
+		<entity name="zombieNurse3" prob="0.41" />
+		<entity name="zombieUtilityWorker3" prob="0.41" />
+		<entity name="zombieSkateboarder3" prob="0.41" />
+		<entity name="zombieFarmer3" prob="0.41" />
+		<entity name="zombieBusinessMan3" prob="0.41" />
+        <entity name="zombieBusinessMan4" prob="0.41" />
+        <entity name="zombieScreamer4" prob="0.41" />
+        <entity name="zombieFootballPlayer4" prob="0.41" />
+        <entity name="zombieStripper4" prob="0.41" />
+        <entity name="zombieFarmer4" prob="0.41" />
+        <entity name="zombieBiker4" prob="0.41" />
+        <entity name="zombieOldTimer4" prob="0.41" />
+        <entity name="zombieCheerleader4" prob="0.41" />
+        <entity name="zombieFatHawaiian4" prob="0.41" />
+        <entity name="zombieFemaleFat4" prob="0.41" />
+        <entity name="zombieSkateboarder4" prob="0.41" />
+        <entity name="zombieSoldier4" prob="0.41" />
+        <entity name="zombieUtilityWorker4" prob="0.41" />
+        <entity name="zombieMaleHazmat4" prob="0.41" />
+        <entity name="zombieNurse4" prob="0.41" />
+        <entity name="zombieBurnt4" prob="0.41" />
+        <entity name="zombieSpider4" prob="0.41" />
+        <entity name="zombieMarlene4" prob="0.41" />
+        <entity name="zombieYo4" prob="0.41" />
+        <entity name="zombieDarlene4" prob="0.41" />
+        <entity name="zombieArlene4" prob="0.41" />
+        <entity name="zombieJoe4" prob="0.41" />
+        <entity name="zombieBoe4" prob="0.41" />
+        <entity name="zombieSteveCrawler" prob="0.41" />
+		<entity name="zombieSteve5" prob="0.41" />
+		<entity name="zombieBoe5" prob="0.41" />
+		<entity name="zombieArlene5" prob="0.41" />
+		<entity name="zombieSpider5" prob="0.41" />
+		<entity name="zombieNurse5" prob="0.41" />
+		<entity name="zombieDarlene5" prob="0.41" />
+		<entity name="zombieSkateboarder5" prob="0.41" />
+		<entity name="zombieUtilityWorker5" prob="0.41" />
+		<entity name="zombieCheerleader5" prob="0.41" />
+		<entity name="zombieOldTimer5" prob="0.41" />
+		<entity name="zombieFarmer5" prob="0.41" />
+		<entity name="zombieStripper5" prob="0.41" />
+		<entity name="zombieBusinessMan5" prob="0.41" />
+		<entity name="zombieBoe6" prob="0.41" />
+		<entity name="zombieJoe6" prob="0.41" />
+		<entity name="zombieArlene6" prob="0.41" />
+		<entity name="zombieDarlene6" prob="0.41" />
+		<entity name="zombieMarlene6" prob="0.41" />
+		<entity name="zombieYo6" prob="0.41" />
+		<entity name="zombieSpider6" prob="0.41" />
+		<entity name="zombieNurse6" prob="0.41" />
+		<entity name="zombieCheerleader6" prob="0.41" />
+		<entity name="zombieOldTimer6" prob="0.41" />
+		<entity name="zombieSkateboarder6" prob="0.41" />
+		<entity name="zombieStripper6" prob="0.41" />
+		<entity name="zombieScreamer6" prob="0.41" />
+		<entity name="zombieBusinessMan6" prob="0.41" />
+		<entity name="zombieBoe7" prob="0.41" />
+		<entity name="zombieJoe7" prob="0.41" />
+		<entity name="zombieSteve7" prob="0.41" />
+		<entity name="zombieArlene7" prob="0.41" />
+		<entity name="zombieDarlene7" prob="0.41" />
+		<entity name="zombieMarlene7" prob="0.41" />
+		<entity name="zombieYo7" prob="0.41" />
+		<entity name="zombieSpider7" prob="0.41" />
+		<entity name="zombieUtilityWorker7" prob="0.41" />
+		<entity name="zombieCheerleader7" prob="0.41" />
+		<entity name="zombieOldTimer7" prob="0.41" />
+		<entity name="zombieSkateboarder7" prob="0.41" />
+		<entity name="zombieFarmer7" prob="0.41" />
+		<entity name="zombieStripper7" prob="0.41" />
+		<entity name="zombieScreamer7" prob="0.41" />
+        <!--35%-->
+		<entity name="zombieFootballPlayer" prob="0.64" /> 
+        <entity name="zombieFootballPlayer1" prob="0.64" />
+        <entity name="zombieFootballPlayer2" prob="0.64" />
+        <entity name="zombieFootballPlayer3" prob="0.64" />
+        <entity name="zombieFootballPlayer5" prob="0.64" />
+        <entity name="zombieFootballPlayer7" prob="0.64" />
+        <entity name="zombieFemaleFat" prob="0.64" />
+        <entity name="zombieFemaleFat2" prob="0.64" />
+		<entity name="zombieFemaleFat3" prob="0.64" />
+		<entity name="zombieFemaleFat5" prob="0.64" />
+		<entity name="zombieFemaleFat6" prob="0.64" />
+		<entity name="zombieFemaleFat7" prob="0.64" />
+		<entity name="zombieMoe" prob="0.64" />
+        <entity name="zombieMoe2" prob="0.64" />
+        <entity name="zombieMoe3" prob="0.64" />
+        <entity name="zombieMoe5" prob="0.64" />
+        <entity name="zombieMoe6" prob="0.64" />
+        <entity name="zombieMoe7" prob="0.64" />
+        <entity name="zombieBurnt" prob="0.64" />
+        <entity name="zombieBurnt1" prob="0.64" />
+        <entity name="zombieBurnt2" prob="0.64" />
+        <entity name="zombieBurnt3" prob="0.64" />
+        <entity name="zombieBurnt5" prob="0.64" />
+        <entity name="zombieBurnt6" prob="0.64" />
+        <entity name="zombieFatHawaiian" prob="0.64" />
+        <entity name="zombieFatHawaiian2" prob="0.64" />
+        <entity name="zombieFatHawaiian3" prob="0.64" />
+		<entity name="zombieFatHawaiian5" prob="0.64" />
+        <entity name="zombieFatHawaiian6" prob="0.64" />
+        <entity name="zombieFatHawaiian7" prob="0.64" />
+        <entity name="zombieFatCop" prob="0.64" />
+        <entity name="zombieFatCop2" prob="0.64" />
+		<entity name="zombieFatCop3" prob="0.64" />
+		<entity name="zombieFatCop5" prob="0.64" />
+		<entity name="zombieFatCop6" prob="0.64" />
+		<entity name="zombieFatCop7" prob="0.64" />
+		<entity name="zombieMaleHazmat" prob="0.64" />
+        <entity name="zombieMaleHazmat1" prob="0.64" />
+        <entity name="zombieMaleHazmat2" prob="0.64" />
+        <entity name="zombieMaleHazmat3" prob="0.64" />
+        <entity name="zombieMaleHazmat5" prob="0.64" />
+        <entity name="zombieMaleHazmat6" prob="0.64" />
+		<entity name="zombieSoldier" prob="0.64" />
+        <entity name="zombieSoldier1" prob="0.64" />
+        <entity name="zombieSoldier3" prob="0.64" />
+        <entity name="zombieSoldier5" prob="0.64" />
+        <entity name="zombieSoldier6" prob="0.64" />
+		<entity name="zombieSoldier7" prob="0.64" />
+        <entity name="zombieBiker" prob="0.64" />
+        <entity name="zombieBiker1" prob="0.64" />
+        <entity name="zombieBiker2" prob="0.64" />
+        <entity name="zombieBiker3" prob="0.64" />
+        <entity name="zombieBiker5" prob="0.64" />
+        <entity name="zombieBiker6" prob="0.64" />
+        <!--15%-->
+        <entity name="zombieScreamer2" prob="0.42" /> 
+        <entity name="zombieMaleHazmat5" prob="0.42" /> 
+        <entity name="zombieBurnt2" prob="0.42" /> 
+        <entity name="zombieBiker1" prob="0.42" /> 
+        <entity name="zombieSpider1" prob="0.42" /> 
+        <entity name="zombieStripperFeral" prob="0.42" /> 
+        <entity name="zombieFarmerFeral" prob="0.42" /> 
+        <entity name="zombieOldTimerFeral" prob="0.42" /> 
+        <entity name="zombieCheerleaderFeral" prob="0.42" /> 
+        <entity name="zombieSkateboarderFeral" prob="0.42" /> 
+        <entity name="zombieSoldierFeral" prob="0.42" /> 
+        <entity name="zombieUtilityWorkerFeral" prob="0.42" /> 
+        <entity name="zombieFatCopFeral" prob="0.42" /> 
+        <entity name="zombieFatHawaiianFeral" prob="0.42" /> 
+        <entity name="zombieNurseFeral" prob="0.42" /> 
+        <entity name="zombieSnowFeral" prob="0.42" /> 
+        <entity name="zombieBusinessManFeral" prob="0.42" /> 
+        <entity name="zombieSteveCrawlerFeral" prob="0.42" /> 
+        <entity name="zombieSteveFeral" prob="0.42" /> 
+        <entity name="zombieYoFeral" prob="0.42" /> 
+        <entity name="zombieMarleneFeral" prob="0.42" /> 
+        <entity name="zombieDarleneFeral" prob="0.42" /> 
+        <entity name="zombieScreamerFeral" prob="0.42" /> 
+        <entity name="zombieArleneFeral" prob="0.42" /> 
+        <entity name="zombieMoeFeral" prob="0.42" /> 
+        <entity name="zombieJoeFeral" prob="0.42" /> 
+        <entity name="zombieFemaleFatFeral" prob="0.42" /> 
+        <entity name="zombieFootballPlayerFeral" prob="0.42" /> 
+        <entity name="zombieBoeFeral" prob="0.42" /> 
+        <entity name="zombieWightFeral" prob="0.42" /> 
+        <entity name="zombieWightFeral7" prob="0.42" /> 
+        <entity name="zombieWightFeral6" prob="0.42" /> 
+        <entity name="zombieWightFeral5" prob="0.42" /> 
+        <entity name="zombieWightFeral3" prob="0.42" /> 
+        <entity name="zombieWightFeral1" prob="0.42" /> 
+    </entitygroup>
+    <entitygroup name="sleeperHordeStageGS1">
 		<entity name="zombieBusinessMan5" />
 		<entity name="zombieBoe1" />
 		<entity name="zombieArlene5" />
 		<entity name="zombieFootballPlayer4" prob="0.001" />
 		<entity name="zombieSteveCrawler" />
 		<entity name="zombieSkateboarder7" />
-		<entity name="zombieJoeFeral8" />
+		<entity name="zombieJoe3" />
 		<entity name="zombieUtilityWorker7" prob="0.201" />
 		<entity name="zombieNurse4" />
-		<entity name="zombieYoFeral8" />
+		<entity name="zombieYo6" />
 		<entity name="zombieArlene7" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS2">
@@ -1127,7 +2253,7 @@ animalStagHostile
 		<entity name="zombieYo2" />
 		<entity name="zombieBurnt2" />
 		<entity name="zombieFemaleFat5" prob="0.201" />
-		<entity name="zombieMaleHazmatFeral8" />
+		<entity name="zombieMaleHazmat2" />
 		<entity name="zombieFatHawaiian7" />
 		<entity name="zombieOldTimer1" />
 		<entity name="zombieSoldier5" prob="0.201" />
@@ -1143,7 +2269,7 @@ animalStagHostile
 		<entity name="zombieSpider3" />
 		<entity name="zombieMoe3" />
 		<entity name="zombieDarlene2" />
-		<entity name="zombieBurntFeral8" />
+		<entity name="zombieBurnt5" />
 		<entity name="zombieSpider" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS8">
@@ -1190,7 +2316,7 @@ animalStagHostile
 		<entity name="zombieBoe6" />
 		<entity name="zombieSoldier1" prob="0.206" />
 		<entity name="zombieOldTimer4" />
-		<entity name="zombieYoFeral8" />
+		<entity name="zombieYo2" />
 		<entity name="zombieStripper6" />
 		<entity name="zombieMoe" />
 		<entity name="zombieBoe7" />
@@ -1199,26 +2325,26 @@ animalStagHostile
 		<entity name="zombieBusinessMan3" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS22">
-		<entity name="zombieSnowFeral8" />
+		<entity name="zombieSnow3" />
 		<entity name="zombieSoldier6" prob="0.207" />
 		<entity name="zombieBiker" prob="0.205" />
 		<entity name="zombieSpider1" />
 		<entity name="zombieMaleHazmat1" prob="0.205" />
 		<entity name="zombieBoe" />
 		<entity name="zombieStripper6" />
-		<entity name="zombieFarmerFeral8" />
+		<entity name="zombieFarmer1" />
 		<entity name="zombieStripper2" />
 		<entity name="zombieSkateboarder1" />
-		<entity name="zombieSoldierFeral8" />
+		<entity name="zombieSoldier" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS27">
-		<entity name="zombieBikerFeral8" />
+		<entity name="zombieBiker2" />
 		<entity name="zombieBurnt5" />
 		<entity name="zombieMaleHazmat6" prob="0.206" />
 		<entity name="zombieStripper7" />
 		<entity name="zombieBusinessMan4" />
 		<entity name="zombieFootballPlayer2" prob="0.006" />
-		<entity name="zombieArleneFeral8" />
+		<entity name="zombieArlene7" />
 		<entity name="zombieSpider3" />
 		<entity name="zombieFarmer7" />
 		<entity name="zombieMoe6" />
@@ -1227,7 +2353,7 @@ animalStagHostile
 	<entitygroup name="sleeperHordeStageGS31">
 		<entity name="zombieBusinessMan3" />
 		<entity name="zombieUtilityWorker4" prob="0.207" />
-		<entity name="zombieBurntFeral8" />
+		<entity name="zombieBurnt4" />
 		<entity name="zombieOldTimer5" />
 		<entity name="zombieCheerleader2" />
 		<entity name="zombieFootballPlayer" prob="0.007" />
@@ -1270,19 +2396,19 @@ animalStagHostile
 		<entity name="zombieBiker3" prob="0.21" />
 		<entity name="zombieBurnt6" />
 		<entity name="zombieYo" />
-		<entity name="zombieSkateboarderFeral8" />
+		<entity name="zombieSkateboarder3" />
 		<entity name="zombieSkateboarder" />
 		<entity name="zombieJoe2" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse5" />
 		<entity name="zombieBiker5" prob="0.21" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS52">
 		<entity name="zombieArlene6" />
 		<entity name="zombieMoe3" />
 		<entity name="zombieBusinessMan" />
-		<entity name="zombieArleneFeral8" />
+		<entity name="zombieArlene" />
 		<entity name="zombieMarlene3" />
-		<entity name="zombieStripperFeral8" />
+		<entity name="zombieStripper1" />
 		<entity name="zombieSpider6" />
 		<entity name="zombieUtilityWorker4" prob="0.211" />
 		<entity name="zombieSoldier1" prob="0.215" />
@@ -1319,7 +2445,7 @@ animalStagHostile
 		<entity name="zombieDarlene6" />
 		<entity name="zombieNurse6" />
 		<entity name="zombieFootballPlayerFeral8" />
-		<entity name="zombieSnowFeral8" />
+		<entity name="zombieSnow7" />
 		<entity name="zombieSkateboarder3" />
 		<entity name="zombieFootballPlayer4" prob="0.014" />
 		<entity name="zombieMarlene1" />
@@ -1330,10 +2456,10 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS76">
 		<entity name="zombieFootballPlayer2" prob="0.016" />
-		<entity name="zombieFatHawaiianFeral8" />
+		<entity name="zombieFatHawaiian6" />
 		<entity name="zombieFemaleFat5" prob="0.216" />
 		<entity name="zombieCheerleader" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse3" />
 		<entity name="zombieSpider6" />
 		<entity name="zombieDarlene4" />
 		<entity name="zombieSkateboarder4" />
@@ -1348,7 +2474,7 @@ animalStagHostile
 		<entity name="zombieStripper6" />
 		<entity name="zombieUtilityWorker5" prob="0.217" />
 		<entity name="zombieDarlene4" />
-		<entity name="zombieBikerFeral8" />
+		<entity name="zombieBiker2" />
 		<entity name="zombieYo2" />
 		<entity name="animalZombieDog" />
 		<entity name="zombieUtilityWorker3" prob="0.217" />
@@ -1387,40 +2513,40 @@ animalStagHostile
 		<entity name="zombieFootballPlayer4" prob="0.021" />
 		<entity name="zombieDarlene6" />
 		<entity name="zombieYo1" />
-		<entity name="zombieFemaleFatFeral8" />
-		<entity name="zombieOldTimerFeral8" />
+		<entity name="zombieFemaleFat" />
+		<entity name="zombieOldTimer1" />
 		<entity name="zombieFatHawaiian2" prob="0.221" />
-		<entity name="zombieArleneFeral8" />
+		<entity name="zombieArlene6" />
 		<entity name="zombieBiker3" prob="0.221" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS110">
 		<entity name="zombieSteve5" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse1" />
 		<entity name="zombieMoe7" />
 		<entity name="zombieUtilityWorker" prob="0.222" />
 		<entity name="zombieJoe7" />
 		<entity name="zombieBoe5" />
-		<entity name="zombieBusinessManFeral8" />
+		<entity name="zombieBusinessMan" />
 		<entity name="zombieYo7" />
 		<entity name="zombieMaleHazmat6" prob="0.222" />
 		<entity name="zombieDarlene5" />
-		<entity name="zombieCheerleaderFeral8" />
+		<entity name="zombieCheerleader5" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS117">
 		<entity name="zombieOldTimer" />
 		<entity name="zombieSnow7" />
 		<entity name="zombieBurnt1" />
 		<entity name="zombieFootballPlayer7" prob="0.024" />
-		<entity name="zombieFarmerFeral8" />
+		<entity name="zombieFarmer1" />
 		<entity name="zombieFarmer2" />
 		<entity name="zombieArlene7" />
 		<entity name="zombieSpider4" />
 		<entity name="zombieFemaleFatFeral8" />
 		<entity name="zombieSkateboarder4" />
-		<entity name="zombieBikerFeral8" />
+		<entity name="zombieBiker2" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS125">
-		<entity name="zombieBikerFeral8" />
+		<entity name="zombieBiker3" />
 		<entity name="zombieBoe5" />
 		<entity name="zombieMaleHazmat2" prob="0.225" />
 		<entity name="zombieStripper6" />
@@ -1447,9 +2573,9 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS140">
 		<entity name="zombieCheerleader4" />
-		<entity name="zombieFootballPlayerFeral8" />
+		<entity name="zombieFootballPlayer4" />
 		<entity name="zombieFarmer2" />
-		<entity name="zombieBusinessManFeral8" />
+		<entity name="zombieBusinessMan5" />
 		<entity name="zombieFemaleFat4" prob="0.228" />
 		<entity name="zombieUtilityWorker1" prob="0.228" />
 		<entity name="zombieJoe3" />
@@ -1465,7 +2591,7 @@ animalStagHostile
 		<entity name="zombieFarmer1" />
 		<entity name="zombieFarmer4" />
 		<entity name="zombieMaleHazmat6" prob="0.23" />
-		<entity name="zombieMarleneFeral8" />
+		<entity name="zombieMarlene6" />
 		<entity name="zombieSkateboarder3" />
 		<entity name="zombieFemaleFat2" prob="0.23" />
 		<entity name="zombieMarlene1" />
@@ -1473,25 +2599,25 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS156">
 		<entity name="zombieBusinessMan3" />
-		<entity name="zombieMarleneFeral8" />
+		<entity name="zombieMarlene7" />
 		<entity name="zombieBoe7" />
 		<entity name="zombieFatHawaiian4" prob="0.232" />
 		<entity name="zombieFemaleFat2" prob="0.232" />
-		<entity name="zombieUtilityWorkerFeral8" />
+		<entity name="zombieUtilityWorker1" />
 		<entity name="zombieMarlene4" />
 		<entity name="zombieFatHawaiian7" />
-		<entity name="zombieMoeFeral8" />
+		<entity name="zombieMoe2" />
 		<entity name="zombieCheerleader7" />
 		<entity name="zombieOldTimer5" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS164">
 		<entity name="zombieSkateboarder5" />
 		<entity name="zombieOldTimer5" />
-		<entity name="zombieJoeFeral8" />
+		<entity name="zombieJoe3" />
 		<entity name="zombieBiker1" prob="0.233" />
-		<entity name="zombieFarmerFeral8" />
+		<entity name="zombieFarmer4" />
 		<entity name="zombieMarlene4" />
-		<entity name="zombieArleneFeral8" />
+		<entity name="zombieArlene5" />
 		<entity name="zombieJoe6" />
 		<entity name="zombieNurse2" />
 		<entity name="zombieMarlene6" />
@@ -1508,14 +2634,14 @@ animalStagHostile
 		<entity name="zombieMoe5" />
 		<entity name="zombieFootballPlayer7" prob="0.035" />
 		<entity name="zombieFatHawaiian7" />
-		<entity name="zombieSnowFeral8" />
+		<entity name="zombieSnow6" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS181">
 		<entity name="zombieBurnt6" />
 		<entity name="zombieJoe1" />
 		<entity name="zombieCheerleader" />
 		<entity name="zombieMarlene" />
-		<entity name="zombieFatHawaiianFeral8" />
+		<entity name="zombieFatHawaiian7" />
 		<entity name="zombieSteve7" />
 		<entity name="zombieSoldier3" prob="0.251" />
 		<entity name="zombieFarmer2" />
@@ -1528,11 +2654,11 @@ animalStagHostile
 		<entity name="zombieDarlene6" />
 		<entity name="zombieNurse5" />
 		<entity name="zombieFatHawaiian4" prob="0.238" />
-		<entity name="zombieSteveCrawlerFeral" />
+		<entity name="zombieSteveCrawler" />
 		<entity name="zombieSoldier1" prob="0.253" />
 		<entity name="zombieJoe2" />
 		<entity name="zombieSoldier3" prob="0.253" />
-		<entity name="zombieUtilityWorkerFeral8" />
+		<entity name="zombieUtilityWorker7" />
 		<entity name="zombieUtilityWorker3" prob="0.238" />
 		<entity name="zombieBurnt3" />
 	</entitygroup>
@@ -1551,12 +2677,12 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS207">
 		<entity name="zombieYo1" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse1" />
 		<entity name="zombieNurse3" />
 		<entity name="zombieYo" />
 		<entity name="zombieSteve7" />
 		<entity name="zombieYo7" />
-		<entity name="zombieArleneFeral8" />
+		<entity name="zombieArlene2" />
 		<entity name="zombieMarlene6" />
 		<entity name="zombieSkateboarder3" />
 		<entity name="zombieMaleHazmat1" prob="0.242" />
@@ -1571,7 +2697,7 @@ animalStagHostile
 		<entity name="zombieCheerleader4" />
 		<entity name="zombieFatCop3" />
 		<entity name="zombieMaleHazmat4" prob="0.244" />
-		<entity name="zombieDarleneFeral" />
+		<entity name="zombieDarlene1" />
 		<entity name="zombieJoe7" />
 		<entity name="zombieOldTimer2" />
 	</entitygroup>
@@ -1579,7 +2705,7 @@ animalStagHostile
 		<entity name="zombieFarmer1" />
 		<entity name="zombieFootballPlayer4" prob="0.045" />
 		<entity name="zombieBiker5" prob="0.245" />
-		<entity name="zombieCheerleaderFeral" />
+		<entity name="zombieCheerleader2" />
 		<entity name="zombieBurnt3" />
 		<entity name="zombieSkateboarder1" />
 		<entity name="zombieArlene7" />
@@ -1590,10 +2716,10 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS234">
 		<entity name="zombieFatCop6" />
-		<entity name="zombieSnowFeral8" />
+		<entity name="zombieSnow3" />
 		<entity name="zombieOldTimer6" />
-		<entity name="zombieBusinessManFeral8" />
-		<entity name="zombieOldTimerFeral" />
+		<entity name="zombieBusinessMan4" />
+		<entity name="zombieOldTimer5" />
 		<entity name="zombieBusinessMan6" />
 		<entity name="zombieYo6" />
 		<entity name="zombieArlene" />
@@ -1603,12 +2729,12 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS243">
 		<entity name="zombieFatCop2" />
-		<entity name="zombieJoeFeral" />
+		<entity name="zombieJoe6" />
 		<entity name="zombieSkateboarder" />
-		<entity name="zombieBusinessManFeral8" />
+		<entity name="zombieBusinessMan" />
 		<entity name="zombieBiker5" prob="0.249" />
 		<entity name="zombieStripper7" />
-		<entity name="zombieJoeFeral8" />
+		<entity name="zombieJoe1" />
 		<entity name="zombieBurnt1" />
 		<entity name="zombieBusinessMan1" />
 		<entity name="zombieArlene7" />
@@ -1620,11 +2746,11 @@ animalStagHostile
 		<entity name="zombieFemaleFat3" prob="0.251" />
 		<entity name="zombieStripper" />
 		<entity name="zombieBiker1" prob="0.251" />
-		<entity name="zombieStripperFeral8" />
+		<entity name="zombieStripper1" />
 		<entity name="zombieSpider1" />
 		<entity name="zombieMoeFeral" />
 		<entity name="zombieFarmer3" />
-		<entity name="zombieOldTimerFeral" />
+		<entity name="zombieOldTimer2" />
 		<entity name="zombieSkateboarder" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS262">
@@ -1645,12 +2771,12 @@ animalStagHostile
 		<entity name="zombieSnow6" />
 		<entity name="zombieSkateboarder1" />
 		<entity name="zombieFemaleFat2" prob="0.255" />
-		<entity name="zombieOldTimerFeral8" />
+		<entity name="zombieOldTimer" />
 		<entity name="zombieCheerleader5" />
 		<entity name="zombieSoldier1" prob="0.277" />
 		<entity name="zombieSteveCrawlerFeral" />
 		<entity name="zombieOldTimer2" />
-		<entity name="zombieBoeFeral8" />
+		<entity name="zombieBoe4" />
 		<entity name="zombieMoe5" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS281">
@@ -1658,16 +2784,16 @@ animalStagHostile
 		<entity name="zombieMarlene3" />
 		<entity name="zombieDarlene2" />
 		<entity name="zombieBiker5" prob="0.257" />
-		<entity name="zombieSoldierFeral8" />
+		<entity name="zombieSoldier5" />
 		<entity name="zombieSpider1" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse6" />
 		<entity name="zombieCheerleader7" />
 		<entity name="zombieFatHawaiian" prob="0.257" />
 		<entity name="zombieYo4" />
 		<entity name="zombieSteve7" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS291">
-		<entity name="zombieFatHawaiianFeral8" />
+		<entity name="zombieFatHawaiian7" />
 		<entity name="zombieSnow5" />
 		<entity name="zombieSpider5" />
 		<entity name="zombieOldTimer4" />
@@ -1676,7 +2802,7 @@ animalStagHostile
 		<entity name="zombieDarlene5" />
 		<entity name="zombieDarleneFeral" />
 		<entity name="zombieSpider" />
-		<entity name="zombieMarleneFeral8" />
+		<entity name="zombieMarlene1" />
 		<entity name="zombieWightFeral5" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS301">
@@ -1686,7 +2812,7 @@ animalStagHostile
 		<entity name="zombieArlene6" />
 		<entity name="zombieBoeFeral" />
 		<entity name="zombieNurse4" />
-		<entity name="zombieFatHawaiianFeral" />
+		<entity name="zombieFatHawaiian5" />
 		<entity name="zombieSoldier3" prob="0.285" />
 		<entity name="zombieBurnt" />
 		<entity name="zombieSoldier6" prob="0.285" />
@@ -1701,46 +2827,46 @@ animalStagHostile
 		<entity name="zombieDarlene" />
 		<entity name="zombieYoFeral" />
 		<entity name="zombieOldTimer7" />
-		<entity name="zombieMarleneFeral8" />
+		<entity name="zombieMarlene1" />
 		<entity name="zombieFatCop7" />
-		<entity name="zombieStripperFeral" />
+		<entity name="zombieStripper2" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS322">
 		<entity name="zombieBiker" prob="0.265" />
 		<entity name="zombieDarlene6" />
-		<entity name="zombieFarmerFeral" />
+		<entity name="zombieFarmer3" />
 		<entity name="zombieBurnt5" />
 		<entity name="zombieSnow4" />
 		<entity name="zombieSkateboarder1" />
-		<entity name="zombieStripperFeral8" />
+		<entity name="zombieStripper4" />
 		<entity name="zombieCheerleader4" />
 		<entity name="zombieUtilityWorker3" prob="0.265" />
 		<entity name="zombieSoldier" prob="0.291" />
 		<entity name="zombieMarlene7" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS332">
-		<entity name="zombieDarleneFeral" />
+		<entity name="zombieDarlene5" />
 		<entity name="zombieDarlene" />
-		<entity name="zombieNurseFeral8" />
+		<entity name="zombieNurse6" />
 		<entity name="zombieSpider4" />
 		<entity name="zombieSkateboarder4" />
-		<entity name="zombieUtilityWorkerFeral8" />
-		<entity name="zombieBoeFeral8" />
+		<entity name="zombieUtilityWorker7" />
+		<entity name="zombieBoe1" />
 		<entity name="zombieFatHawaiian4" prob="0.267" />
-		<entity name="zombieMoeFeral8" />
+		<entity name="zombieMoe2" />
 		<entity name="zombieBurnt3" />
-		<entity name="zombieSnowFeral8" />
+		<entity name="zombieSnow3" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS343">
 		<entity name="zombieJoe1" />
 		<entity name="zombieSkateboarder5" />
 		<entity name="zombieNurse4" />
-		<entity name="zombieMoeFeral8" />
+		<entity name="zombieMoe" />
 		<entity name="zombieArlene6" />
 		<entity name="zombieMoe7" />
 		<entity name="zombieSteve" />
 		<entity name="zombieSnow6" />
-		<entity name="zombieFatCopFeral" />
+		<entity name="zombieFatCop2" />
 		<entity name="zombieSpider5" />
 		<entity name="zombieSnow7" />
 	</entitygroup>
@@ -1748,76 +2874,76 @@ animalStagHostile
 		<entity name="zombieDarlene6" />
 		<entity name="zombieOldTimer1" />
 		<entity name="zombieSoldier1" prob="0.299" />
-		<entity name="zombieBoeFeral" />
+		<entity name="zombieBoe4" />
 		<entity name="zombieSnow4" />
 		<entity name="zombieYo7" />
 		<entity name="zombieOldTimer5" />
 		<entity name="zombieFemaleFat3" prob="0.271" />
-		<entity name="zombieFarmerFeral8" />
+		<entity name="zombieFarmer5" />
 		<entity name="zombieBiker4" prob="0.271" />
 		<entity name="zombieNurse4" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS364">
 		<entity name="zombieCheerleader4" />
 		<entity name="zombieSpider6" />
-		<entity name="zombieWightFeral7" />
+		<entity name="zombieWightFeral6" />
 		<entity name="zombieFootballPlayer3" prob="0.073" />
 		<entity name="zombieOldTimer1" />
 		<entity name="zombieDarlene7" />
-		<entity name="zombieSnowFeral" />
-		<entity name="zombieMarleneFeral" />
-		<entity name="zombieNurseFeral8" />
-		<entity name="zombieSpiderFeral" />
+		<entity name="zombieSnow7" />
+		<entity name="zombieMarlene3" />
+		<entity name="zombieNurse1" />
+		<entity name="zombieSpider2" />
 		<entity name="zombieUtilityWorker3" prob="0.273" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS374">
 		<entity name="zombieStripper7" />
 		<entity name="zombieMoe2" />
-		<entity name="zombieDarleneFeral" />
+		<entity name="zombieDarlene" />
 		<entity name="zombieBoe6" />
 		<entity name="zombieFootballPlayer1" prob="0.075" />
-		<entity name="zombieSkateboarderFeral8" />
+		<entity name="zombieSkateboarder4" />
 		<entity name="zombieBoe" />
 		<entity name="zombieBurnt1" />
 		<entity name="zombieJoe7" />
-		<entity name="zombieCheerleaderFeral8" />
+		<entity name="zombieCheerleader5" />
 		<entity name="zombieMarlene" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS385">
 		<entity name="zombieBurnt1" />
 		<entity name="zombieBoe1" />
-		<entity name="zombieArleneFeral" />
-		<entity name="zombieFatCopFeral8" />
-		<entity name="zombieNurseFeral" />
+		<entity name="zombieArlene7" />
+		<entity name="zombieFatCop5" />
+		<entity name="zombieNurse3" />
 		<entity name="zombieFatCop2" />
 		<entity name="zombieBusinessMan2" />
 		<entity name="zombieMaleHazmat5" prob="0.277" />
 		<entity name="zombieMaleHazmat6" prob="0.277" />
 		<entity name="zombieSkateboarder4" />
-		<entity name="zombieFatHawaiianFeral" />
+		<entity name="zombieFatHawaiian5" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS396">
 		<entity name="zombieUtilityWorker3" prob="0.28" />
 		<entity name="zombieYo1" />
 		<entity name="zombieSoldier4" prob="0.311" />
 		<entity name="zombieNurse3" />
-		<entity name="zombieMoeFeral" />
-		<entity name="zombieBoeFeral" />
+		<entity name="zombieMoe2" />
+		<entity name="zombieBoe1" />
 		<entity name="zombieMaleHazmat5" prob="0.28" />
-		<entity name="zombieFarmerFeral8" />
+		<entity name="zombieFarmer3" />
 		<entity name="zombieMaleHazmat4" prob="0.28" />
-		<entity name="zombieSpiderFeralRadiated" />
+		<entity name="zombieSpider5" />
 		<entity name="zombieCheerleader1" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS407">
-		<entity name="zombieFatCopFeral" />
+		<entity name="zombieFatCop6" />
 		<entity name="zombieNurse4" />
 		<entity name="zombieBusinessManFeral" />
 		<entity name="zombieSnow7" />
 		<entity name="zombieMarlene1" />
 		<entity name="zombieNurse6" />
 		<entity name="zombieFarmer3" />
-		<entity name="zombieOldTimerFeral8" />
+		<entity name="zombieOldTimer1" />
 		<entity name="zombieFatHawaiian3" prob="0.282" />
 		<entity name="zombieMarlene4" />
 		<entity name="animalZombieVulture" />
@@ -1836,12 +2962,12 @@ animalStagHostile
 		<entity name="zombieFatHawaiian2" prob="0.284" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS430">
-		<entity name="zombieYoFeral8" />
+		<entity name="zombieYo2" />
 		<entity name="zombieSnow" />
 		<entity name="zombieMarlene" />
-		<entity name="zombieBurntFeral8" />
+		<entity name="zombieBurnt3" />
 		<entity name="zombieFatCop6" />
-		<entity name="zombieFemaleFatFeral" />
+		<entity name="zombieFemaleFat5" />
 		<entity name="zombieBusinessMan4" />
 		<entity name="zombieStripper6" />
 		<entity name="zombieFemaleFat7" prob="0.286" />
@@ -1851,15 +2977,15 @@ animalStagHostile
 	<entitygroup name="sleeperHordeStageGS441">
 		<entity name="zombieMarlene6" />
 		<entity name="zombieSpider1" />
-		<entity name="zombieSoldierFeral8" />
+		<entity name="zombieSoldier6" />
 		<entity name="zombieFarmer7" />
 		<entity name="zombieSpider4" />
 		<entity name="zombieBoe" />
 		<entity name="zombieFootballPlayer" prob="0.089" />
-		<entity name="zombieCheerleaderFeral8" />
+		<entity name="zombieCheerleader7" />
 		<entity name="zombieCheerleader4" />
 		<entity name="zombieMarlene2" />
-		<entity name="zombieYoFeral" />
+		<entity name="zombieYo6" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS453">
 		<entity name="zombieFatHawaiian2" prob="0.291" />
@@ -1867,7 +2993,7 @@ animalStagHostile
 		<entity name="zombieYo2" />
 		<entity name="zombieSnow3" />
 		<entity name="zombieJoe4" />
-		<entity name="zombieFatCopFeral8" />
+		<entity name="zombieFatCop3" />
 		<entity name="zombieBurnt6" />
 		<entity name="animalZombieDog" />
 		<entity name="zombieCheerleader5" />
@@ -1876,11 +3002,11 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS464">
 		<entity name="zombieJoe2" />
-		<entity name="zombieDarleneFeral8" />
+		<entity name="zombieDarlene1" />
 		<entity name="zombieMoe2" />
 		<entity name="zombieJoe3" />
-		<entity name="zombieFatCopFeral" />
-		<entity name="zombieBikerFeral8" />
+		<entity name="zombieFatCop3" />
+		<entity name="zombieBiker4" />
 		<entity name="zombieFemaleFat7" prob="0.293" />
 		<entity name="zombieNurse5" />
 		<entity name="zombieBurnt3" />
@@ -1891,10 +3017,10 @@ animalStagHostile
 		<entity name="zombieBiker4" prob="0.296" />
 		<entity name="zombieSpider1" />
 		<entity name="zombieSnow" />
-		<entity name="zombieNurseFeral" />
-		<entity name="zombieWightFeralRadiated" />
+		<entity name="zombieNurse5" />
+		<entity name="zombieWightFeral5" />
 		<entity name="zombieJoe" />
-		<entity name="zombieArleneFeral" />
+		<entity name="zombieArlene6" />
 		<entity name="zombieFatCop" />
 		<entity name="zombieUtilityWorker3" prob="0.296" />
 		<entity name="zombieNurse4" />
@@ -1904,8 +3030,8 @@ animalStagHostile
 		<entity name="zombieMarlene7" />
 		<entity name="zombieNurse" />
 		<entity name="zombieCheerleader1" />
-		<entity name="zombieSoldierFeral8" />
-		<entity name="zombieSpiderFeral" />
+		<entity name="zombieSoldier7" />
+		<entity name="zombieSpider6" />
 		<entity name="zombieJoe" />
 		<entity name="zombieOldTimer4" />
 		<entity name="zombieJoeFeral" />
@@ -1917,14 +3043,14 @@ animalStagHostile
 		<entity name="zombieMarlene1" />
 		<entity name="zombieSteve" />
 		<entity name="zombieNurse" />
-		<entity name="zombieSkateboarderFeral" />
-		<entity name="zombieUtilityWorkerFeral8" />
+		<entity name="zombieSkateboarder5" />
+		<entity name="zombieUtilityWorker4" />
 		<entity name="zombieBoe1" />
 		<entity name="zombieCheerleader2" />
-		<entity name="zombieDarleneFeral8" />
+		<entity name="zombieDarlene" />
 		<entity name="zombieSnow5" />
 		<entity name="zombieCheerleader5" />
-		<entity name="zombieSkateboarderFeral8" />
+		<entity name="zombieSkateboarder" />
 	</entitygroup>
 	<entitygroup name="sleeperHordeStageGS512">
 		<entity name="zombieStripperFeral8" />

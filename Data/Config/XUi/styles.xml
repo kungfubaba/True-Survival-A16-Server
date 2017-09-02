@@ -1,6 +1,6 @@
 <styles>
 
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
 
 	<style name="SMXUnitFrameWindow" type="window">
 		<style_entry name="pos" value="9,20" />
@@ -8,11 +8,11 @@
 		<style_entry name="anchor" value="BottomLeft" />
 	</style>
 
-	<style name="SMXItemStack">
-		<style_entry name="select_color" value="[beige]" />
-		<style_entry name="press_color" value="[limeGreen]" />
-		<style_entry name="final_pressed_color" value="[lightGrey]" />
-		<style_entry name="background_color" value="[mediumGrey]" />
+	<style name="SMXTBItemStack">
+		<style_entry name="select_color" value="[beige]" /> 
+		<style_entry name="press_color" value="[limeGreen]" /> 
+		<style_entry name="final_pressed_color" value="[lightGrey]" /> 
+		<style_entry name="background_color" value="[mediumGrey]" /> 
 		<style_entry name="highlight_color" value="[hoverColor]" /> 
 		<style_entry name="holding_color" value="[white]" />
 		<style_entry name="width" value="82" />
@@ -38,6 +38,34 @@
 		<style_entry name="pos" value="-60,10" />
 	</style>
 
+	<style name="SMXcompass.window.background3SIRMOD" type="sprite">
+		<style_entry name="depth" value="1"/>
+<!--	<style_entry name="sprite" value="ui_game_header_fill"/> -->
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="300,37"/>
+		<style_entry name="pos" value="50,-3"/>
+		<style_entry name="color" value="128,128,128,100"/>
+	</style>
+	
+	<style name="SMXcompass.window.background.border3SIRMOD" type="sprite">
+		<style_entry name="depth" value="0"/>
+<!--	<style_entry name="sprite" value="ui_game_header_fill"/> -->
+		<style_entry name="size" value="305,43"/>
+		<style_entry name="pos" value="48,0"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="color" value="0,0,0,100"/>
+	</style>
+
+	<style name="SMXcompass.window.compass.background3SIRMOD" type="sprite">
+		<style_entry name="depth" value="5"/>
+<!--	<style_entry name="sprite" value="ui_game_header_fill"/> -->
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="color" value="0,0,0,100"/>
+		<style_entry name="pos" value="50,-3"/>
+		<style_entry name="width" value="300" />
+		<style_entry name="height" value="37" />
+	</style>
+	
 	<style name="SMXcompass.window.indicator" type="texture">
 		<style_entry name="depth" value="9" />
 		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Equivalent: http://i65.tinypic.com/11jx6ap.jpg -->
@@ -62,12 +90,19 @@
 		<style_entry name="color" value="[iconColor]" />
 		<style_entry name="tooltip" value="CHARACTER" />
 		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
+<!--	<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compass.png" /> --><!-- Online Equivalent: --> <!-- WARNING! Do NOT enable. Causes major memory leak! -->
 	</style>
 
 	<style name="SMXDayTimeFrame.window" type="window">
 		<style_entry name="pos" value="-12,50" />
 		<style_entry name="size" value="100,100" />
 		<style_entry name="anchor" value="LeftTop" />
+	</style>
+	
+	<style name="SMXDayTimeFrame2.window" type="window">
+		<style_entry name="pos" value="9,50"/>
+		<style_entry name="size" value="400,400"/>
+		<style_entry name="anchor" value="LeftTop"/>
 	</style>
 
 	<style name="SMXLevelXP.window" type="window">
@@ -88,8 +123,8 @@
 		<style_entry name="height" value="15"/>
 		<style_entry name="foregroundlayer" value="true" />
 	</style>
-
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+	
+<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
 
 	<global>
 		<!-- 	
@@ -100,9 +135,14 @@
 		-->
 		
 		<!--NAMED COLORS-->
+
+		<!-- START ADDED GLOBALS FOR VALMOD -->
 		
 		<style_entry name="yellow"		value="247,255,0"/>
 		<style_entry name="gold" 		value="245,196,0"/>
+
+		<!-- END ADDED GLOBALS FOR VALMOD -->
+		
 		<style_entry name="limeGreen" 		value="222,255,163,255"/>
 		<style_entry name="tan" 					value="182,166,123,255"/>
 		<style_entry name="beige" 				value="222,206,163"/>
@@ -129,6 +169,7 @@
 		<style_entry name="selectedColor" 					value="255,0,0" />
 		<!-- <style_entry name="hoverColor"						value="250,255,163" /> -->
 		<style_entry name="hoverColor"						value="255,0,0" />
+		
 		<style_entry name="disabledLabelColor"				value="160,160,160" />
 		
 		<!--NAMED SPRITES-->
@@ -320,7 +361,6 @@
 		<style_entry name="pos" value="42,-6"/>
 		<style_entry name="size" value="250,32"/>
 		<style_entry name="font_size" value="32"/>
-		<style_entry name="color" value="[red]" />
 	</style>
 	
 	<style name="header.timer" type="label">
@@ -355,7 +395,7 @@
 		<style_entry name="justify" value="center"/>
 		<style_entry name="pos" value="300,-20"/>
 		<style_entry name="name" value="lblWindowName"/>
-		<style_entry name="color" value="[red]"/>
+		<style_entry name="color" value="[red]"/> <!-- TS added -->
 	</style>
 	
 	<!--PAGING WINDOW BACKGROUND-->
@@ -555,7 +595,7 @@
 	<style name="workstation.reserve.name" type="label">
 		<style_entry name="depth" value="2"/>
 		<style_entry name="height" value="24"/>
-		<style_entry name="width" value="70"/>
+		<style_entry name="width" value="70"/>  <!-- was 53 -->
 	</style>
 	
 	<style name="workstation.reserve.weight" type="label">

@@ -63,6 +63,7 @@
 		<reward type="Quest" id="quest_BasicSurvival30" />
 		<reward type="Quest" id="quest_BasicSurvival31" />
 		<reward type="Quest" id="quest_BasicSurvival32" />
+        <reward type="Quest" id="quest_BasicSurvival33" />
 		<reward type="Exp" value="400" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 		<reward type="SkillPoints" value="1" />
@@ -169,16 +170,25 @@
 	<quest id="quest_BasicSurvival15" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival15" subtitle_key="quest_BasicSurvival15_subtitle" description_key="quest_BasicSurvival15_description" icon="ui_game_symbol_club" category_key="quest">
 		<objective type="FetchKeep" id="clubWood" value="1" />
 		<objective type="FetchKeep" id="scrapIron" value="10" />
-		<objective type="Craft" id="clubIron" value="1" />
+		<objective type="FetchKeep" id="clubIron" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!-- Basic Survival 16 - Find some Yucca /> -->
+	<!-- Basic Survival 16 - Food Servings /> -->
 	<quest id="quest_BasicSurvival16" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival16" subtitle_key="quest_BasicSurvival16_subtitle" description_key="quest_BasicSurvival16_description" icon="ui_game_symbol_fork" category_key="quest">
-		<objective type="FetchKeep" id="foodYuccaFruit" value="3" />
+		<objective type="Craft" id="fruitServing" value="5" />
+        <objective type="Craft" id="grainServing" value="5" />
+        <objective type="Craft" id="veggieServing" value="5" />
+        <objective type="Craft" id="proteinServing" value="5" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="Cooking2" />
 	</quest>
-	<!-- Basic Survival 17 - Craft a Torch /> -->
+    <quest id="Cooking2" group_name_key="Cooking" name_key="Learning to Cook" subtitle_key="Learning to cook" description_key="Staying alive means staying healthy and staying healthy starts with eating a healthy diet. Build a Food Prep Table to more efficiently break down food. You can also store your food serving and cook more nutritious meals on it." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="prepTable" value="1" />
+		<reward type="Exp" value="400" />
+        <reward type="SkillPoints" value="1" />
+	</quest>
+    <!-- Basic Survival 17 - Craft a Torch /> -->
 	<quest id="quest_BasicSurvival17" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival17" subtitle_key="quest_BasicSurvival17_subtitle" description_key="quest_BasicSurvival17_description" icon="ui_game_symbol_lightbulb" category_key="quest">
 		<objective type="FetchKeep" id="woodBranch" value="2" />
 		<objective type="FetchKeep" id="coal" value="5" />
@@ -207,8 +217,8 @@
 		<objective type="Craft" id="hayBaleBlock" value="4" />
 		<reward type="Exp" value="400" />
 	</quest>
-	<!-- Basic Survival 21 - Cure and Dry Leather /> -->
-	<quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival21" subtitle_key="quest_BasicSurvival21_subtitle" description_key="quest_BasicSurvival21_description" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<!-- Basic Survival 33 - Cure and Dry Leather /> -->
+	<quest id="quest_BasicSurvival33" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival21" subtitle_key="quest_BasicSurvival21_subtitle" description_key="quest_BasicSurvival21_description" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="animalHide" value="4" />
 		<objective type="FetchKeep" id="brainMatter" value="4" />
 		<objective type="FetchKeep" id="coal" value="4" />
@@ -220,9 +230,21 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
+    <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
+	<quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">
+		<objective type="FetchKeep" id="craftedRevolverStock" value="1" />
+        <objective type="FetchKeep" id="craftedRevolverBarrel" value="1" />
+        <objective type="FetchKeep" id="revolver_cylinder" value="1" />
+        <objective type="FetchKeep" id="revolver_parts" value="1" />
+        <objective type="FetchKeep" id="craftedRevolver" value="1" />
+		<objective type="ZombieKill" value="3" />
+		<requirement type="Holding" id="craftedRevolver" />
+		<reward type="Exp" value="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
 	<!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
-	<quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="blunderbuss" value="1" />
+	<quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="blunderbuss" category_key="quest">
+		<objective type="FetchKeep" id="blunderbuss" value="1" />
 		<objective type="FetchKeep" id="blunderbussAmmo" value="5" />
 		<objective type="ZombieKill" value="3" />
 		<requirement type="Holding" id="blunderbuss" />
@@ -230,10 +252,12 @@
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- Basic Survival 23 - Craft and use craftedRifle /> -->
-	<quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="craftedRifle" value="1" />
-		<objective type="FetchKeep" id="308mmBullet" value="5" />
-		<objective type="ZombieKill" value="3" />
+	<quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+		<objective type="FetchKeep" id="craftedRifle_stock" value="1" />
+        <objective type="FetchKeep" id="craftedRifle_receiver" value="1" />
+        <objective type="FetchKeep" id="craftedRifleBarrel" value="1" />
+		<objective type="FetchKeep" id="revolver_parts" value="1" />
+        <objective type="ZombieKill" value="3" />
 		<requirement type="Holding" id="craftedRifle" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
@@ -246,154 +270,271 @@
 		<objective type="BlockPlace" id="2x5Planks" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
-	<!-- Basic Survival 25 - Wood Building /> -->
-	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="clawHammer" value="1" />
-		<reward type="ShowTip" value="woodBuildingTip" stage="aftercomplete" />
+	<!-- Basic Survival 25 - Wood Building /> --> 
+	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="If you want to learn to build wood structures you're going to need the proper tools to do it. Craft or find a Claw Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="clawHammer" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="woodBuilding2" />
+	</quest>
+    <quest id="woodBuilding2" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the claw hammer to break down wooden blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="plank" value="1000" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="woodBuildingSkill" />
+        <reward type="Quest" id="woodBuilding3" />
+	</quest>
+    <quest id="woodBuilding3" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="woodFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="woodBuildingSkill" />
+        <reward type="Quest" id="woodBuilding4" />
+	</quest>
+    <quest id="woodBuilding4" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="woodBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 26 - Cobblestone Building /> -->
-	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="cobblestoneHammer" value="1" />
-		<reward type="ShowTip" value="cobblestoneBuildingTip" stage="aftercomplete" />
+	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="If you want to learn to build cobblestone structures you're going to need the proper tools to do it. Craft or find a cobblestone Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="cobblestoneHammer" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="cobblestoneBuilding2" />
+	</quest>
+    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the cobblestone hammer to break down cobblestone blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="cobblestones" value="1000" />
+		<reward type="Exp" value="400" />
+		<reward type="Item" id="cobblestoneBuildingSkill" />
+		<reward type="Quest" id="cobblestoneBuilding3" />
+	</quest>
+    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="cobblestoneFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="cobblestoneBuildingSkill" />
+        <reward type="Quest" id="cobblestoneBuilding4" />
+	</quest>
+    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="cobblestoneFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="cobblestoneBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 27 - Brick Building /> -->
-	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="brickHammer" value="1" />
-		<reward type="ShowTip" value="brickBuildingTip" stage="aftercomplete" />
+	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="If you want to learn to build brick structures you're going to need the proper tools to do it. Craft or find a brick Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="brickHammer" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="brickBuilding2" />
 	</quest>
-	<!-- Basic Survival 28 - Concrete Building /> -->
-	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="concreteSledge" value="1" />
-		<reward type="ShowTip" value="concreteBuildingTip" stage="aftercomplete" />
+    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the brick hammer to break down brick blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="bricks" value="1000" />
 		<reward type="Exp" value="400" />
+		<reward type="Item" id="brickBuildingSkill" />
+        <reward type="Quest" id="brickBuilding3" />
+	</quest>
+    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="brickFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="brickBuildingSkill" />
+        <reward type="Quest" id="brickBuilding4" />
+	</quest>
+    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="brickFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="brickBuildingSkill" />
+    </quest>
+	<!-- Basic Survival 28 - Concrete Building /> -->
+	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="If you want to learn to build Concrete structures you're going to need the proper tools to do it. Craft or find a Concrete Sledge to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="concreteSledge" value="1" />
+		<reward type="Exp" value="400" />
+        <reward type="Quest" id="concreteBuilding2" />
+	</quest>
+    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Concrete sledge to break down Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="cementMix" value="1000" />
+		<reward type="Exp" value="400" />
+		<reward type="Item" id="concreteBuildingSkill" />
+        <reward type="Quest" id="concreteBuilding3" />
+    </quest>
+    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="cementFormBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="concreteBuildingSkill" />
+        <reward type="Quest" id="concreteBuilding4" />
+	</quest>
+    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="cementFormBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="concreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 29 - rConcrete Building /> -->
-	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="rConcreteSledge" value="1" />
-		<reward type="ShowTip" value="rConcreteBuildingTip" stage="aftercomplete" />
+	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="If you want to learn to build Reinforced Concrete structures you're going to need the proper tools to do it. Craft or find a Reinforced Concrete Bar to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="rConcreteBar" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="rConcreteBuilding2" />
+	</quest>
+    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Reinforced Concrete bar to break down Reinforced Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="concreteMix" value="1000" />
+		<reward type="Exp" value="400" />
+		<reward type="Item" id="rConcreteBuildingSkill" />
+        <reward type="Quest" id="rConcreteBuilding3" />
+	</quest>
+    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="rConcreteBuilding3" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="rConcreteBuildingSkill" />
+        <reward type="Quest" id="rConcreteBuilding4" />
+	</quest>
+    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="rConcreteBuilding3" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="rConcreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 30 - Iron Building /> -->
-	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="wrench" value="1" />
-		<reward type="ShowTip" value="scrapIronBuildingTip" stage="aftercomplete" />
+	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="If you want to learn to build iron structures you're going to need the proper tools to do it. Craft or find a wrench to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="wrench" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="scrapIronBuilding2" />
+	</quest>
+    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the wrench to break down iron blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="corrugatedMetalSheet" value="1000" />
+		<reward type="Exp" value="400" />
+		<reward type="Item" id="scrapIronBuildingSkill" />
+        <reward type="Quest" id="scrapIronBuilding3" />
+	</quest>
+    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="scrapIronFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="scrapIronBuildingSkill" />
+        <reward type="Quest" id="scrapIronBuilding4" />
+	</quest>
+    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="scrapIronFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="scrapIronBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Steel Building /> -->
-	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="welderTool" value="1" />
-		<reward type="ShowTip" value="steelBuildingTip" stage="aftercomplete" />
+	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="If you want to learn to build steel structures you're going to need the proper tools to do it. Craft or find a welder tool to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="welderTool" value="1" />
 		<reward type="Exp" value="400" />
+        <reward type="Quest" id="steelBuilding2" />
+	</quest>
+    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the welder tool to break down steel blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="FetchKeep" id="metalRivetSheet" value="1000" />
+		<reward type="Exp" value="400" />
+		<reward type="Item" id="steelBuildingSkill" />
+        <reward type="Quest" id="steelBuilding3" />
+	</quest>
+    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="forgedFrame" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="steelBuildingSkill" />
+        <reward type="Quest" id="steelBuilding4" />
+	</quest>
+    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="forgedFrame" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="steelBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Farming Chain Starter /> -->
-	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Learning To Farm" subtitle_key="Growing trees" description_key="You can't live off moldy Twinkies forever and sooner or later all the food in the world will spoil so you better know how to grow your own by then. Let's start off with something easy. Collect these tree seeds and plant them to begin your Farming quest chain.When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
-		<reward type="ShowTip" value="FarmingTip" stage="aftercomplete" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming1" />
 	</quest>
 	<!-- Farming Quest Chain -->
-	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="Becoming a Farmer" subtitle_key="Learning To Farm" description_key="You can't be a farmer without a hoe so get one made. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="hoeIron" value="1" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Quest" id="quest_Farming2" />
 		<reward type="Exp" value="400" />
 	</quest>
-	<quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="Growing Cotton" subtitle_key="Growing Cotton" description_key="Now craft and plant some Cotton Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCotton1" value="50" />
 		<objective type="BlockPlace" id="plantedCotton1" value="50" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming3" />
 	</quest>
-	<quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="Growing Potatos" subtitle_key="Growing Potatos" description_key="Now craft and plant some Potato Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedPotato1" value="50" />
 		<objective type="BlockPlace" id="plantedPotato1" value="50" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming4" />
 	</quest>
-	<quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="Growing Goldenrod" subtitle_key="Growing Goldenrod" description_key="Now craft and plant some Goldenrod Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedGoldenrod1" value="100" />
 		<objective type="BlockPlace" id="plantedGoldenrod1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming5" />
 	</quest>
-	<quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="Growing Corn" subtitle_key="Growing Corn" description_key="Now craft and plant some Corn Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCorn1" value="100" />
 		<objective type="BlockPlace" id="plantedCorn1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming6" />
 	</quest>
-	<quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="Growing Chrysanthemum" subtitle_key="Growing Chrysanthemum" description_key="Now craft and plant some Chrysanthemum Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedChrysanthemum1" value="100" />
 		<objective type="BlockPlace" id="plantedChrysanthemum1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming7" />
 	</quest>
-	<quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="Growing carrot" subtitle_key="Growing carrot" description_key="Now craft and plant some carrot Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="carrotSeed" value="100" />
 		<objective type="BlockPlace" id="carrotSeed" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming8" />
 	</quest>
-	<quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="Growing wheat" subtitle_key="Growing wheat" description_key="Now craft and plant some wheat Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="wheatSeed" value="100" />
 		<objective type="BlockPlace" id="wheatSeed" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming9" />
 	</quest>
-	<quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="Growing apples" subtitle_key="Growing apples" description_key="Now craft and plant some apple Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="appleSeed" value="100" />
 		<objective type="BlockPlace" id="appleSeed" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming10" />
 	</quest>
-	<quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="Growing Mushroom" subtitle_key="Growing Mushroom" description_key="Now craft and plant some Mushroom Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedMushroom1" value="100" />
 		<objective type="BlockPlace" id="plantedMushroom1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming11" />
 	</quest>
-	<quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="Growing Blueberry" subtitle_key="Growing Blueberry" description_key="Now craft and plant some Blueberry Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedBlueberry1" value="100" />
 		<objective type="BlockPlace" id="plantedBlueberry1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming12" />
 	</quest>
-	<quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="Growing Yucca" subtitle_key="Growing Yucca" description_key="Now craft and plant some Yucca Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedYucca1" value="100" />
 		<objective type="BlockPlace" id="plantedYucca1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming13" />
 	</quest>
-	<quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="Growing Aloe" subtitle_key="Growing Aloe" description_key="Now craft and plant some Aloe Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedAloe1" value="100" />
 		<objective type="BlockPlace" id="plantedAloe1" value="100" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming14" />
 	</quest>
-	<quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="Making fertilizer" subtitle_key="Making fertilizer" description_key="Any squirrel can plant a nut and grow a tree but it takes Farmer that can make fertilizer to increase crop yields. To finish off your farming quest chain create some fertilizer. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="fertilizer" value="500" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
-		<!--<reward type="Quest" id="quest_TheCure" />-->
 	</quest>
 	<!-- CHALLENGES -->
 	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane">
@@ -569,418 +710,84 @@
 		<objective type="ZombieKill" value="250" />
 		<reward type="SkillPoints" value="5" />
 	</quest>
+    <quest id="challenge_Hen" name_key="challenge_Hen" subtitle_key="challenge_Hen_subtitle" description_key="challenge_Hen_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Hen_offer" difficulty="easy">
+		<objective type="Craft" id="chickenCoop" value="1" />
+        <objective type="BlockPlace" id="chickenCoop" value="1" />
+		<objective type="FetchKeep" id="babyChicken" value="1" />
+		<objective type="FetchKeep" id="hen" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_InfectedAnimals" name_key="challenge_Vorpal" subtitle_key="challenge_Vorpal_subtitle" description_key="challenge_Vorpal_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Vorpal_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalRabbitHostile" value="1" />
+		<objective type="AnimalKill" id="animalChickenHostile" value="1" />
+		<objective type="ZombieKill" id="zombiedog" value="1" />
+		<objective type="AnimalKill" id="zombieBear" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_AntiVenom" name_key="challenge_AntiVenom" subtitle_key="challenge_AntiVenom_subtitle" description_key="challenge_AntiVenom_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_AntiVenom_offer" difficulty="easy">
+		<objective type="Craft" id="antiVenom" value="1" />
+		<objective type="Buff" id="antiVenom" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
 	<!--JZMOD PROFESSION QUEST CHAINS-->
 	<!--Doctor-->
 	<quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="Doctors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<!--<reward type="Quest" id="challenge_Doctor" />
-		<reward type="Quest" id="challenge_Doctor2" />
-		<reward type="Quest" id="challenge_Doctor3" />
-		<reward type="Quest" id="challenge_Doctor4" />-->
-	</quest>
-	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_description" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<objective type="Craft" id="painKillerShot" value="1" />
-		<objective type="Craft" id="stimulantShot" value="1" />
-		<objective type="Craft" id="infectedShot" value="1" />
-		<objective type="Craft" id="sedativeShot" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Doctor2" name_key="challenge_Profession" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
-		<objective type="Craft" id="painkillers" value="1" />
-		<objective type="Craft" id="antibiotics" value="1" />
-		<objective type="Craft" id="superPill" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Doctor3" name_key="challenge_Profession" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
-		<objective type="Craft" id="aloeCream" value="1" />
-		<objective type="Craft" id="firstAidBandage" value="1" />
-		<objective type="Craft" id="firstAidKit" value="1" />
-		<objective type="Craft" id="firstAidBandage" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Doctor4" name_key="challenge_Profession" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
-		<objective type="FetchKeep" id="doctorBook" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Carpenter-->
 	<quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="Carpenters Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="clawHammer" value="300" />
-		<!--<reward type="Quest" id="challenge_Carpenter" />
-		<reward type="Quest" id="challenge_Carpenter2" />
-		<reward type="Quest" id="challenge_Carpenter3" />
-		<reward type="Quest" id="challenge_Carpenter4" />-->
-	</quest>
-	<quest id="challenge_Carpenter" name_key="challenge_Profession" subtitle_key="challenge_Carpenter_subtitle" description_key="challenge_Carpenter_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter_offer" difficulty="easy">
-		<objective type="Craft" id="woodFrameBlock" value="50" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Carpenter2" name_key="challenge_Profession" subtitle_key="challenge_Carpenter2_subtitle" description_key="challenge_Carpenter2_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter2_offer" difficulty="easy">
-		<objective type="Craft" id="woodFrameCNRFull" value="1" />
-		<objective type="Craft" id="woodFrameCNRInside" value="1" />
-		<objective type="Craft" id="woodFrameWedge" value="1" />
-		<objective type="Craft" id="woodFrameRamp" value="1" />
-		<objective type="Craft" id="woodStairs25" value="1" />
-		<objective type="Craft" id="woodPillar100" value="1" />
-		<objective type="Craft" id="woodPlate" value="1" />
-		<objective type="Craft" id="woodPole" value="1" />
-		<objective type="Craft" id="woodArrowSlitHalf" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Carpenter3" name_key="challenge_Profession" subtitle_key="challenge_Carpenter3_subtitle" description_key="challenge_Carpenter3_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter3_offer" difficulty="easy">
-		<objective type="Craft" id="clawHammer" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Carpenter4" name_key="challenge_Profession" subtitle_key="challenge_Carpenter4_subtitle" description_key="challenge_Carpenter4_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter4_offer" difficulty="easy">
-		<objective type="Craft" id="plank" value="250" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Cop-->
 	<quest id="StartCop" name_key="challenge_Profession" subtitle_key="Cops Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldRevolver" value="600" />
 	</quest>
-	<quest id="challenge_Cop" name_key="challenge_Profession" subtitle_key="challenge_Cop_subtitle" description_key="challenge_Cop_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop_offer" difficulty="easy">
-		<objective type="Craft" id="gunOil" value="10" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Cop2" name_key="challenge_Profession" subtitle_key="challenge_Cop2_subtitle" description_key="challenge_Cop2_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop2_offer" difficulty="easy">
-		<objective type="Craft" id="weaponRepairKit" value="10" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
-		<objective type="Craft" id="nightStick" value="1" />
-		<reward type="Exp" value="1200" />
-		<reward type="SkillPoints" value="3" />
-	</quest>
 	<!--Soldier-->
 	<quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="Soldiers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldRifle" value="600" />
-		<!--<reward type="Quest" id="challenge_Soldier" />
-		<reward type="Quest" id="challenge_Soldier2" />
-		<reward type="Quest" id="challenge_Soldier3" />
-		<reward type="Quest" id="challenge_Soldier4" />-->
-	</quest>
-	<quest id="challenge_Soldier" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier_offer" difficulty="easy">
-		<objective type="Craft" id="grubs" value="20" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Soldier2" name_key="challenge_Profession" subtitle_key="challenge_Soldier2_subtitle" description_key="challenge_Soldier2_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier2_offer" difficulty="easy">
-		<objective type="Craft" id="blunderbuss" value="1" />
-		<objective type="Craft" id="blunderbussAmmo" value="5" />
-		<objective type="ZombieKill" value="1" />
-		<requirement type="Holding" id="blunderbuss" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier3_subtitle" description_key="challenge_Soldier3_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier3_offer" difficulty="easy">
-		<objective type="Craft" id="mineCookingPot" value="3" />
-		<objective type="Craft" id="pipeBomb" value="3" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Soldier4" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier4_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier4_offer" difficulty="easy">
-		<objective type="Craft" id="weaponRepairKit" value="5" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Scientist-->
-	<quest id="StartScientist" name_key="challenge_Profession" subtitle_key="Chemists Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<!--<reward type="Quest" id="challenge_Scientist" />
-		<reward type="Quest" id="challenge_Scientist2" />
-		<reward type="Quest" id="challenge_Scientist3" />
-		<reward type="Quest" id="challenge_Scientist4" />
-		<reward type="Quest" id="challenge_Scientist5" />-->
-	</quest>
+	<quest id="StartScientist" name_key="challenge_Profession" subtitle_key="Chemists Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">	
+    </quest>
 	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="purificationTablets" value="10" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Scientist2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
-		<objective type="Craft" id="redBull" value="6" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Scientist3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
-		<objective type="Craft" id="mixedChemicals" value="5" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Scientist4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
-		<objective type="Craft" id="gunPowder" value="100" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Scientist5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
-		<objective type="Craft" id="oilShale" value="1" />
-		<objective type="Craft" id="oil" value="1" />
-		<objective type="Craft" id="bioFuel" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Chef-->
 	<quest id="StartChef" name_key="challenge_Profession" subtitle_key="Chefs Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldKnife" value="600" />
-		<!--<reward type="Quest" id="challenge_Chef" />
-		<reward type="Quest" id="challenge_Chef2" />
-		<reward type="Quest" id="challenge_Chef3" />
-		<reward type="Quest" id="challenge_Chef4" />-->
-	</quest>
-	<quest id="challenge_Chef" name_key="challenge_Profession" subtitle_key="challenge_Chef_subtitle" description_key="challenge_Chef_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef_offer" difficulty="easy">
-		<objective type="Craft" id="canMeat" value="1" />
-		<objective type="Craft" id="cornBread" value="1" />
-		<objective type="Craft" id="friedEggOmelet" value="1" />
-		<objective type="Craft" id="baconAndEggs" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Chef2" name_key="challenge_Profession" subtitle_key="challenge_Chef2_subtitle" description_key="challenge_Chef2_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef2_offer" difficulty="easy">
-		<objective type="Craft" id="blueberryPie" value="1" />
-		<objective type="Craft" id="applePie" value="1" />
-		<objective type="Craft" id="carrotCake" value="1" />
-		<objective type="Craft" id="Bread" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Chef3" name_key="challenge_Profession" subtitle_key="challenge_Chef3_subtitle" description_key="challenge_Chef3_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef3_offer" difficulty="easy">
-		<objective type="Craft" id="bearStew" value="1" />
-		<objective type="Craft" id="vegetableStew" value="1" />
-		<objective type="Craft" id="beer" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Chef4" name_key="challenge_Profession" subtitle_key="challenge_Chef4_subtitle" description_key="challenge_Chef4_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef4_offer" difficulty="easy">
-		<objective type="Craft" id="brainShnitzel" value="1" />
-		<objective type="Craft" id="fishNChips" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Chef5" name_key="challenge_Profession" subtitle_key="challenge_Chef5_subtitle" description_key="challenge_Chef5_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef5_offer" difficulty="easy">
-		<objective type="Craft" id="sharpeningStone" value="10" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Fitness Instructor-->
 	<quest id="StartFitness" name_key="challenge_Profession" subtitle_key="Fitness Instructors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="bat" value="300" />
-		<!--<reward type="Quest" id="challenge_Fitness" />
-		<reward type="Quest" id="challenge_Fitness2" />
-		<reward type="Quest" id="challenge_Fitness3" />-->
-	</quest>
-	<quest id="challenge_Fitness" name_key="challenge_Profession" subtitle_key="challenge_Fitness_subtitle" description_key="challenge_Fitness_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness_offer" difficulty="easy">
-		<objective type="Craft" id="goldenRodTea" value="15" />
-		<objective type="Craft" id="redTea" value="15" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Fitness2" name_key="challenge_Profession" subtitle_key="challenge_Fitness2_subtitle" description_key="challenge_Fitness2_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness2_offer" difficulty="easy">
-		<objective type="Craft" id="redBull" value="12" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Fitness3" name_key="challenge_Profession" subtitle_key="challenge_Fitness3_subtitle" description_key="challenge_Fitness3_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness3_offer" difficulty="easy">
-		<objective type="Craft" id="wellnessJuice" value="5" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Fireman-->
 	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="Firemans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="firemanAxe" value="300" />
-		<!--<reward type="Quest" id="challenge_Fireman" />
-		<reward type="Quest" id="challenge_Fireman2" />
-		<reward type="Quest" id="challenge_Fireman3" />-->
-	</quest>
-	<quest id="challenge_Fireman" name_key="challenge_Profession" subtitle_key="challenge_Fireman_subtitle" description_key="challenge_Fireman_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_Fireman_offer" difficulty="easy">
-		<objective type="Craft" id="aloeCream" value="20" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Fireman2" name_key="challenge_Profession" subtitle_key="challenge_Fireman2_subtitle" description_key="challenge_Fireman2_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_Fireman2_offer" difficulty="easy">
-		<objective type="Craft" id="fireaxeIron" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Fireman3" name_key="challenge_Profession" subtitle_key="challenge_Fireman3_subtitle" description_key="challenge_Fireman3_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_Fireman3_offer" difficulty="easy">
-		<objective type="Craft" id="fireaxeSteel" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Iron Worker-->
 	<quest id="StartIronWorker" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="wrench" value="300" />
-		<!--<reward type="Quest" id="challenge_Construction" />
-		<reward type="Quest" id="challenge_Construction2" />
-		<reward type="Quest" id="challenge_Construction3" />-->
-	</quest>
-	<quest id="challenge_Construction" name_key="challenge_Profession" subtitle_key="challenge_Construction_subtitle" description_key="challenge_Construction_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_Construction_offer" difficulty="easy">
-		<objective type="Craft" id="wrench" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Construction2" name_key="challenge_Profession" subtitle_key="challenge_Construction2_subtitle" description_key="challenge_Construction2_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_Construction2_offer" difficulty="easy">
-		<objective type="Craft" id="scrapIronFrameBlock" value="50" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Construction3" name_key="challenge_Profession" subtitle_key="challenge_Construction3_subtitle" description_key="challenge_Construction3_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_Construction3_offer" difficulty="easy">
-		<objective type="Craft" id="scrapIronFrameCNRFull" value="1" />
-		<objective type="Craft" id="scrapIronFrameCNRInside" value="1" />
-		<objective type="Craft" id="scrapIronFrameRamp" value="1" />
-		<objective type="Craft" id="scrapIronFrameWedge" value="1" />
-		<objective type="Craft" id="scrapIronStairs25" value="1" />
-		<objective type="Craft" id="rScrapIronPlate" value="1" />
-		<objective type="Craft" id="scrapIronSheet" value="1" />
-		<objective type="Craft" id="scrapIronArrowSlitHalf" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Electrician-->
 	<quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="Electriciana Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="wireTool" value="300" />
-		<!--<reward type="Quest" id="challenge_Electrician" />
-		<reward type="Quest" id="challenge_Electrician2" />
-		<reward type="Quest" id="challenge_Electrician3" />
-		<reward type="Quest" id="challenge_Electrician4" />-->
-	</quest>
-	<quest id="challenge_Electrician" name_key="challenge_Profession" subtitle_key="challenge_Electrician_subtitle" description_key="challenge_Electrician_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician_offer" difficulty="easy">
-		<objective type="Craft" id="screwdriver" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Electrician2" name_key="challenge_Profession" subtitle_key="challenge_Electrician2_subtitle" description_key="challenge_Electrician2_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician2_offer" difficulty="easy">
-		<objective type="Craft" id="dieselGen" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Electrician3" name_key="challenge_Profession" subtitle_key="challenge_Electrician3_subtitle" description_key="challenge_Electrician3_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician3_offer" difficulty="easy">
-		<objective type="FetchKeep" id="electricParts" value="25" />
-		<objective type="FetchKeep" id="electronicParts" value="25" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Electrician4" name_key="challenge_Profession" subtitle_key="challenge_Electrician4_subtitle" description_key="challenge_Electrician4_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician4_offer" difficulty="easy">
-		<objective type="Craft" id="ShockStick" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Welder-->
 	<quest id="StartSteelWelder" name_key="challenge_Profession" subtitle_key="Metal Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="welderTool" value="300" />
-		<!--<reward type="Quest" id="challenge_Metal" />
-		<reward type="Quest" id="challenge_Metal2" />
-		<reward type="Quest" id="challenge_Metal3" />-->
-	</quest>
-	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Metal_subtitle" description_key="challenge_Metal_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_Metal_offer" difficulty="easy">
-		<objective type="Craft" id="workforge" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Metal2" name_key="challenge_Profession" subtitle_key="challenge_Metal2_subtitle" description_key="challenge_Metal2_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_Metal2_offer" difficulty="easy">
-		<objective type="Craft" id="rebarFrameBlock" value="50" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Metal3" name_key="challenge_Profession" subtitle_key="challenge_Metal3_subtitle" description_key="challenge_Metal3_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_Metal3_offer" difficulty="easy">
-		<objective type="Craft" id="rebarFrameCNRInside" value="1" />
-		<objective type="Craft" id="rebarFramePillar100" value="1" />
-		<objective type="Craft" id="rebarFrameRamp" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Burglar-->
 	<quest id="StartThief" name_key="challenge_Profession" subtitle_key="Burglars Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="lockPickGun" value="600" />
-		<!--<reward type="Quest" id="challenge_Burglar" />
-		<reward type="Quest" id="challenge_Burglar2" />
-		<reward type="Quest" id="challenge_Burglar3" />-->
-	</quest>
-	<quest id="challenge_Burglar" name_key="challenge_Profession" subtitle_key="challenge_Burglar_subtitle" description_key="challenge_Burglar_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_Burglar_offer" difficulty="easy">
-		<objective type="Craft" id="ironShiv" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Burglar2" name_key="challenge_Profession" subtitle_key="challenge_Burglar2_subtitle" description_key="challenge_Burglar2_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_Burglar2_offer" difficulty="easy">
-		<objective type="Craft" id="LockPick" value="20" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
-	</quest>
-	<quest id="challenge_Burglar3" name_key="challenge_Profession" subtitle_key="challenge_Burglar3_subtitle" description_key="challenge_Burglar3_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_Burglar3_offer" difficulty="easy">
-		<objective type="ZombieKill" value="5" />
-		<requirement type="Holding" id="ironShiv" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Park Ranger-->
 	<quest id="StartRanger" name_key="challenge_Profession" subtitle_key="Park Rangers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldRifle" value="600" />
-		<!--<reward type="Quest" id="challenge_Ranger" />
-		<reward type="Quest" id="challenge_Ranger2" />
-		<reward type="Quest" id="challenge_Ranger3" />
-		<reward type="Quest" id="challenge_Ranger4" />
-		<reward type="Quest" id="challenge_Ranger5" />-->
-	</quest>
-	<quest id="challenge_Ranger" name_key="challenge_Profession" subtitle_key="challenge_Ranger_subtitle" description_key="challenge_Ranger_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger_offer" difficulty="easy">
-		<objective type="Craft" id="PurificationTablets" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Ranger2" name_key="challenge_Profession" subtitle_key="challenge_Ranger2_subtitle" description_key="challenge_Ranger2_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger2_offer" difficulty="easy">
-		<objective type="Craft" id="WoodSpear" value="1" />
-		<objective type="Craft" id="WoodJavelin" value="50" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Ranger3" name_key="challenge_Profession" subtitle_key="challenge_Ranger3_subtitle" description_key="challenge_Ranger3_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger3_offer" difficulty="easy">
-		<objective type="Craft" id="SetUpASpikeTrap" value="50" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Ranger4" name_key="challenge_Profession" subtitle_key="challenge_Ranger4_subtitle" description_key="challenge_Ranger4_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger4_offer" difficulty="easy">
-		<objective type="Craft" id="BearTrap" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Ranger5" name_key="challenge_Profession" subtitle_key="challenge_Ranger5_subtitle" description_key="challenge_Ranger5_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger5_offer" difficulty="easy">
-		<objective type="Craft" id="herbalAntibiotics" value="2" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Mechanic-->
 	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="Mechanics Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="oldWrench" value="600" />
-		<!--<reward type="Quest" id="challenge_Mechanic" />
-		<reward type="Quest" id="challenge_Mechanic2" />
-		<reward type="Quest" id="challenge_Mechanic3" />
-		<reward type="Quest" id="challenge_Mechanic4" />-->
-	</quest>
-	<quest id="challenge_Mechanic" name_key="challenge_Profession" subtitle_key="challenge_Mechanic_subtitle" description_key="challenge_Mechanic_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic_offer" difficulty="easy">
-		<objective type="Craft" id="wrench" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Mechanic2" name_key="challenge_Profession" subtitle_key="challenge_Mechanic2_subtitle" description_key="challenge_Mechanic2_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic2_offer" difficulty="easy">
-		<objective type="FetchKeep" id="mechanicalParts" value="25" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Mechanic3" name_key="challenge_Profession" subtitle_key="challenge_Mechanic3_subtitle" description_key="challenge_Mechanic3_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic3_offer" difficulty="easy">
-		<objective type="Craft" id="chainsaw" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Mechanic4" name_key="challenge_Profession" subtitle_key="challenge_Mechanic4_subtitle" description_key="challenge_Mechanic4_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic4_offer" difficulty="easy">
-		<objective type="Craft" id="auger" value="1" />
-		<reward type="Exp" value="800" />
-		<reward type="SkillPoints" value="2" />
+		<reward type="Item" id="screwdriver" value="600" />
 	</quest>
 	<!--Bouncer-->
 	<quest id="StartBouncer" name_key="challenge_Profession" subtitle_key="Bouncer Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
@@ -989,5 +796,36 @@
 	<!--Mason-->
 	<quest id="StartMason" name_key="challenge_Profession" subtitle_key="Mason Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="brickHammer" value="300" />
+	</quest>
+    <!--JZMOD TRADER BARTAR SYSTEM-->
+    <quest id="q_barterForGoldenrodTea" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="goldenRodTea" value="15" />
+	</quest>
+    <quest id="q_barterForCraftedRevolver" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="craftedRevolver" value="500" />
+	</quest>
+    <quest id="q_barterForFirstAidBandage" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="firstAidBandage" value="5" />
+	</quest>
+    <quest id="q_barterForGrainAlcohol" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="grainAlcohol" value="2" />
+	</quest>
+    <quest id="q_barterForForgedIron" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="forgedIron" value="20" />
+	</quest>
+    <quest id="q_barterForForgedSteel" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="forgedSteel" value="20" />
+	</quest>
+    <quest id="q_barterForCorrugatedMetalSheet" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="corrugatedMetalSheet" value="100" />
+	</quest>
+    <quest id="q_barterForConcreteMix" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="concreteMix" value="100" />
+	</quest>
+    <quest id="q_barterForMetalRivetSheet" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="metalRivetSheet" value="100" />
+	</quest>
+    <quest id="q_barterForFirstAidKit" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="firstAidKit" value="2" />
 	</quest>
 </quests>
