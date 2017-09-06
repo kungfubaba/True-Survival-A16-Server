@@ -3704,7 +3704,7 @@
 		</perk>
       <!--SCIENCE-->
       <!-- JZMOD BUILDING SKILLS-->
-		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn to make nails and planks at skill level 10." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn to make nails and planks at skill level 3." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="woodFrameBlock" unlock_level="1" />
 			<recipe name="woodFrameCNRFull" unlock_level="2" />
 			<recipe name="woodFrameCNRInside" unlock_level="2" />
@@ -3729,7 +3729,7 @@
 			<recipe name="nail" unlock_level="3" />
 			<recipe name="plank" unlock_level="3" />
 		</perk>
-		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn to make cobblestones at skill level 10" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
+		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn to make cobblestones at skill level 3" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
 			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
 			<recipe name="cobblestoneFrameRamp" unlock_level="2" />
 			<recipe name="cobblestoneFrameStairs25" unlock_level="2" />
@@ -3745,7 +3745,7 @@
 			<!--upgrade material-->
 			<recipe name="cobblestones" unlock_level="3" />
 		</perk>
-		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 10" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 3" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="brickFrameBlock" unlock_level="1" />
 			<recipe name="brickFrameRamp" unlock_level="2" />
 			<recipe name="brickFrameStairs" unlock_level="2" />
@@ -3762,7 +3762,7 @@
           	<!--upgrade material-->
 			<recipe name="bricks" unlock_level="3" />
 		</perk>
-		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 3" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="cementFormBlock" unlock_level="1" />
 			<recipe name="cementFormRamp" unlock_level="2" />
             <recipe name="cementFormStairs25CornerCNR" unlock_level="2" />
@@ -3782,7 +3782,7 @@
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
 		</perk>
-		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn to make concrete mix at skill level 10" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn to make concrete mix at skill level 3" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameRamp" unlock_level="2" />
 			<recipe name="rebarStairs25" unlock_level="2" />
@@ -3799,7 +3799,7 @@
             <recipe name="cement" unlock_level="3" />
 			<recipe name="concreteMix" unlock_level="3" />
 		</perk>
-		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 10" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 3" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameRamp" unlock_level="2" />
 			<recipe name="scrapIronStairs25" unlock_level="2" />
@@ -3817,7 +3817,7 @@
 			<recipe name="nutAndBolt" unlock_level="3" />
 			<recipe name="corrugatedMetalSheet" unlock_level="3" />
 		</perk>
-		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 10" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 3" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="forgedFrame" unlock_level="1" />
 			<recipe name="forgedFrameRamp" unlock_level="2" />
 			<recipe name="forgedStairs25" unlock_level="2" />

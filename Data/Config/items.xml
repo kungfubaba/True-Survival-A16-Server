@@ -13210,7 +13210,7 @@ Mesh files no longer used:
         <property name="HandMeshfile" value="#drill?DrillTool" /> 
 		<property name="CustomIcon" value="ui_game_symbol_welder" />
 		<property name="Material" value="metal" />
-		<property name="RepairTools" value="scrapSteel" />
+		<property name="RepairTools" value="forgedSteel" />
 		<property name="HoldType" value="37" />
 		<property name="Stacknumber" value="1" />
 		<property name="DegradationBreaksAfter" value="true" />

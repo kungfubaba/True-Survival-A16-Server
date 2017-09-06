@@ -142,7 +142,7 @@ There is a console command: forcegamestage
 			<spawn group="wanderingHorde30" num="24" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="20">
-			<spawn group="animalZombieDog" num="6" maxAlive="30" duration="09" />
+			<spawn group="ZombieDogGroup" num="6" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="21">
 			<spawn group="wanderingHorde30" num="25" maxAlive="30" duration="09" />
