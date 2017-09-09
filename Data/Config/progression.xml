@@ -3480,7 +3480,7 @@
 		</perk>
 		<perk name="nailgunPerk" icon="ui_game_symbol_nailgun" description_key="Learn to build and maintain a nailgun" title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
-			<recipe name="ui_game_symbol_nailgun" unlock_level="1" />
+			<recipe name="nailgun" unlock_level="1" />
 		</perk>
 		<perk name="stoneDrillPerk" icon="ui_game_symbol_auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
