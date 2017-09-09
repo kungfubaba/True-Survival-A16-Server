@@ -1919,7 +1919,7 @@
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
-		<property name="MaxHealth" value="50" />
+		<property name="MaxHealth" value="150" />
 		<property name="HandItem" value="handSnake" />
 		<property name="Weight" value="70" />
 		<property name="WanderSpeed" value="0.08" />

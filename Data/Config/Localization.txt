@@ -5141,7 +5141,7 @@ gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zom
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
 boneMeal,,,,"Bone Meal",,,,
 boneMealDesc,,,,"Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
-airCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Battery Pack Workstation",,,,
+airCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Work Bench",,,,
 garageDoorDesc,,,,"A strong garage door crafted on the Wood Working Bench.",,,,
 fermentationBarrel,,,,"Fermentation Barrel",,,,
 fermentationBarrelDesc,,,,"Used to make fermented Mead or Beer. Crafted on the Anvil with a Claw Hammer.",,,,
@@ -5293,7 +5293,7 @@ trophyBear,,,,"Bear Claw",,,,
 HuntingDesc,,,,"A Trophy retrieved from your game. Craft it into bones to earn xp toward your hunting skill.",,,,
 narrowLog,,,,"Narrow Log",,,,
 PlankGroupDesc,,,,"Easily crafted large flat planks. Great for early building or boarding up a hole.",,,,
-scubaTankEmptyDesc,,,,"This tank is empty and needs to be refilled. To refill it you will need to use the battery pack with the air compressor. You will also need power to run it all.",,,,
+scubaTankEmptyDesc,,,,"This tank is empty and needs to be refilled. To refill it you will need to use the Work Bench with the air compressor. ",,,,
 cobblestoneHammerDesc,,,,"Use this cobblestone hammer to take apart cobblestone blocks and retrieve building materials. It can also be used to upgrade cobblestone Blocks and repair all any block.",,,,
 brickHammerDesc,,,,"Use this brick hammer to take apart brick blocks and retrieve building materials. It can also be used to upgrade brick Blocks and repair any block.",,,,
 concreteSledgeDesc,,,,"Use this concrete sledge hammer to take apart concrete blocks and retrieve building materials. It can also be used to upgrade concrete Blocks and repair any block.",,,,
@@ -5323,3 +5323,9 @@ barterForCraftedRevolver,,,,"Bartering",,,,
 barterForCraftedRevolverDesc,,,,"What will you give me for this Crafted Revolver?",,,,
 barterForGoldenrodTea,,,,"Bartering",,,,
 barterForGoldenrodTeaDesc,,,,"What will you give me for 15 Goldenrod Tea?",,,,
+skillPaper,,,,"Skill Paper",,,,
+skillPaperDesc,,,,"Obtained from scraping For Dummies Books. Collect 10 and us them to craft a Profession Page on the Research Desk.",,,,
+
+
+
+

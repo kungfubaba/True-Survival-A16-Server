@@ -1852,7 +1852,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="katanaCraft" icon="ui_game_symbol_katanamichonne" description_key="machete" title_key="machete" group="crafting">
+        <crafting_skill name="katanaCraft" icon="ui_game_symbol_katanamichonne" description_key="katana" title_key="katana" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />

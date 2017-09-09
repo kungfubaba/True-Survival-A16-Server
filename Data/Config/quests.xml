@@ -231,38 +231,48 @@
 		<reward type="SkillPoints" value="1" />
 	</quest>
     <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
-	<quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">
-		<objective type="FetchKeep" id="craftedRevolverStock" value="1" />
-        <objective type="FetchKeep" id="craftedRevolverBarrel" value="1" />
-        <objective type="FetchKeep" id="revolver_cylinder" value="1" />
-        <objective type="FetchKeep" id="revolver_parts" value="1" />
+    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">
+        <objective type="Craft" id="craftedRevolverStock" value="1" />
+        <objective type="Craft" id="craftedRevolverBarrel" value="1" />
+        <objective type="Craft" id="revolver_cylinder" value="1" />
+        <objective type="Craft" id="revolver_parts" value="1" />
         <objective type="FetchKeep" id="craftedRevolver" value="1" />
-		<objective type="ZombieKill" value="3" />
-		<requirement type="Holding" id="craftedRevolver" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
-	<quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="blunderbuss" category_key="quest">
-		<objective type="FetchKeep" id="blunderbuss" value="1" />
-		<objective type="FetchKeep" id="blunderbussAmmo" value="5" />
-		<objective type="ZombieKill" value="3" />
-		<requirement type="Holding" id="blunderbuss" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<!-- Basic Survival 23 - Craft and use craftedRifle /> -->
-	<quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
-		<objective type="FetchKeep" id="craftedRifle_stock" value="1" />
-        <objective type="FetchKeep" id="craftedRifle_receiver" value="1" />
-        <objective type="FetchKeep" id="craftedRifleBarrel" value="1" />
-		<objective type="FetchKeep" id="revolver_parts" value="1" />
+        <reward type="Quest" id="quest_BasicSurvival21b" stage="aftercomplete" />
+    </quest>    
+    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
         <objective type="ZombieKill" value="3" />
-		<requirement type="Holding" id="craftedRifle" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<!-- Basic Survival 24 - Build Planks /> -->
+        <requirement type="Holding" id="craftedRevolver" />
+        <reward type="Exp" value="400" />
+        <reward type="SkillPoints" value="1" />
+    </quest>
+    <!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
+    <quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="ui_game_symbol_blunderbuss" category_key="quest">
+        <objective type="Craft" id="blunderbuss" value="1" />
+        <objective type="Craft" id="blunderbussAmmo" value="5" />
+        <reward type="Quest" id="quest_BasicSurvival22b" stage="aftercomplete" />
+    </quest>
+    <quest id="quest_BasicSurvival22b" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="ui_game_symbol_blunderbuss" category_key="quest">
+        <objective type="ZombieKill" value="3" />
+        <requirement type="Holding" id="blunderbuss" />
+        <reward type="Exp" value="400" />
+        <reward type="SkillPoints" value="1" />
+    </quest>    
+    <!-- Basic Survival 23 - Craft and use craftedRifle /> -->
+    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+        <objective type="Craft" id="craftedRifle_stock" value="1" />
+        <objective type="Craft" id="craftedRifle_receiver" value="1" />
+        <objective type="Craft" id="craftedRifleBarrel" value="1" />
+        <objective type="Craft" id="revolver_parts" value="1" />
+        <objective type="FetchKeep" id="craftedRifle" value="1" />
+        <reward type="Quest" id="quest_BasicSurvival23b" stage="aftercomplete" />
+    </quest>
+    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+        <objective type="ZombieKill" value="3" />
+        <requirement type="Holding" id="craftedRifle" />
+        <reward type="Exp" value="400" />
+        <reward type="SkillPoints" value="1" />
+    </quest>
+    <!-- Basic Survival 24 - Build Planks /> -->
 	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="1x3Planks" value="1" />
 		<objective type="Craft" id="2x5Planks" value="1" />
