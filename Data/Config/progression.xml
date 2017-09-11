@@ -3713,7 +3713,16 @@
 			<recipe name="woodStairs25" unlock_level="2" />
 			<recipe name="woodPillar100" unlock_level="2" />
 			<recipe name="woodPlate" unlock_level="2" />
-			<recipe name="woodPole" unlock_level="2" />
+            <recipe name="woodFrameWedgeIncline" unlock_level="2" />
+            <recipe name="woodFrameWedgeTipCNRFullTop" unlock_level="2" />
+            <recipe name="woodFrameWedgeTipCNRFullBottom" unlock_level="2" />
+            <recipe name="woodFrameWedgeCNRInsideBottom" unlock_level="2" />
+            <recipe name="woodFrameWedgeCNRInsideTop" unlock_level="2" />
+            <recipe name="woodFrameStairs25CornerCNR" unlock_level="2" />
+            <recipe name="woodCTRpole" unlock_level="2" />
+            <recipe name="woodFrameCNRRampFiller" unlock_level="2" />
+            <recipe name="woodFrameArch" unlock_level="2" />
+          	<recipe name="woodPole" unlock_level="2" />
 			<recipe name="woodArrowSlitHalf" unlock_level="2" />
             <recipe name="woodCatwalk" unlock_level="2" />
             <recipe name="woodCatwalkRailing" unlock_level="2" />
@@ -3777,7 +3786,9 @@
 			<recipe name="cementFormPillar50" unlock_level="2" />
 			<recipe name="cementFormPole" unlock_level="2" />
             <recipe name="cementFormWedgeCNRInsideBottom" unlock_level="2" />
-			<recipe name="cementFormWedgeTipCNRFullTop" unlock_level="2" />
+			<recipe name="cementFormArch" unlock_level="2" />
+            <recipe name="cementFormCNRRampFiller" unlock_level="2" />
+            <recipe name="cementFormWedgeTipCNRFullTop" unlock_level="2" />
 			<!--upgrade material-->
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
@@ -3813,7 +3824,16 @@
 			<recipe name="scrapIronFramePillar50" unlock_level="2" />
 			<recipe name="scrapIronFramePole" unlock_level="2" />
 			<recipe name="rScrapIronPlate" unlock_level="2" />
-			<!--upgrade material-->
+            <recipe name="scrapIronFrameWedgeIncline" unlock_level="2" />
+            <recipe name="scrapIronFrameWedgeTipCNRFullTop" unlock_level="2" />
+            <recipe name="scrapIronFrameWedgeTipCNRFullBottom" unlock_level="2" />
+            <recipe name="scrapIronFrameWedgeCNRInsideBottom" unlock_level="2" />
+            <recipe name="scrapIronFrameWedgeCNRInsideTop" unlock_level="2" />
+            <recipe name="scrapIronFrameStairs25CornerCNR" unlock_level="2" />
+            <recipe name="scrapIronCTRpole" unlock_level="2" />
+            <recipe name="scrapIronFrameCNRRampFiller" unlock_level="2" />
+            <recipe name="scrapIronFrameArch" unlock_level="2" />
+            <!--upgrade material-->
 			<recipe name="nutAndBolt" unlock_level="3" />
 			<recipe name="corrugatedMetalSheet" unlock_level="3" />
 		</perk>

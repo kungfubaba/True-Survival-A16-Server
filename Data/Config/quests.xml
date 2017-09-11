@@ -64,6 +64,8 @@
 		<reward type="Quest" id="quest_BasicSurvival31" />
 		<reward type="Quest" id="quest_BasicSurvival32" />
         <reward type="Quest" id="quest_BasicSurvival33" />
+        <reward type="Quest" id="quest_BasicSurvival34" />
+        <reward type="Quest" id="quest_BasicSurvival35" />
 		<reward type="Exp" value="400" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 		<reward type="SkillPoints" value="1" />
@@ -230,6 +232,18 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
+    <!-- Basic Survival 34 - Craft Storage Containers /> -->
+	<quest id="quest_BasicSurvival34" group_name_key="quest_BasicSurvival" name_key="Looted Storage" subtitle_key="Looted Storage" description_key="Having a place to stash your supplies is a must but if you don't have the materials or smarts to craft one you can always pick one up. Destroying Backpacks, Sports Bags, Purses and Trash bags will let you pick them up and replace them for easy storage. Grab a few to use for latter." icon="ui_game_symbol_map_house" category_key="quest">
+		<objective type="FetchKeep" id="cntDuffle01" value="1" />
+        <objective type="FetchKeep" id="cntPurse01" value="1" />
+        <objective type="FetchKeep" id="cntTrashPile02" value="2" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 35 - Storage Sacks /> -->
+	<quest id="quest_BasicSurvival35" group_name_key="quest_BasicSurvival" name_key="Crafted Storage" subtitle_key="Crafted Storage" description_key="You will need a lot of things to survive in True Survival and you will need somewhere to keep them. Before you can learn more complex secure storage containers Storage Sacks will be all you can craft. Craft one to stash your supplies in." icon="ui_game_symbol_map_house" category_key="quest">
+		<objective type="Craft" id="storageSack" value="1" />
+		<reward type="Exp" value="400" />
+	</quest>
     <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
     <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">
         <objective type="Craft" id="craftedRevolverStock" value="1" />
@@ -273,7 +287,7 @@
         <reward type="SkillPoints" value="1" />
     </quest>
     <!-- Basic Survival 24 - Build Planks /> -->
-	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="Early Barricades" subtitle_key="Please add text here to finish me" description_key="Before you learn to build frames it can be hard to barricade doors and windows. Craft these Planks and use them for early building and securing buildings." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="1x3Planks" value="1" />
 		<objective type="Craft" id="2x5Planks" value="1" />
 		<objective type="BlockPlace" id="1x3Planks" value="1" />
@@ -441,7 +455,7 @@
 		<reward type="Exp" value="400" />
         <reward type="Item" id="steelBuildingSkill" />
 	</quest>
-	<!-- Basic Survival 31 - Farming Chain Starter /> -->
+	<!-- Basic Survival 32 - Farming Chain Starter /> -->
 	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Learning To Farm" subtitle_key="Growing trees" description_key="You can't live off moldy Twinkies forever and sooner or later all the food in the world will spoil so you better know how to grow your own by then. Let's start off with something easy. Collect these tree seeds and plant them to begin your Farming quest chain.When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />

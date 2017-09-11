@@ -1406,42 +1406,44 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="1" />
 	</recipe>
 	<recipe name="scrapIronFrameBlock" count="1" craft_time="10" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameBlock" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameCNRFull" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameCNRInside" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameRamp" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameWedge" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronFrameWedgeTip" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="15" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="scrapIronStairs25" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="40" />
-		<ingredient name="nutAndBolt" count="3" />
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="rScrapIronTable" count="1">
+	<recipe name="rScrapIronTable" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="40" />
+        <ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="scrapIronArrowSlitHalf" count="1">
+	<recipe name="scrapIronArrowSlitHalf" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="40" />
+        <ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="secureDoorWooden" count="1" craft_time="10" craft_exp_gain="10">
 		<ingredient name="plank" count="10" />
@@ -1568,7 +1570,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="plank" count="5" />
 	</recipe>
 	<recipe name="window03Wood" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="stick" count="15" />
+		<ingredient name="stick" count="20" />
         <ingredient name="glassBusinessCTRSheet" count="4" />
 	</recipe>
 	<recipe name="woodFenceFarmSheet" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
@@ -1627,8 +1629,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="3" />
 	</recipe>
 	<recipe name="woodArrowSlitHalf" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
-		<ingredient name="nail" count="5" />
+		<ingredient name="plank" count="5" />
+		<ingredient name="nail" count="20" />
 	</recipe>
 	<recipe name="woodHatch1_v1" count="1" craft_time="10" craft_exp_gain="10">
 		<ingredient name="plank" count="10" />
@@ -1637,11 +1639,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="1" />
 	</recipe>
 	<recipe name="woodCatwalk" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodCatwalkRailing" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodRailing" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
@@ -1649,23 +1651,23 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="nail" count="2" />
 	</recipe>
 	<recipe name="woodCatwalkRailingCNR" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodCatwalkWedgeRailing" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodStairsBoard" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodStairsBoardRailing" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="woodWedgeTip" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
+		<ingredient name="plank" count="20" />
 		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="workbench" count="1" craft_time="300" craft_exp_gain="100">
@@ -3691,74 +3693,90 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_lead" count="5"/>
 		<ingredient name="unit_clay" count="3"/>
 	</recipe>
-	<recipe name="woodFrameWedgeIncline" count="1">
-		<ingredient name="plank" count="5"/>
+	<recipe name="woodFrameWedgeIncline" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
 	</recipe>
-	<recipe name="scrapIronFrameWedgeIncline" count="1">
-		<ingredient name="scrapIron" count="15"/>
+	<recipe name="scrapIronFrameWedgeIncline" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="cementFormWedgeCNRInsideBottom" count="1">
 		<ingredient name="plank" count="5"/>
 	</recipe>
-	<recipe name="woodFrameWedgeTipCNRFullTop" count="1">
-		<ingredient name="plank" count="5"/>
+	<recipe name="woodFrameWedgeTipCNRFullTop" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
 	</recipe>
-	<recipe name="scrapIronFrameWedgeTipCNRFullTop" count="1">
-		<ingredient name="scrapIron" count="15"/>
+	<recipe name="scrapIronFrameWedgeTipCNRFullTop" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="cementFormWedgeTipCNRFullTop" count="1">
+	<recipe name="cementFormWedgeTipCNRFullTop" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
 			<ingredient name="plank" count="5"/>
 	</recipe>
-	<recipe name="woodFrameWedgeTipCNRFullBottom" count="1">
+	<recipe name="woodFrameWedgeTipCNRFullBottom" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
+	</recipe>
+	<recipe name="scrapIronFrameWedgeTipCNRFullBottom" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
+	</recipe>
+	<recipe name="woodFrameWedgeCNRInsideBottom" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
+	</recipe>
+	<recipe name="scrapIronFrameWedgeCNRInsideBottom" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
+	</recipe>
+	<recipe name="woodFrameWedgeCNRInsideTop" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
 		<ingredient name="plank" count="5"/>
 	</recipe>
-	<recipe name="scrapIronFrameWedgeTipCNRFullBottom" count="1">
-		<ingredient name="scrapIron" count="15"/>
+	<recipe name="scrapIronFrameWedgeCNRInsideTop" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="woodFrameWedgeCNRInsideBottom" count="1">
-		<ingredient name="plank" count="5"/>
+	<recipe name="woodFrameStairs25CornerCNR" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
 	</recipe>
-	<recipe name="scrapIronFrameWedgeCNRInsideBottom" count="1">
-		<ingredient name="scrapIron" count="15"/>
-	</recipe>
-	<recipe name="woodFrameWedgeCNRInsideTop" count="1">
-		<ingredient name="plank" count="5"/>
-	</recipe>
-	<recipe name="scrapIronFrameWedgeCNRInsideTop" count="1">
-		<ingredient name="scrapIron" count="15"/>
-	</recipe>
-	<recipe name="woodFrameStairs25CornerCNR" count="1">
-		<ingredient name="plank" count="5"/>
-	</recipe>
-	<recipe name="scrapIronFrameStairs25CornerCNR" count="1">
-		<ingredient name="scrapIron" count="15"/>
+	<recipe name="scrapIronFrameStairs25CornerCNR" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
 	<recipe name="cementFormStairs25CornerCNR" count="1">
 		<ingredient name="plank" count="5"/>
 	</recipe>
-	<recipe name="woodCTRpole" count="1">
-		<ingredient name="plank" count="10"/>
+	<recipe name="woodCTRpole" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="plank" count="20"/>
+        <ingredient name="nail" count="5"/>
 	</recipe>
-	<recipe name="scrapIronCTRpole" count="1">
-		<ingredient name="scrapIron" count="15"/>
-        <ingredient name="nutAndBolt" count="3"/>
+	<recipe name="scrapIronCTRpole" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="woodFrameCNRRampFiller" count="1">
+	<recipe name="woodFrameCNRRampFiller" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
+	</recipe>
+	<recipe name="scrapIronFrameCNRRampFiller" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
+	</recipe>
+	<recipe name="cementFormCNRRampFiller" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
 		<ingredient name="plank" count="5"/>
 	</recipe>
-	<recipe name="scrapIronFrameCNRRampFiller" count="1">
-		<ingredient name="scrapIron" count="15"/>
+	<recipe name="woodFrameArch" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
+		<ingredient name="nail" count="5"/>
+        <ingredient name="plank" count="20"/>
 	</recipe>
-	<recipe name="cementFormCNRRampFiller" count="1">
-		<ingredient name="plank" count="5"/>
+	<recipe name="scrapIronFrameArch" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
+		<ingredient name="scrapIron" count="20" />
+		<ingredient name="nutAndBolt" count="5" />
 	</recipe>
-	<recipe name="woodFrameArch" count="1">
-		<ingredient name="plank" count="5"/>
-	</recipe>
-	<recipe name="scrapIronFrameArch" count="1">
-		<ingredient name="scrapIron" count="15"/>
-	</recipe>
-	<recipe name="cementFormArch" count="1">
+	<recipe name="cementFormArch" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
 		<ingredient name="plank" count="5"/>
 	</recipe>
 	<recipe name="insulator" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
@@ -3766,7 +3784,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_glass" count="10"/>
 		<ingredient name="unit_clay" count="20"/>
 	</recipe>
-	
 	<recipe name="wireTool" count="1" craft_area="workbench">
 		<ingredient name="forgedSteel" count="9"/>
 		<ingredient name="mechanicalParts" count="3"/>
