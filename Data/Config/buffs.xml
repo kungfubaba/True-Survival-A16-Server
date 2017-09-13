@@ -565,7 +565,7 @@ This requires a 50+ food bar:
 <buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="ui_game_symbol_limp">
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
-<buff id="limp1" duration="1" onexpired="limp2" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="ui_game_symbol_limp" />
+<buff id="limp1" duration="1" onexpired="limp2"  name_key="Limp" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="ui_game_symbol_limp" />
 <buff id="limp2" name_key="Limp" debuffif="health gequal .1" duration="1" onexpired="limp1" type="speedmodifier" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="ui_game_symbol_limp">
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
@@ -595,11 +595,11 @@ This requires a 50+ food bar:
 	<modify id="1" stat="coretemp" modifyValue="30" />
 </buff>	
 <!--JZMOD Red Bull-->
-<buff id="redBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="ui_game_symbol_RedBull" stack="extend">
+<buff id="redBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="ui_game_symbol_redBull" stack="extend">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 </buff>
 <!--JZMOD Smoking-->
-<buff id="smoking" duration="180" name_key="Smoking" type="sickness" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="ui_game_symbol_Pot">
+<buff id="smoking" duration="180" name_key="Smoking" type="sickness" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="ui_game_symbol_pot">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="food" amount="1" rate="18" />
 </buff>
@@ -649,7 +649,7 @@ This requires a 50+ food bar:
 </buff>
 <buff id="cauterize" castsound="Player_Female/player2death" requires="bite" duration="1" actions="buff(biteWound);debuff(bite)" />
 <buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You've held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="ui_game_symbol_bite" />
-<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don't care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="bandaged" />
+<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don't care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="ui_game_symbol_bite" />
 <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
 <buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="ui_game_symbol_bandaged" />
@@ -669,7 +669,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="coretemp" modifyValue="10" />
 </buff>
 <buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="dirtyBandage" />
+<buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySmallWound" duration="1" actions="setvar(scratch, 11)" />
 <buff id="tending2" duration="1800" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)" />
@@ -685,7 +685,7 @@ This requires a 50+ food bar:
 <buff id="tending4" duration="1800" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healWound" duration="10" actions="setvar(scratch, 6)" />
 <!-- JZMOD WOUND 4-->
-<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_severeWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
+<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,infectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_severeWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
 	<modify id="0" stat="stamina" amount="-6" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.89" />
 	<modify id="2" stat="health" amount="-1" rate="20" />
@@ -701,7 +701,7 @@ This requires a 50+ food bar:
 <buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)" />
 <!-- JZMOD WOUND 5-->
-<buff id="infectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="Your wound has gotten infected. Treat it with Sanitized Bandage and be sure to change it when it gets dirty or you could die." icon="InfectedWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
+<buff id="infectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="Your wound has gotten infected. Treat it with Sanitized Bandage and be sure to change it when it gets dirty or you could die." icon="ui_game_symbol_infectedWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
 	<modify id="0" stat="stamina" amount="-7" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.88" />
 	<modify id="2" stat="health" amount="-1" rate="15" />
@@ -714,7 +714,7 @@ This requires a 50+ food bar:
 <buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healInfectedWound" duration="10" actions="setvar(scratch, 16)" />
 <!--JZMOD Stimulan Addiction-->
-<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_Stimulant" >
+<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_stimulant" >
 	<modify id="0" stat="stamina" amount="4" rate="1" />
 	<modify id="1" stat="food" amount="1" rate="35" />
 </buff>
@@ -766,7 +766,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-1" rate="1" />
 </buff>	
 <!--JZMOD High-->
-<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_Pot">
+<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_pot">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="food" amount="-1" rate="8" />

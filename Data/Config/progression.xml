@@ -1046,7 +1046,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="crossbowCraft" icon="ui_game_symbol_crossbow" description_key="Crossbow." title_key="crossbowAction" group="crafting">
+		<crafting_skill name="crossbowCraft" icon="ui_game_symbol_crossbow" description_key="Crossbow." title_key="Crossbow Crafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3931,7 +3931,7 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="scrapHatch_v1" unlock_level="1" />
 		</perk>
-        <perk name="doorKnobPerk" icon="ui_game_symbol_doorKnob" description_key="Learn to craft Door Knobs in the forge using calipers" title_key="Door Knob" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+        <perk name="doorKnobPerk" icon="ui_game_symbol_doorKnob" description_key="Learn to craft Door Locks in the forge using calipers" title_key="Door Locks" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="3" />
 			<recipe name="doorKnob" unlock_level="1" />
 		</perk>
