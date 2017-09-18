@@ -61,13 +61,15 @@
 			</action>
 		</ai_package>
 		<ai_package name="Human Basic">
-			<!-- Basic AI -->
-			<action name="Wander" weight="1">
-				<task class="Wander" />
+            <!-- Basic AI -->
+            <action name="Follow" weight="1">
+                <task class="FollowTarget" run="true"/>
+                <consideration class="TargetVisible" flip_y="true" />
+				<consideration class="TargetType" type="EntityPlayer" />
 			</action>
 			<action name="MoveToWaypoint" weight="1">
 				<task class="MoveToTarget" run="false" />
-				<consideration class="TargetDistance" min="2" max="4" />
+				<consideration class="TargetDistance" min="2" max="10" />
 				<consideration class="TargetVisible" flip_y="true" />
 			</action>
 			<action name="Flee" weight="4">

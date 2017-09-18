@@ -1041,12 +1041,13 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<material id="forgecoal">
 		<property name="damage_category" value="stone" />
 		<property name="surface_category" value="stone" />
-		<property name="Hardness" type="float" value="2" />
+		<property name="Hardness" type="float" value="1" />
 		<property name="forge_category" value="coal" />
 		<property name="stepsound" value="stone" />
-		<property name="stability_glue" value="16" />
-		<property name="Mass" type="int" value="8" />
+		<property name="stability_glue" value="20" />
+		<property name="Mass" type="int" value="10" />
 		<property name="MaxDamage" value="1000" />
+        <property name="Experience" value="6" />
 	</material>
 	<material id="MmechanicalParts">
 		<property name="damage_category" value="metal" />

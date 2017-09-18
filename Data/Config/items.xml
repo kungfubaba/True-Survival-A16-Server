@@ -2053,7 +2053,7 @@ Mesh files no longer used:
 	</item>
 	<item id="108" name="fireaxeSteel">
 		<property name="Extends" value="fireaxeIron" />
-		<property name="Material" value="Msteel" />
+		<property name="Weight" value="0" />
 		<property name="CustomIcon" value="fireaxeIron" />
 		<property name="CustomIconTint" value="a0a0ff" />
 		<!-- xxx model to be replaced -->
@@ -2162,6 +2162,7 @@ Mesh files no longer used:
 	</item>
 	<item id="114" name="pickaxeSteel">
 		<property name="Extends" value="pickaxeIron" />
+        <property name="Weight" value="0" />
 		<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_pickaxeSteel" />
 		<property name="HoldType" value="4" />
@@ -2306,6 +2307,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Tools/shovel_steelPrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_steelShovel" />
 		<property name="RepairTools" value="shortSteelPipe" />
+        <property name="Weight" value="0" />
 		<property name="EconomicValue" value="760" />
 		<property class="Action0">
 			<property name="Delay" value="1.2" />
@@ -9696,10 +9698,11 @@ Mesh files no longer used:
 	<item id="1345" name="coal">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab" />
-		<property name="Material" value="coal" />
+		<property name="Material" value="forgecoal" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
+        <property name="Weight" value="1" />
 		<property name="FuelValue" value="20" />
 		<property name="DropScale" value="8" />
 		<property name="EconomicValue" value="10" />
@@ -11910,6 +11913,7 @@ Mesh files no longer used:
 		<property name="Extends" value="huntingKnife" />
 		<property name="CustomIcon" value="ui_game_symbol_battleKnifeCherry" />
 		<property name="Meshfile" value="#CombatKnife?CombatKnife" />
+        <property name="DropMeshfile" value="#CombatKnife?CombatKnife" />
 		<property name="RepairTools" value="sharpeningStone" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="5" />
@@ -11968,10 +11972,10 @@ Mesh files no longer used:
 	</item>
     <item id="1601" name="katana">
         <property name="Meshfile" value="#michonnekatana?katana" /> 
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="HoldType" value="17" />
-		<property name="Weight" value="1000" />
+		<property name="Weight" value="0" />
         <property name="DegradationBreaksAfter" value="true" />
 		<property name="EconomicValue" value="600" />
 		<property name="SoundDestroy" value="wooddestroy1" />
@@ -12729,7 +12733,15 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="1,1" />
 		</property>
 	</item>
-	<item id="1619" name="npcMagnum">
+    <item id="2043" name="npcColt1911">
+        <property name="Extends" value="npcPistol" />
+        <property name="Meshfile" value="#colt1911?colt1911" />
+    </item>
+    <item id="2045" name="npcDesertVII">
+        <property name="Extends" value="npcPistol" />
+        <property name="Meshfile" value="#desertVII?desertVII" />
+    </item>
+    <item id="1619" name="npcMagnum">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
@@ -12842,13 +12854,88 @@ Mesh files no longer used:
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-			<property name="DamageBonus.head" value="0.5" />
+			<property name="DamageBonus.head" value="0.1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="6,12" />
 			<property name="BlockDamage" value="2,6" />
 			<property name="Accuracy" value="1,1" />
 			<property name="FalloffRange" value="90,95" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+    <item id="2046" name="npcAK12">
+        <property name="Extends" value="npcAK47" />
+        <property name="Meshfile" value="#assaultrifles?AK12" />
+        <property name="HoldType" value="6" />
+    </item>
+    <item id="2047" name="npcScarH">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#assaultrifles?Scar-H" />
+        <property name="HoldType" value="6" />
+    </item>
+    <item id="2048" name="npcM4A1">
+        <property name="Extends" value="npcAK47" />
+       <property name="HandMeshfile" value="#assaultrifles?M4A1" />
+       <property name="HoldType" value="6" />
+    </item>
+    <item id="2049" name="npcG36c">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#assaultrifles?G36c" />
+        <property name="HoldType" value="6" />
+    </item>
+    <item id="2050" name="npcACW">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#assaultrifles?ACWPrefab" />
+    </item>
+    <item id="2051" name="npcUMP45">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#hk?UMP45" />
+        <property name="HoldType" value="6" />
+    </item>
+    <item id="2052" name="npcHK416">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#hk?HK416" />
+        <property name="HoldType" value="6" />
+    </item>
+    <item id="2053" name="npcMG4">
+        <property name="Extends" value="npcAK47" />
+        <property name="HandMeshfile" value="#hk?MG4" />
+        <property name="HoldType" value="11" />
+    </item>
+    <item id="2054" name="npcRocketLauncher">
+		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="10" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Launcher" />
+			<property name="Delay" value="3" />
+			<property name="Crosshair_min_distance" value="29" />
+			<property name="Crosshair_max_distance" value="34" />
+			<property name="Magazine_size" value="5" />
+			<property name="Magazine_items" value="npcRocket" />
+			<property name="Rays_spread" value="0.095" />
+			<property name="Reload_time" value="2" />
+            <property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="m136_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="weapon_empty" />
+			<property name="Sound_reload" value="m136_reload" />
+			<property name="Particles_muzzle_fire" value="rocketLauncherFire" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136" />
+		</property>
+		<property class="Attributes">
+            <property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="2,6" />
 			<property name="DegradationMax" value="9998,9999" />
 			<property name="DegradationRate" value="1,1" />
 		</property>
@@ -12871,10 +12958,6 @@ Mesh files no longer used:
 		<property name="Extends" value="npc9mmBullet" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
-		</property>
 	</item>
 	<item id="1624" name="npc762mmBullet">
 		<property name="Extends" value="npc9mmBullet" />
@@ -12885,6 +12968,37 @@ Mesh files no longer used:
 		<property name="Extends" value="npc9mmBullet" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+	</item>
+    <item id="2055" name="npcRocket">
+        <property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
+		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="500" />
+		<property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true" />
+            <property name="EntityDamage" value="250,500" />
+            <property name="BlockDamage" value="50,200" />
+            <!-- this is not working yet, it uses damage from Action1 -->
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="4" />
+			<!-- which Prefab/particle is used -->
+			<property name="Explosion.RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="Explosion.BlockDamage" value="500" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="Explosion.RadiusEntities" value="4" />
+			<!-- damage radius for entities -->
+			<property name="Explosion.EntityDamage" value="10" />
+			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+			<property name="Velocity" value="50" />
+			<property name="FlyTime" value="1.2" />
+			<property name="LifeTime" value="8" />
+		</property>
 	</item>
 	<!-- JZMOD NPC MELEE WEAPONS-->
 	<item id="1626" name="npcSledgeHammer">
@@ -12936,8 +13050,8 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="1,1" />
 		</property>
 	</item>
-	<item id="1629" name="npcFireaxeSteel">
-		<property name="Extends" value="fireaxeSteel" />
+	<item id="1629" name="npcGoodNightBat">
+		<property name="Extends" value="batGoodNight" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -12987,6 +13101,86 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+	</item>
+    <item id="2056" name="npcTPXBat">
+		<property name="Extends" value="batTPX" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+    <item id="2057" name="npcTomahawk">
+		<property name="Extends" value="tomahawk" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+    <item id="2058" name="npcFryingPan">
+		<property name="Extends" value="fryingPan" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+    <item id="2059" name="npcHayfork">
+		<property name="Extends" value="hayfork" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+    <item id="2060" name="npcBattleKnife">
+		<property name="Extends" value="battleKnifeCherry" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
 	</item>
 	<!--JZMOD TOOLS -->
 	<item id="1632" name="cobblestoneHammer">
@@ -13213,6 +13407,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
+        <property name="Weight" value="0" />
 		<property name="RepairTools" value="scrapSteel" />
 		<property name="Degradation" value="350" param1="true" />
         <property name="SoundDestroy" value="wooddestroy1" />

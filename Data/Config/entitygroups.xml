@@ -979,38 +979,134 @@ animalStagHostile
 	</entitygroup>
     <entitygroup name="Peoples">
         <entity name="invisibleAnimal" prob="65.0" />
-        <entity name="npcTraderSuitMelee" prob="1.0" />
-		<entity name="npcBandit01" prob="1.71" />
-		<entity name="npcBandit02" prob="1.71" />
-        <entity name="npcBandit03" prob="1.71" />
-		<entity name="npcBandit04" prob="1.71" />
-		<entity name="npcBandit05" prob="1.71" />
-		<entity name="npcBandit06" prob="1.71" />
-		<entity name="npcBandit07" prob="1.71" />
-        <entity name="npcSurvivorRanged" prob="1" />
-        <entity name="npcSurvivorMelee" prob="4.2" />
-		<entity name="npcSurvivorMelee02" prob="4.2" />
-		<entity name="npcSurvivorMelee03" prob="4.2" />
-		<entity name="npcSurvivorMelee04" prob="4.2" />
-		<entity name="npcSurvivorMelee05" prob="4.2" />
+        <entity name="follwerChris" prob="2.5" />
+		<entity name="follwerRick" prob="2.5" />
+		<entity name="follwerDarrylDixon" prob="2.5" />
+        <entity name="followerCarl" prob="2.5" />
+		<entity name="follwerMaggi" prob="2.5" />
+		<entity name="follwerJill" prob="2.5" />
+		<entity name="follwerAda" prob="2.5" />
+		<entity name="followerMichonne" prob="2.5" />
+        <entity name="followerTara" prob="2.5" />
+        <entity name="followerRosita" prob="2.5" />
+		<entity name="followerBittercup" prob="2" />
+		<entity name="followerBarry" prob="2" />
+        <entity name="banditSMutant2" prob="1" />
+		<entity name="banditMale" prob="2" />
+        <entity name="npcBanditFemaleMelee" prob="2" />
+		<entity name="banditTheMakerLeader" prob="1" />
+	</entitygroup>
+    <entitygroup name="WastelandPeoples">
+        <entity name="invisibleAnimal" prob="64.0" />
+        <entity name="followerBittercup" prob="1.15" />
+        <entity name="followerBarry" prob="1.15" />
+		<entity name="followerMedic" prob="1.15" />
+		<entity name="followerParkRanger" prob="1.15" />
+		<entity name="followerSargentSlaughter" prob="1.15" />
+		<entity name="followerTheEnd" prob="1.15" />
+        <entity name="followerPrivateChang" prob="1.15" />
+        <entity name="followerArnold" prob="1.15" />
+		<entity name="followerRambo" prob="1.15" />
+		<entity name="followerDeathskwad" prob="1.15" />
+        <entity name="followerSargentRock" prob="1.15" />
+		<entity name="followerColonelKurtz" prob="1.15" />
+        <entity name="followerMajorPayne" prob="1.15" />
+        <entity name="traderAbraham" prob="1" />
+        <entity name="banditWesker" prob="1.81" />
+		<entity name="banditHunk" prob="1.81" />
+		<entity name="banditSMutant" prob="1.81" />
+        <entity name="banditWarLeader" prob="1.81" />
+		<entity name="banditDreadLeader" prob="1.81" />
+		<entity name="banditTheMakerLeader" prob="1.81" />
+		<entity name="banditFamineLeader" prob="1.81" />
+		<entity name="banditDragonLeader" prob="1.81" />
+        <entity name="banditDeathLeader" prob="1.81" />
+        <entity name="banditMaleLeader" prob="1.81" />
+		<entity name="banditPestilenceLeader" prob="1.81" />
+	</entitygroup>
+    <entitygroup name="SnowWasteLandPeoples">
+         <entity name="invisibleAnimal" prob="64.0" />
+        <entity name="followerBittercup" prob="1.15" />
+        <entity name="followerBarry" prob="1.15" />
+		<entity name="followerMedic" prob="1.15" />
+		<entity name="followerParkRanger" prob="1.15" />
+		<entity name="followerSargentSlaughter" prob="1.15" />
+		<entity name="followerTheEnd" prob="1.15" />
+        <entity name="followerPrivateChang" prob="1.15" />
+        <entity name="followerArnold" prob="1.15" />
+		<entity name="followerRambo" prob="1.15" />
+		<entity name="followerDeathskwad" prob="1.15" />
+        <entity name="followerSargentRock" prob="1.15" />
+		<entity name="followerColonelKurtz" prob="1.15" />
+        <entity name="followerMajorPayne" prob="1.15" />
+        <entity name="traderMorgan" prob="1" />
+        <entity name="banditWesker" prob="1.81" />
+		<entity name="banditHunk" prob="1.81" />
+		<entity name="banditSMutant" prob="1.81" />
+        <entity name="banditWarLeader" prob="1.81" />
+		<entity name="banditDreadLeader" prob="1.81" />
+		<entity name="banditTheMakerLeader" prob="1.81" />
+		<entity name="banditFamineLeader" prob="1.81" />
+		<entity name="banditDragonLeader" prob="1.81" />
+        <entity name="banditDeathLeader" prob="1.81" />
+        <entity name="banditMaleLeader" prob="1.81" />
+		<entity name="banditPestilenceLeader" prob="1.81" />
     </entitygroup>
-    <entitygroup name="BadPeoples">
-        <entity name="invisibleAnimal" prob="65.0" />
-        <entity name="npcTraderSuitMelee" prob="1.0" />
-		<entity name="npcBanditRanged" prob="1" />
-		<entity name="npcBandit01" prob="1.71" />
-		<entity name="npcBandit02" prob="1.71" />
-        <entity name="npcBandit03" prob="1.71" />
-		<entity name="npcBandit04" prob="1.71" />
-		<entity name="npcBandit05" prob="1.71" />
-		<entity name="npcBandit06" prob="1.71" />
-		<entity name="npcBandit07" prob="1.71" />
-        <entity name="npcSurvivorRanged" prob="1" />
-        <entity name="npcSurvivorMelee" prob="4" />
-		<entity name="npcSurvivorMelee02" prob="4" />
-		<entity name="npcSurvivorMelee03" prob="4" />
-		<entity name="npcSurvivorMelee04" prob="4" />
-		<entity name="npcSurvivorMelee05" prob="4" />
+    <entitygroup name="radiatedBurntForestPeoples">
+         <entity name="invisibleAnimal" prob="64.0" />
+        <entity name="followerBittercup" prob="1.15" />
+        <entity name="followerBarry" prob="1.15" />
+		<entity name="followerMedic" prob="1.15" />
+		<entity name="followerParkRanger" prob="1.15" />
+		<entity name="followerSargentSlaughter" prob="1.15" />
+		<entity name="followerTheEnd" prob="1.15" />
+        <entity name="followerPrivateChang" prob="1.15" />
+        <entity name="followerArnold" prob="1.15" />
+		<entity name="followerRambo" prob="1.15" />
+		<entity name="followerDeathskwad" prob="1.15" />
+        <entity name="followerSargentRock" prob="1.15" />
+		<entity name="followerColonelKurtz" prob="1.15" />
+        <entity name="followerMajorPayne" prob="1.15" />
+        <entity name="traderAbrahamSr" prob="1" />
+        <entity name="banditWesker" prob="1.81" />
+		<entity name="banditHunk" prob="1.81" />
+		<entity name="banditSMutant" prob="1.81" />
+        <entity name="banditWarLeader" prob="1.81" />
+		<entity name="banditDreadLeader" prob="1.81" />
+		<entity name="banditTheMakerLeader" prob="1.81" />
+		<entity name="banditFamineLeader" prob="1.81" />
+		<entity name="banditDragonLeader" prob="1.81" />
+        <entity name="banditDeathLeader" prob="1.81" />
+        <entity name="banditMaleLeader" prob="1.81" />
+		<entity name="banditPestilenceLeader" prob="1.81" />
+    </entitygroup>
+    <entitygroup name="plainsWasteLandPeoples">
+         <entity name="invisibleAnimal" prob="64.0" />
+        <entity name="followerBittercup" prob="1.15" />
+        <entity name="followerBarry" prob="1.15" />
+		<entity name="followerMedic" prob="1.15" />
+		<entity name="followerParkRanger" prob="1.15" />
+		<entity name="followerSargentSlaughter" prob="1.15" />
+		<entity name="followerTheEnd" prob="1.15" />
+        <entity name="followerPrivateChang" prob="1.15" />
+        <entity name="followerArnold" prob="1.15" />
+		<entity name="followerRambo" prob="1.15" />
+		<entity name="followerDeathskwad" prob="1.15" />
+        <entity name="followerSargentRock" prob="1.15" />
+		<entity name="followerColonelKurtz" prob="1.15" />
+        <entity name="followerMajorPayne" prob="1.15" />
+        <entity name="traderMorganSr" prob="1" />
+        <entity name="banditWesker" prob="1.81" />
+		<entity name="banditHunk" prob="1.81" />
+		<entity name="banditSMutant" prob="1.81" />
+        <entity name="banditWarLeader" prob="1.81" />
+		<entity name="banditDreadLeader" prob="1.81" />
+		<entity name="banditTheMakerLeader" prob="1.81" />
+		<entity name="banditFamineLeader" prob="1.81" />
+		<entity name="banditDragonLeader" prob="1.81" />
+        <entity name="banditDeathLeader" prob="1.81" />
+        <entity name="banditMaleLeader" prob="1.81" />
+		<entity name="banditPestilenceLeader" prob="1.81" />
     </entitygroup>
     <entitygroup name="EnemyAnimalsWasteland">
 		<entity name="animalRabbit" prob="5.0" />
@@ -1390,7 +1486,8 @@ animalStagHostile
 		<entity name="animalZombieBear" />
 	</entitygroup>
 	<entitygroup name="BanditGroup">
-		<entity name="npcBanditMelee" />
+        <entity name="invisibleAnimal" prob="65.0" />
+		<!--<entity name="npcBanditMelee" />-->
 	</entitygroup>
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />

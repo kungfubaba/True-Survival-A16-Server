@@ -3,7 +3,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 -->
 <recipes>
 	<!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
-	<recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
+	<recipe name="coal" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_coal" count="1" />
+	</recipe>
+    <recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
 	<recipe name="bioMass" count="1" tooltip="ttScrapMetalBrass">
@@ -3084,6 +3087,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="ratOnAStick" count="1" craft_area="campfire" craft_tool="stick" craft_time="4" craft_exp_gain="10">
 		<ingredient name="deadRat" count="1" />
 	</recipe>
+    <recipe name="razorWire" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="3" craft_exp_gain="2">
+		<ingredient name="unit_iron" count="20" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
     <recipe name="revolver_parts" count="1" craft_area="workbench" craft_tool="screwdriver" craft_time="4" craft_exp_gain="25">
 		<ingredient name="oldRevolver" count="1" />
 	</recipe>
@@ -3162,6 +3169,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="scrapSteel" count="1" craft_area="blastFurnace" material_based="true" craft_time="0" craft_exp_gain="0">
 		<ingredient name="unit_iron" count="5" />
 		<ingredient name="unit_coal" count="5" />
+	</recipe>
+    <recipe name="scrapSteel" count="450" craft_time="30" craft_exp_gain="0">
+		<ingredient name="katana" count="1"/>
+	</recipe>
+    <recipe name="scrapSteel" count="90" craft_time="10" craft_exp_gain="0">
+		<ingredient name="fireaxeSteel" count="1"/>
+	</recipe>
+    <recipe name="scrapSteel" count="90" craft_time="10" craft_exp_gain="0">
+		<ingredient name="shovelSteel" count="1"/>
+	</recipe>
+    <recipe name="scrapSteel" count="90" craft_time="10" craft_exp_gain="0">
+		<ingredient name="pickaxeSteel" count="1"/>
+	</recipe>
+    <recipe name="scrapSteel" count="9" craft_time="5" craft_exp_gain="0">
+		<ingredient name="screwdriver" count="1"/>
 	</recipe>
     <recipe name="scrapWrenchMold" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="4" craft_exp_gain="40">
 		<ingredient name="wrench" count="1" />

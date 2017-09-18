@@ -4231,7 +4231,7 @@ group desc for stuff like metal siding
 		<!--property name="DontDamageOnTouch" value="true" /-->
 		<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger" />
 		<property class="RepairItems">
-			<property name="wood" value="10" />
+			<property name="plank" value="10" />
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="rWoodLogSpike2" />
@@ -4676,16 +4676,15 @@ kind of free
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="FallDamage" value="true" />
 		<property name="FuelValue" value="12" />
-		<property name="CanPickup" value="false" />
+		<property name="CanPickup" value="true" param1="mattressFlat"/>
 		<drop event="Harvest" name="cottonPlant" count="2" />
 		<drop event="Harvest" name="cloth" count="2" />
 		<drop event="Destroy" name="spring" count="2,4" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<property name="EconomicValue" value="60" />
-		<!-- disassemble value -->
 	</block>
 	<block id="466" name="mattressFlat">
-		<property name="DescriptionKey" value="bedGroupDesc" />
+        <property name="DescriptionKey" value="bedGroupDesc" />
 		<property name="Class" value="SleepingBag" />
 		<property name="Material" value="furniture" />
 		<property name="Shape" value="Ext3dModel" />
@@ -4698,14 +4697,13 @@ kind of free
 		<property name="OnlySimpleRotations" value="true" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="FuelValue" value="12" />
-		<!-- A15
-	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
-	-->
+		<property name="CanPickup" value="true" />
+        <property name="BuffsWhenWalkedOn" value="cozybed1"/>
 		<drop event="Harvest" name="cottonPlant" count="2" />
 		<drop event="Harvest" name="cloth" count="2" />
+        <drop event="Destroy" name="spring" count="2,4" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<property name="EconomicValue" value="60" />
-		<!-- disassemble value -->
 	</block>
 	<block id="467" name="shapedChargeBlockTest">
 		<property name="CreativeMode" value="Dev" />
@@ -5113,16 +5111,22 @@ kind of free
 	<block id="523" name="storeShelving01Double">
 		<property name="Extends" value="storeShelving01" />
 		<property name="Model" value="Commercial/store_shelving01_double" param1="main_mesh" />
+        <drop event="Harvest" name="scrapIron" count="5,15" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="1,5" tool_category="Disassemble" />
 	</block>
 	<block id="524" name="storeShelving01Top">
 		<property name="Extends" value="storeShelving01" />
 		<property name="StabilitySupport" value="false" />
 		<!-- build restriction -->
 		<property name="Model" value="Commercial/store_shelving01_top" param1="main_mesh" />
+        <drop event="Harvest" name="scrapIron" count="5,15" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="1,5" tool_category="Disassemble" />
 	</block>
 	<block id="525" name="storeShelving01TopDouble">
 		<property name="Extends" value="storeShelving01" />
 		<property name="Model" value="Commercial/store_shelving01_top_double" param1="main_mesh" />
+        <drop event="Harvest" name="scrapIron" count="5,15" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="1,5" tool_category="Disassemble" />
 	</block>
 	<block id="526" name="mineCookingPot">
 		<property name="Extends" value="mineCandyTin" />
@@ -5370,6 +5374,7 @@ kind of free
 		<property name="Model" value="Furniture/end_table" param1="main_mesh" />
         <property name="CanPickup" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
+        <property name="StabilitySupport" value="false" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<drop event="Destroy" name="plank" count="1,3" prob="1" />
@@ -7147,7 +7152,7 @@ kind of free
         <property name="FallDamage" value="true" />
         <property name="LootList" value="1" />
 		<property name="DowngradeBlock" value="goreBlock1BonesPrefab" />
-		<drop event="Harvest" name="femur" count="3,5" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,3" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="2" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="femur" count="1" />
@@ -7168,8 +7173,8 @@ kind of free
 		<property name="UpgradeRated.ToBlock" value="bonesPrefab" />
 		<property name="UpgradeRated.Rate" value="15" />
       	<property name="DowngradeBlock" value="bonesPrefab" />
-		<drop event="Harvest" name="femur" count="3,5" tool_category="Butcher" />
-		<drop event="Harvest" name="rottingFlesh" count="2" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,3" tool_category="Butcher" />
+		<drop event="Harvest" name="rottingFlesh" count="1" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="femur" count="1" />
 		<drop event="Destroy" count="0" />
@@ -16842,7 +16847,7 @@ kind of free
 		<property name="DowngradeBlock" value="bikeLoot" />
 	</block>
 	<!-- JZMOD NPC CORPSES -->
-	<block id="459" name="npcCorpse">
+	<block id="459" name="npcFollowerMeleeCorpse">
         <property name="Class" value="Gore" />
       	<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="organic" />
@@ -16856,55 +16861,59 @@ kind of free
         <property name="FallDamage" value="true" />
         <property name="LootList" value="211" />
 		<property name="DowngradeBlock" value="goreBlock1BonesPrefab" />
-		<drop event="Harvest" name="femur" count="3,5" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,3" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="2" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="femur" count="1" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<block id="460" name="banditPistolCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="460" name="npcFollowerRangedCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
+		<property name="LootList" value="229" />
+	</block>
+	<block id="461" name="npcBanditMeleeCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
+		<property name="LootList" value="200" />
+	</block>
+	<block id="462" name="npcBanditAK12Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="201" />
 	</block>
-	<block id="461" name="bandit44MagnumCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="484" name="npcBanditMG4Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="202" />
 	</block>
-	<block id="462" name="banditSawedOffPumpShotgunCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="583" name="npcBanditRocketCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="203" />
 	</block>
-	<block id="484" name="banditPumpShotgunCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="584" name="npcBanditHK416Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="204" />
 	</block>
-	<block id="583" name="banditMP5Corpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="585" name="npcBanditUMP45Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="205" />
 	</block>
-	<block id="584" name="banditAK47Corpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="609" name="npcBanditACWCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="206" />
 	</block>
-	<block id="585" name="banditHuntingRifleCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="610" name="npcBanditG36CCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="207" />
 	</block>
-	<block id="609" name="banditSniperRifleCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="611" name="npcBanditM4A1Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="208" />
 	</block>
-	<block id="610" name="banditRocketLauncherCorpse">
-		<property name="Extends" value="npcCorpse" />
+	<block id="659" name="npcBanditScarHCorpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="209" />
 	</block>
-	<block id="611" name="banditSledgeCorpse">
-		<property name="Extends" value="npcCorpse" />
+    <block id="1765" name="npcBanditAK47Corpse">
+		<property name="Extends" value="npcFollowerMeleeCorpse" />
 		<property name="LootList" value="210" />
-	</block>
-	<block id="659" name="followerCorpse">
-		<property name="Extends" value="npcCorpse" />
-		<property name="LootList" value="211" />
 	</block>
 	<!--JZMOD PLANTS-->
 	<block id="660" name="appleSeed">

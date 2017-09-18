@@ -1186,7 +1186,6 @@
 		<item group="t2Books" prob="22" />
 		<item group="t3Books" prob="3" />
 	</lootgroup>
-
 	<lootgroup name="militaryAmmo">
        	<item name="9mmFireBullet" count="5,25" prob="5.26" />
         <item name="shotgunShell" count="5,15" prob="5.26" />
@@ -1949,97 +1948,169 @@
 	</lootgroup>
 	<!--JZMOD BANDIT LOOT-->
 	<lootgroup name="banditsRare" >
-		<item name="bulletCasing" count="10,100" prob="44.4" />
-		<item group="questChallenge"  prob="22.2" />
-		<item group="treasureMaps"  prob="22.2" />
-		<item group="rareTools"  prob="5.6" />
-		<item group="rareOres" count="1,3" prob="5.6" />
+		<item name="bulletCasing" count="10,100" prob="50" />
+		<item group="questChallenge" prob="20" />
+		<item group="treasureMaps" prob="20" />
+		<item group="rareTools" prob="5" />
+		<item group="rareOres" count="1,3" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsPistol" >
-		<item name="9mmFireBullet" count="5,24" prob="27.3" />
-		<item name="9mmBullet" count="5,24" prob="72.7" />
+    <lootgroup name="banditsFood" >
+		<item group="dryfood" count="1,2" prob="25" />
+		<item group="farmCrops" count="1,2" prob="25" />
+		<item group="rottenFood" count="1" prob="25" />
+		<item name="ratOnAStick" count="1,2" prob="25" />
 	</lootgroup>
-	<lootgroup name="bandits44Magnum" count="all">
-		<item name="44MagBullet" count="6,18" />
+    <lootgroup name="banditsMeds" >
+		<item group="medicine" count="1,2" prob="30" />
+		<item name="bandage" count="1,2" prob="20" />
+		<item name="firstAidBandage" count="1,2" prob="20" />
+		<item name="antiVenom" count="1" prob="10" />
+		<item name="grainAlcohol" count="1,2" prob="10" />
 	</lootgroup>
-	<lootgroup name="banditsPumpShotgun" >
-		<item name="shotgunFireShell" count="1,12" prob="33.3" />
-		<item name="shotgunSlug" count="1,12" prob="22.2" />
-		<item name="shotgunShell" count="1,12" prob="44.4" />
+    <lootgroup name="banditAK47" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_receiver" quality="50,350" prob="10" />
+		<item name="partsAK47_barrel" quality="50,350" prob="40" />
+		<item name="partsAK47_parts" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsMP5" >
-		<item name="9mmFireBullet" count="5,24" prob="27.3" />
-		<item name="9mmBullet" count="5,24" prob="72.7" />
+    <lootgroup name="banditAK12" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_parts" quality="50,350" prob="10" />
+        <item name="ak12_receiver" quality="50,350" prob="40" />
+		<item name="ak12_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsAK47" count="all">
-		<item name="556mmBullet" count="1,20" />
+    <lootgroup name="banditScarH" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_parts" quality="50,350" prob="10" />
+        <item name="scarh_receiver" quality="50,350" prob="40" />
+		<item name="scarh_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsHuntingRifle" count="all">
-		<item name="308mmBullet" count="1,20" />
+    <lootgroup name="banditM4A1" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_parts" quality="50,350" prob="10" />
+        <item name="m4A1_receiver" quality="50,350" prob="40" />
+		<item name="m4A1_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsSniperRifle" count="all">
-		<item name="762mmBullet" count="1,20" />
+    <lootgroup name="banditACW" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_parts" quality="50,350" prob="10" />
+        <item name="acw_receiver" quality="50,350" prob="40" />
+		<item name="acw_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsRocketLauncher" >
-		<item name="762mmBullet" count="1,20" />
+    <lootgroup name="banditHK416" >
+		<item name="partsAK47_stock" quality="50,350" prob="10" />
+		<item name="partsAK47_parts" quality="50,350" prob="10" />
+        <item name="hk416_receiver" quality="50,350" prob="40" />
+		<item name="hk416_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsLeader+AK47" count="2">
-		<item group="banditsGeneral" count="1,2" prob="30.4" />
-		<item group="banditsAK47"  prob="34.8" />
-		<item group="banditsRare" count="1,2" prob="8.7" />
-		<item group="militaryAmmo"  prob="8.7" />
+    <lootgroup name="banditG36C" >
+		<item name="partsMP5_stock" quality="50,350" prob="10" />
+		<item name="partsMP5_parts" quality="50,350" prob="10" />
+        <item name="g36C_receiver" quality="50,350" prob="40" />
+		<item name="g36C_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsThug+Pistol" count="2">
-		<item group="pistolWeaponParts"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsPistol"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+    <lootgroup name="banditUmp" >
+		<item name="partsMP5_stock" quality="50,350" prob="10" />
+		<item name="partsMP5_parts" quality="50,350" prob="10" />
+		<item name="ump_receiver" quality="50,350" prob="40" />
+		<item name="ump_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsThug+44Magnum" count="2">
-		<item group="weaponsMagnumParts"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="bandits44Magnum"  prob="38.1" />
-		<item group="banditsRare" count="0,2" prob="9.5" />
+    <lootgroup name="banditRocket" >
+		<item name="partsRocketLauncher_barrel" quality="50,350" prob="10" />
+		<item name="partsRocketLauncher_stock" quality="50,350" prob="10" />
+		<item name="partsRocketLauncher_receiver" quality="50,350" prob="40" />
+		<item name="partsRocketLauncher_parts" quality="50,350" prob="40" />
+    </lootgroup>
+    <lootgroup name="banditMG4" >
+		<item name="partsRocketLauncher_stock" quality="50,350" prob="10" />
+		<item name="partsRocketLauncher_parts" quality="50,350" prob="10" />
+        <item name="mg4_receiver" quality="50,350" prob="40" />
+		<item name="mg4_barrel" quality="50,350" prob="40" />
 	</lootgroup>
-	<lootgroup name="banditsThug+PumpShotgun" count="2">
-		<item group="pumpShotgunWeaponParts"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsPumpShotgun"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+    <lootgroup name="banditMeleeWeapons" >
+		<item name="battleKnifeCherry" quality="100,600" prob="10" />
+		<item name="batGoodNight" quality="100,600" prob="10" />
+        <item name="batTPX" quality="100,600" prob="10" />
+        <item name="sledgehammer" quality="100,300" prob="10" />
+		<item name="fryingPan" quality="100,300" prob="10" />
+		<item group="weaponsMelee" count="1" prob="50" />
+	</lootgroup>    
+    <lootgroup name="Bandit+AK47" count="2">
+		<item group="banditAK47" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+MP5" count="2">
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsMP5"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+ScarH" count="2">
+		<item group="banditScarH" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+AK47" count="2">
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsAK47"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+M4A1" count="2">
+		<item group="banditM4A1" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+HuntingRifle" count="2">
-		<item group="weaponsHuntingRifleParts"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsHuntingRifle"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+G36C" count="2">
+		<item group="banditG36C" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+SniperRifle" count="2">
-		<item group="sniperRifleWeaponParts"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsSniperRifle"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+ACW" count="2">
+		<item group="banditACW" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+RocketLauncher" count="2">
-		<item group="militaryAmmo"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item group="banditsRocketLauncher"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+UMP45" count="2">
+		<item group="banditUmp" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
-	<lootgroup name="banditsThug+SledgeHammer" count="2">
-		<item group="banditsGeneral"  prob="19.0" />
-		<item group="banditsGeneral" count="1,2" prob="33.3" />
-		<item name="sledgehammer"  prob="38.1" />
-		<item group="banditsRare"  prob="9.5" />
+	<lootgroup name="bandit+HK416" count="2">
+		<item group="banditHK416" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
+	</lootgroup>
+	<lootgroup name="bandit+MG4" count="2">
+		<item group="banditMG4" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
+	</lootgroup>
+	<lootgroup name="bandit+RocketLauncher" count="2">
+		<item group="banditRocket" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
+	</lootgroup>
+	<lootgroup name="bandit+AK12" count="2">
+		<item group="banditAK12" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
+	</lootgroup>
+    <lootgroup name="bandit+Melee" count="2">
+		<item group="banditMeleeWeapons" prob="40" />
+		<item group="militaryAmmo" prob="25" />
+        <item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="20" />
+        <item group="banditsRare" count="1,2" prob="5" />
 	</lootgroup>
 	<lootgroup name="coffinGroup" >
 		<item group="clothes" count="1,2" prob="30" />
@@ -2153,7 +2224,6 @@
 		<item name="sutureKit" count="1,3" />
 		<item name="stimulantShot" count="6,6" />
 	</lootgroup>
-	
 	<lootgroup name="airdropMason" count="all">
 		<item name="brickHammer" />
 		<item name="bricks" count="10,20" />
@@ -2162,7 +2232,6 @@
 		<item name="painkillers" />
         <item group="professionPageChance"  />
 	</lootgroup>
-		
 	<lootgroup name="airdropChef" count="all">
 		<item group="farmCrops" count="3" />
 		<item name="cookingGrill" />
@@ -3434,45 +3503,65 @@
 		<item name="grainAlcohol" prob="11.1" />
 		<item name="mead" prob="5.6" />
 	</lootcontainer>
-	<!-- NPC and Class Loot tables 190-229 -->
 	<!--Bandit Loot-->
-	<lootcontainer id="200"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsLeader+AK47" prob="1" />
+	<lootcontainer id="200" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+Melee" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="201"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+Pistol" prob="1" />
+	<lootcontainer id="201" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+AK12" prob="1" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="202"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+44Magnum" prob="1" />
+	<lootcontainer id="202" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+MG4" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="203"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+PumpShotgun" prob="1" />
+	<lootcontainer id="203" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+RocketLauncher" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="204"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+PumpShotgun" prob="1" />
+	<lootcontainer id="204" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+HK416" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="205"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+MP5" prob="1" />
+	<lootcontainer id="205" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+UMP45" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="206"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+AK47" prob="1" />
+	<lootcontainer id="206" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+ACW" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="207"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+HuntingRifle" prob="1" />
+	<lootcontainer id="207" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+G36C" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="208"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+SniperRifle" prob="1" />
+	<lootcontainer id="208" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+M4A1" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="209"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+RocketLauncher" prob="1" />
+	<lootcontainer id="209" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="bandit+ScarH" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="210"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="banditsThug+SledgeHammer" prob="1" />
+	<lootcontainer id="210" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="Bandit+AK47" prob="66" />
+        <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<!-- JZMOD FollowerCorpse -->
-	<lootcontainer id="211"  size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="junkPersonal" prob="1" />
-		<item group="backpacks" prob="1" />
+    <!-- JZMOD FollowerCorpse -->
+	<lootcontainer id="211" count="1,3" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="banditsMeds" prob="10" />
+        <item group="banditsFood" prob="15" />
+        <item group="junkPersonal" prob="30" />
+		<item group="backpacks" prob="25" />
+        <item group="weaponsMelee" prob="20" />
+	</lootcontainer>
+    <lootcontainer id="229" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="banditsMeds" prob="5" />
+        <item group="banditsFood" prob="15" />
+        <item group="junkPersonal" prob="50" />
+		<item group="backpacks" prob="15" />
+        <item group="ammo" prob="15" />
 	</lootcontainer>
 	<!-- Soldier Loot  -->
 	<lootcontainer id="212" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
