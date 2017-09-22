@@ -1091,9 +1091,7 @@ This requires a 50+ food bar:
 </buff>
 <!--Fast Travel Icon-->
 <buff id="fastTravel" mutex="fastTravel" duration="1" actions="increment(fastRaod, 1, 1, 0, 0)" /> <!-- smallBed -->
-<buff id="fastTravelIcon" buffif="fastRaod greater 1" debuffif="fastRaod less 1" duration="0" actions="increment(fastRaod, -1, 1, 0, 0);min(fastRaod, 0)" name_key="Fast Travel" description_key="You make much better time traveling on a road than through the wilds. Speed Increased by 20%." tooltip_key="Now your moving" icon="ui_game_symbol_fastTravel" >
-    <modify id="0" stat="health" amount="1" rate="4" />
-	<modify id="1" stat="coretemp" modifyValue="25" />
-</buff>
+<buff id="fastTravelIcon" buffif="fastRaod greater 1" debuffif="fastRaod less 1" duration="0" actions="increment(fastRaod, -1, 1, 0, 0);min(fastRaod, 0)" name_key="Fast Travel" description_key="You make much better time traveling on a road than through the wilds. Speed Increased by 20%." tooltip_key="Now your moving" icon="ui_game_symbol_fastTravel" />
+    
 
 </buffs>
