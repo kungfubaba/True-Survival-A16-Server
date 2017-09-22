@@ -1253,7 +1253,6 @@
 	</lootgroup>
 	<lootgroup name="seeds">
 		<item name="plantedPotato1" prob="7.69" />
-		<item name="plantedCoffee1" prob="7.69" />
 		<item name="plantedCorn1" prob="7.69" />
 		<item name="plantedBlueberry1" prob="7.69" />
 		<item name="plantedCotton1" prob="7.69" />
@@ -1287,9 +1286,9 @@
 		<item name="salmonSandwich"  prob="5.55" />
 	</lootgroup>
     <lootgroup name="MREs">
-        <item name="mreSmall" count="1,4" prob="50.0" />
-        <item name="mreMedium" count="1,4" prob="35.0" />
-        <item name="mreLarge" count="1,4" prob="15.0" />
+        <item name="mreSmall" count="1,2" prob="50.0" />
+        <item name="mreMedium" count="1,2" prob="35.0" />
+        <item name="mreLarge" count="1,2" prob="15.0" />
     </lootgroup>
 	<lootgroup name="dryfood">
 		<item group="cannedfood" count="1,2" prob="20" />

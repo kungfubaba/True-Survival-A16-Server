@@ -6946,7 +6946,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="gored,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -6956,7 +6956,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="gored,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property name="Group" value="Science" />
 		<property name="DescriptionKey" value="bandageDesc" />
@@ -6969,11 +6969,11 @@ Mesh files no longer used:
 		<property name="Extends" value="bandage" />
 		<property name="EconomicValue" value="15" />
 		<property class="Action0">
-			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="gored,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property class="Action1">
-			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="gored,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property name="DescriptionKey" value="firstAidBandageDesc" />
@@ -6986,13 +6986,13 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="player_firstAidKit" />
-			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,burning,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
+			<property name="Debuff" value="gored,bleedingHealthy,bleedingNormal,bleedingMalnourished,burning,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="player_firstAidKit" />
-			<property name="Debuff" value="burning,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
+			<property name="Debuff" value="gored,burning,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property name="DescriptionKey" value="firstAidKitDesc" />
@@ -7110,6 +7110,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="medicineCraft" />
+        <property name="PickupJournalEntry" value="augmentGunsTip" />
 		<property name="Group" value="Science" />
 		<property name="ActionExp" value="5" />
 	</item>
@@ -7381,6 +7382,7 @@ Mesh files no longer used:
 			<property name="Create_item" value="canEmpty" />
 		</property>
 		<property name="Group" value="food/Cooking" />
+        <property name="PickupJournalEntry" value="airDropTip" />
     </item>
 	<item id="708" name="canChicken">
 		<property name="Extends" value="canBeef" />
@@ -8220,7 +8222,7 @@ Mesh files no longer used:
 		<property name="Group" value="food/Cooking" />
         <property name="CraftingSkillGroup" value="cookingCraft" />
         <property name="PickupJournalEntry" value="alternateAmmoTip" />
-	</item>
+    </item>
 	<item id="781" name="snowberryJuice">
 		<property name="Extends" value="bottledWater" />
 		<property name="CustomIcon" value="grainAlcohol" />
@@ -10157,20 +10159,20 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK loot -->
-		<property name="EconomicValue" value="250" />
+		<property name="EconomicValue" value="10" />
 		<property name="CraftingIngredientTime" value="15" />
 		<property name="Group" value="Resources" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
 	<item id="1391" name="goldNugget">
 		<property name="Extends" value="silverNugget" />
-		<property name="EconomicValue" value="700" />
+		<property name="EconomicValue" value="20" />
 		<property name="CraftingIngredientTime" value="15" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
 	<item id="1392" name="rawDiamond">
 		<property name="Extends" value="silverNugget" />
-		<property name="EconomicValue" value="1500" />
+		<property name="EconomicValue" value="50" />
 		<property name="CraftingIngredientTime" value="60" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
@@ -12315,7 +12317,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="#Hatchet?HatchetPrefab" /> 
 		<property name="HoldType" value="2" />
 		<property name="RepairTools" value="NoRepair" />
-		<property name="CustomIcon" value="ui_game_symbol_axe02" />
+		<property name="CustomIcon" value="ui_game_symbol_oldAxe" />
 		<property class="Action0">
 			<property name="Delay" value="1.3" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
@@ -13711,6 +13713,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Light Armor" />
 		<property name="DescriptionKey" value="tatteredClothesDesc" />
+        <property name="PickupJournalEntry" value="bedrollTip" />
 	</item>
 	<item id="1650" name="tatteredPants">
 		<property name="Insulation" value="0" />
@@ -14476,6 +14479,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="QuestGiven" value="challenge_Killer" />
        	</property>
+        <property name="PickupJournalEntry" value="gunAssemblyTip" />
 	</item>
 	<!--JZMOD DRUGS-->
 	<item id="1754" name="herbalCream">
@@ -15123,8 +15127,8 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="8" />
-			<property name="Gain_water" value="5" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="-20" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_fruitSalad" />
@@ -15134,9 +15138,9 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="10" />
-			<property name="Gain_water" value="6" />
-			<property name="Gain_stamina" value="-20" />
+			<property name="Gain_food" value="12" />
+			<property name="Gain_water" value="8" />
+			<property name="Gain_stamina" value="-25" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_fruitSalad" />
 		<property name="DescriptionKey" value="fruitSaladDesc" />
@@ -15156,8 +15160,8 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="8" />
-			<property name="Gain_water" value="5" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="-20" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_veggieSalad" />
@@ -15167,9 +15171,9 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="10" />
-			<property name="Gain_water" value="6" />
-			<property name="Gain_stamina" value="-20" />
+			<property name="Gain_food" value="12" />
+			<property name="Gain_water" value="8" />
+			<property name="Gain_stamina" value="-25" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_veggieSalad" />
 		<property name="DescriptionKey" value="veggieSaladDesc" />
@@ -16360,6 +16364,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="keystoneStone" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_keystoneRock" />
+        <property name="PickupJournalEntry" value="bedrollTip" />
 		<property name="DescriptionKey" value="keystoneDesc" />
 	</item>
 	<item id="1912" name="alternator">
@@ -17047,7 +17052,7 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="glass" />
 		<property name="CustomIcon" value="ui_game_symbol_glassEye" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 	</item>
 	<item id="2009" name="electricBlackVibrator">
 		<property name="Extends" value="itemMaster" />
@@ -17317,6 +17322,26 @@ Mesh files no longer used:
 			<property name="Delay" value="0" />
 		</property>
         <property name="DescriptionKey" value="barterForFirstAidKitDesc" />
+	</item>
+    <item id="2044" name="handAnimalBoar">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="HoldType" value="35" />
+		<property class="Action0">
+			<property name="Delay" value="0.7" />
+			<property name="DamageEntity" value="10" />
+			<property name="DamageBlock" value="50" />
+			<property name="Buff" value="bleeding,scratch" />
+			<property name="Buff_chance" value="0.1,1" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.earth" value="20" />
+			<property name="DamageBonus.stone" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+			<property name="DamageBonus.wood" value="2" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.steel" value="0" />
+		</property>
 	</item>
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using

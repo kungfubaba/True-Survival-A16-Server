@@ -1997,12 +1997,12 @@
 		<property name="HasRagdoll" value="true" />
 		<property name="PhysicsBody" value="boar" />
 		<property name="Mesh" value="Animals/Boar/AnimalBoarStandardRagdoll" />
-		<property name="HandItem" value="handAnimalWolf" />
-		<property name="MaxHealth" value="200" />
+		<property name="HandItem" value="handAnimalBoar" />
+		<property name="MaxHealth" value="250" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="RootMotion" value="true" />
 		<property name="RagdollOnDeathChance" value=".5" />
-		<property name="WanderSpeed" value="0.2" />
+		<property name="WanderSpeed" value="0.3" />
 		<property name="PanicSpeed" value="2.5" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.2" />

@@ -1,9 +1,9 @@
 <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 <progression>
-	<player max_level="200" exp_to_level="8300" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" />
+	<player max_level="200" exp_to_level="8500" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" />
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 	<!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
-	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="1">
+	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_per_level="3">
 		<!-- these are defaults and can be used to modify individual skills as needed -->
 		<!-- if skill_point_cost_multiplier > 0 then PointCostPerLevel = int(SkillPointCostMultiplier ^ currentTier) * SkillPointCostPerLevel -->
 		<!-- JZMOD WEAPONS-->
@@ -2534,7 +2534,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="cobblestone Hammer." title_key="cobblestone Hammer" skill_point_cost_per_level="1" group="crafting">
+		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="cobblestone Hammer." title_key="cobblestone Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2596,7 +2596,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="brick Hammer." title_key="brick Hammer" skill_point_cost_per_level="1" group="crafting">
+		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="brick Hammer." title_key="brick Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3550,15 +3550,6 @@
 			<recipe name="ironHelmet" unlock_level="1" />
 			<recipe name="ironLegArmor" unlock_level="1" />
 		</perk>
-		<perk name="steelArmorPerk" icon="ui_game_symbol_steelChestArmor" description_key="Learn to craft Steel Armor on the armor table using a Wielder." title_key="Steel Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
-			<requirement perk_level="1" required_skill_name="armorSmithingCraft" required_skill_level="1" />
-			<requirement perk_level="1" required_player_level="55" />
-			<recipe name="SteelGauntlets" unlock_level="1" />
-			<recipe name="SteelHelmet" unlock_level="1" />
-			<recipe name="SteelLegArmor" unlock_level="1" />
-			<recipe name="SteelBoots" unlock_level="1" />
-			<recipe name="SteelChestArmor" unlock_level="1" />
-		</perk>
 		<perk name="lightAttachmentPerk" icon="ui_game_symbol_flashlight02" description_key="Learn to attach flashlights to helmets on the armor table" title_key="Light Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="clothing">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="25" />
 			<recipe name="scrapHelmet+Light" unlock_level="1" />
@@ -3704,7 +3695,7 @@
 		</perk>
       <!--SCIENCE-->
       <!-- JZMOD BUILDING SKILLS-->
-		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn to make nails and planks at skill level 3." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn these skill by completing your building quest chain and then you will Learn to make nails and planks at skill level 3." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="woodFrameBlock" unlock_level="1" />
 			<recipe name="woodFrameCNRFull" unlock_level="2" />
 			<recipe name="woodFrameCNRInside" unlock_level="2" />
@@ -3738,7 +3729,7 @@
 			<recipe name="nail" unlock_level="3" />
 			<recipe name="plank" unlock_level="3" />
 		</perk>
-		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn to make cobblestones at skill level 3" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
+		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn these skill by completing your building quest chain and then you will Learn to make cobblestones at skill level 3" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
 			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
 			<recipe name="cobblestoneFrameRamp" unlock_level="2" />
 			<recipe name="cobblestoneFrameStairs25" unlock_level="2" />
@@ -3754,7 +3745,7 @@
 			<!--upgrade material-->
 			<recipe name="cobblestones" unlock_level="3" />
 		</perk>
-		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 3" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn these skill by completing your building quest chain and then you will Learn to make bricks at skill level 3" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="brickFrameBlock" unlock_level="1" />
 			<recipe name="brickFrameRamp" unlock_level="2" />
 			<recipe name="brickFrameStairs" unlock_level="2" />
@@ -3771,7 +3762,7 @@
           	<!--upgrade material-->
 			<recipe name="bricks" unlock_level="3" />
 		</perk>
-		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 3" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn these skill by completing your building quest chain and then you will Learn to make cement at skill level 3" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="cementFormBlock" unlock_level="1" />
 			<recipe name="cementFormRamp" unlock_level="2" />
             <recipe name="cementFormStairs25CornerCNR" unlock_level="2" />
@@ -3793,11 +3784,10 @@
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
 		</perk>
-		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn to make concrete mix at skill level 3" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn these skill by completing your building quest chain and then you will Learn to make concrete mix at skill level 3" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameRamp" unlock_level="2" />
 			<recipe name="rebarStairs25" unlock_level="2" />
-			<recipe name="rebarArrowSlitHalf" unlock_level="2" />
 			<recipe name="rebarFrameWedge" unlock_level="2" />
 			<recipe name="rebarFrameWedgeTip" unlock_level="2" />
 			<recipe name="rebarFramePlate" unlock_level="2" />
@@ -3806,11 +3796,18 @@
 			<recipe name="rebarFramePillar100" unlock_level="2" />
 			<recipe name="rebarFramePillar50" unlock_level="2" />
 			<recipe name="rebarFramePole" unlock_level="2" />
-			<!--upgrade material-->
+            <recipe name="rebarFrameCNRRamp" unlock_level="2" />
+            <recipe name="rebarFrameWedgeTipCNRFullTop" unlock_level="2" />
+            <recipe name="rebarFrameCNRRampFiller" unlock_level="2" />
+            <recipe name="rebarFrameStairs25CornerCNR" unlock_level="2" />
+			<recipe name="rebarFrameArch" unlock_level="2" />
+            <recipe name="rebarFrameWedgeIncline" unlock_level="2" />
+            <recipe name="rebarFrameWedgeCNRInsideBottom" unlock_level="2" />
+            <!--upgrade material-->
             <recipe name="cement" unlock_level="3" />
 			<recipe name="concreteMix" unlock_level="3" />
 		</perk>
-		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 3" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn these skill by completing your building quest chain and then you will Learn to make scrapiron sheets plus nuts and bolts at skill level 3" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameRamp" unlock_level="2" />
 			<recipe name="scrapIronStairs25" unlock_level="2" />
@@ -3837,7 +3834,7 @@
 			<recipe name="nutAndBolt" unlock_level="3" />
 			<recipe name="corrugatedMetalSheet" unlock_level="3" />
 		</perk>
-		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 3" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn these skill by completing your building quest chain and then you will Learn to make forged steel sheets at skill level 3" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="forgedFrame" unlock_level="1" />
 			<recipe name="forgedFrameRamp" unlock_level="2" />
 			<recipe name="forgedStairs25" unlock_level="2" />
@@ -3854,8 +3851,8 @@
 			<recipe name="forgedIronSheet" unlock_level="2" />
 			<!--upgrade material-->
             <recipe name="metalRivetSheet" unlock_level="3" />
-		</perk>
-      <perk name="quickerCraftingPerk" icon="ui_game_symbol_quickercrafting" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="science">
+        </perk>
+        <perk name="quickerCraftingPerk" icon="ui_game_symbol_quickercrafting" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
 			<requirement perk_level="3" required_player_level="60" />
@@ -4338,6 +4335,10 @@
 			<recipe name="setUpASpikeTrap" unlock_level="1" />
 			<recipe name="herbalAntibiotics" unlock_level="1" />
 			<recipe name="purificationTablets" unlock_level="1" />
+            <effect name="CraftingTime">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+			</effect>
 		</perk>
 		<perk name="mechanic" icon="ui_game_symbol_mechanic" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="auger" unlock_level="1" />

@@ -297,24 +297,55 @@
 	<!-- Basic Survival 25 - Wood Building /> --> 
 	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="If you want to learn to build wood structures you're going to need the proper tools to do it. Craft or find a Claw Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="clawHammer" value="1" />
-		<reward type="Exp" value="400" />
+        <reward type="Exp" value="400" />
         <reward type="Quest" id="woodBuilding2" />
 	</quest>
     <quest id="woodBuilding2" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the claw hammer to break down wooden blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="plank" value="1000" />
 		<reward type="Exp" value="400" />
+        <reward type="Recipe" id="woodFrameBlock" />
         <reward type="Item" id="woodBuildingSkill" />
         <reward type="Quest" id="woodBuilding3" />
 	</quest>
     <quest id="woodBuilding3" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="woodFrameBlock" value="100" />
 		<reward type="Exp" value="400" />
+        <reward type="Recipe" id="woodFrameCNRFull" />
+        <reward type="Recipe" id="woodFrameCNRInside" />
+        <reward type="Recipe" id="woodFrameWedge" />
+        <reward type="Recipe" id="woodFrameRamp" />
+        <reward type="Recipe" id="woodStairs25" />
+        <reward type="Recipe" id="woodPillar100" />
+        <reward type="Recipe" id="woodPlate" />
+        <reward type="Recipe" id="woodFrameWedgeIncline" />
+        <reward type="Recipe" id="woodFrameWedgeTipCNRFullTop" />
+        <reward type="Recipe" id="woodFrameWedgeTipCNRFullBottom" />
+        <reward type="Recipe" id="woodFrameWedgeCNRInsideBottom" />
+        <reward type="Recipe" id="woodFrameWedgeCNRInsideTop" />
+        <reward type="Recipe" id="woodFrameStairs25CornerCNR" />
+        <reward type="Recipe" id="woodCTRpole" />
+        <reward type="Recipe" id="woodFrameCNRRampFiller" />
+        <reward type="Recipe" id="woodFrameArch" />
+        <reward type="Recipe" id="woodPole" />
+        <reward type="Recipe" id="woodArrowSlitHalf" />
+        <reward type="Recipe" id="woodCatwalk" />
+        <reward type="Recipe" id="woodCatwalkRailing" />
+        <reward type="Recipe" id="woodCatwalkRailingCNR" />
+        <reward type="Recipe" id="woodRailing" />
+        <reward type="Recipe" id="woodCatwalkWedgeRailing" />
+        <reward type="Recipe" id="woodStairsBoard" />
+        <reward type="Recipe" id="woodStairsBoardRailing" />
+        <reward type="Recipe" id="woodSupport" />
+        <reward type="Recipe" id="woodWedgeTip" />
+        <reward type="Recipe" id="window03Wood" />
         <reward type="Item" id="woodBuildingSkill" />
         <reward type="Quest" id="woodBuilding4" />
 	</quest>
     <quest id="woodBuilding4" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="nail" />
+        <reward type="Recipe" id="plank" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="woodBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 26 - Cobblestone Building /> -->
@@ -326,18 +357,31 @@
     <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the cobblestone hammer to break down cobblestone blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestones" value="1000" />
 		<reward type="Exp" value="400" />
-		<reward type="Item" id="cobblestoneBuildingSkill" />
+		<reward type="Recipe" id="cobblestoneFrameBlock" />
+        <reward type="Item" id="cobblestoneBuildingSkill" />
 		<reward type="Quest" id="cobblestoneBuilding3" />
 	</quest>
     <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cobblestoneFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="cobblestoneFrameRamp" />
+        <reward type="Recipe" id="cobblestoneFrameStairs25" />
+        <reward type="Recipe" id="cobblestoneArrowSlitHalf" />
+        <reward type="Recipe" id="cobblestoneFrameWedge" />
+        <reward type="Recipe" id="cobblestoneFrameWedgeTip" />
+        <reward type="Recipe" id="cobblestoneFramePlate" />
+        <reward type="Recipe" id="cobblestoneFrameCNRFull" />
+        <reward type="Recipe" id="cobblestoneFrameCNRInside" />
+        <reward type="Recipe" id="cobblestoneFramePillar100" />
+        <reward type="Recipe" id="cobblestoneFramePillar50" />
+        <reward type="Recipe" id="cobblestoneFramePole" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
         <reward type="Quest" id="cobblestoneBuilding4" />
 	</quest>
     <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cobblestoneFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="cobblestones" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 27 - Brick Building /> -->
@@ -349,18 +393,32 @@
     <quest id="brickBuilding2" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the brick hammer to break down brick blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="bricks" value="1000" />
 		<reward type="Exp" value="400" />
-		<reward type="Item" id="brickBuildingSkill" />
+		<reward type="Recipe" id="brickFrameBlock" />
+        <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding3" />
 	</quest>
     <quest id="brickBuilding3" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="brickFrameBlock" value="100" />
+        <reward type="Recipe" id="brickFrameRamp"  />
+		<reward type="Recipe" id="brickFrameStairs" />
+		<reward type="Recipe" id="brickFrameStairs25" />
+		<reward type="Recipe" id="brickFrameWedge" />
+		<reward type="Recipe" id="brickFrameWedgeTip" />
+		<reward type="Recipe" id="brickFramePlate" />
+		<reward type="Recipe" id="brickFrameCNRFull" />
+		<reward type="Recipe" id="brickFrameCNRInside" />
+		<reward type="Recipe" id="brickFramePillar100" />
+		<reward type="Recipe" id="brickFramePillar50" />
+		<reward type="Recipe" id="brickFramePole" />
+        <reward type="Recipe" id="playerBrickArrowSlitHalf" />
 		<reward type="Exp" value="400" />
         <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding4" />
 	</quest>
     <quest id="brickBuilding4" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="brickFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="bricks" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="brickBuildingSkill" />
     </quest>
 	<!-- Basic Survival 28 - Concrete Building /> -->
@@ -371,19 +429,38 @@
 	</quest>
     <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Concrete sledge to break down Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cementMix" value="1000" />
+        <reward type="Recipe" id="cementFormBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding3" />
     </quest>
     <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cementFormBlock" value="100" />
-		<reward type="Exp" value="400" />
+        <reward type="Recipe" id="cementFormRamp"  />
+        <reward type="Recipe" id="cementFormStairs25CornerCNR" />
+		<reward type="Recipe" id="cementFormStairs25" />
+		<reward type="Recipe" id="concreteArrowSlitHalf" />
+		<reward type="Recipe" id="cementFormWedge" />
+		<reward type="Recipe" id="cementFormWedgeTip" />
+		<reward type="Recipe" id="cementFormPlate" />
+		<reward type="Recipe" id="cementFormCNRFull" />
+		<reward type="Recipe" id="cementFormCNRInside" />
+		<reward type="Recipe" id="cementFormPillar100" />
+		<reward type="Recipe" id="cementFormPillar50" />
+		<reward type="Recipe" id="cementFormPole" />
+        <reward type="Recipe" id="cementFormWedgeCNRInsideBottom" />
+		<reward type="Recipe" id="cementFormArch" />
+        <reward type="Recipe" id="cementFormCNRRampFiller" />
+        <reward type="Recipe" id="cementFormWedgeTipCNRFullTop" />
+      	<reward type="Exp" value="400" />
         <reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding4" />
 	</quest>
     <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cementFormBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="cement" />
+        <reward type="Recipe" id="cementMix" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="concreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 29 - rConcrete Building /> -->
@@ -394,19 +471,39 @@
 	</quest>
     <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Reinforced Concrete bar to break down Reinforced Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteMix" value="1000" />
+        <reward type="Recipe" id="rebarFrameBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding3" />
 	</quest>
     <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="Craft" id="rConcreteBuilding3" value="100" />
-		<reward type="Exp" value="400" />
+		<objective type="Craft" id="rebarFrameBlock" value="100" />
+		<reward type="Recipe" id="rebarFrameRamp"  />
+		<reward type="Recipe" id="rebarStairs25"  />
+		<reward type="Recipe" id="rebarFrameWedge"  />
+		<reward type="Recipe" id="rebarFrameWedgeTip"  />
+		<reward type="Recipe" id="rebarFramePlate"  />
+		<reward type="Recipe" id="rebarFrameCNRFull"  />
+		<reward type="Recipe" id="rebarFrameCNRInside"  />
+		<reward type="Recipe" id="rebarFramePillar100"  />
+		<reward type="Recipe" id="rebarFramePillar50"  />
+		<reward type="Recipe" id="rebarFramePole"  />
+        <reward type="Recipe" id="rebarFrameCNRRamp"  />
+        <reward type="Recipe" id="rebarFrameWedgeTipCNRFullTop"  />
+        <reward type="Recipe" id="rebarFrameCNRRampFiller"  />
+        <reward type="Recipe" id="rebarFrameStairs25CornerCNR"  />
+        <reward type="Recipe" id="rebarFrameArch"  />
+        <reward type="Recipe" id="rebarFrameWedgeIncline"  />
+        <reward type="Recipe" id="rebarFrameWedgeCNRInsideBottom"  />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding4" />
 	</quest>
     <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
-		<objective type="BlockUpgrade" id="rConcreteBuilding3" value="100" />
-		<reward type="Exp" value="400" />
+		<objective type="BlockUpgrade" id="rebarFrameBlock" value="100" />
+		<reward type="Recipe" id="cement"  />
+        <reward type="Recipe" id="concreteMix"  />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="rConcreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 30 - Iron Building /> -->
@@ -415,21 +512,45 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="scrapIronBuilding2" />
 	</quest>
-    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the wrench to break down iron blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some Scrap Iron Sheets. Use the wrench to break down iron blocks and retrieve the Scrap Iron Sheet from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="corrugatedMetalSheet" value="1000" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="scrapIronFrameBlock"  />
+        <reward type="Exp" value="400" />
 		<reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding3" />
 	</quest>
     <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="scrapIronFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="scrapIronFrameRamp" />
+		<reward type="Recipe" id="scrapIronStairs25" />
+		<reward type="Recipe" id="scrapIronArrowSlitHalf" />
+		<reward type="Recipe" id="scrapIronFrameWedge" />
+		<reward type="Recipe" id="scrapIronFrameWedgeTip" />
+		<reward type="Recipe" id="scrapIronFramePlate" />
+		<reward type="Recipe" id="scrapIronFrameCNRFull" />
+		<reward type="Recipe" id="scrapIronFrameCNRInside" />
+		<reward type="Recipe" id="scrapIronFramePillar100" />
+		<reward type="Recipe" id="scrapIronFramePillar50" />
+		<reward type="Recipe" id="scrapIronFramePole" />
+		<reward type="Recipe" id="rScrapIronPlate" />
+        <reward type="Recipe" id="scrapIronFrameWedgeIncline" />
+        <reward type="Recipe" id="scrapIronFrameWedgeTipCNRFullTop" />
+        <reward type="Recipe" id="scrapIronFrameWedgeTipCNRFullBottom" />
+        <reward type="Recipe" id="scrapIronFrameWedgeCNRInsideBottom" />
+        <reward type="Recipe" id="scrapIronFrameWedgeCNRInsideTop" />
+        <reward type="Recipe" id="scrapIronFrameStairs25CornerCNR" />
+        <reward type="Recipe" id="scrapIronCTRpole" />
+        <reward type="Recipe" id="scrapIronFrameCNRRampFiller" />
+        <reward type="Recipe" id="scrapIronFrameArch" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding4" />
 	</quest>
     <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="scrapIronFrameBlock" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="nutAndBolt" />
+        <reward type="Recipe" id="corrugatedMetalSheet" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="scrapIronBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Steel Building /> -->
@@ -438,21 +559,36 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="steelBuilding2" />
 	</quest>
-    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the welder tool to break down steel blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some Scrap Steel Sheet. Use the welder tool to break down steel blocks and retrieve the Scrap Steel Sheet from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="metalRivetSheet" value="1000" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="forgedFrame" />
+        <reward type="Exp" value="400" />
 		<reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding3" />
 	</quest>
     <quest id="steelBuilding3" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="forgedFrame" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="forgedFrameRamp" />
+		<reward type="Recipe" id="forgedStairs25" />
+		<reward type="Recipe" id="forgedArrowSlitHalf" />
+		<reward type="Recipe" id="forgedFrameWedge" />
+		<reward type="Recipe" id="forgedFrameWedgeTip" />
+		<reward type="Recipe" id="forgedFramePlate" />
+		<reward type="Recipe" id="forgedFrameCNRFull" />
+		<reward type="Recipe" id="forgedFrameCNRInside" />
+		<reward type="Recipe" id="forgedFramePillar100" />
+		<reward type="Recipe" id="forgedFramePillar50" />
+		<reward type="Recipe" id="forgedFramePole" />
+		<reward type="Recipe" id="forgedIronPlate" />
+		<reward type="Recipe" id="forgedIronSheet" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding4" />
 	</quest>
     <quest id="steelBuilding4" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="forgedFrame" value="100" />
-		<reward type="Exp" value="400" />
+		<reward type="Recipe" id="metalRivetSheet" />
+        <reward type="Exp" value="400" />
         <reward type="Item" id="steelBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 32 - Farming Chain Starter /> -->

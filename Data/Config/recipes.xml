@@ -1206,19 +1206,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="shortMetalPipe" count="6" />
 		<ingredient name="scrapCable" count="6" />
 	</recipe>
-	<recipe name="minibikeHandlebars" count="1" craft_area="workbench" craft_time="4">
-		<ingredient name="partsHandlebars" count="1" />
-		<ingredient name="ductTape" count="2" />
-		<ingredient name="headlight" count="1" />
-		<ingredient name="electricParts" count="5" />
-		<ingredient name="shortMetalPipe" count="2" />
-	</recipe>
-	<recipe name="minibikeSeat" count="1" craft_area="workbench" craft_time="4">
-		<ingredient name="ductTape" count="4" />
-		<ingredient name="leather" count="7" />
-		<ingredient name="cottonPlant" count="3" />
-		<ingredient name="shortMetalPipe" count="4" />
-	</recipe>
 	<recipe name="plantedMushroom1" count="1" craft_time="15" craft_exp_gain="10">
 		<ingredient name="mushrooms" count="1" />
 		<ingredient name="dirtFragment" count="1" />
@@ -1330,6 +1317,62 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
 	<recipe name="rebarFrameRamp" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarStairs25" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameWedge" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameWedgeTip" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFramePlate" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameCNRFull" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFramePillar50" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFramePole" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameCNRRamp" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameWedgeTipCNRFullTop" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameCNRRampFiller" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameStairs25CornerCNR" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameArch" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameWedgeIncline" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+    <recipe name="rebarFrameWedgeCNRInsideBottom" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="4" craft_exp_gain="5">
 		<ingredient name="unit_iron" count="10" />
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
