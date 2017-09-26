@@ -692,7 +692,7 @@
 		<reward type="Quest" id="quest_Farming14" />
 	</quest>
 	<quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="Making fertilizer" subtitle_key="Making fertilizer" description_key="Any squirrel can plant a nut and grow a tree but it takes Farmer that can make fertilizer to increase crop yields. To finish off your farming quest chain create some fertilizer. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
-		<objective type="Craft" id="fertilizer" value="500" />
+		<objective type="Craft" id="fertilizer" value="250" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 	</quest>

@@ -625,17 +625,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="egg" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="endTable" count="1">
-		<ingredient name="plank" count="5" />
-	</recipe>
-    <recipe name="explodingCrossbowBolt" count="1" craft_area="workbench" craft_time="4" craft_exp_gain="50">
+	<recipe name="explodingCrossbowBolt" count="1" craft_area="workbench" craft_time="4" craft_exp_gain="50">
 		<ingredient name="steelArrowHead" count="1" />
 		<ingredient name="nitroglycerin" count="1" />
 		<ingredient name="ductTape" count="1" />
 		<ingredient name="stick" count="1" />
 		<ingredient name="feather" count="1" />
 	</recipe>
-	<recipe name="fertilizer" count="1" craft_time="60" craft_exp_gain="0">
+	<recipe name="fertilizer" count="1" craft_time="30" craft_exp_gain="5">
 		<ingredient name="turd" count="1" />
 		<ingredient name="boneMeal" count="1" />
 		<ingredient name="bioMass" count="15" />
@@ -981,13 +978,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="spring" count="3" />
 		<ingredient name="mechanicalParts" count="1" />
 		<ingredient name="doorKnob" count="1" />
-	</recipe>
-	<recipe name="keystoneBlock" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="100">
-		<ingredient name="forgedSteel" count="10" />
-		<ingredient name="forgedIron" count="10" />
-		<ingredient name="radiated" count="10" />
-		<ingredient name="scrapBrass" count="50" />
-		<ingredient name="scrapLead" count="50" />
 	</recipe>
 	<recipe name="ladderSteel" count="1" craft_area="workbench" craft_tool="wrench" craft_time="4" craft_exp_gain="5">
 		<ingredient name="shortMetalPipe" count="10" />
@@ -2151,6 +2141,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="keystoneStone" count="1" />
 		<ingredient name="blankSkillBook" count="1" />
 	</recipe>
+    <recipe name="claimingYourShit" count="1" craft_area="researchDesk" craft_time="4" craft_exp_gain="100">
+		<ingredient name="keystoneRock" count="1" />
+		<ingredient name="blankSkillBook" count="1" />
+	</recipe>
 	<recipe name="clubSteelSpiked" count="1" craft_area="workbench" craft_time="4" craft_exp_gain="30">
 		<ingredient name="clubSpiked" count="1" />
 		<ingredient name="shortSteelPipe" count="10" />
@@ -2852,12 +2846,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapBrass" count="30" />
 		<ingredient name="radiated" count="10" />
 	</recipe>
-	<recipe name="keystoneRock" count="1" craft_time="60" craft_exp_gain="50">
+	<recipe name="keystoneStone" count="1" craft_time="60" craft_exp_gain="50">
 		<ingredient name="carBattery" count="1" />
 		<ingredient name="radiated" count="10" />
 		<ingredient name="rockSmall" count="5000" />
 	</recipe>
-    <recipe name="keystoneBlock" count="1" craft_area="workbench" craft_tool="welderTool" craft_time="60" craft_exp_gain="100">
+    <recipe name="keystoneBlock" count="1" craft_area="workbench" craft_tool="welderTool" craft_time="30" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="10" />
 		<ingredient name="forgedIron" count="10" />
 		<ingredient name="radiated" count="10" />
@@ -3715,17 +3709,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="woodBranch" count="5" />
 	</recipe>
-	<recipe name="woodSpear" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="15">
+	<recipe name="woodSpear" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="40">
 		<ingredient name="rockSmall" count="5" />
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="woodBranch" count="5" />
 	</recipe>
-	<recipe name="wrench" count="1" craft_area="forge" craft_tool="scrapWrenchMold" craft_time="30" craft_exp_gain="10">
+	<recipe name="wrench" count="1" craft_area="forge" craft_tool="scrapWrenchMold" craft_time="4" craft_exp_gain="50">
 		<ingredient name="unit_iron" count="50" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
-    
-	<recipe name="jailDoor" count="1" craft_area="workbench">
+    <recipe name="jailDoor" count="1" craft_area="workbench">
 		<ingredient name="forgedSteel" count="12"/>
 		<ingredient name="spring" count="2"/>
 		<ingredient name="mechanicalParts" count="2"/>

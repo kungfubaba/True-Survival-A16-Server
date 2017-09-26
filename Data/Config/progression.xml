@@ -3780,6 +3780,7 @@
 			<recipe name="cementFormArch" unlock_level="2" />
             <recipe name="cementFormCNRRampFiller" unlock_level="2" />
             <recipe name="cementFormWedgeTipCNRFullTop" unlock_level="2" />
+            <recipe name="concreteSupport" unlock_level="2" />
 			<!--upgrade material-->
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
@@ -3949,12 +3950,7 @@
 			<recipe name="metalTrussingBlock" unlock_level="1" />
 			<recipe name="metalTrussingRamp" unlock_level="1" />
 		</perk>
-		<perk name="concreteDrawBridgePerk" icon="ui_game_symbol_concreteDrawBridge" description_key="Learn to craft a concrete draw bridge on the metal working bench using the Wielder" title_key="Concrete Draw Bridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="concreteBuilding" required_skill_level="2" />
-			<recipe name="drawBridge" unlock_level="1" />
-		</perk>
-		
-		<perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+        <perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultHatch_v1" unlock_level="1" />

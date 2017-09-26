@@ -884,6 +884,7 @@
 		<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 		<property name="HandItem" value="handZombieBurning" />
+        <property name="LootListOnDeath" value="153" />
 		<property name="MaxHealth" value="800" />
 		<property name="ExperienceGain" value="100" />
         <property name="ApproachSpeed" value="0.56" />
@@ -4073,7 +4074,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.34" />
+		<property name="ApproachSpeed" value="0.31" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
@@ -4567,90 +4568,7 @@
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-	<!--JZMOD ADDED UMA ZOMBIES-->
-	<!-- JZMOD CHARRED ZOMBIE-->
-	<!-- 	<entity_class name="zombieZombieCharred" extends="zombieUMA">
-		<property name="Archetype" value="ZombieCharred" />
-		<property name="WalkType" value="7" />
-		<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
-		<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
-		<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack" />
-		<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain" />
-		<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
-		<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
-		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
-		<property name="HandItem" value="CharredHand" />
-		<property name="MaxHealth" value="80" />
-		<property name="LootListOnDeath" value="154" />
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" /> 
-		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
-		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
-		<property name="AITask-5" value="ApproachSpot" />
-		<property name="AITask-6" value="Wander" />
-		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
-		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-		<property name="AITarget-3" value="BlockingTargetTask" />
-		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-	</entity_class>  -->
-	<!-- JZMOD BABY ZOMBIE-->
-	<!-- JZMOD Brute-->
-	<!-- 	<entity_class name="zombieZombieBrute" extends="zombieUMA">
-			<property name="Archetype" value="ZombieBrute" />
-			<property name="MaxHealth" value="20000" />
-			<property name="ExperienceGain" value="50" />
-			<property name="LootListOnDeath" value="155" />
-			<property name="HandItem" value="BruteBash" />
-			<property name="WalkType" value="2" />
-			<property name="WanderSpeed" value="0.25" />
-			<property name="PanicSpeed" value="1.0" />
-			<property name="ApproachSpeed" value="0.46" />
-			<property name="NightWanderSpeed" value="0.25" />
-			<property name="NightApproachSpeed" value="1.86" />
-			<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
-			<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
-			<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
-			<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
-			<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
-			<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
-			<property name="AITask-1" value="BreakDoor" />
-			<property name="AITask-2" value="BreakBlock" />
-			<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
-			<property name="AITask-5" value="ApproachSpot" />
-			<property name="AITask-6" value="Wander" />
-			<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
-			<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-			<property name="AITarget-3" value="BlockingTargetTask" />
-			<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-			<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-			<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-	</entity_class>  -->
-	<!--     JZMOD BOOMERS    -->
-	<!--<entity_class name="HungryWitchBoomer" extends="WitchBoomer">
-		<property name="ExperienceGain" value="30" />
-        <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
-		<property name="MaxHealth" value="4500" />
-        <property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="1.35" />
-		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
-		<property name="PanicSpeed" value="0.55" />
-	</entity_class>
-    <entity_class name="HungryBabyBoomer" extends="ZombieBabyBoomer">
-		<property name="ExperienceGain" value="30" />
-        <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
-		<property name="WanderSpeed" value="1" />
-		<property name="ApproachSpeed" value="1.8" />
-		<property name="NightWanderSpeed" value="1" />
-		<property name="NightApproachSpeed" value="2.5" />
-	</entity_class> -->
-	<!-- <property name="MeshScale" value="2,2" />
-    <property name="DamageCategory" value="Boss"/>-->
+	
 </entity_classes>
 <!-- Radiated, harder to decap
 	<property name="HeadDismemberBaseChance" value="-.15"/>

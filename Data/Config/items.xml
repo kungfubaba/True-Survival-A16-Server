@@ -246,7 +246,7 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="0.2,0.3" />
 			<property name="DamageBonus.head" value="34" />
 			<property name="DamageBonus.glass" value="10" />
-			<property name="DamageBonus.organic" value="0.1" />
+			<property name="DamageBonus.organic" value="1" />
 			<property name="DamageBonus.cloth" value="0.1" />
 			<property name="DamageBonus.earth" value="0.1" />
 			<property name="DamageBonus.stone" value="5" />
@@ -271,7 +271,7 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="0.5,0.4" />
 			<property name="DamageBonus.head" value="64" />
 			<property name="DamageBonus.glass" value="10" />
-			<property name="DamageBonus.organic" value="0.1" />
+			<property name="DamageBonus.organic" value="1" />
 			<property name="DamageBonus.cloth" value="0.1" />
 			<property name="DamageBonus.earth" value="0.1" />
 			<property name="DamageBonus.stone" value="5" />
@@ -3504,7 +3504,7 @@ Mesh files no longer used:
 	<item id="191" name="turd">
 		<property name="Meshfile" value="Items/Crafting/clayPrefab" />
 		<property name="Material" value="MbioMass" />
-		<property name="Weight" value="3" />
+		<property name="Weight" value="2" />
 		<property name="HoldType" value="40" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
@@ -7245,6 +7245,7 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0" />
 			<property name="Buff" value="nutrition_5_Trigger" />
 		</property>
+        <property name="ActionExp" value="5000"/>
 	</item>
 	<item id="671" name="brokenGlass">
 		<!-- scrap material -->
@@ -7278,7 +7279,7 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="10" />
 		<!-- STK food -->
 		<property class="Action0">
-			<property name="Class" value="UseOther" />
+			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
@@ -14566,7 +14567,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="antiVenomDesc" />
 	</item>
 	<item id="1760" name="stimulant">
-		<property name="Extends" value="sutureKit" />
+		<property name="Extends" value="foodMaster" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="CustomIcon" value="ui_game_symbol_stimulant" />
@@ -15955,7 +15956,7 @@ Mesh files no longer used:
     <item id="1866" name="bioMass">
 		<property name="Extends" value="foodMaster" />
 		<property name="Material" value="MbioMass" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="5000" />
 		<property name="CustomIcon" value="ui_game_symbol_bioMass" />
         <property name="DescriptionKey" value="bioMassDesc" />
@@ -17173,7 +17174,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="Weight" value="100" />
 		<property name="DescriptionKey" value="ironSledgeHeadDesc" />
-		<property name="CraftingSkillGroup" value="ironShovelCraft" />
+		<property name="CraftingSkillGroup" value="sledgeHammerCraft" />
 		<property name="CustomIcon" value="ui_game_symbol_ironSledgeHead" />
 	</item>
     <item id="2028" name="drillTool">
