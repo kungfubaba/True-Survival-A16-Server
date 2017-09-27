@@ -9578,8 +9578,8 @@ Mesh files no longer used:
 		<property name="Group" value="Resources" />
 		<property name="CraftingIngredientExp" value="15" />
 		<property name="CraftingIngredientTime" value="2" />
-		<!-- <property name="RepairTime" value="2"/>
-	<property name="RepairAmount" value="400"/> -->
+        <property name="RepairTime" value="10"/>
+        <property name="RepairAmount" value="50"/> 
 	</item>
 	<item id="1334" name="cottonPlant">
 		<property name="CustomIcon" value="plantedCotton3Harvest" />
