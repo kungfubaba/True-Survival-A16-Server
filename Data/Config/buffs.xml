@@ -766,7 +766,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-1" rate="1" />
 </buff>	
 <!--JZMOD High-->
-<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson),debuff(pain)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_pot">
+<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_pot">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="food" amount="-1" rate="8" />

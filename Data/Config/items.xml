@@ -9277,8 +9277,7 @@ Mesh files no longer used:
 	<item id="1312" name="animalHide">
 		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
 		<property name="HoldType" value="21" />
-		<property name="Material" value="leather" />
-		<property name="Weight" value="5" />
+		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
 		<property name="FuelValue" value="5" />
@@ -9356,6 +9355,8 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="20" />
 		<property name="EconomicBundleSize" value="10" />
 		<property name="Group" value="Resources" />
+        <property name="RepairTime" value="5"/>
+        <property name="RepairAmount" value="50"/>
 	</item>
 	<item id="1318" name="scrapLead">
 		<!-- scrap material -->
@@ -13588,6 +13589,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="DegradationBreaksAfter" value="true" />
+        <property name="Degradation" value="5000" param1="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -15417,6 +15419,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1825" name="handFullOfSeeds">
 		<property name="Extends" value="foodMaster" />
+        <property name="Material" value="Mgrain" />
+		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_handFullOfSeeds" />
 		<property class="Action1">
 			<property name="Gain_water" value="-4" />
@@ -16179,7 +16183,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1893" name="curedLeather">
 		<property name="Extends" value="itemMaster" />
-		<property name="Material" value="leather" />
+		<property name="Material" value="organic" />
 		<property name="DescriptionKey" value="curedLeatherDesc" />
 		<property name="CustomIcon" value="leather" />
 		<property name="CustomIconTint" value="edf4b0" />
@@ -16589,9 +16593,11 @@ Mesh files no longer used:
 		</property>
 		<property class="Action1">
 			<property name="Buff" value="high" />
+            <property name="Debuff" value="pain" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="medicineCraft" />
+        <property name="DescriptionKey" value="jointDesc" />
 	</item>
 	<item id="1940" name="wheat">
 		<property name="Extends" value="itemMaster" />

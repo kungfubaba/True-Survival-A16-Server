@@ -596,13 +596,15 @@
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="hoeIron" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming1" />
 	</quest>
 	<!-- Farming Quest Chain -->
 	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="Becoming a Farmer" subtitle_key="Learning To Farm" description_key="You can't be a farmer without a hoe so get one made. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="hoeIron" value="1" />
+        <reward type="Recipe" id="plantedCotton1" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Quest" id="quest_Farming2" />
 		<reward type="Exp" value="400" />
@@ -610,84 +612,96 @@
 	<quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="Growing Cotton" subtitle_key="Growing Cotton" description_key="Now craft and plant some Cotton Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCotton1" value="50" />
 		<objective type="BlockPlace" id="plantedCotton1" value="50" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedPotato1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming3" />
 	</quest>
 	<quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="Growing Potatos" subtitle_key="Growing Potatos" description_key="Now craft and plant some Potato Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedPotato1" value="50" />
 		<objective type="BlockPlace" id="plantedPotato1" value="50" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedGoldenrod1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming4" />
 	</quest>
 	<quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="Growing Goldenrod" subtitle_key="Growing Goldenrod" description_key="Now craft and plant some Goldenrod Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedGoldenrod1" value="100" />
 		<objective type="BlockPlace" id="plantedGoldenrod1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedCorn1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming5" />
 	</quest>
 	<quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="Growing Corn" subtitle_key="Growing Corn" description_key="Now craft and plant some Corn Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCorn1" value="100" />
 		<objective type="BlockPlace" id="plantedCorn1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedChrysanthemum1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming6" />
 	</quest>
 	<quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="Growing Chrysanthemum" subtitle_key="Growing Chrysanthemum" description_key="Now craft and plant some Chrysanthemum Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedChrysanthemum1" value="100" />
 		<objective type="BlockPlace" id="plantedChrysanthemum1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="carrotSeed" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming7" />
 	</quest>
 	<quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="Growing carrot" subtitle_key="Growing carrot" description_key="Now craft and plant some carrot Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="carrotSeed" value="100" />
 		<objective type="BlockPlace" id="carrotSeed" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="wheatSeed" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming8" />
 	</quest>
 	<quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="Growing wheat" subtitle_key="Growing wheat" description_key="Now craft and plant some wheat Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="wheatSeed" value="100" />
 		<objective type="BlockPlace" id="wheatSeed" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="appleSeed" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming9" />
 	</quest>
 	<quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="Growing apples" subtitle_key="Growing apples" description_key="Now craft and plant some apple Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="appleSeed" value="100" />
 		<objective type="BlockPlace" id="appleSeed" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedMushroom1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming10" />
 	</quest>
 	<quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="Growing Mushroom" subtitle_key="Growing Mushroom" description_key="Now craft and plant some Mushroom Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedMushroom1" value="100" />
 		<objective type="BlockPlace" id="plantedMushroom1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedBlueberry1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming11" />
 	</quest>
 	<quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="Growing Blueberry" subtitle_key="Growing Blueberry" description_key="Now craft and plant some Blueberry Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedBlueberry1" value="100" />
 		<objective type="BlockPlace" id="plantedBlueberry1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedYucca1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming12" />
 	</quest>
 	<quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="Growing Yucca" subtitle_key="Growing Yucca" description_key="Now craft and plant some Yucca Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedYucca1" value="100" />
 		<objective type="BlockPlace" id="plantedYucca1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="plantedAloe1" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming13" />
 	</quest>
 	<quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="Growing Aloe" subtitle_key="Growing Aloe" description_key="Now craft and plant some Aloe Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedAloe1" value="100" />
 		<objective type="BlockPlace" id="plantedAloe1" value="100" />
-		<reward type="Item" id="farmersAlmanac" />
+		<reward type="Recipe" id="fertilizer" />
+        <reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming14" />
 	</quest>
@@ -695,6 +709,7 @@
 		<objective type="Craft" id="fertilizer" value="250" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
+        <reward type="SkillPoints" value="5" />
 	</quest>
 	<!-- CHALLENGES -->
 	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane">

@@ -1893,7 +1893,8 @@
 		<property name="DeadBodyHitPoints" value="175" />
 		<drop event="Harvest" name="rottingFlesh"  count="1" />
         <drop event="Harvest" name="feather"  count="5" />
-		<drop event="Harvest" name="feather" tool_category="Butcher" count="30" />
+		<drop event="Harvest" name="feather" tool_category="Butcher" count="15" />
+        <drop event="Harvest" name="feather" tool_category="Hunter" count="30"/>
 	</entity_class>
 	<entity_class name="animalSnake" extends="animalTemplateHostile">
 		<property name="EntityType" value="Animal" />

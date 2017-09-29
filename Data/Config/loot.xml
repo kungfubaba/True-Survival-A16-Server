@@ -3284,7 +3284,16 @@
     
     
 	<!--JZMOD ADDED LOOT CONTAINERS >100 xxxxstopped herexxxx-->
-
+    <!-- Tractor -->
+	<lootcontainer id="101" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item group="junkPersonal" prob="32" />
+		<item group="tools" prob="5" />
+		<item group="farmCrops" prob="10" />
+		<item group="seeds" prob="22" />
+		<item name="hoeIron" prob="5" />
+		<item name="beer" prob="1" />
+		<item group="empty" prob="25" />
+	</lootcontainer>
 	<!-- Bike N A Box loot  -->
 	<lootcontainer id="111"  size="3,3" destroy_on_close="true" open_time="8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 		<item group="bikeNABox"  />
@@ -3298,51 +3307,51 @@
 	<lootcontainer id="117" size="8,8" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer"></lootcontainer>
 	<!-- Day Zombies Loot Containers  150-189 -->
 	<!-- lootcontainer 153 Burnt Zombie Loot -->
-	<lootcontainer id="153" count="0,2" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+	<lootcontainer id="153" count="0,2" size="3,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item name="coal" count="5,15" />
 	</lootcontainer>
 	<!--Bandit Loot-->
-	<lootcontainer id="200" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="200" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+Melee" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="201" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="201" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+AK12" prob="1" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="202" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="202" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+MG4" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="203" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="203" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+RocketLauncher" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="204" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="204" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+HK416" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="205" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="205" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+UMP45" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="206" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="206" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+ACW" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="207" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="207" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+G36C" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="208" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="208" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+M4A1" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="209" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="209" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="bandit+ScarH" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>
-	<lootcontainer id="210" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="210" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="Bandit+AK47" prob="66" />
         <item group="junkPersonal" prob="34" />
 	</lootcontainer>

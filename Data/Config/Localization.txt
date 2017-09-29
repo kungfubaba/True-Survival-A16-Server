@@ -1477,7 +1477,7 @@ foodYuccaJuiceDesc,items,Food,KgNone,"Yucca juice can cool you, hydrate you, and
 goldenRodTea,items,Food,KgNone,Golden Rod Tea,Thé à verge d'or,Goldrutentee,,Té de vara de oro
 goldenRodTeaDesc,items,Food,KgNone,Got dysentery? This bottle of sweet goldenrod tea will cure it.,Vous avez la dysenterie ? Cette bouteille de thé de gerbe d'or sucré vous guérira.,Hast du Dysenterie? Diese Flasche mit süßem Goldrutentee wird sie heilen.,,¿Tienes disentería? Esta botella de té de vara de oro dulce te curará.
 grainAlcohol,items,Food,KgNone,Grain Alcohol,Alcool de grain,Spiritus,,Alcohol de grano
-grainAlcoholDesc,items,Food,KgNone,Grain alcohol can be made in a beaker at a campfire. Useful for homemade gas and first aid kits.,L'alcool de grain peut être fabriqué dans un bécher sur le feu de camp. Très pratique pour une composition d'essence maison et les trousses de premiers soins.,Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
+grainAlcoholDesc,items,Food,KgNone,Grain alcohol can be made in a Still. Useful for homemade gas and first aid kits.,L'alcool de grain peut être fabriqué dans un bécher sur le feu de camp. Très pratique pour une composition d'essence maison et les trousses de premiers soins.,Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
 grilledMeat,items,Food,KgNone,Grilled Meat,Viande grillée,Gegrilltes Wildbret,,Carne a la parrilla
 grilledMeatDesc,items,Food,KgNone,"Meat! Meat on fire! Good! Nutritious, filling and will boost your wellness. Can attract zombies if carried.","Viande ! Viande cuite ! Bonne ! Nourrit, remplit et améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden. Wer damit durch die Gegend reist könnte Zombies anziehen.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 meatStew,items,Food,KgNone,Meat Stew,Ragoût de viande,Wildbreteintopf,,Estofado de carne
@@ -5361,4 +5361,4 @@ bioMassDesc,,,,"Rotten organic material. Lets not end up in this stack. Can be u
 ratOnAStickDesc,,,"Ummmm. Now doesn't that look delicious!,,,,
 sutureKit,,,,"Suture Kit",,,,
 sutureKitDesc,,,,"Used to stich up a Gash wound",,,,
-
+jointDesc,,,,"A hand rolled Joint. Maybe not the best thing to use in a fight but great for treating pain and keeping your appetite up.",,,,

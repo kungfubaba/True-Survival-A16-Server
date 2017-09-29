@@ -506,10 +506,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="cntSecureStorageChest" count="1">
         <ingredient name="nail" count="10" />
 		<ingredient name="plank" count="20" />
+        <ingredient name="spring" count="2" />
+		<ingredient name="doorKnob" count="1" />
 	</recipe>
 	<recipe name="cntStorageGeneric" count="1">
 		<ingredient name="nail" count="10" />
 		<ingredient name="plank" count="20" />
+        <ingredient name="spring" count="2" />
+		<ingredient name="doorKnob" count="1" />
 	</recipe>
 	<recipe name="cobblestones" count="1">
 		<ingredient name="clayLump" count="1" />
@@ -905,8 +909,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="potassiumNitratePowder" count="1" />
 		<ingredient name="zincPowder" count="1" />
 	</recipe>
-	<recipe name="hoeIron" count="1" craft_time="30" craft_exp_gain="30">
-		<ingredient name="forgedIron" count="5" />
+	<recipe name="hoeIron" count="1" craft_area="anvil" craft_tool="clawHammer" craft_exp_gain="50" craft_time="4">
+		<ingredient name="scrapIron" count="100" />
 		<ingredient name="plank" count="20" />
 	</recipe>
 	<recipe name="plantedHop1" count="2" craft_time="15" craft_exp_gain="10">
@@ -2530,7 +2534,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="forgedIron" count="1" />
 		<ingredient name="footballHelmet" count="1" />
 	</recipe>
-    <recipe name="forgeCrucible" count="1" craft_area="workbench">
+    <recipe name="forgeCrucible" count="1" craft_area="workbench" craft_time="4" craft_exp_gain="25">
 		<ingredient name="forgedIron" count="40" />
 		<ingredient name="mechanicalParts" count="10" />
 		<ingredient name="rockSmall" count="1200" />

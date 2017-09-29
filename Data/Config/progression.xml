@@ -1728,7 +1728,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="fieldKnifeCraft" icon="ui_game_symbol_fieldKnife" description_key="Hunting Knife." title_key="Hunting Knife" group="crafting">
+        <crafting_skill name="fieldKnifeCraft" icon="ui_game_symbol_fieldKnife" description_key="Field Knife." title_key="Field Knife Crafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3487,7 +3487,7 @@
 			<recipe name="partsAuger_bladeDiamond" unlock_level="1" />
 			<recipe name="stoneDrill" unlock_level="1" />
 		</perk>
-        <perk name="fieldKnife" icon="ui_game_symbol_fieldKnife" description_key="Learn to craft a Field Knife that can harvest better and more animals resources." title_key="field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+        <perk name="fieldKnife" icon="ui_game_symbol_fieldKnife" description_key="Learn to craft a Field Knife on the Anvil using a Claw Hammer. Using the Field Knife to butcher animals will gather more and rarer resources" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 			<requirement perk_level="1" required_skill_name="huntingCraft" required_skill_level="25" />
 			<recipe name="fieldKnife" unlock_level="1" />
 		</perk>
@@ -3914,7 +3914,7 @@
 			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="2" />
 			<recipe name="woodHatch1_v1" unlock_level="1" />
 		</perk>
-	    <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a steel Ladder on the Metal Working Bench" title_key="steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+	    <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a steel Ladder on the Metal Working Bench" title_key="Steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="ladderSteel" unlock_level="1" />

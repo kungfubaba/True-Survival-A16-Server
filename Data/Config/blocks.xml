@@ -18884,7 +18884,7 @@ kind of free
 		<property name="Model" value="#vehiclesdeco?Tractor2" />
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
-		<property name="LootList" value="85" />
+		<property name="LootList" value="101" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
@@ -18893,7 +18893,7 @@ kind of free
 		<property name="Model" value="#vehiclesdeco?Tractor" />
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
-		<property name="LootList" value="85" />
+		<property name="LootList" value="101" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
