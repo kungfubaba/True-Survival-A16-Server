@@ -5,9 +5,10 @@
     <property name="TraderArea" value="False"/>
     <property name="ExcludeDistantPOIMesh" value="False"/>
     <property name="Zoning" value="ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="1"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
-    <property name="AllowedTownships" value="rural,town,wilderness"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
     <property name="SleeperVolumeStart" value="3,1,4"/>
     <property name="SleeperVolumeSize" value="9,3,9"/>
     <property name="SleeperVolumeGroup" value="S_LootRoom_XS"/>

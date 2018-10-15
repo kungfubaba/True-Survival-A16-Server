@@ -7,5 +7,6 @@
     <property name="Zoning" value="Industrial"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>
-    <property name="AllowedBiomes" value="plains"/>
+    <property name="AllowedBiomes" value="snow,plains"/>
+    <property name="AllowedTownships" value="rural,wilderness"/>
 </prefab>

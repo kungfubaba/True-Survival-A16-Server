@@ -1,4 +1,4 @@
-<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="bulletCasing">
+<traders buy_markup="2.0" sell_markdown="0.2" quality_mod="1,2" currency_item="bulletCasing">
 	<!--
 When adding items or blocks to the list, check if they have an "EconomicValue".
 Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
@@ -680,16 +680,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="motionsensor" count="1,2" prob="1.0" />
 			<item name="speaker" count="1,2" prob="1.0" />
 			<item name="switch" count="3,9" prob="1.0" />
-		</trader_item_group>
-		<trader_item_group name="stashOnlyItemsLow" count="1">
-			<item name="plantedHop1" count="1,5" />
-			<item name="solarbank" count="1" />
-		</trader_item_group>
-		<trader_item_group name="stashOnlyItemsHigh" count="1">
-			<item name="plantedHop1" count="2,8" />
-			<item name="solarCell" count="1,2" />
-			<item name="autoTurret" count="1,2" prob="0.5" />
-			<item name="shotgunTurret" count="1,3" prob="0.7" />
+			<item name="solarbank" count="1" prob="0.7" />
+			<item name="solarCell" count="1,4" prob="0.7" />
 		</trader_item_group>
 	</trader_item_groups>
 	<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -740,7 +732,7 @@ workstations
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20" reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-        <item group="ammo" count="5,8" /><!--
+        <item group="ammo" count="5,8" />
 			<item group="traderAlways" />
 			<item group="traderGeneral" count="4,8" />
 			<item group="generalResources" count="9,14" />
@@ -751,11 +743,11 @@ workstations
 			<item group="weaponsGunsCommon" count="1,2" />
 			<item group="lightArmor" count="1,3" />
 			<item group="heavyArmor" count="0,2" />
-			<item group="traderElectrical" count="1,2" />-->
+			<item group="traderElectrical" count="1,2" />
 		</trader_items>
 		<tier_items level="1,50" count="all">
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-            <item group="ammo" count="5,8" /><!--
+            <item group="ammo" count="5,8" />
 			<item group="traderElectrical" count="2,3" />
 			<item name="cntVendingMachine" count="0,1" />
 			<item group="tools" count="1" />
@@ -770,11 +762,10 @@ workstations
 			<item group="paintMagazines" count="0,1" />
 			<item group="commonBooks" count="2,3" />
 			<item group="rareBooks" count="1,2" />
-			<item group="stashOnlyItems" count="1" />-->
 		</tier_items>
 		<tier_items level="50,251" count="all">
 			<!-- Stash Tier 2 -->
-            <item group="ammo" count="5,8" /><!--
+            <item group="ammo" count="5,8" />
 			<item group="traderElectrical" count="2,3" />
 			<item name="cntVendingMachine" count="1" />
 			<item group="tools" count="1,2" />
@@ -792,12 +783,11 @@ workstations
 			<item group="rareBooks" count="2" />
 			<item name="miningHelmet" />
 			<item group="minibikeParts" count="0,1" />
-			<item group="stashOnlyItems" count="2" />-->
 		</tier_items>
 		<tier_items level="251,-1" count="all">
 			<!-- Stash Tier 3, requires Perk 3 + Player level 126 -->
             <item group="ammo" count="5,8" />
-			<!--<item group="traderElectrical" count="3,4" />
+			<item group="traderElectrical" count="3,4" />
 			<item group="tools" count="1,2" />
 			<item group="rareTools" count="3,4" />
 			<item name="cntVendingMachine" count="2" />
@@ -815,11 +805,6 @@ workstations
 			<item name="miningHelmet" />
 			<item group="minibikeParts" count="0,1" />
 			<item name="nightvisionGoggles" count="1" />
-			<item name="beerBook" count="1" />
-			<item name="plantedHop1" count="1,8" />
-			<item name="solarbank" count="1" />
-			<item name="solarCell" count="1,3" />
-			<item name="batterybankSchematic" count="1" />-->
 		</tier_items>
 	</trader_info>
 	<!-- Trader 2, carries better tools and construction material at higher levels. -->

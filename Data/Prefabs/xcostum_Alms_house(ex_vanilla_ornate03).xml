@@ -4,15 +4,15 @@
     <property name="AllowTopSoilDecorations" value="True"/>
     <property name="TraderArea" value="False"/>
     <property name="ExcludeDistantPOIMesh" value="False"/>
-    <property name="Zoning" value="Downtown,ResidentialNew"/>
+    <property name="Zoning" value="Downtown,ResidentialNew,ResidentialOld"/>
     <property name="RotationToFaceNorth" value="3"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>
-    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland_hub,wasteland"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
     <property name="AllowedTownships" value="city,rural,town"/>
-    <property name="SleeperVolumeStart" value="8,3,37#10,3,12#2,7,9"/>
-    <property name="SleeperVolumeSize" value="10,3,5#10,3,20#20,3,25"/>
-    <property name="SleeperVolumeGroup" value="S_Default_Med,S_LootRoom_XS,S_BusinessMan_Med"/>
-    <property name="SleeperVolumeGameStageAdjust" value=",,"/>
-    <property name="SleeperIsLootVolume" value="False,False,False"/>
+    <property name="SleeperVolumeStart" value="0,0,12#20,0,12#0,2,10#5,2,27#5,6,35#5,6,27#3,6,10#5,12,22#5,12,7"/>
+    <property name="SleeperVolumeSize" value="7,2,29#7,2,24#27,3,18#14,3,14#14,3,6#14,3,8#23,3,17#16,3,14#13,3,15"/>
+    <property name="SleeperVolumeGroup" value="S_LootRoom_XS,S_LootRoom_XS,S_Default_Med,S_Default_Med,S_FeralZombies_S,S_Default_Med,S_LootRoom_L,S_BikerBar_L,S_Default_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,,,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False"/>
 </prefab>

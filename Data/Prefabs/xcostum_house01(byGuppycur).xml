@@ -9,6 +9,7 @@
     <property name="YOffset" value="-2"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
     <property name="SleeperVolumeStart" value="2,3,4#19,2,4#2,7,4"/>
     <property name="SleeperVolumeSize" value="17,3,11#7,3,7#5,3,11"/>
     <property name="SleeperVolumeGroup" value="S_Default_Med,S_Default_S,S_LootRoom_XS"/>

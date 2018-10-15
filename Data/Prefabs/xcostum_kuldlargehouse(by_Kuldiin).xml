@@ -9,7 +9,7 @@
     <property name="YOffset" value="-5"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
-    <property name="AllowedTownships" value="town"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
     <property name="SleeperVolumeStart" value="2,10,2"/>
     <property name="SleeperVolumeSize" value="10,7,21"/>
     <property name="SleeperVolumeGroup" value="S_GhostTown_Med"/>

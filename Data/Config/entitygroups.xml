@@ -1119,29 +1119,29 @@ animalStagHostile
 		<entity name="animalZombieBear" prob="5.0" />
 	</entitygroup>
 	<entitygroup name="ZombieDogGroup">
-		<entity name="animalZombieDog" />
+		<entity name="animalZombieDog" prob="15.0" />		
 	</entitygroup>
     <entitygroup name="ZombieBunnyGroup">
-		<entity name="animalRabbitHostile" />
+		<entity name="animalRabbitHostile" prob="30.0" />
 	</entitygroup>
     <entitygroup name="ZombieChickenGroup">
-		<entity name="animalChickenHostile" />
+		<entity name="animalChickenHostile" prob="30.0" />
 	</entitygroup>
     <entitygroup name="ZombieBearGroup">
-		<entity name="animalZombieBear" />
+		<entity name="animalZombieBear" prob="10.0" />
 	</entitygroup>
 	<entitygroup name="WolfGroup">
-		<entity name="animalWolf" />
+		<entity name="animalWolf" prob="25.0" />
 	</entitygroup>
 	<entitygroup name="WolfPack">
-		<entity name="animalWolf" />
-		<entity name="animalDireWolf" prob="0.5" />
+		<entity name="animalWolf" prob="25.0" />
+		<entity name="animalDireWolf" prob="10.0" />
 	</entitygroup>
 	<entitygroup name="VultureGroup">
-		<entity name="animalZombieVulture" />
+		<entity name="animalZombieVulture" prob="30.0" />
 	</entitygroup>
     <entitygroup name="CrocGrp">
-		<entity name="animalSnake" prob="1" />
+		<entity name="animalSnake" prob="10" />
 	</entitygroup>
 	<entitygroup name="ZombieBusinessManGroup">
 		<entity name="zombieBusinessMan1" prob="14.28" />

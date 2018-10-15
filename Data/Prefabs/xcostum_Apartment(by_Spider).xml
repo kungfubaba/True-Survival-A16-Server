@@ -4,7 +4,7 @@
     <property name="AllowTopSoilDecorations" value="True"/>
     <property name="TraderArea" value="False"/>
     <property name="ExcludeDistantPOIMesh" value="False"/>
-    <property name="Zoning" value="Commercial,ResidentialOld"/>
+    <property name="Zoning" value="any"/>
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>

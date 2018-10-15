@@ -4,15 +4,15 @@
     <property name="AllowTopSoilDecorations" value="True"/>
     <property name="TraderArea" value="False"/>
     <property name="ExcludeDistantPOIMesh" value="False"/>
-    <property name="Zoning" value="Commercial,ResidentialOld"/>
+    <property name="Zoning" value="Commercial,ResidentialNew,ResidentialOld"/>
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
-    <property name="AllowedTownships" value="rural,town"/>
-    <property name="SleeperVolumeStart" value="1,2,11"/>
-    <property name="SleeperVolumeSize" value="27,3,10"/>
-    <property name="SleeperVolumeGroup" value="S_LootRoom_XS"/>
-    <property name="SleeperVolumeGameStageAdjust" value=""/>
-    <property name="SleeperIsLootVolume" value="False"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
+    <property name="SleeperVolumeStart" value="1,2,11#2,7,12"/>
+    <property name="SleeperVolumeSize" value="27,3,10#25,3,9"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_BikerBar_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=","/>
+    <property name="SleeperIsLootVolume" value="False,False"/>
 </prefab>

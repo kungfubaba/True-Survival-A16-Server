@@ -9,10 +9,10 @@
     <property name="YOffset" value="-5"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
-    <property name="AllowedTownships" value="rural,town"/>
-    <property name="SleeperVolumeStart" value="4,5,12"/>
-    <property name="SleeperVolumeSize" value="20,9,12"/>
-    <property name="SleeperVolumeGroup" value="S_LootRoom_XS"/>
-    <property name="SleeperVolumeGameStageAdjust" value=""/>
-    <property name="SleeperIsLootVolume" value="False"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
+    <property name="SleeperVolumeStart" value="4,5,12#4,9,12"/>
+    <property name="SleeperVolumeSize" value="20,3,12#17,3,11"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_Default_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=","/>
+    <property name="SleeperIsLootVolume" value="False,False"/>
 </prefab>

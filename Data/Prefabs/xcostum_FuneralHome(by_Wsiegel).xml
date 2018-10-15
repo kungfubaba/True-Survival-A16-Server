@@ -4,7 +4,7 @@
     <property name="AllowTopSoilDecorations" value="False"/>
     <property name="TraderArea" value="False"/>
     <property name="ExcludeDistantPOIMesh" value="False"/>
-    <property name="Zoning" value="ResidentialOld"/>
+    <property name="Zoning" value="any"/>
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-6"/>
     <property name="DistantPOIYOffset" value="0"/>
@@ -12,7 +12,7 @@
     <property name="AllowedTownships" value="city,rural,town"/>
     <property name="SleeperVolumeStart" value="2,1,14#0,6,13#1,12,15#2,19,20"/>
     <property name="SleeperVolumeSize" value="26,3,16#30,3,19#28,3,16#26,3,7"/>
-    <property name="SleeperVolumeGroup" value="S_LootRoom_XS,S_LootRoom_XS,S_Badass_XS,S_FeralZombies_S"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_Default_Med,S_Badass_XS,S_FeralZombies_S"/>
     <property name="SleeperVolumeGameStageAdjust" value=",,,"/>
     <property name="SleeperIsLootVolume" value="False,False,False,False"/>
 </prefab>

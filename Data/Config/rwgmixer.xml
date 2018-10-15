@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rwgmixer>  <!-- for COMPOPACK 28 -->
+<rwgmixer>  <!-- for COMPOPACK 30 -->
 	<world ruleset="vanilla" />
 	
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="10000" terrain_generator="vanilla" biome_generator="vanilla">
-			<cell_rule name="default" prob="1"/>
+			<cell_rule name="default" prob="10"/>
 			<!-- <cell_rule name="customHubTest" position="0,1" prob="0"/> -->
-
 		</ruleset>
 	</rulesets>
+	
 	
 	<cell_rules>
 		<cell_rule name="default">
@@ -16,127 +16,203 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
-			<hub_rule name="townSmall" prob="0.3"/>
-			<hub_rule name="townLarge" prob="0.3"/>
-			<hub_rule name="citySmall" prob="0.1"/>
-			<hub_rule name="cityLarge" prob="0.1"/>
-			<hub_rule name="rural" prob="0.3"/>
-			
+			<hub_rule name="ruralSmall" prob="0.1"/>
+			<hub_rule name="ruralLarge" prob="0.2"/>
+			<hub_rule name="ruraloldwest" prob="0.1"/>	
+			<hub_rule name="asiatown" prob="0.1"/>
+			<hub_rule name="townSmallold" prob="0.2"/>
+			<hub_rule name="townSmallnew" prob="0.3"/>
+			<hub_rule name="citySmall" prob="0.5"/>			
+			<hub_rule name="townLarge" prob="0.5"/>
+			<hub_rule name="cityLarge" prob="0.6"/>
+
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
-		
+
+		<!--
 		<cell_rule name="customHubTest">
 			<cave_count value="1,3"/>
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
-			
 			<hub_rule name="customHubTest"/>
-			
 			<wilderness_rule name="wildernessDefault"/>
-		</cell_rule>
+		</cell_rule>  -->
 		
 	</cell_rules>
+
+
+
 	
 	<hub_rules>
+	
+		<hub_rule name="asiatown">
+			<hub_type value="town"/>
+			<width value="200, 250" />
+			<height value="200, 250" />
+			<path_material value="asphalt" /> 
+			<path_radius value="10" />
+
+			<prefab_rule name="asiatownPOIS"/>
+			
+			<street_gen level="15" length_multiplier="4">  <!-- noch optimieren -->
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
+			</street_gen>
+		</hub_rule>	
+
+		
 		<hub_rule name="ruralSmall">
 			<hub_type value="rural"/>
-			<width value="168, 250" />
-			<height value="168, 250" />
+			<width value="250, 400" />
+			<height value="250, 400" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
-			<prefab_rule name="default"/>
+			<prefab_rule name="MINI_RURAL_POIS"/>
 			
-			<street_gen level="10" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
-			</street_gen>
+			<street_gen level="1" length_multiplier="1">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+			    <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
+			</street_gen>  
 		</hub_rule>
-		
+	
+	
 		<hub_rule name="ruralLarge">
 			<hub_type value="rural"/>
-			<width value="250, 300" />
-			<height value="250, 300" />
+			<width value="250, 400" />
+			<height value="250, 400" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
-			<prefab_rule name="default"/>
+			<prefab_rule name="RURAL_VILLAGE_POIS"/>
 			
-			<street_gen level="15" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+			<street_gen level="10" length_multiplier="10">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
+
+
+		<hub_rule name="ruraloldwest">
+			<hub_type value="rural"/>
+			<width value="250, 400" />
+			<height value="250, 400" />
+			<path_material value="asphalt" /> 
+			<path_radius value="10" />
+
+			<prefab_rule name="OLDWEST_POIS"/>
+			
+			<street_gen level="10" length_multiplier="10">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
+			</street_gen>
+		</hub_rule>
+
 		
-		<hub_rule name="townSmall">
+		<hub_rule name="townSmallold">
 			<hub_type value="town"/>
-			<width value="300, 400" />
-			<height value="300, 400" />
+			<width value="250, 400" />
+			<height value="250, 400" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
-			<prefab_rule name="default"/>
+			<prefab_rule name="TOWN_COMMON_POIS"/>
 			
 			<street_gen level="15" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
+
+		<hub_rule name="townSmallnew">
+			<hub_type value="town"/>
+			<width value="250, 400" />
+			<height value="250, 400" />
+			<path_material value="asphalt" /> 
+			<path_radius value="10" />
+
+			<prefab_rule name="TOWN_MODERN_POIS"/>
+			
+			<street_gen level="15" length_multiplier="4">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
+			</street_gen>
+		</hub_rule>
+
+	
 		<hub_rule name="townLarge">
 			<hub_type value="town"/>
-			<width value="400, 600" />
-			<height value="400, 600" />
+			<width value="600, 600" />
+			<height value="600, 600" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
-			<prefab_rule name="default"/>
+			<prefab_rule name="TOWN_LARGE_POIS"/>
 			
 			<street_gen level="20" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
+
 		<hub_rule name="citySmall">
 			<hub_type value="city"/>
-			<width value="600, 800" />
-			<height value="600, 800" />
+			<width value="800, 800" />
+			<height value="800, 800" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
+			<downtown_zone_size_perc value="0.55"/>
 			
-			<prefab_rule name="default"/>
+			<prefab_rule name="CITY_SMALL_POIS"/>
 			
 			<street_gen level="20" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
+
 		
 		<hub_rule name="cityLarge">
 			<hub_type value="city"/>
@@ -144,54 +220,255 @@
 			<height value="800, 1200" />
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
-			<downtown_zone_size_perc value="0.45"/>
+			<downtown_zone_size_perc value="0.75"/>
 			
-			<prefab_rule name="default"/>
+			<prefab_rule name="CITY_LARGE_POIS"/>
 			
 			<street_gen level="25" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
 		
-		<hub_rule name="customHubTest"> 
+		<!--	<hub_rule name="customHubTest"> 
 			<hub_type value="town"/>
 			<hub_layout name="customHubTest"/>
-
 			<prefab_rule name="town"/>
-		</hub_rule>
-
+		</hub_rule>   -->
+		
 	</hub_rules>
+
 	
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
+		<wilderness_rule name="wildernessDefault" spawn_min_max="20,25">
 			<path_material value="gravel" /> 
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroup" prob="1"/>
 		</wilderness_rule>
 	</wilderness_rules>
+
+
+<!-- ********************************************************************************************************************** -->
+
 	
 	<prefab_rules>
-		<prefab_rule name="none"/>
+		<prefab_rule name="none"/>	
+
 		
-		<prefab_rule name="default">
-			<prefab rule="residentialOldGroup"/>
-			<prefab rule="residentialNewGroup"/>
-			<prefab rule="commercialGroup"/>
-			<prefab rule="downtownGroup"/>
-			<prefab rule="industrialGroup"/>
-			<prefab rule="ruralGroup"/>
-			<prefab rule="detailFillerGroup"/>
+		<prefab_rule name="asiatownPOIS">
+			<prefab name="xcostum_Asia_Apartments(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_ChineseMarket(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Dojo(by_RedLotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_KhooKongsi(by_StompyNZ)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_KungFuSchool(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Livinghouse_sm_01(by_magoli)" min_count="1" max_count="3" />
+			<prefab name="xcostum_Asia_ModernCottage_01(by_StompyNZ)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Pagoda(by_RedLotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Pagoda_sm_01(by_magoli)" min_count="1" max_count="2" />			
+			<prefab name="xcostum_Asia_Restaurant(by_Redlotus)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Swordmaster(by_magoli)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Temple9Powermonks(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_ChineseGate(by_XXX)" />
+			<prefab name="trailer_01" max_count="1" />
+			<prefab name="trailer_02" max_count="1" />
+			<prefab name="trailer_03" max_count="1" />
+			<prefab name="trailer_04" max_count="1" />
+			<prefab name="trailer_park_01" max_count="1" />
+			<prefab name="garageyellow1" max_count="1" />
+			<prefab name="garagewhite1" max_count="1" />
+			<prefab name="garagetan1" max_count="1" />
+			<prefab name="garagestucco1" max_count="1" />
+			<prefab name="store_book_lg_01" prob="0.6" max_count="1" />
+			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="1" />			
+			<prefab name="store_pharmacy_sm_01" max_count="1" />
+			<prefab name="parking_lot_03" max_count="1"/>
+			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />			
+		</prefab_rule>
+
+		
+		<prefab_rule name="MINI_RURAL_POIS">
+			<prefab name="xcostum_WulftownA(by_WereWulfen)" max_count="1" />
+			<prefab name="football_stadium" max_count="1"/>
+			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="1" />			
+			<prefab name="store_gun_sm_01" max_count="1" />
+			<prefab name="store_gun_lg_01" max_count="1" />
+			<prefab name="store_pharmacy_sm_01" max_count="1" />
+			<prefab name="store_hardware_sm_01" max_count="1" />
+			<prefab name="store_hardware_lg_01" max_count="1" />
+			<prefab name="store_book_sm_01" max_count="1" />
+			<prefab name="store_book_lg_01" max_count="1" />
+			<prefab name="store_grocery_lg_01" max_count="1" />
+			<prefab name="store_grocery_sm_01" max_count="1" />
+			<prefab name="store_bank_lg_01" max_count="1" />
+			<prefab rule="GasStations" max_count="1" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_circus(by_magoli)" max_count="1" />
+			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" />
+			<prefab name="junkyard_lg_01" max_count="1" />
+			<prefab name="junkyard_med_01" max_count="1" />
+			<prefab name="army_barracks_01" max_count="1" />
+			<prefab name="factory_lg_01" max_count="1"/>
+			<prefab name="factory_lg_02" max_count="1"/>
+			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" />
+			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" />			
+			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_RaceTrack(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" />
+			<prefab name="xcostum_spanish_mission(by_The_Cure)" max_count="1" />			
+			<prefab name="xcostum_airport1(by_ouch)" max_count="1" />
+			<prefab name="xcostum_airport2(by_ouch)" max_count="1" />			
+		</prefab_rule>
+
+	
+		<prefab_rule name="RURAL_VILLAGE_POIS">
+			<prefab name="blueberryfield_sm" max_count="1" />
+			<prefab name="barn_01" max_count="1" />
+			<prefab name="barn_02" max_count="1" />
+			<prefab name="barn_03" max_count="1" />			
+			<prefab name="farm_shed1" max_count="1" />
+			<prefab name="farm_shed2" max_count="1" />
+			<prefab name="farm_shed3" max_count="1" />
+			<prefab name="farm_shed4" max_count="1" />	
+			<prefab name="oldwest_stables" max_count="1" />
+			<prefab name="pond02" max_count="1" />
+			<prefab name="pond01" max_count="1" />
+			<prefab name="water_tower_01" max_count="1" />
+			<prefab name="water_tower_02" max_count="1" />			
+			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
+			<prefab name="xvanilla_cornfield_md" max_count="1" />			
+			<prefab name="xvanilla_cornfield_sm" max_count="1" />
+			<prefab name="xvanilla_potatofield1" max_count="1" />
+			<prefab name="xvanilla_Trailerhousemix01" max_count="1" />
+			<prefab name="xvanilla_Trailerhousemix02" max_count="1" />
+			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />
+			<prefab name="xvanilla_Trailerhousemix04" max_count="1" />
+			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_Storage(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_RestArea_Desert(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_ZombieZoo(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_RaceTrack(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
+		    <prefab rule="GasStations" max_count="1" />
+		    <prefab rule="residentialOldGroup" />
+			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" />			
 		</prefab_rule>
 		
+		
+		<prefab_rule name="OLDWEST_POIS">
+			<prefab name="blueberryfield_sm" max_count="1" />
+			<prefab name="barn_01" max_count="1" />
+			<prefab name="barn_02" max_count="1" />
+			<prefab name="barn_03" max_count="1" />			
+			<prefab name="farm_shed1" max_count="1" />
+			<prefab name="farm_shed2" max_count="1" />
+			<prefab name="farm_shed3" max_count="1" />
+			<prefab name="farm_shed4" max_count="1" />	
+			<prefab name="oldwest_stables" max_count="1" />
+			<prefab name="pond02" max_count="1" />
+			<prefab name="pond01" max_count="1" />
+			<prefab name="water_tower_01" max_count="1" />
+			<prefab name="water_tower_02" max_count="1" />
+			<prefab name="water_tower_03" max_count="1" />			
+			<prefab name="oldwest_watertower" max_count="1" />	
+			<prefab name="oldwest_church" max_count="1" />
+			<prefab name="oldwest_hotel_01" max_count="1" />
+			<prefab name="oldwest_hotel_02" max_count="1" />
+			<prefab name="oldwest_jail" max_count="1" />
+			<prefab name="oldwest_md_shop_01" max_count="1" />
+			<prefab name="oldwest_md_shop_02" max_count="1" />
+			<prefab name="oldwest_md_shop_03" max_count="1" />
+			<prefab name="oldwest_md_shop_04" max_count="1" />
+			<prefab name="oldwest_sm_shop_01" max_count="1" />
+			<prefab name="oldwest_sm_shop_02" max_count="1" />
+			<prefab name="oldwest_sm_shop_03" max_count="1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
+			<prefab name="xvanilla_cornfield_md" max_count="1" />			
+			<prefab name="xvanilla_cornfield_sm" max_count="1" />
+			<prefab name="xvanilla_potatofield1" max_count="1" />		
+			<prefab name="cemetery_01" max_count="1" />
+			<prefab name="cemetery_02" max_count="1" />
+			<prefab name="church_graveyard1" max_count="1" />		
+			<prefab name="xcostum_nationalparkLodge(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_TittyTwister(by_Sorrowthief)" max_count="1" />
+			<prefab name="xcostum_Farm(by_BigC90210)" max_count="1" />		
+			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" max_count="1" />		
+			<prefab name="church_sm_01" max_count="1"/>
+			<prefab name="xcostum_Wooden_Store(by_Guppycur)" max_count="1" />
+			<prefab name="bar_sm_01" max_count="1" />
+			<prefab name="xcostum_oldwestBank(by_magoli)" max_count="1" />
+		</prefab_rule>		
+
+
+		<prefab_rule name="TOWN_COMMON_POIS">
+			<prefab rule="residentialOldGroup" />
+			<prefab rule="commercialGroup" max_count="8" />		
+			<prefab rule="industrialGroup" max_count="4" />
+			<prefab rule="GasStations" max_count="1" />	
+			<prefab rule="ruined_POIS" max_count="4" />
+		</prefab_rule>		
+		
+		
+		<prefab_rule name="TOWN_MODERN_POIS">
+			<prefab rule="residentialNewGroup" />
+			<prefab rule="commercialGroup" max_count="8" />		
+			<prefab rule="industrialGroup" max_count="2" />
+			<prefab rule="GasStations" max_count="1" />	
+			<prefab rule="ruined_POIS" max_count="2" />			
+		</prefab_rule>		
+		
+
+		<prefab_rule name="TOWN_LARGE_POIS">
+			<prefab rule="residentialNewGroup" />
+			<prefab rule="residentialOldGroup" />			
+			<prefab rule="commercialGroup" max_count="20" />		
+			<prefab rule="industrialGroup" max_count="8" />
+			<prefab rule="GasStations" max_count="2" />	
+			<prefab rule="ruined_POIS" max_count="6" />			
+		</prefab_rule>
+
+
+		<prefab_rule name="CITY_SMALL_POIS">
+			<prefab rule="CITY_POIS" />
+			<prefab rule="downtownGroup" max_count="20" />		
+			<prefab rule="industrialGroup" max_count="6" />
+			<prefab rule="GasStations" max_count="2" />	
+			<prefab rule="ruined_POIS" max_count="6" />
+			<prefab rule="skyscrapers" max_count="3"/>
+			<prefab rule="commercialGroup" max_count="10" />			
+		</prefab_rule>		
+		
+
+		<prefab_rule name="CITY_LARGE_POIS">
+			<prefab rule="CITY_POIS" />
+			<prefab rule="downtownGroup" />
+			<prefab rule="industrialGroup" max_count="10" />
+			<prefab rule="GasStations" max_count="3" />	
+			<prefab rule="ruined_POIS" max_count="9" />
+			<prefab rule="skyscrapers" max_count="3"/>
+			<prefab rule="commercialGroup" max_count="18" />
+		</prefab_rule>		
+		
+
+
+		
 		<prefab_rule name="residentialOldGroup">	
-			<prefab rule="abandoned_houses" max_count="4" />
+			<prefab rule="abandoned_houses" max_count="2" />
 			<prefab name="bombshelter_lg_01" max_count="1" />
 			<prefab name="bombshelter_md_01" max_count="1" />
 			<prefab name="cemetery_01" max_count="1" />
@@ -270,7 +547,6 @@
 			<prefab name="xcostum_Warehouse(by_Batman)" max_count="1" />
 			<prefab name="xcostum_Farm(by_BigC90210)" max_count="1" />
 			<prefab name="xcostum_Haulier_md(by_Limodor)" max_count="1" />
-			<prefab name="xcostum_Household_Storage_sm(by_Devilhunter)" max_count="1" />
 			<prefab name="xcostum_Info_Center(by_LuckyStar)" max_count="1" />	
 			<prefab name="xcostum_Trailer(by_Sorrowthief)" max_count="1" />
 			<prefab name="xvanilla_Trailerhousemix01" max_count="1" />		
@@ -282,9 +558,12 @@
 			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />
 			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" />			
 			<prefab name="xcostum_Park(by_Guppycur)" max_count="1" />
-	
+			<prefab name="xcostum_house_number14(by_Kam)" max_count="1" />
+			<prefab name="xcostum_Woodhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Redhouse(by_Tom)" max_count="1" />
 		</prefab_rule>
-				
+
+		
 		<prefab_rule name="residentialNewGroup">		
 			<prefab name="house_new_mansion_01" max_count="1"/>
 			<prefab name="house_new_mansion_02" max_count="1"/>
@@ -329,8 +608,8 @@
 			<prefab name="xcostum_simpsonshouse(by_magoli)" max_count="1" />
 			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="1" />			
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" max_count="1" />
-			<prefab name="xcostum_Apartment(by_Gertle)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Apartments(by_Batman)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Apartment(by_Gertle)" max_count="1" />
+			<prefab name="xcostum_Apartments(by_Batman)" max_count="1" />
 			<prefab name="xcostum_WulftownA(by_WereWulfen)" max_count="1" />
 			<prefab name="xcostum_House(by_LastI)" max_count="1" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
@@ -340,26 +619,30 @@
 			<prefab name="xcostum_house03(byGuppycur)" max_count="1" />
 			<prefab name="xcostum_house04(byGuppycur)" max_count="1" />
 			<prefab name="xcostum_house05(byGuppycur)" max_count="1" />
-			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" max_count="1" />			
+			<prefab name="xcostum_house_modern_01(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_02(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_03(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_05(by_Kam)" max_count="1" />				
+			<prefab name="xcostum_Stonehouse01(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Hostel_destroyed(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Villa(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Roundhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Redhouse(by_Tom)" max_count="1" />
 		</prefab_rule>
 
 		
 		<prefab_rule name="commercialGroup">	
-			<prefab name="store_gun_sm_01" min_count="1" max_count="1" />
-			<prefab name="store_gun_lg_01" min_count="1" max_count="1" />
+			<prefab name="store_gun_sm_01" max_count="1" />
+			<prefab name="store_gun_lg_01" max_count="1" />
 			<prefab name="store_pharmacy_sm_01" max_count="1" />
-			<prefab name="store_hardware_sm_01" prob="1" max_count="1" />
-			<prefab name="store_hardware_lg_01" prob="1" max_count="1" />
-			<prefab name="store_book_sm_01" prob="0.8" max_count="1" />
-			<prefab name="store_book_lg_01" prob="0.6" max_count="1" />
-			<prefab name="store_grocery_lg_01" prob="0.6" max_count="1" />
-			<prefab name="store_grocery_sm_01" prob="0.8" max_count="1" />
+			<prefab name="store_hardware_sm_01" max_count="1" />
+			<prefab name="store_hardware_lg_01" max_count="1" />
+			<prefab name="store_book_sm_01" max_count="1" />
+			<prefab name="store_book_lg_01" max_count="1" />
+			<prefab name="store_grocery_lg_01" max_count="1" />
+			<prefab name="store_grocery_sm_01" max_count="1" />
 			<prefab name="store_bank_lg_01" max_count="1" />
-			<prefab name="gas_station1" max_count="1" />
-			<prefab name="gas_station2" max_count="1" />
-			<prefab name="gas_station3" max_count="1" />
-			<prefab name="gas_station4" max_count="1" />
-			<prefab name="gas_station5" max_count="1" />
 			<prefab name="diner_01" max_count="1" />
 			<prefab name="diner_02" max_count="1" />
 			<prefab name="fastfood_01" max_count="1" />
@@ -373,8 +656,8 @@
 			<prefab name="store_salon" max_count="1" />
 			<prefab name="xcostum_GasnWash32(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_GasStation(by_Warsaken)" max_count="1" />	
-			<prefab name="xcostum_Bavarian_Bowse_Shop(by_magoli)" prob="0.5" max_count="1" />
-			<prefab name="xcostum_kwikemart(by_magoli)"  prob="0.3" max_count="1" />
+			<prefab name="xcostum_Bavarian_Bowse_Shop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_kwikemart(by_magoli)" max_count="1" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_tv_store(by_magoli)" max_count="1" />
 			<prefab name="xcostum_Pawnshop(by_magoli)" max_count="1" />
@@ -385,20 +668,49 @@
 			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
 			<prefab name="xcostum_MultiStore(by_ANT)" max_count="1" />
 			<prefab name="xcostum_SuperStore(by_Volar)" max_count="1" />
-			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
-			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" max_count="1" />
+			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_Stripmall(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_townsquare(by_snake0567)" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" />
 			<prefab name="xcostum_seafoodshop(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_storeset1(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_storeset2(by_Guppycur)" max_count="1" />			
+			<prefab name="xcostum_storeset2(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Paintballarena(by_Jackelmyer)" max_count="1" />
+			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="1" />
+			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />	
+			<prefab name="xcostum_FarmerJoesNursery(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_Shoppingcenter(by_Tom)" max_count="1" />
+			<prefab name="xcostum_donut_shop(by_bigstep70)" max_count="1" />			
+			<prefab name="xcostum_drivethru(by_bigstep70)" max_count="1" />
+			<prefab name="xcostum_RedCatDiner(by_Najax)" max_count="1" />			
 		</prefab_rule>
 
 		
 		<prefab_rule name="downtownGroup">
+			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
+			<prefab name="apartment_brick_6_flr" max_count="1" />
+			<prefab name="hotel_roadside_01" max_count="1"/>
+			<prefab name="hotel_roadside_02" max_count="1"/>
+			<prefab name="hotel_ostrich" max_count="1"/>
+			<prefab name="hotel_new_01" max_count="1"/>
+			<prefab name="parking_garage_01" max_count="1"/>
+			<prefab name="theater_01"  max_count="1"/>
+			<prefab name="bar_theater_01"  max_count="1"/>
+			<prefab name="xcostum_Brownstones_House(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" max_count="1" />
+			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" max_count="1" />
+			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" max_count="1" />			
+			<prefab name="xcostum_Courthouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_Spirallibrary(by_Tom)" max_count="1" />
+		</prefab_rule>
+
+
+		<prefab_rule name="CITY_POIS">	
 			<prefab name="business_red_brick_01" max_count="1"/>
 			<prefab name="business_red_brick_02" max_count="1"/>
 			<prefab name="business_red_brick_03" max_count="1"/>
@@ -419,25 +731,16 @@
 			<prefab name="post_office_med_01" max_count="1" />
 			<prefab name="mp_waste_bldg_governer_08" max_count="1"/>
 			<prefab name="police_station1" max_count="1"/>
-			<prefab name="hotel_roadside_01" max_count="1"/>
-			<prefab name="hotel_roadside_02" max_count="1"/>
-			<prefab name="hotel_ostrich" max_count="1"/>
-			<prefab name="hotel_new_01" max_count="1"/>
 			<prefab name="prison_01" max_count="1"/>
 			<prefab name="parking_lot_01" max_count="1"/>
 			<prefab name="parking_lot_02" max_count="1"/>
-			<prefab name="parking_lot_03" max_count="1"/>
-			<prefab name="parking_garage_01" max_count="1"/>
-			<prefab name="theater_01"  max_count="1"/>
-			<prefab name="bar_theater_01"  max_count="1"/>
+			<prefab name="parking_lot_03" max_count="1"/>			
 			<prefab name="bar_stripclub_01" max_count="1" />
 			<prefab name="bar_sm_01" max_count="1" />
 			<prefab name="fire_station_01" max_count="1"/>
-			<prefab name="fire_station_02" max_count="1"/>
-			<prefab rule="skyscrapers" min_count="2" max_count="3"/>
+			<prefab name="fire_station_02" max_count="1"/>			
 			<prefab name="store_pawn_01" max_count="1" />
 			<prefab name="xcostum_bowlingcenter(by_magoli)" max_count="1" />
-			<prefab name="xcostum_circus(by_magoli)" max_count="1" />
 			<prefab name="xcostum_stripclub(by_magoli)" max_count="1" />
 			<prefab name="xcostum_StripClub(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_ArtGallery(by_Wsiegel)" max_count="1"/>			
@@ -445,68 +748,20 @@
 			<prefab name="xcostum_Firehouse(by_Warsaken)" max_count="1" />
 			<prefab name="xcostum_Firestation(by_Slick50)" max_count="1" />
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" max_count="1" />
-			<prefab name="xcostum_rollerskatedisco(by_magoli)" max_count="1" />
+			<prefab name="xcostum_rollerskatedisco(by_magoli)" max_count="1" />			
 			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" />
-			<prefab name="xcostum_CasinoANKH(by_magoli)" max_count="1" />
-			<prefab name="xcostum_Brownstones_House(by_Laz_Man)" max_count="1" />
-			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" max_count="1" />
+			<prefab name="xcostum_CasinoANKH(by_magoli)" max_count="1" />			
 			<prefab name="xcostum_CityPark(by_Spider)" max_count="1" />
-			<prefab name="xcostum_MiniMall(by_Spider)" max_count="1" />
-			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" max_count="1" />
-			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" max_count="1" />
-			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" max_count="1" />			
-			<prefab name="xcostum_Courthouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_MiniMall(by_Spider)" max_count="1" />			
 			<prefab name="xcostum_CurlingCenter(by_magoli)" max_count="1" />
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" />
 			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />			
 			<prefab name="xcostum_UnionStation(by_BuLLeTZ)" max_count="1" />
+			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="1" />			
+			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
+			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" />			
+		</prefab_rule>		
 
-		<!--	<prefab name="xcostum_CityCombo01(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo02(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo03(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo04(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo05(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo06(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo07(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo08(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo09(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo10(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo11(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo12(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo13(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo14(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo15(by_Stallionsden)" max_count="1" />		
-			<prefab name="xcostum_CityCombo16(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo18(by_Stallionsden)" max_count="1" />
-
-			<prefab name="xcostum_Citymix_01(grtown-strclub-burnth-h-gar)" max_count="1" />
-			<prefab name="xcostum_Citymix_02(gunst_sm-kuldlargeh-bunk)" max_count="1" />
-			<prefab name="xcostum_Citymix_03(wareh-pistol-moes-bunker2)" max_count="1" />
-			<prefab name="xcostum_Citymix_04(firedep-bookstore_sm_01)" max_count="1" />
-			<prefab name="xcostum_Citymix_05(niceh-businesstanh-garage)" max_count="2" />
-			<prefab name="xcostum_Citymix_06(simpsonh-gravey-brickh-camp-gar)" max_count="1" />
-			<prefab name="xcostum_Citymix_07(guildh-restaurant-firest-xxxclub)" max_count="1" />
-			<prefab name="xcostum_Citymix_08(myh-crema-gupchurch-farmsh1)" max_count="1" />
-			<prefab name="xcostum_Citymix_09(grocery_sm-barn01-medclinic_sm)" max_count="1" />
-			<prefab name="xcostum_Citymix_10(scilab-firewatcht-stayouth)" max_count="1" />		
-			<prefab name="xcostum_Citymix_11(mpwaste08-mpwaste04grey)" max_count="1" />
-			<prefab name="xcostum_Citymix_12(businessbrick_r7_t4_t2_r2_r4)" max_count="1" />
-			<prefab name="xcostum_Citymix_13(CarDealer-Pawnshop-storagesm-gar)" max_count="1" />
-			<prefab name="xcostum_Citymix_14(BowseShop-hse-gar-Cantine-Bunker)" max_count="1" />
-			<prefab name="xcostum_Citymix_15(GasSt-buisnessHse-BunkerTop-Bench)" max_count="1" />  -->
-			
-		</prefab_rule>
-
-
-		
-		<prefab_rule name="skyscrapers">
-			<prefab name="skyscraper_01" max_count="1" prob="50"/>
-			<prefab name="skyscraper_02" max_count="1" prob="50"/>
-			<prefab name="skyscraper_03" max_count="1" prob="50"/>
-			<prefab name="skyscraper_04" max_count="1" prob="50"/>
-			<!--  <prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />  (skyscraper)-->
-			<prefab name="xcostum_Skycpraper(by_Peppino)" max_count="1" prob="50" />	
-		</prefab_rule>
 
 		<prefab_rule name="industrialGroup">	
 			<prefab name="utility_waterworks_01" max_count="1" />
@@ -518,37 +773,10 @@
 			<prefab name="installation_red_mesa" max_count="1"/>
 			<prefab name="sawmill_01_snow" max_count="1"/>
 			<prefab name="utility_celltower_01" max_count="1"/>
+			<prefab name="utility_celltower_02" max_count="1"/>
 			<prefab name="junkyard_lg_01" max_count="1" />
 			<prefab name="junkyard_med_01" max_count="1" />
-			<prefab name="vacant_lot_med_01" max_count="1" />
-			<prefab name="vacant_lot_med_02" max_count="1" />
-			<prefab name="vacant_lot_sm_01" max_count="1" />
-			<prefab name="vacant_lot_sm_02" max_count="1" />
 			<prefab name="army_barracks_01" max_count="1" />
-			<prefab name="mp_waste_bldg_01_white" max_count="1" />
-			<prefab name="mp_waste_bldg_03_white" max_count="1" />
-			<prefab name="mp_waste_bldg_04_white" max_count="1" />
-			<prefab name="mp_waste_bldg_01_red" max_count="1" />
-			<prefab name="mp_waste_bldg_02_red" max_count="1" />
-			<prefab name="mp_waste_bldg_03_red" max_count="1" />
-			<prefab name="mp_waste_bldg_04_red" max_count="1" />
-			<prefab name="mp_waste_bldg_01_tan" max_count="1" />
-			<prefab name="mp_waste_bldg_02_tan" max_count="1" />
-			<prefab name="mp_waste_bldg_03_tan" max_count="1" />
-			<prefab name="mp_waste_bldg_04_tan" max_count="1" />
-			<prefab name="mp_waste_bldg_04_grey" max_count="1" />
-			<prefab name="mp_waste_bldg_05_grey" max_count="1" />
-			<prefab name="mp_waste_bldg_06_grey" max_count="1" />
-			<prefab name="waste_rubble_bldg_01" max_count="1" />
-			<prefab name="waste_rubble_bldg_02" max_count="1" />
-			<prefab name="waste_rubble_bldg_03" max_count="1" />
-			<prefab name="waste_rubble_bldg_04" max_count="1" />
-			<prefab name="waste_rubble_bldg_05" max_count="1" />
-			<prefab name="waste_rubble_bldg_06" max_count="1" />
-			<prefab name="waste_rubble_bldg_07" max_count="1" />
-			<prefab name="waste_rubble_bldg_08" max_count="1" />
-			<prefab name="waste_rubble_bldg_09" max_count="1" />
-			<prefab name="mp_waste_sewer_hole_1" max_count="1" />
 			<prefab name="xcostum_Power_Station(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Hydro_Plant(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1" />
@@ -559,70 +787,18 @@
 			<prefab name="xcostum_CountyJail(by_Volar)" max_count="1" />
 			<prefab name="xcostum_Plant(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_Windowfactory(by_magoli)" max_count="1" />
-		</prefab_rule>
-
-		
-		<prefab_rule name="ruralGroup">	
-			<prefab name="blueberryfield_sm" max_count="1" />
-			<prefab name="cornfield_sm" max_count="1" />
-			<prefab name="cornfield_med" max_count="1" />
-			<prefab name="potatofield_sm" max_count="1" />	
-			<prefab name="barn_01" max_count="1" />
-			<prefab name="barn_02" max_count="1" />
-			<prefab name="barn_03" max_count="1" />			
-			<prefab name="farm_shed1" max_count="1" />
-			<prefab name="farm_shed2" max_count="1" />
-			<prefab name="farm_shed3" max_count="1" />
-			<prefab name="farm_shed4" max_count="1" />	
-			<prefab name="oldwest_stables" max_count="1" />
-			<prefab name="pond02" max_count="1" />
-			<prefab name="pond01" max_count="1" />
-			<prefab name="water_tower_01" max_count="1" />
-			<prefab name="water_tower_02" max_count="1" />			
-			<prefab name="oldwest_watertower" max_count="1" />	
-			<prefab name="oldwest_church" max_count="1" />
-			<prefab name="oldwest_hotel_01" max_count="1" />
-			<prefab name="oldwest_hotel_02" max_count="1" />
-			<prefab name="oldwest_jail" max_count="1" />
-			<prefab name="oldwest_md_shop_01" max_count="1" />
-			<prefab name="oldwest_md_shop_02" max_count="1" />
-			<prefab name="oldwest_md_shop_03" max_count="1" />
-			<prefab name="oldwest_md_shop_04" max_count="1" />
-			<prefab name="oldwest_sm_shop_01" max_count="1" />
-			<prefab name="oldwest_sm_shop_02" max_count="1" />
-			<prefab name="oldwest_sm_shop_03" max_count="1" />	
-			<prefab name="army_camp_01" max_count="1" />
-			<prefab name="army_camp_02" max_count="1" />
-			<prefab name="army_camp_03" max_count="1" />
-			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" />
-			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" max_count="1" />
-			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1" />
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" />
-			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
-			<prefab name="xvanilla_cornfield_md" max_count="1" />			
-			<prefab name="xvanilla_cornfield_sm" max_count="1" />
-			<prefab name="xvanilla_potatofield1" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix01" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix02" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix04" max_count="1" />
-			
-			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" />
-			<prefab name="xcostum_Storage(by_ShoNuff)" max_count="1" />
-			<prefab name="xcostum_RestArea_Desert(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" max_count="1" />
-			
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />			
 		</prefab_rule>
 
 
 
+<!--wilderness :-->
 		
 		<prefab_rule name="wildernessGroup">	
-			<prefab rule="traderGroup" min_count="1" max_count="1"/>
-			<prefab rule="W_POIs_common" prob="0.6"/>
-			<prefab rule="W_POIs_rare" prob="0.3"/>
-			<prefab rule="W_POIs_superrare" prob="0.1"/>
+			<prefab rule="traderGroup" min_count="1" max_count="4"/>
+			<prefab rule="W_POIs_common" prob="0.3"/>
+			<prefab rule="W_POIs_rare" prob="0.4"/>
+			<prefab rule="W_POIs_superrare" prob="0.3"/>
 		</prefab_rule>		
 	
 		<prefab_rule name="W_POIs_common">
@@ -700,7 +876,7 @@
 		
 		<prefab_rule name="W_POIs_rare">
 			<prefab rule="W_POIs_rare_Set_A" prob="0.5"/>
-			<prefab rule="W_POIs_rare_Set_B" prob="0.4"/>
+			<prefab rule="W_POIs_rare_Set_B" prob="0.5"/>
 		</prefab_rule>		
 		
 		<prefab_rule name="W_POIs_rare_Set_A">		
@@ -710,27 +886,28 @@
 			<prefab name="xcostum_LumberMill(by_IceJudge)" max_count="1" prob="0.3"/>
     		<prefab name="xcostum_Tavern(by_Limodor)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_icestadium(by_magoli)" max_count="1" prob="0.3"/>
-			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.4"/>
 			<prefab name="snowy_ski_lodge" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_Chernobyl(by_Maz_Burt)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />	
 			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.2" />	
-			<prefab name="xcostum_TheEstate(by_Ekk0)" max_count="1" prob="0.3" />			
+			<prefab name="xcostum_TheEstate(by_Ekk0)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_ancient_tomb(by_bigstep70)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_wastelandtrain(by_incrediblejimmy)" max_count="1" prob="0.3" />
 		</prefab_rule>
 		
 		<prefab_rule name="W_POIs_rare_Set_B">
-			<!-- <prefab name="xcostum_ResidentEvilMansion(by_magoli)" max_count="1" prob="0.3" />	-->
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.3"/>		
 			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" prob="0.2"/>		
+			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" prob="0.2"/>	
 			<prefab name="xcostum_Glass_factory_big(by_Khyber)" max_count="1" prob="0.2" />		
 			<prefab name="xcostum_minigolf(by_magoli)" max_count="1" prob="0.1" />	
 			<prefab name="factory_lg_02" max_count="1" prob="0.1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" prob="0.1" />
 			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" prob="0.1" />
-			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" prob="0.2" />			
+			<prefab name="xcostum_powerplant(byKam)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_spanish_mission(by_The_Cure)" max_count="1" prob="0.2" />			
 		</prefab_rule>		
 		
 	
@@ -740,22 +917,26 @@
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.4"/>
+			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_Sphinx(by_Andyjoki)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_airport1(by_ouch)" prob="0.3" max_count="1" />
+			<prefab name="xcostum_airport2(by_ouch)" prob="0.3" max_count="1" />			
 		</prefab_rule>				
 
-		
-		<prefab_rule name="Campsites">	
-			<prefab name="campsite_01" max_count="1" />
-			<prefab name="campsite_02" max_count="1" />
-			<prefab name="campsite_03" max_count="1" />
-			<prefab name="campsite_04" max_count="1" />
-			<prefab name="campsite_06" max_count="1" />
-			<prefab name="campsite_06a" max_count="1" />
-			<prefab name="campsite_07" max_count="1" />
-			<prefab name="campsite_07a" max_count="1" />
+
+<!-- POI-Groups: -->
+
+		<prefab_rule name="abandoned_houses">	
+			<prefab name="abandoned_house_01" max_count="1" />
+			<prefab name="abandoned_house_02" max_count="1" />
+			<prefab name="abandoned_house_03" max_count="1" />
+			<prefab name="abandoned_house_04" max_count="1" />
+			<prefab name="abandoned_house_05" max_count="1" />
+			<prefab name="abandoned_house_06" max_count="1" />
+			<prefab name="abandoned_house_07" max_count="1" />
+			<prefab name="abandoned_house_08" max_count="1" />
 		</prefab_rule>		
-		
 		
 		<prefab_rule name="AframeHouses">	
 			<prefab name="xcostum_House_AF01P(19x35)(by_Nodabba)" max_count="1" />
@@ -772,22 +953,20 @@
 			<prefab name="xcostum_House_AF05R(14x17)(by_Nodabba)" max_count="1" />
 			<prefab name="xcostum_House_AF06D(29x30)(by_Nodabba)" max_count="1" />
 			<prefab name="xcostum_House_AF06R(29x30)(by_Nodabba)" max_count="1" />
-		</prefab_rule>		
-		
-
-
-
-		<prefab_rule name="abandoned_houses">	
-			<prefab name="abandoned_house_01" max_count="1" />
-			<prefab name="abandoned_house_02" max_count="1" />
-			<prefab name="abandoned_house_03" max_count="1" />
-			<prefab name="abandoned_house_04" max_count="1" />
-			<prefab name="abandoned_house_05" max_count="1" />
-			<prefab name="abandoned_house_06" max_count="1" />
-			<prefab name="abandoned_house_07" max_count="1" />
-			<prefab name="abandoned_house_08" max_count="1" />
 		</prefab_rule>
 
+		
+		<prefab_rule name="Campsites">	
+			<prefab name="campsite_01" max_count="1" />
+			<prefab name="campsite_02" max_count="1" />
+			<prefab name="campsite_03" max_count="1" />
+			<prefab name="campsite_04" max_count="1" />
+			<prefab name="campsite_06" max_count="1" />
+			<prefab name="campsite_06a" max_count="1" />
+			<prefab name="campsite_07" max_count="1" />
+			<prefab name="campsite_07a" max_count="1" />
+		</prefab_rule>		
+		
 		
 		<prefab_rule name="detailFillerGroup">
 			<prefab name="mailbox1" prob="0.25"/>
@@ -805,7 +984,69 @@
 			<prefab name="tree_burntpine_02"/>
 			<prefab name="tree_burntpine_03"/>
 			<prefab name="water_tower_03" />
+			<prefab name="vacant_lot_med_01" />
+			<prefab name="vacant_lot_med_02" />
+			<prefab name="vacant_lot_sm_01" />
+			<prefab name="vacant_lot_sm_02" />
+			<prefab name="xcostum_Household_Storage_sm(by_Devilhunter)" />
 		</prefab_rule>
+
+
+		<prefab_rule name="GasStations">
+			<prefab name="gas_station1" max_count="1" />
+			<prefab name="gas_station2" max_count="1" />
+			<prefab name="gas_station3" max_count="1" />
+			<prefab name="gas_station4" max_count="1" />
+			<prefab name="gas_station5" max_count="1" />
+			<prefab name="xcostum_GasStation(by_Warsaken)" max_count="1" />			
+		</prefab_rule>
+
+		
+		<prefab_rule name="ruined_POIS">
+			<prefab name="mp_waste_bldg_01_white" max_count="1" />
+			<prefab name="mp_waste_bldg_03_white" max_count="1" />
+			<prefab name="mp_waste_bldg_04_white" max_count="1" />
+			<prefab name="mp_waste_bldg_01_red" max_count="1" />
+			<prefab name="mp_waste_bldg_02_red" max_count="1" />
+			<prefab name="mp_waste_bldg_03_red" max_count="1" />
+			<prefab name="mp_waste_bldg_04_red" max_count="1" />
+			<prefab name="mp_waste_bldg_01_tan" max_count="1" />
+			<prefab name="mp_waste_bldg_02_tan" max_count="1" />
+			<prefab name="mp_waste_bldg_03_tan" max_count="1" />
+			<prefab name="mp_waste_bldg_04_tan" max_count="1" />
+			<prefab name="mp_waste_bldg_04_grey" max_count="1" />
+			<prefab name="mp_waste_bldg_05_grey" max_count="1" />
+			<prefab name="mp_waste_bldg_06_grey" max_count="1" />
+			<prefab name="waste_rubble_bldg_01" max_count="2" />
+			<prefab name="waste_rubble_bldg_02" max_count="2" />
+			<prefab name="waste_rubble_bldg_03" max_count="2" />
+			<prefab name="waste_rubble_bldg_04" max_count="2" />
+			<prefab name="waste_rubble_bldg_05" max_count="2" />
+			<prefab name="waste_rubble_bldg_06" max_count="2" />
+			<prefab name="waste_rubble_bldg_07" max_count="2" />
+			<prefab name="waste_rubble_bldg_08" max_count="2" />
+			<prefab name="waste_rubble_bldg_09" max_count="2" />
+			<prefab name="mp_waste_sewer_hole_1" max_count="2" />			
+			<prefab name="garageburnt1" max_count="3" />
+			<prefab name="houseburnt1" max_count="2" />
+			<prefab name="houseburnt2" max_count="2" />
+			<prefab name="houseburnt3" max_count="2" />
+			<prefab name="houseburnt3b" max_count="2" />
+			<prefab name="houseburnt4" max_count="2" />
+			<prefab name="houseburnt5" max_count="2" />	
+			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" max_count="1" />	
+			<prefab name="xcostum_house_number14(by_Kam)" max_count="1" />			
+		</prefab_rule>
+		
+
+		<prefab_rule name="skyscrapers">
+			<prefab name="skyscraper_01" max_count="1" />
+			<prefab name="skyscraper_02" max_count="1" />
+			<prefab name="skyscraper_03" max_count="1" />
+			<prefab name="skyscraper_04" max_count="1" />
+			<prefab name="xcostum_Skycpraper(by_Peppino)" max_count="1" />	
+		</prefab_rule>
+
 		
 		<prefab_rule name="traderGroup">
 			<prefab name="settlement_trader_01" />
@@ -814,11 +1055,11 @@
 			<prefab name="settlement_trader_04" />
 			<prefab name="settlement_trader_05" />
 		</prefab_rule>
-
-
-
 		
 	</prefab_rules>
+
+
+
 	
 	<hub_layouts>
 		<hub_layout name="customHubTest">
@@ -853,7 +1094,8 @@
 	
 		
 	</hub_layouts>
-	<!-- 
+	
+<!--
 	GENERATOR MODULE TYPES
 	    AbsoluteOutput
         Add
@@ -889,276 +1131,86 @@
         Turbulence
         Voronoi
 	
+-->
 
 	<terrain_generators>
 		<terrain_generator name="vanilla" use_old_final="false">
-			<module name="landBaseBase" type="FastBillow" seed_additive="5">
-				<property name="frequency" value="0.02" />
+			<module name="landBaseBase" type="FastBillow" seed_additive="420">
+				<property name="frequency" value="0.02"/>
 			</module>
 			<module name="scaleLandBaseFilter" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landBaseBase" />
-				<property name="scale" value="0.25" />
-				<property name="bias" value="0.25" />
+				<property name="sourceModule" value="landBaseBase"/>
+				<property name="scale" value="0.25"/>
+				<property name="bias" value="0.25"/>
 			</module>
 			<module name="landBase" type="ClampOutput">
-				<property name="sourceModule" value="scaleLandBaseFilter" />
-				<property name="bounds" value="0.01,0.5" />
+				<property name="sourceModule" value="scaleLandBaseFilter"/>
+				<property name="bounds" value="0.01,0.5"/>
 			</module>
+
 			<module name="fastMountainsBase" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.25" />
+				<property name="frequency" value="0.2"/>
 			</module>
 			<module name="fastMountainsT" type="FastTurbulence">
-				<property name="sourceModule" value="fastMountainsBase" />
-				<property name="power" value="5" />
-				<property name="frequency" value="0.025" />
-				<property name="roughness" value="1" />
+				<property name="sourceModule" value="fastMountainsBase"/>
+				<property name="power" value="5"/>
+				<property name="frequency" value="0.025"/>
+				<property name="roughness" value="1"/>
 			</module>
 			<module name="fastMountainsScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastMountainsT" />
-				<property name="scale" value="0.9" />
+				<property name="sourceModule" value="fastMountainsT"/>
+				<property name="scale" value="0.9"/>
 			</module>
 			<module name="fastWaterBase" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.35" />
+				<property name="frequency" value="0.02"/>
 			</module>
 			<module name="fastWaterBase2" type="InvertOutput">
-				<property name="sourceModule" value="fastWaterBase" />
+				<property name="sourceModule" value="fastWaterBase"/>
 			</module>
 			<module name="fastWaterScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastWaterBase2" />
-				<property name="scale" value="1" />
-				<property name="bias" value="-0.15" />
+				<property name="sourceModule" value="fastWaterBase2"/>
+				<property name="scale" value="1"/>
+				<property name="bias" value="-0.15"/>
 			</module>
 			<module name="fastWaterClamped" type="ClampOutput">
-				<property name="sourceModule" value="fastWaterScaled" />
-				<property name="bounds" value="-1,0.25" />
+				<property name="sourceModule" value="fastWaterScaled"/>
+				<property name="bounds" value="-1,0.25"/>
 			</module>
+
 			<module name="fastWaterFilter" type="FastRidgedMultifractal" seed_additive="3">
-				<property name="frequency" value="0.05" />
+				<property name="frequency" value="0.05"/>
 			</module>
 			<module name="scaleBiasLandFilter" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastWaterFilter" />
-				<property name="scale" value="1" />
-				<property name="bias" value="0.25" />
+				<property name="sourceModule" value="fastWaterFilter"/>
+				<property name="scale" value="1"/>
+				<property name="bias" value="0.25"/>
 			</module>
+
 			<module name="fastLandWater" type="Blend">
-				<property name="controlModule" value="scaleBiasLandFilter" />
-				<property name="sourceModule1" value="landBase" />
-				<property name="sourceModule2" value="fastWaterClamped" />
+				<property name="controlModule" value="scaleBiasLandFilter"/>
+				<property name="sourceModule1" value="landBase"/>
+				<property name="sourceModule2" value="fastWaterClamped"/>
 			</module>
+
 			<module name="finalLand" type="Blend">
-				<property name="controlModule" value="fastMountainsScaled" />
-				<property name="sourceModule1" value="fastLandWater" />
-				<property name="sourceModule2" value="fastMountainsScaled" />
+				<property name="controlModule" value="fastMountainsScaled"/>
+				<property name="sourceModule1" value="fastLandWater"/>
+				<property name="sourceModule2" value="fastMountainsScaled"/>
 			</module>
-			<module name="scaleBiasOutput" type="ScaleBiasOutput">
-				<property name="sourceModule" value="finalLand" />
-				<property name="scale" value="255" />
-			</module>
-			<output module="scaleBiasOutput" />
-		</terrain_generator>
-	</terrain_generators>
-	<biome_generators>
-		<biome_generator name="vanilla">
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008" />
-				<property name="displacement" value="0.5" />
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi" />
-				<property name="bias" value="0.5" />
-			</module>
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput" />
-				<property name="frequency" value="0.25" />
-				<property name="power" value="8" />
-				<property name="roughness" value="5" />
-			</module>
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither" />
-				<property name="frequency" value="0.0016" />
-				<property name="power" value="400" />
-				<property name="roughness" value="1" />
-			</module>
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle" />
-				<property name="bounds" value="0,1" />
-			</module>
-			<output module="clampOutput" />
-		</biome_generator>
-	**Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-**
-	</biome_generators>
-	<biome_intensity_generators>
-		<biome_intensity_generator name="vanilla">
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008" />
-				<property name="displacement" value="0.5" />
-				<property name="distanceEnabled" value="true" />
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi" />
-				<property name="bias" value="0.5" />
-			</module>
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput" />
-				<property name="frequency" value="0.25" />
-				<property name="power" value="8" />
-				<property name="roughness" value="5" />
-			</module>
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither" />
-				<property name="frequency" value="0.0016" />
-				<property name="power" value="400" />
-				<property name="roughness" value="1" />
-			</module>
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle" />
-				<property name="bounds" value="0,1" />
-			</module>
-			<output module="clampOutput" />
-		</biome_intensity_generator>
-	</biome_intensity_generators>
--->
-<!--TINS TERRAIN
-    <terrain_generators>
-	
-		<terrain_generator name="vanilla" use_old_final="false">
-		
-			<module name="landBase" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.02"/>
-			</module>
-			<module name="landT" type="FastTurbulence">
-				<property name="sourceModule" value="landBase"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.025"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="scaleLandBase" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landT"/>
-				<property name="scale" value="0.15"/>
-				<property name="bias" value="0.25"/>
-			</module>
-			<module name="land" type="ClampOutput">
-				<property name="sourceModule" value="scaleLandBase"/>
-				<property name="bounds" value="0,0.05"/>
-			</module>
-			
-			<module name="landBase2" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.02"/>
-			</module>
-			<module name="landT2" type="FastTurbulence">
-				<property name="sourceModule" value="landBase2"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.025"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="scaleLandBase2" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landT2"/>
-				<property name="scale" value="0.15"/>
-				<property name="bias" value="0.25"/>
-			</module>
-			<module name="land2" type="ClampOutput">
-				<property name="sourceModule" value="scaleLandBase2"/>
-				<property name="bounds" value="0,0.05"/>
-			</module>
-			
-			<module name="mountainsBase" type="FastNoise" no_seed="true">
-				<property name="frequency" value="0.25"/>
-			</module>
-			<module name="mountainsT" type="FastTurbulence">
-				<property name="sourceModule" value="mountainsBase"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.25"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="mountainsScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="mountainsT"/>
-				<property name="scale" value="1.3"/>
-				<property name="bias" value="-0.4"/>
-			</module>
-			<module name="mountainsOutput" type="ClampOutput">
-				<property name="sourceModule" value="mountainsScaled"/>
-				<property name="bounds" value="0,1.3"/>
-			</module>
-			
-			<module name="Control" type="FastNoise" no_seed="true">
-				<property name="frequency" value="1"/>
-			</module>
-			
-			<module name="landMnt" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="land"/>
-				<property name="sourceModule2" value="land2"/>
-				<property name="bounds" value="2500,5000"/>
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			
-			<module name="landMnt2" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="mountainsOutput"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			
-			<module name="landMnt3" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="landMnt2"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			
-			<module name="WaterBase" type="FastBillow" no_seed="true">
-				<property name="frequency" value="1.5"/>
-				<property name="displacement" value="-0.5"/>
-			</module>
-			<module name="WaterOutput" type="BiasOutput">
-				<property name="sourceModule" value="WaterBase"/>
-				<property name="bias" value="0.8"/>
-			</module>
-			<module name="Water" type="ScaleOutput">
-				<property name="sourceModule" value="WaterOutput"/>
-				<property name="scale" value="0.15"/>
-			</module>
-			
-			<module name="landMntWater" type="Select" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="Water"/>
-				<property name="sourceModule2" value="land"/>
 
-				<property name="bounds" value="0,15000"/>
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
-			
-			<module name="landMntWater2" type="Select" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="landMntWater"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,15000"/> **want more water make the value="" closer "0,1000" etc,. **
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
-			
-			<module name="Control" type="FastNoise" no_seed="true">
-				<property name="frequency" value="1"/>
-			</module>
-			
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landMntWater2"/>
-				<property name="scale" value="255"/>
+				<property name="sourceModule" value="finalLand"/>
+				<property name="scale" value="182"/>
 			</module>
 
 			<output module="scaleBiasOutput"/>
-			
 		</terrain_generator>
-		
 	</terrain_generators>
 	
 	<biome_generators>
-	
 		<biome_generator name="vanilla">
-		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
+				<property name="frequency" value="0.0007"/>
 				<property name="displacement" value="0.5"/>
 			</module>
 			<module name="biasOutput" type="BiasOutput">
@@ -1186,208 +1238,15 @@
 			</module>
 			
 			<output module="clampOutput"/>
-			
 		</biome_generator>
 		
-		** Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center**
-	</biome_generators>
-	
-	<biome_intensity_generators>
-	
-		<biome_intensity_generator name="vanilla">
-		
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
-				<property name="displacement" value="0.5"/>
-				<property name="distanceEnabled" value="true"/>
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi"/>
-				<property name="bias" value="0.5"/>
-			</module>
-			
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput"/>
-				<property name="frequency" value="0.25"/>
-				<property name="power" value="8"/>
-				<property name="roughness" value="5"/>
-			</module>
-			
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.0016"/>
-				<property name="power" value="400"/>
-				<property name="roughness" value="1"/>
-			</module>
-			
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle"/>
-				<property name="bounds" value="0,1"/>
-			</module>
-			
-			<output module="clampOutput"/>
-			
-		</biome_intensity_generator>
-		
-	</biome_intensity_generators>-->
-    <!--CLOCKWORKS TERRAIN-->
-    <!-- 	GENERATOR MODULE TYPES AbsoluteOutput Add BiasOutput Blend ClampOutput CurveOutput DisplaceInput ExponentialOutput InvertInput InvertOutput LargerOutput Multiply Power RotateInput ScaleBiasOutput ScaleInput ScaleOutput Select SmallerOutput Terrace TranslateInput Billow Checkerboard Constant FastBillow FastNoise FastNoiseBasis FastRidgedMultifractal FastTurbulence GradientNoiseBasis RidgedMultifractal Turbulence Voronoi -->
-	<terrain_generators>
-		<terrain_generator name="vanilla" use_old_final="false">
-			<module name="landBase" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.2"/>
-			</module>
-			<module name="landT" type="FastTurbulence">
-				<property name="sourceModule" value="landBase"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.25"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="scaleLandBase" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landT"/>
-				<property name="scale" value="0.15"/>
-				<property name="bias" value="0.15"/>
-			</module>
-			<module name="land" type="ClampOutput">
-				<property name="sourceModule" value="scaleLandBase"/>
-				<property name="bounds" value="0.05,0.25"/>
-			</module>
-			<module name="landBase2" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.2"/>
-			</module>
-			<module name="landT2" type="FastTurbulence">
-				<property name="sourceModule" value="landBase2"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.25"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="scaleLandBase2" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landT2"/>
-				<property name="scale" value="0.15"/>
-				<property name="bias" value="0.14"/>
-			</module>
-			<module name="land2" type="ClampOutput">
-				<property name="sourceModule" value="scaleLandBase2"/>
-				<property name="bounds" value="0.05,0.25"/>
-			</module>
-			<module name="mountainsBase" type="FastNoise" no_seed="true">
-				<property name="frequency" value="0.25"/>
-			</module>
-			<module name="mountainsT" type="FastTurbulence">
-				<property name="sourceModule" value="mountainsBase"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.25"/>
-				<property name="roughness" value="8"/>
-			</module>
-			<module name="mountainsScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="mountainsT"/>
-				<property name="scale" value="0.5"/>
-				<property name="bias" value="-0.4"/>
-			</module>
-			<module name="mountainsOutput" type="ClampOutput">
-				<property name="sourceModule" value="mountainsScaled"/>
-				<property name="bounds" value="0,1.3"/>
-			</module>
-			<module name="Control" type="FastNoise" no_seed="true">
-				<property name="frequency" value="1"/>
-			</module>
-			<module name="landMnt" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="land"/>
-				<property name="sourceModule2" value="land2"/>
-				<property name="bounds" value="2500,2600"/>
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			<module name="landMnt2" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="mountainsOutput"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,2500"/>
-				<!-- want more mountais? make value="" closer "0,2500" etc,. -->
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			<module name="landMnt3" type="Add" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="landMnt2"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,2500"/>
-				<!-- want more mountais? make value="" closer "0,2500" etc,. -->
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			<module name="WaterBase" type="FastBillow" no_seed="true">
-				<property name="frequency" value="1.5"/>
-				<property name="displacement" value="-0.5"/>
-			</module>
-			<module name="WaterOutput" type="BiasOutput">
-				<property name="sourceModule" value="WaterBase"/>
-				<property name="bias" value="0.75"/>
-			</module>
-			<module name="Water" type="ScaleOutput">
-				<property name="sourceModule" value="WaterOutput"/>
-				<property name="scale" value="0.30"/>
-				<!-- want water deeper? make value="" closer "0.20" etc,. -->
-			</module>
-			<module name="landMntWater" type="Select" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="Water"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,2500"/>
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
-			<module name="landMntWater2" type="Select" no_seed="true">
-				<property name="controlModule" value="Control"/>
-				<property name="sourceModule1" value="landMntWater"/>
-				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,2500"/>
-				<!-- want more water closer to gether make the value="" closer "0,1000" etc,. -->
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
-			<module name="Control" type="FastNoise" no_seed="true">
-				<property name="frequency" value="1"/>
-			</module>
-			<module name="scaleBiasOutput" type="ScaleBiasOutput">
-				<property name="sourceModule" value="landMntWater2"/>
-				<property name="scale" value="255"/>
-			</module>
-			<output module="scaleBiasOutput"/>
-		</terrain_generator>
-	</terrain_generators>
-	<biome_generators>
-		<biome_generator name="vanilla">
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.00065"/>
-				<!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
-				<property name="displacement" value="0.5"/>
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi"/>
-				<property name="bias" value="0.5"/>
-			</module>
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput"/>
-				<property name="frequency" value="0.25"/>
-				<property name="power" value="8"/>
-				<property name="roughness" value="5"/>
-			</module>
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.00016"/>
-				<property name="power" value="1000"/>
-				<property name="roughness" value="5"/>
-			</module>
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle"/>
-				<property name="bounds" value="0,1"/>
-			</module>
-			<output module="clampOutput"/>
-		</biome_generator>
 		<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
 	</biome_generators>
+	
 	<biome_intensity_generators>
-		<biome_intensity_generator name="vanilla">
+		<biome_intensity_generator name="vanilla"> 
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.00065"/>
-				<!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
+				<property name="frequency" value="0.0007"/>
 				<property name="displacement" value="0.5"/>
 				<property name="distanceEnabled" value="true"/>
 			</module>
@@ -1395,28 +1254,32 @@
 				<property name="sourceModule" value="voronoi"/>
 				<property name="bias" value="0.5"/>
 			</module>
+			
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biasOutput"/>
 				<property name="frequency" value="0.25"/>
 				<property name="power" value="8"/>
 				<property name="roughness" value="5"/>
 			</module>
+			
 			<module name="biomeJiggle" type="FastTurbulence">
 				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.00016"/>
-				<property name="power" value="1000"/>
-				<property name="roughness" value="5"/>
+				<property name="frequency" value="0.0016"/>
+				<property name="power" value="400"/>
+				<property name="roughness" value="1"/>
 			</module>
+			
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="biomeJiggle"/>
 				<property name="bounds" value="0,1"/>
 			</module>
+			
 			<output module="clampOutput"/>
 		</biome_intensity_generator>
 	</biome_intensity_generators>
-    <!-- JZMOD BIOME LAYOUT -->
-    <biome_spawn_rules>
-       <!-- BIOMES PERCENTAGE-->
+	
+	<biome_spawn_rules>
+      <!-- BIOMES PERCENTAGE-->
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.11,0.23" />
 		</biome_spawn_rule>
@@ -1431,7 +1294,7 @@
 		</biome_spawn_rule>
         <!--JZMOD LOW BIOME-->
         <biome_spawn_rule name="water">
-			<terrain_generator range="-31,3" />
+			<terrain_generator range="-31,0" />
 		</biome_spawn_rule>
         <biome_spawn_rule name="city">
 			<biome_generator range="0.73,0.84" />
@@ -1453,7 +1316,7 @@
 		</biome_spawn_rule>
         <!-- CENTER ERASER-->
         <biome_spawn_rule name="plains">
-            <distance_from_center range="0,3000" />
+            <distance_from_center range="0,2000" />
 		</biome_spawn_rule>
         <!-- GOOD BIOMES PLAYER SPAWNS IN-->
 		<biome_spawn_rule name="forest">
@@ -1477,93 +1340,20 @@
 		</biome_spawn_rule>
         <!--JZMOD LOW BIOME-->
         <biome_spawn_rule name="water">
-			<terrain_generator range="-31,3" />
+			<terrain_generator range="-31,0" />
 		</biome_spawn_rule>
         <biome_spawn_rule name="city">
 			<biome_generator range="0.73,0.84" />
 		</biome_spawn_rule>
         <!--JZMOD OUTER RINGS-->
 		<biome_spawn_rule name="snow">
-			<distance_from_center range="8750,9250" />
+			<distance_from_center range="8750,9400" />
 		</biome_spawn_rule>
 		<biome_spawn_rule name="city_wasteland">
-			<distance_from_center range="9250,10000" />
+			<distance_from_center range="9400,10000" />
 		</biome_spawn_rule>
         <biome_spawn_rule name="radiated">
 			<distance_from_center range="10000,11000" />
 		</biome_spawn_rule>
-   	</biome_spawn_rules>
-       
-    <!--JZMOD RINGS FOR TESTING BIOMES
-    <biome_spawn_rules>
-    
-    <biome_spawn_rule name="water">
-			<distance_from_center range="0,200" />
-		</biome_spawn_rule>
-    <biome_spawn_rule name="city">
-		<distance_from_center range="200,400" />
-	</biome_spawn_rule>
-    <biome_spawn_rule name="plains">
-			<distance_from_center range="400,600" />
-		</biome_spawn_rule>
-    <biome_spawn_rule name="burnt_forest">
-			<distance_from_center range="600,800" />
-		</biome_spawn_rule>
-    <biome_spawn_rule name="desert">
-			<distance_from_center range="800,1000" />
-		</biome_spawn_rule>
-    <biome_spawn_rule name="pine_forest">
-			<distance_from_center range="1000,1200" />
-		</biome_spawn_rule>
-    <biome_spawn_rule name="forest">
-			<distance_from_center range="1200,1400" />
-		</biome_spawn_rule>
-     <biome_spawn_rule name="snow">
-			<distance_from_center range="1400,1600" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="city_wasteland">
-			<distance_from_center range="1600,1800" />
-		</biome_spawn_rule>
-        <biome_spawn_rule name="wasteland">
-			<distance_from_center range="1800,2000" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="wasteland_hub">
-			<distance_from_center range="2000,2200" />
-		</biome_spawn_rule>
-        <biome_spawn_rule name="radiated">
-			<distance_from_center range="2200,10000" />
-		</biome_spawn_rule>
-    </biome_spawn_rules>
-    **vanilla**
-	<biome_spawn_rules>
-		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.1" />
-			<terrain_generator range="150,175" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.1,0.3" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.4,0.6" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.6,0.7" />
-			<terrain_generator range="176,255" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.7,0.8" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="plains">
-			<biome_generator range="0.8,1" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,20000" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,-1" />
-		</biome_spawn_rule>
-	</biome_spawn_rules>-->
+	</biome_spawn_rules>
 </rwgmixer>

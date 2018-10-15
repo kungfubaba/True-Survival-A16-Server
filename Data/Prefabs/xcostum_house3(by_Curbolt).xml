@@ -10,7 +10,7 @@
     <property name="AllowedTownships" value="city,rural,town,wilderness"/>
     <property name="SleeperVolumeStart" value="2,0,2"/>
     <property name="SleeperVolumeSize" value="23,10,15"/>
-    <property name="SleeperVolumeGroup" value="S_LootRoom_XS"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med"/>
     <property name="SleeperVolumeGameStageAdjust" value=""/>
     <property name="SleeperIsLootVolume" value="False"/>
 </prefab>

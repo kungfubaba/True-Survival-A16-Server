@@ -511,7 +511,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
-			<property name="ToolCategory.Butcher" value="1" param1="20" />
+			<property name="ToolCategory.Hunter" value="1" param1="20" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
 		<property class="Action1">
@@ -555,12 +555,12 @@ Mesh files no longer used:
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.2" />
+			<property name="Range" value="2.6" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="11" />
 			<property name="Buff" value="bleeding" />
-			<property name="Buff_chance" value="0.4" />
+			<property name="Buff_chance" value="0.6" />
 			<property name="DamageBonus.head" value="55" />
 			<property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.organic" value="4" />
@@ -573,7 +573,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
-			<property name="ToolCategory.Butcher" value="0.75" param1="10" />
+			<property name="ToolCategory.Hunter" value="0.8" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
 		<property class="Action1">
@@ -595,7 +595,7 @@ Mesh files no longer used:
 			<property name="BlockDamage" value="1,2" />
 			<property name="DegradationMax" value="100,800" />
 			<property name="DegradationRate" value="5,1" />
-			<property name="DismembermentBaseChance" value="0.01,0.03" />
+			<property name="DismembermentBaseChance" value="0.04,0.08" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="bladeWeaponsAction" />
@@ -987,7 +987,7 @@ Mesh files no longer used:
 	</item>
 	<item id="48" name="gunAK47">
         <property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
-        <property name="CustomIcon" value="ui_game_symbol_gunSchematic"/>
+        <property name="CustomIcon" value="ui_game_symbol_ak47"/>
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="48" />
@@ -1230,7 +1230,7 @@ Mesh files no longer used:
 			<property name="Crosshair_max_distance" value="34" />
 			<!-- <property name="Range" value="200"/> -->
 			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="rocket" />
+			<property name="Magazine_items" value="rocket,demoRocket" />
 			<property name="Rays_spread" value="0.095" />
 			<property name="Reload_time" value="2" />
 			<property name="Bullet_icon" value="uzi" />
@@ -1478,7 +1478,7 @@ Mesh files no longer used:
 			<!-- UseAction -->
 			<property name="Class" value="Vomit" />
 			<property name="Delay" value="0.35" />
-			<property name="Range" value="200" />
+			<property name="Range" value="100" />
 			<property name="Auto_fire" value="true" />
 			<property name="Infinite_ammo" value="true" />
 			<property name="Magazine_items" value="projectileZombieVomit" />
@@ -1500,8 +1500,8 @@ Mesh files no longer used:
 		<property name="CreativeMode" value="None" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
-			<property name="DamageEntity" value="10" />
-			<property name="DamageBlock" value="150" />
+			<property name="DamageEntity" value="3" />
+			<property name="DamageBlock" value="1" />
 			<property name="Explosion.ParticleIndex" value="7" />
 			<property name="Velocity" value="20" />
 			<property name="FlyTime" value="0.50" />
@@ -1726,8 +1726,8 @@ Mesh files no longer used:
 		<property name="Extends" value="projectileZombieVomit" />
 		<property name="CreativeMode" value="None" />
 		<property class="Action1">
-			<property name="DamageEntity" value="20" />
-			<property name="DamageBlock" value="300" />
+			<property name="DamageEntity" value="3" />
+			<property name="DamageBlock" value="1" />
 		</property>
 	</item>
 	<item id="95" name="handAnimalZombieDogFeral">
@@ -2604,9 +2604,9 @@ Mesh files no longer used:
 			<property name="Horde_meter_rate" value="0.275" />
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
-			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.head" value="50" />
 			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.organic" value="5" />
+			<property name="DamageBonus.organic" value="100" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.earth" value="1" />
 			<property name="DamageBonus.stone" value="0" />
@@ -2847,7 +2847,7 @@ Mesh files no longer used:
 			<property name="Crosshair_max_distance" value="30" />
 			<!-- 30 -->
 			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot" />
+			<property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot," />
 			<property name="Rays_spread" value="0.012" />
 			<property name="Reload_time" value="2" />
 			<property name="Bullet_icon" value="uzi" />
@@ -3987,10 +3987,10 @@ Mesh files no longer used:
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="50" />
 		<property class="Attributes">
-			<property name="EntityDamage" value="21,35" />
+			<property name="EntityDamage" value="28,42" />
 			<property name="BlockDamage" value="10,20" />
 			<!-- <property name="Accuracy" value="1, 0.01"/> -->
-			<property name="DismembermentBaseChance" value="0.01,0.03" />
+			<property name="DismembermentBaseChance" value="0.6,0.9" />
 			<property name="DismembermentBonus" value="0,0" />
 			<property name="DegradationMax" value="3000,6000" />
 		</property>
@@ -7166,7 +7166,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
+			<property name="Debuff" value="infection,bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7177,7 +7177,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
+			<property name="Debuff" value="infection,bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="medicineCraft" />
@@ -7298,7 +7298,6 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Buff" value="wellness_2_Trigger" />
-			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 		</property>
 		<property name="Group" value="food/Cooking" />
@@ -7308,7 +7307,7 @@ Mesh files no longer used:
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="14" />
-		<property name="Stacknumber" value="50" />
+		<property name="Stacknumber" value="100" />
 		<!-- STK food -->
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
@@ -8586,7 +8585,7 @@ Mesh files no longer used:
 		<property name="Extends" value="schematicMaster" />
 		<property name="EconomicValue" value="500" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="gunSniperRifle" />
+			<property name="Recipes_to_learn" value="gunSniperRifle,mg4" />
 			<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 		</property>
 		<property name="PickupJournalEntry" value="gunAssemblyTip" />
@@ -10161,20 +10160,20 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK loot -->
-		<property name="EconomicValue" value="10" />
+		<property name="EconomicValue" value="1000" />
 		<property name="CraftingIngredientTime" value="15" />
 		<property name="Group" value="Resources" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
 	<item id="1391" name="goldNugget">
 		<property name="Extends" value="silverNugget" />
-		<property name="EconomicValue" value="20" />
+		<property name="EconomicValue" value="2000" />
 		<property name="CraftingIngredientTime" value="15" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
 	<item id="1392" name="rawDiamond">
 		<property name="Extends" value="silverNugget" />
-		<property name="EconomicValue" value="50" />
+		<property name="EconomicValue" value="5000" />
 		<property name="CraftingIngredientTime" value="60" />
 		<property name="DescriptionKey" value="rareOresGroupDesc" />
 	</item>
@@ -10690,7 +10689,7 @@ Mesh files no longer used:
 			<property name="Barrel" value="carbonCrossbow_Barrel" />
 		</property>
 		<property class="Action0">
-			<property name="Magazine_items" value="steelCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot" />
+			<property name="Magazine_items" value="steelCrossbowBolt, explodingCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot" />
 			<property name="Rays_spread" value="0.01" />
 		</property>
 	</item>
@@ -11569,7 +11568,7 @@ Mesh files no longer used:
 			<property name="Class" value="Projectile" />
 			<property name="Explosion.ParticleIndex" value="4" />
 			<property name="Explosion.RadiusBlocks" value="5" />
-			<property name="Explosion.BlockDamage" value="7" />
+			<property name="Explosion.BlockDamage" value="1400" />
 			<property name="Explosion.RadiusEntities" value="1" />
 			<property name="Explosion.EntityDamage" value="25" />
 		</property>
@@ -11937,13 +11936,13 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
-            <property name="ToolCategory.Butcher" value="1" />
+            <property name="ToolCategory.Butcher" value="1" param1="20"/>
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="6,13" />
+			<property name="EntityDamage" value="12,16" />
 			<property name="BlockDamage" value="4,6" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="5,1" />
@@ -11959,7 +11958,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
-            <property name="ToolCategory.Butcher" value="1" />
+            <property name="ToolCategory.Butcher" value="0.9" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="4" />
@@ -12028,7 +12027,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
-			<property name="ToolCategory.Butcher" value="0.8" param1="10" />
+			<property name="ToolCategory.Hunter" value="0.8" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
 		<property class="Attributes">
@@ -12211,7 +12210,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="18" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="13,38" />
+			<property name="EntityDamage" value="35,60" />
 			<property name="BlockDamage" value="3,13" />
 			<property name="DegradationMax" value="200,600" />
 		</property>
@@ -12231,14 +12230,14 @@ Mesh files no longer used:
 			<property name="Delay" value="1.3" />
 			<property name="Stamina_usage" value="8" />
 			<property name="Buff" value="criticalBlunt,breakLeg" />
-			<property name="Buff_chance" value="0.3,1" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="DamageBonus.stone" value="0.5" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="4.05" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="criticalBlunt,breakLeg" />
-			<property name="Buff_chance" value="0.4,1" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="DamageBonus.stone" value="0.75" />
 		</property>
 		<property class="Attributes">
@@ -12308,7 +12307,7 @@ Mesh files no longer used:
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="20,40" />
+			<property name="EntityDamage" value="30,50" />
 			<property name="DegradationMax" value="100,600" />
 		</property>
 		<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
@@ -14008,7 +14007,7 @@ Mesh files no longer used:
         <property name="CustomIcon" value="ui_game_symbol_book" />
 		<property name="EconomicValue" value="500" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="blunderbuss,blunderbussAmmo,craftedRevolver,craftedRevolverStock,craftedRevolverBarrel,craftedRifle,craftedRifleBarrel,craftedRifle_stock,craftedRifle_receiver" />
+			<property name="Recipes_to_learn" value="blunderbuss,blunderbussAmmo" />
 		</property>
 	</item>
     <item id="1677" name="farmersAlmanac">
@@ -14140,7 +14139,7 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="Misc/recipe_unlocked" />
 		</property>
-		<property name="ActionExp" value="350" />
+		<property name="ActionExp" value="10000" />
 		<property name="ActionSkillGroup" value="Scavenging" />
 	</item>
 	<item id="1689" name="bluntWeaponsForDummies">
@@ -14697,7 +14696,7 @@ Mesh files no longer used:
 		<property name="CustomIconTint" value="25e008" />
 		<property class="Action1">
 			<property name="Sound_start" value="UseActions/player_painkillers" />
-			<property name="Buff" value="antiViralMedDose" />
+			<property name="Debuff" value="infection,bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property name="Group" value="Science" />
 		<property name="DescriptionKey" value="AntivirialDesc" />
@@ -14808,6 +14807,7 @@ Mesh files no longer used:
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="#Apple1?Apple1Prefab" />
         <property name="DropMeshfile" value="#Apple1?Apple1Prefab" />
+		<property name="Stacknumber" value="100" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
 			<property name="Gain_water" value="1" />
@@ -14823,6 +14823,7 @@ Mesh files no longer used:
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="#fruits?carrot" />
 		<property name="DescriptionKey" value="carrotDesc" />
+		<property name="Stacknumber" value="100" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
 		</property>
@@ -14874,7 +14875,6 @@ Mesh files no longer used:
 			<property name="Gain_stamina" value="100" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Buff" value="staminaBoost,wellness_10_Trigger" />
-			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_wellnessJuice" />
 		<property name="DescriptionKey" value="wellnessJuiceDesc" />
@@ -14899,13 +14899,11 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="UseActions/bucketbail_water" />
 			<property name="Buff" value="wetHead,extinguishFireBuff" />
-			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_water" value="20" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
-			<property name="Create_item" value="emptyJar" />
 			<property name="Buff" value="wellness_2_Trigger" />
 		</property>
 		<property name="DescriptionKey" value="fruitJuiceDesc" />
@@ -15023,7 +15021,7 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0.2" />
 		</property>
 	</item>
-	<!--JZMOD Flask -->
+		<!--JZMOD Flask -->
 	<item id="1792" name="bladderFlaskFull">
 		<!-- JZMOD TODO/BACKGROUND COLOR TO TELL FULLNESS ON ICON -->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -15727,21 +15725,21 @@ Mesh files no longer used:
 		<property name="Extends" value="projectileZombieVomit" />
         <property name="CreativeMode" value="None" />
 		<property class="Action1">
-            <property name="Range" value="20" />
-			<property name="DamageEntity" value="10" />
-			<property name="DamageBlock" value="150" />
+            <property name="Range" value="10" />
+			<property name="DamageEntity" value="3" />
+			<property name="DamageBlock" value="1" />
 			<property name="Velocity" value="15" />
 			<property name="FlyTime" value="0.50" />
 			<property name="LifeTime" value="4" />
 			<property name="CollisionRadius" value="6" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="15" />
-			<property name="DamageBonus.metal" value="20" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.stone" value="1" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.glass" value="1" />
 			<property name="DamageBonus.earth" value="1" />
-			<property name="DamageBonus.cloth" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
-			<property name="DamageBonus.steel" value="5" />
+			<property name="DamageBonus.cloth" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+			<property name="DamageBonus.steel" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="ApplyBuff" value="1, 1" param1="smelly" />
@@ -17239,88 +17237,83 @@ Mesh files no longer used:
     <item id="2032" name="hammer">
         <property name="Extends" value="clubMaster" />
         <property name="Meshfile" value="#Hammer?HammerPrefab" />
+	</item>
+	<item id="2033" name="weedCleaver">
+<property name="DescriptionKey" value="weedCleaverDesc"/>
+<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
+<property name="Material" value="metal" />
+<property name="Degradation" value="500" param1="false" />
+<property name="HoldType" value="47" />
+<property name="Stacknumber" value="1" />
+<property name="RepairTools" value="scrapIron" />
+<property name="DegradationBreaksAfter" value="false" />
+<property name="SoundJammed" value="ItemNeedsRepair" />
+<property name="SoundDestroy" value="wooddestroy1" />
+<property class="Action0">
+<property name="Class" value="Melee" />
+<property name="Delay" value="0.2" />
+<property name="Range" value="2" />
+<property name="Sphere" value="0.1" />
+<property name="Block_range" value="10" />
+<property name="DamageBlock" value="0" />
+<property name="Sound_start" value="swoosh" />
+<property name="Stamina_usage" value="4" />
+<property name="DamageBonus.plants" value="25" />
+<property name="DamageBonus.leaves" value="25" />
+</property>
+<property class="Attributes">
+<property name="EntityDamage" value="8,10" />
+<property name="DegradationMax" value="250,750" />
+<property name="DegradationRate" value="2,1" />
+<property name="DismembermentBaseChance" value="0.1,0.1"/>
+<property name="DismembermentBonus" value="0,0"/>
+</property>
+<property name="EconomicValue" value="20" />
+</item>
+    <item id="2041" name="Bladderbomb">
+        <property name="Class" value="ItemClassTimeBomb" />
+        <property name="Material" value="organic" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+        <property name="CustomIcon" value="ui_game_symbol_dirtyBandage" />
+        <property name="HoldType" value="54" />
+        <property name="DropScale" value="2" />
+        <property name="ThrowableDecoy" value="true" />
+        <property name="FuelValue" value="60" />
+        <property name="Stacknumber" value="40" />
+        <!-- STK explosives -->
+        <property name="Explosion.BlockDamage" value="1" />
+        <property name="Explosion.EntityDamage" value="40" />
+        <property name="Explosion.ParticleIndex" value="7" />
+        <property name="Explosion.RadiusBlocks" value="1" />
+        <property name="Explosion.RadiusEntities" value="10" />
+        <property name="Explosion.BlastPower" value="70" />
+        <property name="Explosion.DamageBonus.stone" value="0.1" />
+        <property name="Explosion.DamageBonus.metal" value="0" />
+        <property name="Explosion.DamageBonus.earth" value="0" />
+        <property name="Explosion.DamageBonus.water" value="0" />
+        <property name="Explosion.DamageBonus.wood" value="0" />
+        <property name="FuseTime" value="20000" />
+        <!-- theoretically redundant but I don't want to experiment on this -->
+        <property name="Explosion.Buff" value="zombieKill" />
+        <property name="Explosion.Buff_chance" value="1" />
+        <property name="ExplodeOnHit" value="true" />
+        <property class="Action0">
+            <property name="Class" value="ThrowAway" />
+            <!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+            <property name="Delay" value="1.2" />
+            <property name="Throw_strength_default" value="14" />
+            <property name="Throw_strength_max" value="25" />
+            <property name="Max_strain_time" value="1.5" />
+            <property name="Sound_start" value="swoosh" />
+        </property>
+        <!-- <property class="Action1">
+        <property name="Class" value="Activate"/>
+        <property name="Delay" value="1"/>
+    </property> -->
+        <property name="EconomicValue" value="41" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property name="CraftingSkillGroup" value="chemistryCraft" />
     </item>
-    <item id="2033" name="barterForGoldenrodTea">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForGoldenrodTea" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForGoldenrodTeaDesc" />
-	</item>
-    <item id="2034" name="barterForCraftedRevolver">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForCraftedRevolver" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForCraftedRevolverDesc" />
-	</item>
-    <item id="2035" name="barterForFirstAidBandage">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForFirstAidBandage" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForFirstAidBandageDesc" />
-	</item>
-    <item id="2036" name="barterForGrainAlcohol">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForGrainAlcohol" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForGrainAlcoholDesc" />
-	</item>
-    <item id="2037" name="barterForForgedIron">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForForgedIron" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForForgedIronDesc" />
-	</item>
-    <item id="2038" name="barterForForgedSteel">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForForgedSteel" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForForgedSteelDesc" />
-	</item>
-    <item id="2039" name="barterForCorrugatedMetalSheet">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForCorrugatedMetalSheet" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForCorrugatedMetalSheetDesc" />
-	</item>
-    <item id="2040" name="barterForConcreteMix">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForConcreteMix" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForConcreteMixDesc" />
-	</item>
-    <item id="2041" name="barterForMetalRivetSheet">
-        <property name="Extends" value="questMaster" />
-		<property name="CreativeMode" value="Player" />
-		<property class="Action1">
-			<property name="QuestGiven" value="q_barterForMetalRivetSheet" />
-			<property name="Delay" value="0" />
-		</property>
-        <property name="DescriptionKey" value="barterForMetalRivetSheetDesc" />
-	</item>
     <item id="2042" name="barterForFirstAidKit">
         <property name="Extends" value="questMaster" />
 		<property name="CreativeMode" value="Player" />
@@ -17350,6 +17343,17 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 		</property>
 	</item>
+		<item id="2045" name="bikeNABox">
+		<property name="Material" value="glass" />
+         <property name="CustomIcon" value="ui_game_symbol_bikeNABox" />
+		<property name="Texture" value="423" />
+		<property name="CanPickup" value="true" />
+		<property name="DescriptionKey" value="bikeNABoxDesc" />
+		<property name="Group" value="Basics" />
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="bikeLoot" />
+	</item>
+
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
         <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />works brass knocklew fork not using
